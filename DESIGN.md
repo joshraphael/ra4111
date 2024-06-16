@@ -6,6 +6,7 @@
 2. [Learnings](#learnings)
 3. [Code Notes](#code-notes)
 4. [Achievements](#achievements)
+5. [Rich Presence](#rich-presence)
 
 ## About
 
@@ -30,7 +31,7 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 
 ## Code Notes
 
-### Navigation
+### Code Notes Navigation
 
 1. [Group 1 Missions](#group-1-missions)
 2. [Group 2 Missions](#group-2-missions)
@@ -38,10 +39,23 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 4. [Group 4 Missions](#group-4-missions)
 5. [Health](#health)
 6. [Lift Pass Level](#lift-pass-level)
+7. [Money Low](#money-low)
+8. [Money High](#money-high)
+9. [Map](#map)
+10. [Select Menu Option](#select-menu-option)
+11. [Language](#language)
+12. [First character of password input](#first-character-of-password-input)
+13. [Second character of password input](#second-character-of-password-input)
+14. [Third character of password input](#third-character-of-password-input)
+15. [Fourth character of password input](#fourth-character-of-password-input)
+16. [Fifth character of password input](#fifth-character-of-password-input)
+17. [Sixth character of password input](#sixth-character-of-password-input)
+18. [Seventh character of password input](#seventh-character-of-password-input)
+19. [Eighth character of password input](#eighth-character-of-password-input)
 
 ### _Group 1 Missions_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD00A**
 
@@ -59,7 +73,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Group 2 Missions_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD00B**
 
@@ -76,7 +90,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Group 3 Missions_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD00C**
 
@@ -93,7 +107,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Group 4 Missions_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD00D**
 
@@ -110,7 +124,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Health_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD122**
 
@@ -126,7 +140,7 @@ Notes: incremental value, should never have more than 5
 
 ### _Lift Pass Level_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD128**
 
@@ -142,7 +156,7 @@ Notes: incremental value, should never have more than 5
 
 ### _Money Low_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD129**
 
@@ -158,7 +172,7 @@ least significant values in the points earned, can represent 0-255 points
 
 ### _Money High_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD12A**
 
@@ -175,7 +189,7 @@ highest significant values in points earned, can represent 255+ points, right pa
 
 ### _Map_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD190 - 0xD195**
 
@@ -192,7 +206,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### _Select Menu Option_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3E5**
 
@@ -203,7 +217,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### _Language_
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3E6**
 
@@ -216,7 +230,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### First character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F0**
 
@@ -255,7 +269,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Second character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F1**
 
@@ -294,7 +308,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Third character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F2**
 
@@ -333,7 +347,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Fourth character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F3**
 
@@ -372,7 +386,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Fifth character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F4**
 
@@ -411,7 +425,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Sixth character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F5**
 
@@ -450,7 +464,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Seventh character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F6**
 
@@ -489,7 +503,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Eighth character of password input
 
-<sub>[Back to navigation](#navigation)</sub>
+<sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xD3F7**
 
@@ -527,3 +541,160 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x1f = ?
 
 ## Achievements
+
+### Achievements navigation
+
+1. [Play Pen](#play-pen)
+2. [Level 1 Mission 1](#level-1-mission-1)
+3. [Level 1 Mission 2](#level-1-mission-2)
+4. [Level 1 Mission 3](#level-1-mission-3)
+5. [Level 2 Mission 1](#level-2-mission-1)
+6. [Level 2 Mission 2](#level-2-mission-2)
+7. [Level 2 Mission 3](#level-2-mission-3)
+8. [Level 3 Mission 1](#level-3-mission-1)
+9. [Level 3 Mission 2](#level-3-mission-2)
+10. [Level 3 Mission 3](#level-3-mission-3)
+11. [Level 4 Mission 1](#level-4-mission-1)
+12. [Level 4 Mission 2](#level-4-mission-2)
+13. [Level 4 Mission 3](#level-4-mission-3)
+14. [Level 5 Mission 1](#level-5-mission-1)
+15. [Level 5 Mission 2](#level-5-mission-2)
+16. [Level 5 Mission 3](#level-5-mission-3)
+17. [Level 6 Mission 1](#level-6-mission-1)
+18. [Level 6 Mission 2](#level-6-mission-2)
+19. [Level 6 Mission 3](#level-6-mission-3)
+20. [Level 7 Mission 1](#level-7-mission-1)
+21. [Level 7 Mission 2](#level-7-mission-2)
+22. [Level 7 Mission 3](#level-7-mission-3)
+23. [Level 8 Mission 1](#level-8-mission-1)
+24. [Level 8 Mission 2](#level-8-mission-2)
+25. [Level 8 Mission 3](#level-8-mission-3)
+26. [Level 9 Mission 1](#level-9-mission-1)
+27. [Level 9 Mission 2](#level-9-mission-2)
+28. [Level 9 Mission 3](#level-9-mission-3)
+29. [Level 10 Mission 1](#level-10-mission-1)
+30. [Beat Game](#beat-game)
+
+### Play Pen
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 1 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 1 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 1 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 2 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 2 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 2 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 3 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 3 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 3 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 4 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 4 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 4 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 5 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 5 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 5 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 6 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 6 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 6 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 7 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 7 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 7 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 8 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 8 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 8 Mission 3
+
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 9 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 9 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 9 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Level 10 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+### Beat Game
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+
+## Rich Presence
