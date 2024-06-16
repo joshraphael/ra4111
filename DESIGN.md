@@ -30,20 +30,66 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 
 ## Code Notes
 
-### _Missions Complete_
+### _Group 1 Missions_
 
-**0xD00A - 0xD00D**
+**0xD00A**
 
 Notes: each bit 0 = not beaten, 1 = beaten
 
-* 0 = room 1
-* 1 = room 2
-* 2 = room 3
-* 3 = room 4
-* 4 = room 5
-* 5 = room 6
-* 6 = room 7
-* 7 = room 8
+* 0 = Play Pen
+* 1 = Level 1 Mission 1
+* 2 = Level 1 Mission 2
+* 3 = Level 1 Mission 3
+* 4 = Level 2 Mission 1
+* 5 = Level 2 Mission 2
+* 6 = Level 2 Mission 3
+* 7 = Level 3 Mission 1
+
+
+### _Group 2 Missions_
+
+**0xD00B**
+
+Notes: each bit 0 = not beaten, 1 = beaten
+
+* 0 = Level 3 Mission 2
+* 1 = Level 3 Mission 3
+* 2 = Level 4 Mission 1
+* 3 = Level 4 Mission 2
+* 4 = Level 4 Mission 3
+* 5 = Level 5 Mission 1
+* 6 = Level 5 Mission 2
+* 7 = Level 5 Mission 3
+
+### _Group 3 Missions_
+
+**0xD00C**
+
+Notes: each bit 0 = not beaten, 1 = beaten
+
+* 0 = Level 6 Mission 1
+* 1 = Level 6 Mission 2
+* 2 = Level 6 Mission 3
+* 3 = Level 7 Mission 1
+* 4 = Level 7 Mission 2
+* 5 = Level 7 Mission 3
+* 6 = Level 8 Mission 1
+* 7 = Level 8 Mission 2
+
+### _Group 4 Missions_
+
+**0xD00D**
+
+Notes: each bit 0 = not beaten, 1 = beaten
+
+* 0 = Level 8 Mission 3
+* 1 = Level 9 Mission 1
+* 2 = Level 9 Mission 2
+* 3 = Level 9 Mission 3
+* 4 = Level 10 Mission 1
+* 5 = NOT USED
+* 6 = NOT USED
+* 7 = NOT USED
 
 ### _Health_
 
@@ -59,16 +105,46 @@ Notes: incremental value, should never have more than 5
 * 0x04 = 4 hearts
 * 0x05 = 5 hearts
 
-### _Language_
+### _Lift Pass Level_
 
-**0xD3E6**
+**0xD128**
 
-* 0x00 = ENGLISH
-* 0x03 = FRANCAIS
-* 0x06 = NEDERLANDS
-* 0x09 = ITALIANO
-* 0x0c = ESPANOL
-* 0x0f = DEUTCH
+* 0x00 = level 1
+* 0x01 = level 2
+* 0x02 = level 3
+* 0x03 = level 4
+* 0x04 = level 5
+* 0x05 = level 6
+* 0x06 = level 7
+* 0x07 = level 8
+* 0x08 = level 9
+
+### _Money Low_
+
+**0xD129**
+
+Notes: max the game can display is 9999 (0x2700(high) + 0x0f(low) = 0x270f) but technically can use max of the 4 bits 65535 (0xfff)
+
+least significant values in the points earned, can represent 0-255 points
+
+* 0x00 = 0
+* 0x01 = 1
+* 0x02 = 2
+* ...
+* 0xff = 255
+
+**0xD12A**
+
+Notes: max the game can display is 9999 (0x2700(high) + 0x0f(low) = 0x270f) but technically can use max of the 4 bits 65535 (0xfff)
+
+highest significant values in points earned, can represent 255+ points, right padded with zeros
+
+* 0x00 = 0000 =  0 + money low
+* 0x01 = 0100 = 256 + money low
+* 0x02 = 0200 = 512 + money low
+* 0x03 = 0300 = 768 + money low
+* 0x04 = 0400 = 1024 + money low
+* ...
 
 ### _Map_
 
@@ -93,5 +169,312 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x01 = enter password
 * 0x02 = control pad
 * 0x03 = response
+
+### _Language_
+
+**0xD3E6**
+
+* 0x00 = ENGLISH
+* 0x03 = FRANCAIS
+* 0x06 = NEDERLANDS
+* 0x09 = ITALIANO
+* 0x0c = ESPANOL
+* 0x0f = DEUTCH
+
+### First character of password input
+
+**0xD3F0**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Second character of password input
+
+**0xD3F1**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Third character of password input
+
+**0xD3F2**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Fourth character of password input
+
+**0xD3F3**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Fifth character of password input
+
+**0xD3F4**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Sixth character of password input
+
+**0xD3F5**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Seventh character of password input
+
+**0xD3F6**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
+
+### Eighth character of password input
+
+**0xD3F7**
+
+* 0x00 = 1
+* 0x01 = 2
+* 0x02 = 3
+* 0x03 = 4
+* 0x04 = 5
+* 0x05 = 6
+* 0x06 = 7
+* 0x07 = 8
+* 0x08 = 9
+* 0x09 = B
+* 0x0a = D
+* 0x0b = G
+* 0x0c = H
+* 0x0d = J
+* 0x0e = K
+* 0x0f = L
+* 0x10 = M
+* 0x11 = N
+* 0x12 = P
+* 0x13 = Q
+* 0x14 = R
+* 0x15 = T
+* 0x16 = V
+* 0x17 = W
+* 0x18 = X
+* 0x19 = Y
+* 0x1a = Z
+* 0x1b = #
+* 0x1c = !
+* 0x1d = *
+* 0x1e = -
+* 0x1f = ?
 
 ## Achievements

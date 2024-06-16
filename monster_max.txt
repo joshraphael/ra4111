@@ -139,7 +139,7 @@ current lift pass level obtained
 0x07 = level 8
 0x08 = level 9
 
-* 0xf3e5 - select menu option
+* 0xd3e5 - select menu option
 
 current select menu option
 
