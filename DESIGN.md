@@ -30,7 +30,18 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 
 ## Code Notes
 
+### Navigation
+
+1. [Group 1 Missions](#group-1-missions)
+2. [Group 2 Missions](#group-2-missions)
+3. [Group 3 Missions](#group-3-missions)
+4. [Group 4 Missions](#group-4-missions)
+5. [Health](#health)
+6. [Lift Pass Level](#lift-pass-level)
+
 ### _Group 1 Missions_
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD00A**
 
@@ -48,6 +59,8 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Group 2 Missions_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD00B**
 
 Notes: each bit 0 = not beaten, 1 = beaten
@@ -62,6 +75,8 @@ Notes: each bit 0 = not beaten, 1 = beaten
 * 7 = Level 5 Mission 3
 
 ### _Group 3 Missions_
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD00C**
 
@@ -78,6 +93,8 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Group 4 Missions_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD00D**
 
 Notes: each bit 0 = not beaten, 1 = beaten
@@ -93,6 +110,8 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 ### _Health_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD122**
 
 Notes: incremental value, should never have more than 5
@@ -106,6 +125,8 @@ Notes: incremental value, should never have more than 5
 * 0x05 = 5 hearts
 
 ### _Lift Pass Level_
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD128**
 
@@ -121,6 +142,8 @@ Notes: incremental value, should never have more than 5
 
 ### _Money Low_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD129**
 
 Notes: max the game can display is 9999 (0x2700(high) + 0x0f(low) = 0x270f) but technically can use max of the 4 bits 65535 (0xfff)
@@ -132,6 +155,10 @@ least significant values in the points earned, can represent 0-255 points
 * 0x02 = 2
 * ...
 * 0xff = 255
+
+### _Money High_
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD12A**
 
@@ -148,6 +175,8 @@ highest significant values in points earned, can represent 255+ points, right pa
 
 ### _Map_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD190 - 0xD195**
 
 Notes: start menu map, starting from 0xf190 each bit flipped means youve entered a new room in the mission, its entirely all 0xff for each address in the main lobby to show all floors
@@ -163,6 +192,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### _Select Menu Option_
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD3E5**
 
 * 0x00 = information (default, resets on open)
@@ -171,6 +202,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x03 = response
 
 ### _Language_
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD3E6**
 
@@ -182,6 +215,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x0f = DEUTCH
 
 ### First character of password input
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD3F0**
 
@@ -220,6 +255,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Second character of password input
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD3F1**
 
 * 0x00 = 1
@@ -256,6 +293,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x1f = ?
 
 ### Third character of password input
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD3F2**
 
@@ -294,6 +333,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Fourth character of password input
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD3F3**
 
 * 0x00 = 1
@@ -330,6 +371,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x1f = ?
 
 ### Fifth character of password input
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD3F4**
 
@@ -368,6 +411,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Sixth character of password input
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD3F5**
 
 * 0x00 = 1
@@ -405,6 +450,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### Seventh character of password input
 
+<sub>[Back to navigation](#navigation)</sub>
+
 **0xD3F6**
 
 * 0x00 = 1
@@ -441,6 +488,8 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 * 0x1f = ?
 
 ### Eighth character of password input
+
+<sub>[Back to navigation](#navigation)</sub>
 
 **0xD3F7**
 
