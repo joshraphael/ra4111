@@ -54,8 +54,8 @@ ROOM6MASK = 0x20
 ROOM7MASK = 0x40
 ROOM8MASK = 0x80
 
-MAINROOMID = 0x00
-PLAYPENID = 0x01
+MAINROOMID       = 0x00
+PLAYPENID        = 0x01
 LEVEL1MISSION1ID = 0x02
 LEVEL1MISSION2ID = 0x03
 LEVEL1MISSION3ID = 0x04
@@ -83,16 +83,7 @@ LEVEL8MISSION3ID = 0x19
 LEVEL9MISSION1ID = 0x1a
 LEVEL9MISSION2ID = 0x1b
 LEVEL9MISSION3ID = 0x1c
-LEVEL10MISSONID = 0x1d
-
-
-// anti cheat
-// if level unlocked changes and password == that levels password then they cheated
-// if more than one level opened during a trigger than they cheated
-// if theyre not facing the correct direction when finishing the game then they cheated (might be invalid if they all end in the same direction but it might not hurt to check)
-// if they are in the main menu (map is all FFFF for 32 bits) then they cheated
-// if they have not seen the final room of the mission, they cheated
-// if they have seen more rooms than the mission allos then they cheated
+LEVEL10MISSONID  = 0x1d
 
 function missionMarkedComplete( group, missionMask )
 {
@@ -102,8 +93,12 @@ function missionMarkedComplete( group, missionMask )
 
 function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGroup2, unchangedGroup3 )
 {
-    // Mission is the only level that was marked complete (anti-cheat)
-    return LevelGroup1() == ( prev( LevelGroup1() ) + missionMask )
+    return (
+        group == ( prev( group ) + missionMask ) &&
+        unchangedGroup1 == prev( unchangedGroup1 ) &&
+        unchangedGroup2 == prev( unchangedGroup2 ) &&
+        unchangedGroup3 == prev( unchangedGroup3 )
+    )
 }
 
 function OpenPasswordMenu()
@@ -178,6 +173,72 @@ Configs = [
         "mainGroup": LevelGroup1(),
         "mainGroupMask": ROOM4MASK,
         "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 2 Mission 1",
+        "description": "Beat Level 2 Mission 1",
+        "points": 2,
+        "missionId": LEVEL2MISSION1ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM5MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 2 Mission 2",
+        "description": "Beat Level 2 Mission 2",
+        "points": 2,
+        "missionId": LEVEL2MISSION2ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM6MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 2 Mission 3",
+        "description": "Beat Level 2 Mission 3",
+        "points": 2,
+        "missionId": LEVEL2MISSION3ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM7MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 3 Mission 1",
+        "description": "Beat Level 3 Mission 1",
+        "points": 2,
+        "missionId": LEVEL3MISSION1ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM8MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 3 Mission 2",
+        "description": "Beat Level 3 Mission 2",
+        "points": 2,
+        "missionId": LEVEL3MISSION2ID,
+        "mainGroup": LevelGroup2(),
+        "mainGroupMask": ROOM1MASK,
+        "secondaryGroup1": LevelGroup1(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 3 Mission 3",
+        "description": "Beat Level 3 Mission 3",
+        "points": 2,
+        "missionId": LEVEL3MISSION3ID,
+        "mainGroup": LevelGroup2(),
+        "mainGroupMask": ROOM2MASK,
+        "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
     }
