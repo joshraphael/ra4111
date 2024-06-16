@@ -106,7 +106,7 @@ Notes: max the game can display is 9999 (0x270f) but technically can use max of 
 
 money is in little endian, so when looking at memory inspector the address' come backwards hence why I made a high and low variable with examples. should still be easy to check specific values of money
 
-* 0xf12a - money high
+* 0xd12a - money high
 
 highest significant values in points earned, can represent 255+ points, right padded with zeros
 
@@ -117,7 +117,7 @@ highest significant values in points earned, can represent 255+ points, right pa
 0x03 = 0300 = 768 + money low
 0x04 = 0400 = 1024 + money low
 
-* 0xf129 - money low
+* 0xd129 - money low
 
 least significant values in the points earned, can represent 0-255 points
 
@@ -125,7 +125,7 @@ least significant values in the points earned, can represent 0-255 points
 ...
 255 = 0xff
 
-* 0xf128 - lift pass level
+* 0xd128 - lift pass level
 
 current lift pass level obtained
 

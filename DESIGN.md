@@ -45,20 +45,9 @@ Notes: each bit 0 = not beaten, 1 = beaten
 * 6 = room 7
 * 7 = room 8
 
-### _Language_
-
-**0xD3E6**
-
-* 0x00 = ENGLISH
-* 0x03 = FRANCAIS
-* 0x06 = NEDERLANDS
-* 0x09 = ITALIANO
-* 0x0c = ESPANOL
-* 0x0f = DEUTCH
-
 ### _Health_
 
-**0xF122**
+**0xD122**
 
 Notes: incremental value, should never have more than 5
 
@@ -70,9 +59,20 @@ Notes: incremental value, should never have more than 5
 * 0x04 = 4 hearts
 * 0x05 = 5 hearts
 
+### _Language_
+
+**0xD3E6**
+
+* 0x00 = ENGLISH
+* 0x03 = FRANCAIS
+* 0x06 = NEDERLANDS
+* 0x09 = ITALIANO
+* 0x0c = ESPANOL
+* 0x0f = DEUTCH
+
 ### _Map_
 
-**0xF190 - 0xF195**
+**0xD190 - 0xD195**
 
 Notes: start menu map, starting from 0xf190 each bit flipped means youve entered a new room in the mission, its entirely all 0xff for each address in the main lobby to show all floors
 
@@ -87,7 +87,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 ### _Select Menu Option_
 
-**0xF3E5**
+**0xD3E5**
 
 * 0x00 = information (default, resets on open)
 * 0x01 = enter password

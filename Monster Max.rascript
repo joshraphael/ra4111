@@ -1,8 +1,8 @@
 // Monster Max
 // #ID = 4111
 
-// $F122: Health
-function Health() => byte( 0xF122 )
+// $D122: Health
+function Health() => byte( 0xD122 )
 
 // $D00A: Level Group 1
 function LevelGroup1() => byte( 0xD00A )
@@ -43,7 +43,17 @@ function PasswordChar8() => byte( 0xD3F7 )
 // $CFBF - Current mission
 function CurrentMission() => byte( 0xCFBF )
 
+// $D128: Lift Pass Level
+function LiftPassLevel() => byte( 0xD128 )
+
+// $D12A: Money high value
+function MoneyHigh() => byte( 0xD12A )
+
+// $D129: Money low value
+function MoneyLow() => byte( 0xD129 )
+
 CLOSED = 0x00
+DEAD = 0xFF
 
 ROOM1MASK = 0x01
 ROOM2MASK = 0x02
@@ -85,6 +95,8 @@ LEVEL9MISSION2ID = 0x1b
 LEVEL9MISSION3ID = 0x1c
 LEVEL10MISSONID  = 0x1d
 
+// private functions
+
 function missionMarkedComplete( group, missionMask )
 {
     // Mission is marked complete and it was previously closed
@@ -104,6 +116,8 @@ function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGrou
     )
 }
 
+// public functions
+
 function OpenPasswordMenu()
 {
     return (
@@ -115,6 +129,14 @@ function OpenPasswordMenu()
         prev( PasswordChar6() ) != 0xff && PasswordChar6() == 0xff &&
         prev( PasswordChar7() ) != 0xff && PasswordChar7() == 0xff &&
         prev( PasswordChar8() ) != 0xff && PasswordChar8() == 0xff
+    )
+}
+
+function PlayerDies()
+{
+    return (
+        prev( Health() ) != DEAD &&
+        Health() == DEAD
     )
 }
 
@@ -135,6 +157,30 @@ function MissionCompleteCondition( missionId, roomMask, mainGroup, secondaryGrou
                 onlyMissionUnlocked( mainGroup, roomMask, secondaryGroup1, secondaryGroup2, secondaryGroup3 )
             )
         )
+}
+
+function GameStarts()
+{
+    return (
+        LiftPassLevel() == 0x00 &&
+        MoneyHigh() == 0x00 &&
+        MoneyLow() == 0x00 &&
+        LevelGroup1() == 0x00 &&
+        LevelGroup2() == 0x00 &&
+        LevelGroup3() == 0x00 &&
+        LevelGroup4() == 0x00
+    )
+}
+
+function GameEnds()
+{
+    return (
+        LiftPassLevel() == 0x09 &&
+        LevelGroup1() == 0xFF &&
+        LevelGroup2() == 0xFF &&
+        LevelGroup3() == 0xFF &&
+        LevelGroup4() == 0x1F
+    )
 }
 
 Configs = [
@@ -267,22 +313,24 @@ for config in Configs
                     config["secondaryGroup3"]
                 )
             ) &&
-            never( OpenPasswordMenu() )
+            never( OpenPasswordMenu() ) &&
+            never( PlayerDies() )
         )
     )
 }
 
-//achievement(
-//    title = "Beat the Game",
-//    description = "Beat every level of the game",
-//    points = 50,
-//    trigger = trigger_when(
-//        measured(
-//            tally(2,
-//                once(PlayPenConditions()),
-//                once(Level1Mission1Conditions())
-//            )
-//        )
-//    ),
-//    type = "win_condition"
-//)
+achievement(
+    title = "Beat the Game",
+    description = "Beat every level of the game without passwords in one session",
+    points = 50,
+    trigger = trigger_when(
+        measured(
+            tally(2,
+                once( GameStarts() ),
+                once( GameEnds() )
+            )
+        ) &&
+        never( OpenPasswordMenu() )
+    ),
+    type = "win_condition"
+)
