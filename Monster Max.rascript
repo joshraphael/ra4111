@@ -40,6 +40,9 @@ function PasswordChar7() => byte( 0xD3F6 )
 // $D3F7 - Password eigth char
 function PasswordChar8() => byte( 0xD3F7 )
 
+// $CFBF - Current mission
+function CurrentMission() => byte( 0xCFBF )
+
 CLOSED = 0x00
 
 ROOM1MASK = 0x01
@@ -51,40 +54,36 @@ ROOM6MASK = 0x20
 ROOM7MASK = 0x40
 ROOM8MASK = 0x80
 
-alphabet = {
-    "1": 0x00,
-    "2": 0x01,
-    "3": 0x02,
-    "4": 0x03,
-    "5": 0x04,
-    "6": 0x05,
-    "7": 0x06,
-    "8": 0x07,
-    "9": 0x08,
-    "B": 0x09,
-    "D": 0x0a,
-    "G": 0x0b,
-    "H": 0x0c,
-    "J": 0x0d,
-    "K": 0x0e,
-    "L": 0x0f,
-    "M": 0x10,
-    "N": 0x11,
-    "P": 0x12,
-    "Q": 0x13,
-    "R": 0x14,
-    "T": 0x15,
-    "V": 0x16,
-    "W": 0x17,
-    "X": 0x18,
-    "Y": 0x19,
-    "Z": 0x1a,
-    "#": 0x1b,
-    "!": 0x1c,
-    "*": 0x1d,
-    "-": 0x1e,
-    "?": 0x1f,
-}
+MAINROOMID = 0x00
+PLAYPENID = 0x01
+LEVEL1MISSION1ID = 0x02
+LEVEL1MISSION2ID = 0x03
+LEVEL1MISSION3ID = 0x04
+LEVEL2MISSION1ID = 0x05
+LEVEL2MISSION2ID = 0x06
+LEVEL2MISSION3ID = 0x07
+LEVEL3MISSION1ID = 0x08
+LEVEL3MISSION2ID = 0x09
+LEVEL3MISSION3ID = 0x0a
+LEVEL4MISSION1ID = 0x0b
+LEVEL4MISSION2ID = 0x0c
+LEVEL4MISSION3ID = 0x0d
+LEVEL5MISSION1ID = 0x0e
+LEVEL5MISSION2ID = 0x0f
+LEVEL5MISSION3ID = 0x10
+LEVEL6MISSION1ID = 0x11
+LEVEL6MISSION2ID = 0x12
+LEVEL6MISSION3ID = 0x13
+LEVEL7MISSION1ID = 0x14
+LEVEL7MISSION2ID = 0x15
+LEVEL7MISSION3ID = 0x16
+LEVEL8MISSION1ID = 0x17
+LEVEL8MISSION2ID = 0x18
+LEVEL8MISSION3ID = 0x19
+LEVEL9MISSION1ID = 0x1a
+LEVEL9MISSION2ID = 0x1b
+LEVEL9MISSION3ID = 0x1c
+LEVEL10MISSONID = 0x1d
 
 
 // anti cheat
@@ -107,63 +106,116 @@ function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGrou
     return LevelGroup1() == ( prev( LevelGroup1() ) + missionMask )
 }
 
-function CheckLevelPassword( char1, char2, char3, char4, char5, char6, char7, char8 )
+function OpenPasswordMenu()
 {
     return (
-        alphabet[char1] != PasswordChar1() ||
-        alphabet[char2] != PasswordChar2() ||
-        alphabet[char3] != PasswordChar3() ||
-        alphabet[char4] != PasswordChar4() ||
-        alphabet[char5] != PasswordChar5() ||
-        alphabet[char6] != PasswordChar6() ||
-        alphabet[char7] != PasswordChar7() ||
-        alphabet[char8] != PasswordChar8()
+        prev( PasswordChar1() ) != 0xff && PasswordChar1() == 0xff &&
+        prev( PasswordChar2() ) != 0xff && PasswordChar2() == 0xff &&
+        prev( PasswordChar3() ) != 0xff && PasswordChar3() == 0xff &&
+        prev( PasswordChar4() ) != 0xff && PasswordChar4() == 0xff &&
+        prev( PasswordChar5() ) != 0xff && PasswordChar5() == 0xff &&
+        prev( PasswordChar6() ) != 0xff && PasswordChar6() == 0xff &&
+        prev( PasswordChar7() ) != 0xff && PasswordChar7() == 0xff &&
+        prev( PasswordChar8() ) != 0xff && PasswordChar8() == 0xff
     )
 }
 
-function PlayPenConditions() 
+function PlayerEntersMission( missionId )
 {
     return (
-        missionMarkedComplete( LevelGroup1(), ROOM1MASK ) &&
-        onlyMissionUnlocked( LevelGroup1(), ROOM1MASK, LevelGroup2(), LevelGroup3(), LevelGroup4() )
+        prev( CurrentMission() ) == MAINROOMID &&
+        CurrentMission() == missionId
     )
 }
 
-function Level1Mission1Conditions()
+function MissionCompleteCondition( missionId, roomMask, mainGroup, secondaryGroup1, secondaryGroup2, secondaryGroup3 ) 
 {
-    return (
-        missionMarkedComplete( LevelGroup1(), ROOM2MASK ) &&
-        onlyMissionUnlocked( LevelGroup1(), ROOM2MASK, LevelGroup2(), LevelGroup3(), LevelGroup4() ) &&
-        CheckLevelPassword( "!", "*", "K", "2", "6", "9", "K", "M" )
-    )
-}
-
-
-achievement(
-    title = "PlayPen",
-    description = "Beat the PlayPen level",
-    points = 1,
-    trigger = trigger_when( PlayPenConditions() )
-)
-
-achievement(
-    title = "Level 1 Mission 1",
-    description = "Beat Level 1 Mission 1",
-    points = 2,
-    trigger = trigger_when( Level1Mission1Conditions() )
-)
-
-achievement(
-    title = "Beat the Game",
-    description = "Beat every level of the game",
-    points = 50,
-    trigger = trigger_when(
-        measured(
-            tally(2,
-                once(PlayPenConditions()),
-                once(Level1Mission1Conditions())
-            )
+    return tally( 2,
+            once( PlayerEntersMission( missionId ) ),
+            once( missionMarkedComplete( mainGroup, roomMask ) && onlyMissionUnlocked( mainGroup, roomMask, secondaryGroup1, secondaryGroup2, secondaryGroup3 ) )
         )
-    ),
-    type = "win_condition"
-)
+}
+
+Configs = [
+    {
+        "title": "PlayPen",
+        "description": "Beat the PlayPen mission",
+        "points": 1,
+        "missionId": PLAYPENID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM1MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 1 Mission 1",
+        "description": "Beat Level 1 Mission 1",
+        "points": 2,
+        "missionId": LEVEL1MISSION1ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM2MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 1 Mission 2",
+        "description": "Beat Level 1 Mission 2",
+        "points": 2,
+        "missionId": LEVEL1MISSION2ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM3MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    },
+    {
+        "title": "Level 1 Mission 3",
+        "description": "Beat Level 1 Mission 3",
+        "points": 2,
+        "missionId": LEVEL1MISSION3ID,
+        "mainGroup": LevelGroup1(),
+        "mainGroupMask": ROOM4MASK,
+        "secondaryGroup1": LevelGroup2(),
+        "secondaryGroup2": LevelGroup3(),
+        "secondaryGroup3": LevelGroup4(),
+    }
+]
+
+for config in Configs
+{
+    achievement(
+        title = config["title"],
+        description = config["description"],
+        points = config["points"],
+        trigger = trigger_when(
+            measured(
+                MissionCompleteCondition(
+                    config["missionId"],
+                    config["mainGroupMask"],
+                    config["mainGroup"],
+                    config["secondaryGroup1"],
+                    config["secondaryGroup2"],
+                    config["secondaryGroup3"]
+                )
+            ) &&
+            never( OpenPasswordMenu() )
+        )
+    )
+}
+
+//achievement(
+//    title = "Beat the Game",
+//    description = "Beat every level of the game",
+//    points = 50,
+//    trigger = trigger_when(
+//        measured(
+//            tally(2,
+//                once(PlayPenConditions()),
+//                once(Level1Mission1Conditions())
+//            )
+//        )
+//    ),
+//    type = "win_condition"
+//)

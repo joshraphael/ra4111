@@ -262,6 +262,22 @@ each bit represents what direction
 0x04 = NW
 0x08 = SE
 
+* 0xd127 - direction being pressed
+
+each bit represents what direction
+
+0x00 = none
+0x01 = NE
+0x02 = SW
+0x04 = NW
+0x08 = SE
+
+* 0xd12e - idle timer
+
+0x00 = just moved
+...
+0xff = nothing pressed in 255 frames = idle
+
 * 0xf123 - speed boost in tiles
 
 0x00 = 0 tiles left
@@ -269,6 +285,23 @@ each bit represents what direction
 0x20 = 32 tiles left
 
 * 0xd533 - mission reward
+
+* 0xf12d - response setting
+
+0x01 = Low
+0x00 = High
+
+* 0xd3e7 = control pad
+A = 0x10
+B = 0x00
+
+* 0xf402[16-bit] = bonus
+
+* 0xcfbf - current level
+
+0x00 = main lobby
+...
+0x1d = final level
 
 NOTES:
 
@@ -290,5 +323,12 @@ cheat codes:
 4. spawn in MAIN room
 
 Level9Mission3 = B9KHHDL9
+
+beat level:
+
+counter + 1 if mission was 0 (main lobby) previously then changed to mission number --- this means they entered the level
+counter + 1 if the mission level is marked complete -- this means they finished the level
+
+resetif password is blank -- this means they opened the password bank sometime in the level (hard block anti cheats)
 
 
