@@ -74,12 +74,12 @@ LEVEL2MISSION2ID = 0x06
 LEVEL2MISSION3ID = 0x07
 LEVEL3MISSION1ID = 0x08
 LEVEL3MISSION2ID = 0x09
-LEVEL3MISSION3ID = 0x0a
-LEVEL4MISSION1ID = 0x0b
-LEVEL4MISSION2ID = 0x0c
-LEVEL4MISSION3ID = 0x0d
-LEVEL5MISSION1ID = 0x0e
-LEVEL5MISSION2ID = 0x0f
+LEVEL3MISSION3ID = 0x0A
+LEVEL4MISSION1ID = 0x0B
+LEVEL4MISSION2ID = 0x0C
+LEVEL4MISSION3ID = 0x0D
+LEVEL5MISSION1ID = 0x0E
+LEVEL5MISSION2ID = 0x0F
 LEVEL5MISSION3ID = 0x10
 LEVEL6MISSION1ID = 0x11
 LEVEL6MISSION2ID = 0x12
@@ -90,10 +90,10 @@ LEVEL7MISSION3ID = 0x16
 LEVEL8MISSION1ID = 0x17
 LEVEL8MISSION2ID = 0x18
 LEVEL8MISSION3ID = 0x19
-LEVEL9MISSION1ID = 0x1a
-LEVEL9MISSION2ID = 0x1b
-LEVEL9MISSION3ID = 0x1c
-LEVEL10MISSONID  = 0x1d
+LEVEL9MISSION1ID = 0x1A
+LEVEL9MISSION2ID = 0x1B
+LEVEL9MISSION3ID = 0x1C
+LEVEL10MISSONID  = 0x1D
 
 // private functions
 
@@ -121,14 +121,14 @@ function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGrou
 function OpenPasswordMenu()
 {
     return (
-        prev( PasswordChar1() ) != 0xff && PasswordChar1() == 0xff &&
-        prev( PasswordChar2() ) != 0xff && PasswordChar2() == 0xff &&
-        prev( PasswordChar3() ) != 0xff && PasswordChar3() == 0xff &&
-        prev( PasswordChar4() ) != 0xff && PasswordChar4() == 0xff &&
-        prev( PasswordChar5() ) != 0xff && PasswordChar5() == 0xff &&
-        prev( PasswordChar6() ) != 0xff && PasswordChar6() == 0xff &&
-        prev( PasswordChar7() ) != 0xff && PasswordChar7() == 0xff &&
-        prev( PasswordChar8() ) != 0xff && PasswordChar8() == 0xff
+        prev( PasswordChar1() ) != 0xFF && PasswordChar1() == 0xFF &&
+        prev( PasswordChar2() ) != 0xFF && PasswordChar2() == 0xFF &&
+        prev( PasswordChar3() ) != 0xFF && PasswordChar3() == 0xFF &&
+        prev( PasswordChar4() ) != 0xFF && PasswordChar4() == 0xFF &&
+        prev( PasswordChar5() ) != 0xFF && PasswordChar5() == 0xFF &&
+        prev( PasswordChar6() ) != 0xFF && PasswordChar6() == 0xFF &&
+        prev( PasswordChar7() ) != 0xFF && PasswordChar7() == 0xFF &&
+        prev( PasswordChar8() ) != 0xFF && PasswordChar8() == 0xFF
     )
 }
 
@@ -206,7 +206,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 1 Mission 2",
@@ -218,7 +218,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 1 Mission 3",
@@ -230,7 +230,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 2 Mission 1",
@@ -242,7 +242,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 2 Mission 2",
@@ -254,7 +254,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 2 Mission 3",
@@ -266,7 +266,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 3 Mission 1",
@@ -278,7 +278,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 3 Mission 2",
@@ -290,7 +290,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 3 Mission 3",
@@ -302,7 +302,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 4 Mission 1",
@@ -314,7 +314,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 4 Mission 2",
@@ -326,7 +326,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 4 Mission 3",
@@ -338,7 +338,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 5 Mission 1",
@@ -350,7 +350,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 5 Mission 2",
@@ -362,7 +362,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 5 Mission 3",
@@ -374,7 +374,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 6 Mission 1",
@@ -386,7 +386,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 6 Mission 2",
@@ -398,7 +398,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 6 Mission 3",
@@ -410,7 +410,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 7 Mission 1",
@@ -422,7 +422,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 7 Mission 2",
@@ -434,7 +434,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 7 Mission 3",
@@ -446,7 +446,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 8 Mission 1",
@@ -458,7 +458,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 8 Mission 2",
@@ -470,7 +470,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 8 Mission 3",
@@ -482,7 +482,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 9 Mission 1",
@@ -494,7 +494,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 9 Mission 2",
@@ -506,7 +506,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 9 Mission 3",
@@ -518,7 +518,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "",
+        "type":            "missable",
     },
     {
         "title":           "Level 10 Mission",
@@ -530,7 +530,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "",
+        "type":            "progression",
     }
 ]
 

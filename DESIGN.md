@@ -584,15 +584,34 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 Beat the Play Pen mission
 
 Conditions:
-1. go from the lobby level
+1. Go from the lobby to play pen level
+2. Play pen mission marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
 
 ### Level 1 Mission 1
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
+Beat the Play Pen mission
+
+Conditions:
+1. Go from the lobby to Level 1 Mission 1
+2. Level 1 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
 ### Level 1 Mission 2
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -600,11 +619,15 @@ Conditions:
 
 ### Level 1 Mission 3
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
 ### Level 2 Mission 1
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -612,11 +635,15 @@ Conditions:
 
 ### Level 2 Mission 2
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
 ### Level 2 Mission 3
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -624,11 +651,15 @@ Conditions:
 
 ### Level 3 Mission 1
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
 ### Level 3 Mission 2
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -636,11 +667,15 @@ Conditions:
 
 ### Level 3 Mission 3
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
 ### Level 4 Mission 1
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -648,11 +683,15 @@ Conditions:
 
 ### Level 4 Mission 2
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
 ### Level 4 Mission 3
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -660,11 +699,15 @@ Conditions:
 
 ### Level 5 Mission 1
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
 ### Level 5 Mission 2
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -672,11 +715,15 @@ Conditions:
 
 ### Level 5 Mission 3
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
 ### Level 6 Mission 1
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -684,11 +731,15 @@ Conditions:
 
 ### Level 6 Mission 2
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
 ### Level 6 Mission 3
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -696,11 +747,15 @@ Conditions:
 
 ### Level 7 Mission 1
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
 ### Level 7 Mission 2
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -708,11 +763,15 @@ Conditions:
 
 ### Level 7 Mission 3
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
 ### Level 8 Mission 1
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -720,11 +779,15 @@ Conditions:
 
 ### Level 8 Mission 2
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
 
 ### Level 8 Mission 3
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -732,11 +795,15 @@ Conditions:
 
 ### Level 9 Mission 1
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
 
 ### Level 9 Mission 2
+
+Type: _**Missable**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -744,17 +811,23 @@ Conditions:
 
 ### Level 9 Mission 3
 
+Type: _**Missable**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
 
 ### Level 10 Mission 1
 
+Type: _**Progression**_
+
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
 
 ### Beat Game
+
+Type: _**Win Condition**_
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
