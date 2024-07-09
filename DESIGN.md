@@ -195,14 +195,14 @@ highest significant values in points earned, can represent 255+ points, right pa
 
 Notes: start menu map, starting from 0xf190 each bit flipped means youve entered a new room in the mission, its entirely all 0xff for each address in the main lobby to show all floors
 
-0x01 = first room discovered
-0x03 = second room discovered
-0x07 = third room discovered
-0x0f = fourth room discovered
-0x1f = fifth room discovered
-0x3f = sixth room discovered
-0x7f = seventh room discovered
-0xff = eighth room discovered
+* 0x01 = first room discovered
+* 0x03 = second room discovered
+* 0x07 = third room discovered
+* 0x0f = fourth room discovered
+* 0x1f = fifth room discovered
+* 0x3f = sixth room discovered
+* 0x7f = seventh room discovered
+* 0xff = eighth room discovered
 
 ### _Select Menu Option_
 
@@ -579,122 +579,186 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![play pen](badges/img/PlayPen.png "Play Pen")
+
+Beat the Play Pen mission
+
+Conditions:
+1. go from the lobby level
+
 ### Level 1 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
 ### Level 1 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
+
 ### Level 1 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
 ### Level 2 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
+
 ### Level 2 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
 ### Level 2 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
+
 ### Level 3 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
 ### Level 3 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
+
 ### Level 3 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
 ### Level 4 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
+
 ### Level 4 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
 ### Level 4 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
+
 ### Level 5 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
 ### Level 5 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
+
 ### Level 5 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
 ### Level 6 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
+
 ### Level 6 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
 ### Level 6 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
+
 ### Level 7 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
 ### Level 7 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
+
 ### Level 7 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
 ### Level 8 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
+
 ### Level 8 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
+
 ### Level 8 Mission 3
 
-
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
 
 ### Level 9 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
+
 ### Level 9 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
 
 ### Level 9 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
+
 ### Level 10 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
+
 ### Beat Game
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+![beat game](badges/img/BeatGame.png "Beat Game")
 
 
 ## Rich Presence
