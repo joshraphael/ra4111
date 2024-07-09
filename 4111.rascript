@@ -116,6 +116,13 @@ function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGrou
     )
 }
 
+function inMainLobby()
+{
+    return (
+        CurrentMission() == MAINROOMID
+    )
+}
+
 // public functions
 
 function OpenPasswordMenu()
@@ -572,4 +579,9 @@ achievement(
         never( OpenPasswordMenu() )
     ),
     type = "win_condition"
+)
+
+rich_presence_conditional_display(inMainLobby(), "Main Lobby")
+rich_presence_display("Health: {0}",
+    rich_presence_value("Health", Health())
 )
