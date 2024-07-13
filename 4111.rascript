@@ -93,7 +93,7 @@ LEVEL8MISSION3ID = 0x19
 LEVEL9MISSION1ID = 0x1A
 LEVEL9MISSION2ID = 0x1B
 LEVEL9MISSION3ID = 0x1C
-LEVEL10MISSONID  = 0x1D
+LEVEL10MISSON1ID  = 0x1D
 
 // private functions
 
@@ -190,6 +190,8 @@ function GameEnds()
     )
 }
 
+// Achievements
+
 Configs = [
     {
         "title":           "PlayPen",
@@ -213,7 +215,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 1 Mission 2",
@@ -225,7 +227,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 1 Mission 3",
@@ -237,7 +239,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 2 Mission 1",
@@ -249,7 +251,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 2 Mission 2",
@@ -261,7 +263,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 2 Mission 3",
@@ -273,7 +275,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 3 Mission 1",
@@ -285,7 +287,7 @@ Configs = [
         "secondaryGroup1": LevelGroup2(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 3 Mission 2",
@@ -297,7 +299,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 3 Mission 3",
@@ -309,7 +311,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 4 Mission 1",
@@ -321,7 +323,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 4 Mission 2",
@@ -333,7 +335,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 4 Mission 3",
@@ -345,7 +347,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 5 Mission 1",
@@ -357,7 +359,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 5 Mission 2",
@@ -369,7 +371,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 5 Mission 3",
@@ -381,7 +383,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup3(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 6 Mission 1",
@@ -393,7 +395,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 6 Mission 2",
@@ -405,7 +407,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 6 Mission 3",
@@ -417,7 +419,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 7 Mission 1",
@@ -429,7 +431,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 7 Mission 2",
@@ -441,7 +443,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 7 Mission 3",
@@ -453,7 +455,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 8 Mission 1",
@@ -465,7 +467,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 8 Mission 2",
@@ -477,7 +479,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup4(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 8 Mission 3",
@@ -489,7 +491,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 9 Mission 1",
@@ -501,7 +503,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 9 Mission 2",
@@ -513,7 +515,7 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "missable",
+        "type":            "",
     },
     {
         "title":           "Level 9 Mission 3",
@@ -525,19 +527,19 @@ Configs = [
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "missable",
+        "type":            "",
     },
     {
-        "title":           "Level 10 Mission",
-        "description":     "Beat Level 10 Mission",
+        "title":           "Level 10 Mission 1",
+        "description":     "Beat Level 10 Mission 1",
         "points":          2,
-        "missionId":       LEVEL10MISSONID,
+        "missionId":       LEVEL10MISSON1ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM5MASK,
         "secondaryGroup1": LevelGroup1(),
         "secondaryGroup2": LevelGroup2(),
         "secondaryGroup3": LevelGroup3(),
-        "type":            "progression",
+        "type":            "",
     }
 ]
 
@@ -580,6 +582,8 @@ achievement(
     ),
     type = "win_condition"
 )
+
+// Rich Presence
 
 rich_presence_conditional_display(inMainLobby(), "Main Lobby")
 rich_presence_display("Health: {0}",

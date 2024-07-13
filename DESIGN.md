@@ -593,13 +593,11 @@ Reset When:
 
 ### Level 1 Mission 1
 
-Type: _**Missable**_
-
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
-Beat the Play Pen mission
+Beat Level 1 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -611,227 +609,459 @@ Reset When:
 
 ### Level 1 Mission 2
 
-Type: _**Missable**_
-
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
 
-### Level 1 Mission 3
+Beat Level 1 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 1 Mission 2
+2. Level 1 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 1 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
-### Level 2 Mission 1
+Beat Level 1 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 1 Mission 3
+2. Level 1 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 2 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
 
-### Level 2 Mission 2
+Beat Level 2 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 2 Mission 1
+2. Level 2 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 2 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
-### Level 2 Mission 3
+Beat Level 2 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 2 Mission 2
+2. Level 2 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 2 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
 
-### Level 3 Mission 1
+Beat Level 2 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 2 Mission 3
+2. Level 2 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 3 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
-### Level 3 Mission 2
+Beat Level 3 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 3 Mission 1
+2. Level 3 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 3 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
 
-### Level 3 Mission 3
+Beat Level 3 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 3 Mission 2
+2. Level 3 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 3 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
-### Level 4 Mission 1
+Beat Level 3 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 3 Mission 3
+2. Level 3 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 4 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
 
-### Level 4 Mission 2
+Beat Level 4 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 4 Mission 1
+2. Level 4 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 4 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
-### Level 4 Mission 3
+Beat Level 4 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 4 Mission 2
+2. Level 4 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 4 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
 
-### Level 5 Mission 1
+Beat Level 4 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 4 Mission 3
+2. Level 4 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 5 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
-### Level 5 Mission 2
+Beat Level 5 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 5 Mission 1
+2. Level 5 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 5 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
 
-### Level 5 Mission 3
+Beat Level 5 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 5 Mission 2
+2. Level 5 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 5 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
-### Level 6 Mission 1
+Beat Level 5 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 5 Mission 3
+2. Level 5 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 6 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
 
-### Level 6 Mission 2
+Beat Level 6 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 6 Mission 1
+2. Level 6 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 6 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
-### Level 6 Mission 3
+Beat Level 6 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 6 Mission 2
+2. Level 6 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 6 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
 
-### Level 7 Mission 1
+Beat Level 6 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 6 Mission 3
+2. Level 6 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 7 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
-### Level 7 Mission 2
+Beat Level 7 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 7 Mission 1
+2. Level 7 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 7 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
 
-### Level 7 Mission 3
+Beat Level 7 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 7 Mission 2
+2. Level 7 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 7 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
-### Level 8 Mission 1
+Beat Level 7 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 7 Mission 3
+2. Level 7 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 8 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
 
-### Level 8 Mission 2
+Beat Level 8 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 8 Mission 1
+2. Level 8 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 8 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
 
-### Level 8 Mission 3
+Beat Level 8 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 8 Mission 2
+2. Level 8 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 8 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
 
-### Level 9 Mission 1
+Beat Level 8 Mission 3
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 8 Mission 3
+2. Level 8 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 9 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
 
-### Level 9 Mission 2
+Beat Level 9 Mission 1
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 9 Mission 1
+2. Level 9 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 9 Mission 2
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
 
-### Level 9 Mission 3
+Beat Level 9 Mission 2
 
-Type: _**Missable**_
+Conditions:
+1. Go from the lobby to Level 9 Mission 2
+2. Level 9 Mission 2 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 9 Mission 3
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
 
-### Level 10 Mission 1
+Beat Level 9 Mission 3
 
-Type: _**Progression**_
+Conditions:
+1. Go from the lobby to Level 9 Mission 3
+2. Level 9 Mission 3 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Level 10 Mission 1
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
 
-### Beat Game
+Beat Level 10 Mission 1
 
-Type: _**Win Condition**_
+Conditions:
+1. Go from the lobby to Level 10 Mission 1
+2. Level 10 Mission 1 marked complete, and no other mission status' changed
+
+Reset When:
+1. Password menu opened
+2. Player Dies (spawn back in lobby)
+
+### Beat Game
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+Type: _**Win Condition**_
+
 ![beat game](badges/img/BeatGame.png "Beat Game")
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 1->2 pass
+3. Buy level 2->3 pass
+4. Buy level 3->4 pass
+5. Buy level 4->5 pass
+6. Buy level 5->6 pass
+7. Buy level 6->7 pass
+8. Buy level 7->8 pass
+9. Buy level 8->9 pass
+10. Buy level 9->10 pass
+11. Buy level 10->FINAL pass
+
+Reset When:
+1. Password menu opened
 
 
 ## Rich Presence
