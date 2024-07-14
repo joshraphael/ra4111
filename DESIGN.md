@@ -65,6 +65,8 @@ Notes: integer specifying what current mission the player is in
 * 0x00 = main lobby
 * ...
 * 0x1D = final level
+* 0x1E = title screen
+* 0x1F = final concert scene
 
 ### _Group 1 Missions_
 

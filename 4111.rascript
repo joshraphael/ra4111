@@ -54,7 +54,9 @@ function Credits() => word( 0xD129 )
 
 // Doors
 CLOSED = 0x00
-DEAD   = 0xFF
+
+// Life
+DEAD = 0xFF
 
 // Room Level Group Masks
 ROOM1MASK = 0x01
@@ -97,6 +99,8 @@ LEVEL9MISSION1ID = 0x1A
 LEVEL9MISSION2ID = 0x1B
 LEVEL9MISSION3ID = 0x1C
 LEVEL10MISSON1ID = 0x1D
+TITLESCREENID = 0x1E
+CONCERTSCREENID = 0x1F
 
 // private functions
 
@@ -123,6 +127,20 @@ function inMainLobby()
 {
     return (
         CurrentMission() == MAINROOMID
+    )
+}
+
+function inTitleScreen()
+{
+    return (
+        CurrentMission() == TITLESCREENID
+    )
+}
+
+function inConcertScreen()
+{
+    return (
+        CurrentMission() == CONCERTSCREENID
     )
 }
 
@@ -173,8 +191,7 @@ function GameStarts()
 {
     return (
         LiftPassLevel() == 0x00 &&
-        MoneyHigh() == 0x00 &&
-        MoneyLow() == 0x00 &&
+        Credits() == 0x00 &&
         LevelGroup1() == 0x00 &&
         LevelGroup2() == 0x00 &&
         LevelGroup3() == 0x00 &&
@@ -601,14 +618,57 @@ levelPass = {
     9: "Lvl 10"
 }
 
+currentMission = {
+    1: "Play Pen",
+    2: "Lvl 1 Mission 1",
+    3: "Lvl 1 Mission 2",
+    4: "Lvl 1 Mission 3",
+    5: "Lvl 2 Mission 1",
+    6: "Lvl 2 Mission 2",
+    7: "Lvl 2 Mission 3",
+    8: "Lvl 3 Mission 1",
+    9: "Lvl 3 Mission 2",
+    10: "Lvl 3 Mission 3",
+    11: "Lvl 4 Mission 1",
+    12: "Lvl 4 Mission 2",
+    13: "Lvl 4 Mission 3",
+    14: "Lvl 5 Mission 1",
+    15: "Lvl 5 Mission 2",
+    16: "Lvl 5 Mission 3",
+    17: "Lvl 6 Mission 1",
+    18: "Lvl 6 Mission 2",
+    19: "Lvl 6 Mission 3",
+    20: "Lvl 7 Mission 1",
+    21: "Lvl 7 Mission 2",
+    22: "Lvl 7 Mission 3",
+    23: "Lvl 8 Mission 1",
+    24: "Lvl 8 Mission 2",
+    25: "Lvl 8 Mission 3",
+    26: "Lvl 9 Mission 1",
+    27: "Lvl 9 Mission 2",
+    28: "Lvl 9 Mission 3",
+    29: "Lvl 10 Mission 1"
+}
+
+rich_presence_conditional_display(
+    inTitleScreen(),
+    "Title Screen"
+)
+
+rich_presence_conditional_display(
+    inConcertScreen(),
+    "Playing in the Hero Academy Concert"
+)
+
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby | ⭐ {0} | 🎫 {1} | $ {2}",
-    rich_presence_value("Lucky Stars", LuckyStars()),
-    rich_presence_lookup("Lift Pass Level", LiftPassLevel(), levelPass),
-    rich_presence_value("Credits", Credits() )
+    "Main Lobby | ⭐ {0} | 🎟 {1} | 💰 #{2}",
+    rich_presence_value( "Lucky Stars", LuckyStars() ),
+    rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
+    rich_presence_value( "Credits", Credits() )
 )
-rich_presence_display("🎮 Lvl X Mission Y | ❤️ {0} | ⭐ {1}",
-    rich_presence_value("Health", Health()),
-    rich_presence_value("Lucky Stars", LuckyStars())
+rich_presence_display("🎮 {0} | ❤️ {1} | ⭐ {2}",
+    rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
+    rich_presence_value( "Health", Health() ),
+    rich_presence_value( "Lucky Stars", LuckyStars() )
 )
