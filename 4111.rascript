@@ -99,8 +99,8 @@ LEVEL9MISSION1ID = 0x1A
 LEVEL9MISSION2ID = 0x1B
 LEVEL9MISSION3ID = 0x1C
 LEVEL10MISSON1ID = 0x1D
-TITLESCREENID = 0x1E
-CONCERTSCREENID = 0x1F
+TITLESCREENID    = 0x1E
+CONCERTSCREENID  = 0x1F
 
 // private functions
 
@@ -203,10 +203,7 @@ function GameEnds()
 {
     return (
         LiftPassLevel() == 0x09 &&
-        LevelGroup1() == 0xFF &&
-        LevelGroup2() == 0xFF &&
-        LevelGroup3() == 0xFF &&
-        LevelGroup4() == 0x1F
+        inConcertScreen()
     )
 }
 
