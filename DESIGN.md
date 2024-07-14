@@ -41,25 +41,24 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 6. [Lucky Stars](#lucky-stars)
 7. [Health](#health)
 8. [Lift Pass Level](#lift-pass-level)
-9. [Money Low](#money-low)
-10. [Money High](#money-high)
-11. [Map](#map)
-12. [Select Menu Option](#select-menu-option)
-13. [Language](#language)
-14. [First character of password input](#first-character-of-password-input)
-15. [Second character of password input](#second-character-of-password-input)
-16. [Third character of password input](#third-character-of-password-input)
-17. [Fourth character of password input](#fourth-character-of-password-input)
-18. [Fifth character of password input](#fifth-character-of-password-input)
-19. [Sixth character of password input](#sixth-character-of-password-input)
-20. [Seventh character of password input](#seventh-character-of-password-input)
-21. [Eighth character of password input](#eighth-character-of-password-input)
+9. [Credits](#credits)
+10. [Map](#map)
+11. [Select Menu Option](#select-menu-option)
+12. [Language](#language)
+13. [First character of password input](#first-character-of-password-input)
+14. [Second character of password input](#second-character-of-password-input)
+15. [Third character of password input](#third-character-of-password-input)
+16. [Fourth character of password input](#fourth-character-of-password-input)
+17. [Fifth character of password input](#fifth-character-of-password-input)
+18. [Sixth character of password input](#sixth-character-of-password-input)
+19. [Seventh character of password input](#seventh-character-of-password-input)
+20. [Eighth character of password input](#eighth-character-of-password-input)
 
 ### _Current Mission_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xCFBF**
+**0xCFBF** (8-bits)
 
 Notes: integer specifying what current mission the player is in
 
@@ -71,7 +70,7 @@ Notes: integer specifying what current mission the player is in
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD00A**
+**0xD00A** (8-bits)
 
 Notes: each bit 0 = not beaten, 1 = beaten
 
@@ -89,7 +88,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD00B**
+**0xD00B** (8-bits)
 
 Notes: each bit 0 = not beaten, 1 = beaten
 
@@ -106,7 +105,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD00C**
+**0xD00C** (8-bits)
 
 Notes: each bit 0 = not beaten, 1 = beaten
 
@@ -123,7 +122,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD00D**
+**0xD00D** (8-bits)
 
 Notes: each bit 0 = not beaten, 1 = beaten
 
@@ -140,7 +139,7 @@ Notes: each bit 0 = not beaten, 1 = beaten
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD120**
+**0xD120** (8-bits)
 
 Notes: incremental value, should never have more than 9
 
@@ -159,7 +158,7 @@ Notes: incremental value, should never have more than 9
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD122**
+**0xD122** (8-bits)
 
 Notes: incremental value, should never have more than 5
 
@@ -175,7 +174,7 @@ Notes: incremental value, should never have more than 5
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD128**
+**0xD128** (8-bits)
 
 * 0x00 = level 1
 * 0x01 = level 2
@@ -188,44 +187,27 @@ Notes: incremental value, should never have more than 5
 * 0x08 = level 9
 * 0x09 = level 10
 
-### _Money Low_
+### _Credits_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD129**
+**0xD129** (16-bits)
 
-Notes: max the game can display is 9999 (0x2700(high) + 0x0f(low) = 0x270f) but technically can use max of the 4 bits 65535 (0xfff)
+Notes: max the game can display is 9999 but technically can use max of the 4 bits 65535 (0xfff)
 
 least significant values in the points earned, can represent 0-255 points
 
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
+* 0x0000 = 0
+* 0x0001 = 1
+* 0x0002 = 2
 * ...
-* 0xff = 255
-
-### _Money High_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xD12A**
-
-Notes: max the game can display is 9999 (0x2700(high) + 0x0f(low) = 0x270f) but technically can use max of the 4 bits 65535 (0xfff)
-
-highest significant values in points earned, can represent 255+ points, right padded with zeros
-
-* 0x00 = 0000 =  0 + money low
-* 0x01 = 0100 = 256 + money low
-* 0x02 = 0200 = 512 + money low
-* 0x03 = 0300 = 768 + money low
-* 0x04 = 0400 = 1024 + money low
-* ...
+* 0xffff = 65535
 
 ### _Map_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD190 - 0xD195**
+**0xD190 - 0xD195** (8-bits)
 
 Notes: start menu map, starting from 0xf190 each bit flipped means youve entered a new room in the mission, its entirely all 0xff for each address in the main lobby to show all floors
 
@@ -242,7 +224,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3E5**
+**0xD3E5** (8-bits)
 
 * 0x00 = information (default, resets on open)
 * 0x01 = enter password
@@ -253,7 +235,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3E6**
+**0xD3E6** (8-bits)
 
 * 0x00 = ENGLISH
 * 0x03 = FRANCAIS
@@ -266,7 +248,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F0**
+**0xD3F0** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -305,7 +287,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F1**
+**0xD3F1** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -344,7 +326,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F2**
+**0xD3F2** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -383,7 +365,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F3**
+**0xD3F3** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -422,7 +404,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F4**
+**0xD3F4** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -461,7 +443,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F5**
+**0xD3F5** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -500,7 +482,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F6**
+**0xD3F6** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2
@@ -539,7 +521,7 @@ Notes: start menu map, starting from 0xf190 each bit flipped means youve entered
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xD3F7**
+**0xD3F7** (8-bits)
 
 * 0x00 = 1
 * 0x01 = 2

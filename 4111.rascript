@@ -49,11 +49,8 @@ function PasswordChar8() => byte( 0xD3F7 )
 // $D128: Lift Pass Level
 function LiftPassLevel() => byte( 0xD128 )
 
-// $D12A: Money high value
-function MoneyHigh() => byte( 0xD12A )
-
-// $D129: Money low value
-function MoneyLow() => byte( 0xD129 )
+// $D129: Number of credits earned
+function Credits() => word( 0xD129 )
 
 // Doors
 CLOSED = 0x00
@@ -601,16 +598,17 @@ levelPass = {
     6: "Lvl 7",
     7: "Lvl 8",
     8: "Lvl 9",
-    9: "Lvl 10",
+    9: "Lvl 10"
 }
 
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby | ⭐ {1} | 🎫 {2}",
+    "Main Lobby | ⭐ {0} | 🎫 {1} | $ {2}",
     rich_presence_value("Lucky Stars", LuckyStars()),
-    rich_presence_lookup("Lift Pass Level", LiftPassLevel(), levelPass)
+    rich_presence_lookup("Lift Pass Level", LiftPassLevel(), levelPass),
+    rich_presence_value("Credits", Credits() )
 )
-rich_presence_display("🎮 Lvl X Mission Y" | ❤️ {0} | ⭐ {1}",
+rich_presence_display("🎮 Lvl X Mission Y | ❤️ {0} | ⭐ {1}",
     rich_presence_value("Health", Health()),
     rich_presence_value("Lucky Stars", LuckyStars())
 )
