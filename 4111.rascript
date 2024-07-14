@@ -1,8 +1,8 @@
 // Monster Max
 // #ID = 4111
 
-// $D122: Health
-function Health() => byte( 0xD122 )
+// $CFBF - Current mission
+function CurrentMission() => byte( 0xCFBF )
 
 // $D00A: Level Group 1
 function LevelGroup1() => byte( 0xD00A )
@@ -15,6 +15,12 @@ function LevelGroup3() => byte( 0xD00C )
 
 // $D00D: Level Group 4
 function LevelGroup4() => byte( 0xD00D )
+
+// $D120: Lucky Star Count
+function LuckyStars() => byte( 0xD120 )
+
+// $D122: Health
+function Health() => byte( 0xD122 )
 
 // $D3F0 - Password first char
 function PasswordChar1() => byte( 0xD3F0 )
@@ -40,9 +46,6 @@ function PasswordChar7() => byte( 0xD3F6 )
 // $D3F7 - Password eigth char
 function PasswordChar8() => byte( 0xD3F7 )
 
-// $CFBF - Current mission
-function CurrentMission() => byte( 0xCFBF )
-
 // $D128: Lift Pass Level
 function LiftPassLevel() => byte( 0xD128 )
 
@@ -52,9 +55,11 @@ function MoneyHigh() => byte( 0xD12A )
 // $D129: Money low value
 function MoneyLow() => byte( 0xD129 )
 
+// Doors
 CLOSED = 0x00
-DEAD = 0xFF
+DEAD   = 0xFF
 
+// Room Level Group Masks
 ROOM1MASK = 0x01
 ROOM2MASK = 0x02
 ROOM3MASK = 0x04
@@ -64,6 +69,7 @@ ROOM6MASK = 0x20
 ROOM7MASK = 0x40
 ROOM8MASK = 0x80
 
+// Mission IDs
 MAINROOMID       = 0x00
 PLAYPENID        = 0x01
 LEVEL1MISSION1ID = 0x02
@@ -93,7 +99,7 @@ LEVEL8MISSION3ID = 0x19
 LEVEL9MISSION1ID = 0x1A
 LEVEL9MISSION2ID = 0x1B
 LEVEL9MISSION3ID = 0x1C
-LEVEL10MISSON1ID  = 0x1D
+LEVEL10MISSON1ID = 0x1D
 
 // private functions
 
@@ -530,8 +536,8 @@ Configs = [
         "type":            "",
     },
     {
-        "title":           "Level 10 Mission 1",
-        "description":     "Beat Level 10 Mission 1",
+        "title":           "Defeat Krond",
+        "description":     "Beat Krond in level 10",
         "points":          2,
         "missionId":       LEVEL10MISSON1ID,
         "mainGroup":       LevelGroup4(),
@@ -585,7 +591,26 @@ achievement(
 
 // Rich Presence
 
-rich_presence_conditional_display(inMainLobby(), "Main Lobby")
-rich_presence_display("Health: {0}",
-    rich_presence_value("Health", Health())
+levelPass = {
+    0: "Lvl 1",
+    1: "Lvl 2",
+    2: "Lvl 3",
+    3: "Lvl 4",
+    4: "Lvl 5",
+    5: "Lvl 6",
+    6: "Lvl 7",
+    7: "Lvl 8",
+    8: "Lvl 9",
+    9: "Lvl 10",
+}
+
+rich_presence_conditional_display(
+    inMainLobby(),
+    "Main Lobby | ⭐ {1} | 🎫 {2}",
+    rich_presence_value("Lucky Stars", LuckyStars()),
+    rich_presence_lookup("Lift Pass Level", LiftPassLevel(), levelPass)
+)
+rich_presence_display("🎮 Lvl X Mission Y" | ❤️ {0} | ⭐ {1}",
+    rich_presence_value("Health", Health()),
+    rich_presence_value("Lucky Stars", LuckyStars())
 )

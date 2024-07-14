@@ -33,25 +33,39 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 
 ### Code Notes Navigation
 
-1. [Group 1 Missions](#group-1-missions)
-2. [Group 2 Missions](#group-2-missions)
-3. [Group 3 Missions](#group-3-missions)
-4. [Group 4 Missions](#group-4-missions)
-5. [Health](#health)
-6. [Lift Pass Level](#lift-pass-level)
-7. [Money Low](#money-low)
-8. [Money High](#money-high)
-9. [Map](#map)
-10. [Select Menu Option](#select-menu-option)
-11. [Language](#language)
-12. [First character of password input](#first-character-of-password-input)
-13. [Second character of password input](#second-character-of-password-input)
-14. [Third character of password input](#third-character-of-password-input)
-15. [Fourth character of password input](#fourth-character-of-password-input)
-16. [Fifth character of password input](#fifth-character-of-password-input)
-17. [Sixth character of password input](#sixth-character-of-password-input)
-18. [Seventh character of password input](#seventh-character-of-password-input)
-19. [Eighth character of password input](#eighth-character-of-password-input)
+1. [Current Mission](#current-mission)
+2. [Group 1 Missions](#group-1-missions)
+3. [Group 2 Missions](#group-2-missions)
+4. [Group 3 Missions](#group-3-missions)
+5. [Group 4 Missions](#group-4-missions)
+6. [Lucky Stars](#lucky-stars)
+7. [Health](#health)
+8. [Lift Pass Level](#lift-pass-level)
+9. [Money Low](#money-low)
+10. [Money High](#money-high)
+11. [Map](#map)
+12. [Select Menu Option](#select-menu-option)
+13. [Language](#language)
+14. [First character of password input](#first-character-of-password-input)
+15. [Second character of password input](#second-character-of-password-input)
+16. [Third character of password input](#third-character-of-password-input)
+17. [Fourth character of password input](#fourth-character-of-password-input)
+18. [Fifth character of password input](#fifth-character-of-password-input)
+19. [Sixth character of password input](#sixth-character-of-password-input)
+20. [Seventh character of password input](#seventh-character-of-password-input)
+21. [Eighth character of password input](#eighth-character-of-password-input)
+
+### _Current Mission_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xCFBF**
+
+Notes: integer specifying what current mission the player is in
+
+* 0x00 = main lobby
+* ...
+* 0x1D = final level
 
 ### _Group 1 Missions_
 
@@ -122,6 +136,25 @@ Notes: each bit 0 = not beaten, 1 = beaten
 * 6 = NOT USED
 * 7 = NOT USED
 
+### _Lucky Stars_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xD120**
+
+Notes: incremental value, should never have more than 9
+
+* 0x00 = 0
+* 0x01 = 1
+* 0x02 = 2
+* 0x03 = 3
+* 0x04 = 4
+* 0x05 = 5
+* 0x06 = 6
+* 0x07 = 7
+* 0x08 = 8
+* 0x09 = 9
+
 ### _Health_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
@@ -153,6 +186,7 @@ Notes: incremental value, should never have more than 5
 * 0x06 = level 7
 * 0x07 = level 8
 * 0x08 = level 9
+* 0x09 = level 10
 
 ### _Money Low_
 
@@ -1065,3 +1099,17 @@ Reset When:
 
 
 ## Rich Presence
+
+Rich presence is available and will change depending on where you are in the game
+
+1. if youre in the main lobby it will display
+    * "Main Lobby"
+    * Number of stars
+    * level pass obtained
+    * credits earned
+2. if youre in a mission it will display
+    * "Level X Mission Y"
+    * current hearts
+    * current stars
+    * item A
+    * item B
