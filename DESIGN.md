@@ -29,7 +29,7 @@ There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with 
 
 Stars are accumulated by collecting them in the missions and displayed as a number in the top left of th screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without loosing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we cant reliably tell if they got the star legitimatly or not.
 
-### Max credit and stars per level
+### Mission elements
 
 Play Pen:
 * Reward: 1 credit
