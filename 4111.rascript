@@ -102,6 +102,17 @@ LEVEL10MISSON1ID = 0x1D
 TITLESCREENID    = 0x1E
 CONCERTSCREENID  = 0x1F
 
+LEVEL1  = 0x00
+LEVEL2  = 0x01
+LEVEL3  = 0x02
+LEVEL4  = 0x03
+LEVEL5  = 0x04
+LEVEL6  = 0x05
+LEVEL7  = 0x06
+LEVEL8  = 0x07
+LEVEL9  = 0x08
+LEVEL10 = 0x09
+
 // private functions
 
 function missionMarkedComplete( group, missionMask )
@@ -141,6 +152,22 @@ function inConcertScreen()
 {
     return (
         CurrentMission() == CONCERTSCREENID
+    )
+}
+
+function upgradeLiftPassLevel( prevLevel, newLevel )
+{
+    return (
+        prev( LiftPassLevel() ) == prevLevel &&
+        LiftPassLevel() == newLevel
+    )
+}
+
+function checkMaxStats( stars, credits )
+{
+    return (
+        LuckyStars() <= stars &&
+        Credits() <= credits
     )
 }
 
@@ -583,6 +610,40 @@ for config in Configs
         type = config["type"]
     )
 }
+
+// WIP
+
+achievement(
+    title = "Complete Level 1"
+    description = "Complete level 1 and buy the lift pass for level 2"
+    points = 5,
+    trigger = trigger_when(
+        measured(
+            tally(2,
+                once( GameStarts() ),
+                once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) )
+            )
+        ) &&
+        never( OpenPasswordMenu() )
+    )
+)
+
+achievement(
+    title = "Complete Level 2"
+    description = "Complete level 2 and buy the lift pass for level 3"
+    points = 5,
+    trigger = trigger_when(
+        measured(
+            tally(2,
+                once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) ), // initial check needs to also look at stars & credits
+                once( upgradeLiftPassLevel( LEVEL2, LEVEL3 ) )
+            )
+        ) &&
+        never( OpenPasswordMenu() )
+    )
+)
+
+// END WIP
 
 achievement(
     title = "Beat the Game",

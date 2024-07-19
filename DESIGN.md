@@ -29,6 +29,73 @@ There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with 
 
 Stars are accumulated by collecting them in the missions and displayed as a number in the top left of th screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without loosing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we cant reliably tell if they got the star legitimatly or not.
 
+### Max credit and stars per level
+
+Play Pen:
+* Reward: 1 credit
+* Total: 1 credit max
+
+Level 1 Mission 1:
+* Given: 4 hearts (3 x 4 = 12 credits)
+* Reward: 30 credits
+* In-Game Hearts: 1 (3 credits)
+* Gold Bullions: 1 (3 credits)
+* Stars: 1
+* Lightning: 1
+* Total: 12 + 30 + 3 + 3 = 48 credits max
+
+Level 1 Mission 2:
+* Given: 4 hearts (3 x 4 = 12 credits)
+* Reward: 30 credits
+* In-Game Hearts: 1 (3 credits)
+* Stars: 1
+* Power Spring: 1
+* Total: 12 + 30 + 3 = 45 credits max
+
+Level 1 Mission 3:
+* Given: 4 hearts (3 x 4 = 12 credits)
+* Reward: 45 credits
+* In-Game Hearts: 1 (3 credits)
+* Gold Bullions: 1 (3 credits)
+* Stars: 2
+* Lightning: 2
+* Power Ring: 1
+* Map: 1
+* Total: 12 + 45 + 3 + 3 = 63 credits max
+
+Level 1 Summary:
+* Max credits: 1 + 48 + 45 + 63 = 157
+* Max stars: 4
+* Max credits after buying lift pass: 157 - 70 = 87
+
+Level 2 Mission 1:
+* Given: 4 hearts (7 x 4 = 28 credits)
+* Reward: 45 credits
+* In-Game Hearts: 1 (7 credits)
+* Stars: 2
+* Lightning: 1
+* Map: 1
+* Total: 28 + 45 + 7 = 80 credits max
+
+Level 2 Mission 2:
+* Given: 4 hearts (7 x 4 = 28 credits)
+* Reward: 40 credits
+* In-Game Hearts: 1 (7 credits)
+* Gold Bullions: 1 (7 credits)
+* Stars: 3
+* Total: 28 + 40 + 7 + 7 = 82 credits max
+
+Level 2 Mission 3:
+* Given: 4 hearts (7 x 4 = 28 credits)
+* Reward: 65 credits
+* In-Game Hearts: 1 (7 credits)
+* Total: 28 + 65 + 7 = 100 credits max
+
+Level 2 Summary:
+* Max credits: 87 + 80 + 82 + 100 = 349
+* Max stars: 4 + 5 = 9
+* Max credits after buying lift pass: 349 - 130 = 219
+
 ## Code Notes
 
 ### Code Notes Navigation
@@ -1097,3 +1164,26 @@ Rich presence is available and will change depending on where you are in the gam
     * current stars
     * item A
     * item B
+
+
+Scratch notes:
+
+progression:
+level X pass - 10pts * 9 = 90
+
+win condition:
+beat all levels in order no paswords - 50pts
+
+normal achievements:
+play pen - 1pt
+beat lXmY - 3pts * 27 = 81
+beat krond - 10pts
+
+challenge (missable):
+beat lXmY perfect - 5pts * 27 = 135pts
+beat krond perfect - 15pts
+
+67 achievements
+382pts
+
+2P-BHK5D
