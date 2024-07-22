@@ -234,9 +234,9 @@ function GameEnds()
     )
 }
 
-// Achievements
+// Normal Mission Achievements
 
-Configs = [
+NormalMissionAchievementConfigs = [
     {
         "title":           "PlayPen",
         "description":     "Beat the PlayPen mission",
@@ -252,7 +252,7 @@ Configs = [
     {
         "title":           "Level 1 Mission 1",
         "description":     "Beat Level 1 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL1MISSION1ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM2MASK,
@@ -264,7 +264,7 @@ Configs = [
     {
         "title":           "Level 1 Mission 2",
         "description":     "Beat Level 1 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL1MISSION2ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM3MASK,
@@ -276,7 +276,7 @@ Configs = [
     {
         "title":           "Level 1 Mission 3",
         "description":     "Beat Level 1 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL1MISSION3ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM4MASK,
@@ -288,7 +288,7 @@ Configs = [
     {
         "title":           "Level 2 Mission 1",
         "description":     "Beat Level 2 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL2MISSION1ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM5MASK,
@@ -300,7 +300,7 @@ Configs = [
     {
         "title":           "Level 2 Mission 2",
         "description":     "Beat Level 2 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL2MISSION2ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM6MASK,
@@ -312,7 +312,7 @@ Configs = [
     {
         "title":           "Level 2 Mission 3",
         "description":     "Beat Level 2 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL2MISSION3ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM7MASK,
@@ -324,7 +324,7 @@ Configs = [
     {
         "title":           "Level 3 Mission 1",
         "description":     "Beat Level 3 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL3MISSION1ID,
         "mainGroup":       LevelGroup1(),
         "mainGroupMask":   ROOM8MASK,
@@ -336,7 +336,7 @@ Configs = [
     {
         "title":           "Level 3 Mission 2",
         "description":     "Beat Level 3 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL3MISSION2ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM1MASK,
@@ -348,7 +348,7 @@ Configs = [
     {
         "title":           "Level 3 Mission 3",
         "description":     "Beat Level 3 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL3MISSION3ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM2MASK,
@@ -360,7 +360,7 @@ Configs = [
     {
         "title":           "Level 4 Mission 1",
         "description":     "Beat Level 4 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL4MISSION1ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM3MASK,
@@ -372,7 +372,7 @@ Configs = [
     {
         "title":           "Level 4 Mission 2",
         "description":     "Beat Level 4 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL4MISSION2ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM4MASK,
@@ -384,7 +384,7 @@ Configs = [
     {
         "title":           "Level 4 Mission 3",
         "description":     "Beat Level 4 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL4MISSION3ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM5MASK,
@@ -396,7 +396,7 @@ Configs = [
     {
         "title":           "Level 5 Mission 1",
         "description":     "Beat Level 5 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL5MISSION1ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM6MASK,
@@ -408,7 +408,7 @@ Configs = [
     {
         "title":           "Level 5 Mission 2",
         "description":     "Beat Level 5 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL5MISSION2ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM7MASK,
@@ -420,7 +420,7 @@ Configs = [
     {
         "title":           "Level 5 Mission 3",
         "description":     "Beat Level 5 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL5MISSION3ID,
         "mainGroup":       LevelGroup2(),
         "mainGroupMask":   ROOM8MASK,
@@ -432,7 +432,7 @@ Configs = [
     {
         "title":           "Level 6 Mission 1",
         "description":     "Beat Level 6 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL6MISSION1ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM1MASK,
@@ -444,7 +444,7 @@ Configs = [
     {
         "title":           "Level 6 Mission 2",
         "description":     "Beat Level 6 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL6MISSION2ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM2MASK,
@@ -456,7 +456,7 @@ Configs = [
     {
         "title":           "Level 6 Mission 3",
         "description":     "Beat Level 6 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL6MISSION3ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM3MASK,
@@ -468,7 +468,7 @@ Configs = [
     {
         "title":           "Level 7 Mission 1",
         "description":     "Beat Level 7 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL7MISSION1ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM4MASK,
@@ -480,7 +480,7 @@ Configs = [
     {
         "title":           "Level 7 Mission 2",
         "description":     "Beat Level 7 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL7MISSION2ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM5MASK,
@@ -492,7 +492,7 @@ Configs = [
     {
         "title":           "Level 7 Mission 3",
         "description":     "Beat Level 7 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL7MISSION3ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM6MASK,
@@ -504,7 +504,7 @@ Configs = [
     {
         "title":           "Level 8 Mission 1",
         "description":     "Beat Level 8 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL8MISSION1ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM7MASK,
@@ -516,7 +516,7 @@ Configs = [
     {
         "title":           "Level 8 Mission 2",
         "description":     "Beat Level 8 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL8MISSION2ID,
         "mainGroup":       LevelGroup3(),
         "mainGroupMask":   ROOM8MASK,
@@ -528,7 +528,7 @@ Configs = [
     {
         "title":           "Level 8 Mission 3",
         "description":     "Beat Level 8 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL8MISSION3ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM1MASK,
@@ -540,7 +540,7 @@ Configs = [
     {
         "title":           "Level 9 Mission 1",
         "description":     "Beat Level 9 Mission 1",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL9MISSION1ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM2MASK,
@@ -552,7 +552,7 @@ Configs = [
     {
         "title":           "Level 9 Mission 2",
         "description":     "Beat Level 9 Mission 2",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL9MISSION2ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM3MASK,
@@ -564,7 +564,7 @@ Configs = [
     {
         "title":           "Level 9 Mission 3",
         "description":     "Beat Level 9 Mission 3",
-        "points":          2,
+        "points":          3,
         "missionId":       LEVEL9MISSION3ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM4MASK,
@@ -576,7 +576,7 @@ Configs = [
     {
         "title":           "Defeat Krond",
         "description":     "Beat Krond in level 10",
-        "points":          2,
+        "points":          10,
         "missionId":       LEVEL10MISSON1ID,
         "mainGroup":       LevelGroup4(),
         "mainGroupMask":   ROOM5MASK,
@@ -587,7 +587,7 @@ Configs = [
     }
 ]
 
-for config in Configs
+for config in NormalMissionAchievementConfigs
 {
     achievement(
         title = config["title"],
@@ -611,10 +611,12 @@ for config in Configs
 
 // WIP
 
+// Progression Level Achievements
+
 achievement(
     title = "Complete Level 1",
     description = "Complete level 1 and buy the lift pass for level 2",
-    points = 5,
+    points = 10,
     trigger = measured(
         tally(2,
             once( GameStarts() ),
@@ -624,20 +626,89 @@ achievement(
     never( OpenPasswordMenu() )
 )
 
-achievement(
-    title = "Complete Level 2",
-    description = "Complete level 2 and buy the lift pass for level 3",
-    points = 5,
-    trigger = measured(
-        tally(2,
-            once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) ), // initial check needs to also look at stars & credits
-            once( upgradeLiftPassLevel( LEVEL2, LEVEL3 ) )
-        )
-    ) &&
-    never( OpenPasswordMenu() )
-)
+LevelProgressionAchievementConfigs = [
+    {
+        "title": "Complete Level 2",
+        "description": "Complete level 2 and buy the lift pass for level 3",
+        "prevLevel": LEVEL1,
+        "currLevel": LEVEL2,
+        "nextLevel": LEVEL3,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 3",
+        "description": "Complete level 3 and buy the lift pass for level 4",
+        "prevLevel": LEVEL2,
+        "currLevel": LEVEL3,
+        "nextLevel": LEVEL4,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 4",
+        "description": "Complete level 4 and buy the lift pass for level 5",
+        "prevLevel": LEVEL3,
+        "currLevel": LEVEL4,
+        "nextLevel": LEVEL5,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 5",
+        "description": "Complete level 5 and buy the lift pass for level 6",
+        "prevLevel": LEVEL4,
+        "currLevel": LEVEL5,
+        "nextLevel": LEVEL6,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 6",
+        "description": "Complete level 6 and buy the lift pass for level 7",
+        "prevLevel": LEVEL5,
+        "currLevel": LEVEL6,
+        "nextLevel": LEVEL7,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 7",
+        "description": "Complete level 7 and buy the lift pass for level 8",
+        "prevLevel": LEVEL6,
+        "currLevel": LEVEL7,
+        "nextLevel": LEVEL8,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 8",
+        "description": "Complete level 8 and buy the lift pass for level 9",
+        "prevLevel": LEVEL7,
+        "currLevel": LEVEL8,
+        "nextLevel": LEVEL9,
+        "type":"progression",
+    },
+    {
+        "title": "Complete Level 9",
+        "description": "Complete level 9 and buy the lift pass for level 10",
+        "prevLevel": LEVEL8,
+        "currLevel": LEVEL9,
+        "nextLevel": LEVEL10,
+        "type":"progression",
+    }
+]
 
-// END WIP
+for config in LevelProgressionAchievementConfigs
+{
+    achievement(
+        title = config["title"],
+        description = config["description"],
+        points = 10,
+        trigger = measured(
+            tally(2,
+                once( upgradeLiftPassLevel( config["prevLevel"], config["currLevel"] ) ),
+                once( upgradeLiftPassLevel( config["currLevel"], config["nextLevel"] ) )
+            )
+        ) &&
+        never( OpenPasswordMenu() ),
+        type = config["type"]
+    )
+}
 
 achievement(
     title = "Beat the Game",
@@ -652,6 +723,8 @@ achievement(
     never( OpenPasswordMenu() ),
     type = "win_condition"
 )
+
+// END WIP
 
 // Rich Presence
 
