@@ -795,3 +795,16 @@ rich_presence_display("🎮 {0} | ❤️ {1} | ⭐ {2}",
     rich_presence_value( "Health", Health() ),
     rich_presence_value( "Lucky Stars", LuckyStars() )
 )
+
+// Leaderboards
+
+leaderboard(
+    title = "Speedrun",
+    description = "Complete the game from start to finish as fast as possible (no passwords)",
+    start = prev( CurrentMission() ) == TITLESCREENID && CurrentMission() == MAINROOMID,
+    cancel = OpenPasswordMenu(),
+    submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
+    value = measured( always_true() ),
+    format = "FRAMES",
+    lower_is_better=true
+)
