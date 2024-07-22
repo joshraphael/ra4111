@@ -593,20 +593,18 @@ for config in Configs
         title = config["title"],
         description = config["description"],
         points = config["points"],
-        trigger = trigger_when(
-            measured(
-                MissionCompleteCondition(
-                    config["missionId"],
-                    config["mainGroupMask"],
-                    config["mainGroup"],
-                    config["secondaryGroup1"],
-                    config["secondaryGroup2"],
-                    config["secondaryGroup3"]
-                )
-            ) &&
-            never( OpenPasswordMenu() ) &&
-            never( PlayerDies() )
-        ),
+        trigger = measured(
+            MissionCompleteCondition(
+                config["missionId"],
+                config["mainGroupMask"],
+                config["mainGroup"],
+                config["secondaryGroup1"],
+                config["secondaryGroup2"],
+                config["secondaryGroup3"]
+            )
+        ) &&
+        never( OpenPasswordMenu() ) &&
+        never( PlayerDies() ),
         type = config["type"]
     )
 }
@@ -614,33 +612,29 @@ for config in Configs
 // WIP
 
 achievement(
-    title = "Complete Level 1"
-    description = "Complete level 1 and buy the lift pass for level 2"
+    title = "Complete Level 1",
+    description = "Complete level 1 and buy the lift pass for level 2",
     points = 5,
-    trigger = trigger_when(
-        measured(
-            tally(2,
-                once( GameStarts() ),
-                once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) )
-            )
-        ) &&
-        never( OpenPasswordMenu() )
-    )
+    trigger = measured(
+        tally(2,
+            once( GameStarts() ),
+            once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) )
+        )
+    ) &&
+    never( OpenPasswordMenu() )
 )
 
 achievement(
-    title = "Complete Level 2"
-    description = "Complete level 2 and buy the lift pass for level 3"
+    title = "Complete Level 2",
+    description = "Complete level 2 and buy the lift pass for level 3",
     points = 5,
-    trigger = trigger_when(
-        measured(
-            tally(2,
-                once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) ), // initial check needs to also look at stars & credits
-                once( upgradeLiftPassLevel( LEVEL2, LEVEL3 ) )
-            )
-        ) &&
-        never( OpenPasswordMenu() )
-    )
+    trigger = measured(
+        tally(2,
+            once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) ), // initial check needs to also look at stars & credits
+            once( upgradeLiftPassLevel( LEVEL2, LEVEL3 ) )
+        )
+    ) &&
+    never( OpenPasswordMenu() )
 )
 
 // END WIP
@@ -649,15 +643,13 @@ achievement(
     title = "Beat the Game",
     description = "Beat every level of the game without passwords in one session",
     points = 50,
-    trigger = trigger_when(
-        measured(
-            tally(2,
-                once( GameStarts() ),
-                once( GameEnds() )
-            )
-        ) &&
-        never( OpenPasswordMenu() )
-    ),
+    trigger = measured(
+        tally(2,
+            once( GameStarts() ),
+            once( GameEnds() )
+        )
+    ) &&
+    never( OpenPasswordMenu() ),
     type = "win_condition"
 )
 
