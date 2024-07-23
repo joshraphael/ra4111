@@ -22,6 +22,9 @@ function LuckyStars() => byte( 0xD120 )
 // $D122: Health
 function Health() => byte( 0xD122 )
 
+// $D12E: Idle Timer until Max begins playing guitar
+function IdleTimer() => byte( 0xD12E )
+
 // $D3F0 - Password first char
 function PasswordChar1() => byte( 0xD3F0 )
 
@@ -121,6 +124,15 @@ function missionMarkedComplete( group, missionMask )
     return (
         ( ( group & missionMask ) == missionMask ) &&
         ( ( prev( group ) & missionMask ) == CLOSED )
+    )
+}
+
+function playerHurt()
+{
+    // Player loses a star, or heart
+    return (
+        ( prev( LuckyStart() ) == ( LuckyStarts() - 1 ) ) ||
+        ( prev( Health() ) == ( Health() - 1 ) )
     )
 }
 
@@ -628,68 +640,68 @@ achievement(
 
 LevelProgressionAchievementConfigs = [
     {
-        "title": "Complete Level 2",
+        "title":       "Complete Level 2",
         "description": "Complete level 2 and buy the lift pass for level 3",
-        "prevLevel": LEVEL1,
-        "currLevel": LEVEL2,
-        "nextLevel": LEVEL3,
-        "type":"progression",
+        "prevLevel":   LEVEL1,
+        "currLevel":   LEVEL2,
+        "nextLevel":   LEVEL3,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 3",
+        "title":       "Complete Level 3",
         "description": "Complete level 3 and buy the lift pass for level 4",
-        "prevLevel": LEVEL2,
-        "currLevel": LEVEL3,
-        "nextLevel": LEVEL4,
-        "type":"progression",
+        "prevLevel":   LEVEL2,
+        "currLevel":   LEVEL3,
+        "nextLevel":   LEVEL4,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 4",
+        "title":       "Complete Level 4",
         "description": "Complete level 4 and buy the lift pass for level 5",
-        "prevLevel": LEVEL3,
-        "currLevel": LEVEL4,
-        "nextLevel": LEVEL5,
-        "type":"progression",
+        "prevLevel":   LEVEL3,
+        "currLevel":   LEVEL4,
+        "nextLevel":   LEVEL5,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 5",
+        "title":       "Complete Level 5",
         "description": "Complete level 5 and buy the lift pass for level 6",
-        "prevLevel": LEVEL4,
-        "currLevel": LEVEL5,
-        "nextLevel": LEVEL6,
-        "type":"progression",
+        "prevLevel":   LEVEL4,
+        "currLevel":   LEVEL5,
+        "nextLevel":   LEVEL6,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 6",
+        "title":       "Complete Level 6",
         "description": "Complete level 6 and buy the lift pass for level 7",
-        "prevLevel": LEVEL5,
-        "currLevel": LEVEL6,
-        "nextLevel": LEVEL7,
-        "type":"progression",
+        "prevLevel":   LEVEL5,
+        "currLevel":   LEVEL6,
+        "nextLevel":   LEVEL7,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 7",
+        "title":       "Complete Level 7",
         "description": "Complete level 7 and buy the lift pass for level 8",
-        "prevLevel": LEVEL6,
-        "currLevel": LEVEL7,
-        "nextLevel": LEVEL8,
-        "type":"progression",
+        "prevLevel":   LEVEL6,
+        "currLevel":   LEVEL7,
+        "nextLevel":   LEVEL8,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 8",
+        "title":       "Complete Level 8",
         "description": "Complete level 8 and buy the lift pass for level 9",
-        "prevLevel": LEVEL7,
-        "currLevel": LEVEL8,
-        "nextLevel": LEVEL9,
-        "type":"progression",
+        "prevLevel":   LEVEL7,
+        "currLevel":   LEVEL8,
+        "nextLevel":   LEVEL9,
+        "type":        "progression",
     },
     {
-        "title": "Complete Level 9",
+        "title":       "Complete Level 9",
         "description": "Complete level 9 and buy the lift pass for level 10",
-        "prevLevel": LEVEL8,
-        "currLevel": LEVEL9,
-        "nextLevel": LEVEL10,
-        "type":"progression",
+        "prevLevel":   LEVEL8,
+        "currLevel":   LEVEL9,
+        "nextLevel":   LEVEL10,
+        "type":        "progression",
     }
 ]
 
@@ -742,15 +754,15 @@ levelPass = {
 }
 
 currentMission = {
-    1: "Play Pen",
-    2: "Lvl 1 Mission 1",
-    3: "Lvl 1 Mission 2",
-    4: "Lvl 1 Mission 3",
-    5: "Lvl 2 Mission 1",
-    6: "Lvl 2 Mission 2",
-    7: "Lvl 2 Mission 3",
-    8: "Lvl 3 Mission 1",
-    9: "Lvl 3 Mission 2",
+    1:  "Play Pen",
+    2:  "Lvl 1 Mission 1",
+    3:  "Lvl 1 Mission 2",
+    4:  "Lvl 1 Mission 3",
+    5:  "Lvl 2 Mission 1",
+    6:  "Lvl 2 Mission 2",
+    7:  "Lvl 2 Mission 3",
+    8:  "Lvl 3 Mission 1",
+    9:  "Lvl 3 Mission 2",
     10: "Lvl 3 Mission 3",
     11: "Lvl 4 Mission 1",
     12: "Lvl 4 Mission 2",
@@ -800,11 +812,32 @@ rich_presence_display("🎮 {0} | ❤️ {1} | ⭐ {2}",
 
 leaderboard(
     title = "Speedrun",
-    description = "Complete the game from start to finish as fast as possible (no passwords)",
-    start = prev( CurrentMission() ) == TITLESCREENID && CurrentMission() == MAINROOMID,
+    description = "Complete the game from start to finish as fast as possible without using passwords",
+    start = (
+        prev( CurrentMission() ) == TITLESCREENID
+    ) && (
+        CurrentMission() == MAINROOMID
+    ) &&
+    GameStarts(),
     cancel = OpenPasswordMenu(),
     submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
-    value = measured( always_true() ),
+    value = measured( always_true() ) && unless( inMainLobby() || inTitleScreen() || inConcertScreen() ),
     format = "FRAMES",
-    lower_is_better=true
+    lower_is_better = true
+)
+
+leaderboard(
+    title = "High Score",
+    description = "Complete the game from start to finish with the most credits and stars without using passwords",
+    start = (
+        prev( CurrentMission() ) == TITLESCREENID
+    ) && (
+        CurrentMission() == MAINROOMID
+    ) &&
+    GameStarts(),
+    cancel = OpenPasswordMenu(),
+    submit = GameEnds(),
+    value = Credits() + LuckyStars(),
+    format = "VALUE",
+    lower_is_better = false
 )
