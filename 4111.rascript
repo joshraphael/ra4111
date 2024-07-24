@@ -4,23 +4,20 @@
 // $CFBF - Current mission
 function CurrentMission() => byte( 0xCFBF )
 
-// $D00A: Level Group 1
-function LevelGroup1() => byte( 0xD00A )
-
-// $D00B: Level Group 2
-function LevelGroup2() => byte( 0xD00B )
-
-// $D00C: Level Group 3
-function LevelGroup3() => byte( 0xD00C )
-
-// $D00D: Level Group 4
-function LevelGroup4() => byte( 0xD00D )
+// $D00A: Mission Flags for marking completed missions
+function MissionFlags() => dword( 0xD00A )
 
 // $D120: Lucky Star Count
 function LuckyStars() => byte( 0xD120 )
 
 // $D122: Health
 function Health() => byte( 0xD122 )
+
+// $D128: Lift Pass Level
+function LiftPassLevel() => byte( 0xD128 )
+
+// $D129: Number of credits earned
+function Credits() => word( 0xD129 )
 
 // $D12E: Idle Timer until Max begins playing guitar
 function IdleTimer() => byte( 0xD12E )
@@ -49,12 +46,6 @@ function PasswordChar7() => byte( 0xD3F6 )
 // $D3F7 - Password eigth char
 function PasswordChar8() => byte( 0xD3F7 )
 
-// $D128: Lift Pass Level
-function LiftPassLevel() => byte( 0xD128 )
-
-// $D129: Number of credits earned
-function Credits() => word( 0xD129 )
-
 // Doors
 CLOSED = 0x00
 
@@ -70,6 +61,37 @@ ROOM5MASK = 0x10
 ROOM6MASK = 0x20
 ROOM7MASK = 0x40
 ROOM8MASK = 0x80
+
+// Mission Masks
+PLAYPENMASK         = 0x00000001
+LEVEL1MISSION1MASK  = 0x00000002
+LEVEL1MISSION2MASK  = 0x00000004
+LEVEL1MISSION3MASK  = 0x00000008
+LEVEL2MISSION1MASK  = 0x00000010
+LEVEL2MISSION2MASK  = 0x00000020
+LEVEL2MISSION3MASK  = 0x00000040
+LEVEL3MISSION1MASK  = 0x00000080
+LEVEL3MISSION2MASK  = 0x00000100
+LEVEL3MISSION3MASK  = 0x00000200
+LEVEL4MISSION1MASK  = 0x00000400
+LEVEL4MISSION2MASK  = 0x00000800
+LEVEL4MISSION3MASK  = 0x00001000
+LEVEL5MISSION1MASK  = 0x00002000
+LEVEL5MISSION2MASK  = 0x00004000
+LEVEL5MISSION3MASK  = 0x00008000
+LEVEL6MISSION1MASK  = 0x00010000
+LEVEL6MISSION2MASK  = 0x00020000
+LEVEL6MISSION3MASK  = 0x00040000
+LEVEL7MISSION1MASK  = 0x00080000
+LEVEL7MISSION2MASK  = 0x00100000
+LEVEL7MISSION3MASK  = 0x00200000
+LEVEL8MISSION1MASK  = 0x00400000
+LEVEL8MISSION2MASK  = 0x00800000
+LEVEL8MISSION3MASK  = 0x01000000
+LEVEL9MISSION1MASK  = 0x02000000
+LEVEL9MISSION2MASK  = 0x04000000
+LEVEL9MISSION3MASK  = 0x08000000
+LEVEL10MISSION1MASK = 0x10000000
 
 // Mission IDs
 MAINROOMID       = 0x00
@@ -118,12 +140,19 @@ LEVEL10 = 0x09
 
 // private functions
 
-function missionMarkedComplete( group, missionMask )
+function missionMarkedComplete( missionMask )
 {
     // Mission is marked complete and it was previously closed
     return (
-        ( ( group & missionMask ) == missionMask ) &&
-        ( ( prev( group ) & missionMask ) == CLOSED )
+        ( ( MissionFlags() & missionMask ) == missionMask ) &&
+        ( ( prev( MissionFlags() ) & missionMask ) == CLOSED )
+    )
+}
+
+function onlyMissionUnlocked( missionMask )
+{
+    return (
+        MissionFlags() == ( prev( MissionFlags() ) + missionMask )
     )
 }
 
@@ -131,18 +160,9 @@ function playerHurt()
 {
     // Player loses a star, or heart
     return (
+        !inTitleScreen() && !inConcertScreen() && !inMainLobby() &&
         ( prev( LuckyStart() ) == ( LuckyStarts() - 1 ) ) ||
         ( prev( Health() ) == ( Health() - 1 ) )
-    )
-}
-
-function onlyMissionUnlocked( group, missionMask, unchangedGroup1, unchangedGroup2, unchangedGroup3 )
-{
-    return (
-        group == ( prev( group ) + missionMask ) &&
-        unchangedGroup1 == prev( unchangedGroup1 ) &&
-        unchangedGroup2 == prev( unchangedGroup2 ) &&
-        unchangedGroup3 == prev( unchangedGroup3 )
     )
 }
 
@@ -215,13 +235,13 @@ function PlayerEntersMission( missionId )
     )
 }
 
-function MissionCompleteCondition( missionId, roomMask, mainGroup, secondaryGroup1, secondaryGroup2, secondaryGroup3 ) 
+function MissionCompleteCondition( missionId, missionMask ) 
 {
     return tally( 2,
             once( PlayerEntersMission( missionId ) ),
             once(
-                missionMarkedComplete( mainGroup, roomMask ) &&
-                onlyMissionUnlocked( mainGroup, roomMask, secondaryGroup1, secondaryGroup2, secondaryGroup3 )
+                missionMarkedComplete( missionMask ) &&
+                onlyMissionUnlocked( missionMask )
             )
         )
 }
@@ -231,10 +251,7 @@ function GameStarts()
     return (
         LiftPassLevel() == 0x00 &&
         Credits() == 0x00 &&
-        LevelGroup1() == 0x00 &&
-        LevelGroup2() == 0x00 &&
-        LevelGroup3() == 0x00 &&
-        LevelGroup4() == 0x00
+        MissionFlags() == 0x00000000
     )
 }
 
@@ -254,11 +271,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat the PlayPen mission",
         "points":          1,
         "missionId":       PLAYPENID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM1MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     PLAYPENMASK,
         "type":            "",
     },
     {
@@ -266,11 +279,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 1 Mission 1",
         "points":          3,
         "missionId":       LEVEL1MISSION1ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM2MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL1MISSION1MASK,
         "type":            "",
     },
     {
@@ -278,11 +287,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 1 Mission 2",
         "points":          3,
         "missionId":       LEVEL1MISSION2ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM3MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL1MISSION2MASK,
         "type":            "",
     },
     {
@@ -290,11 +295,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 1 Mission 3",
         "points":          3,
         "missionId":       LEVEL1MISSION3ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM4MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL1MISSION3MASK,
         "type":            "",
     },
     {
@@ -302,11 +303,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 2 Mission 1",
         "points":          3,
         "missionId":       LEVEL2MISSION1ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM5MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL2MISSION1MASK,
         "type":            "",
     },
     {
@@ -314,11 +311,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 2 Mission 2",
         "points":          3,
         "missionId":       LEVEL2MISSION2ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM6MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL2MISSION2MASK,
         "type":            "",
     },
     {
@@ -326,11 +319,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 2 Mission 3",
         "points":          3,
         "missionId":       LEVEL2MISSION3ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM7MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL2MISSION3MASK,
         "type":            "",
     },
     {
@@ -338,11 +327,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 3 Mission 1",
         "points":          3,
         "missionId":       LEVEL3MISSION1ID,
-        "mainGroup":       LevelGroup1(),
-        "mainGroupMask":   ROOM8MASK,
-        "secondaryGroup1": LevelGroup2(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL3MISSION1MASK,
         "type":            "",
     },
     {
@@ -350,11 +335,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 3 Mission 2",
         "points":          3,
         "missionId":       LEVEL3MISSION2ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM1MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL3MISSION2MASK,
         "type":            "",
     },
     {
@@ -362,11 +343,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 3 Mission 3",
         "points":          3,
         "missionId":       LEVEL3MISSION3ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM2MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL3MISSION3MASK,
         "type":            "",
     },
     {
@@ -374,11 +351,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 4 Mission 1",
         "points":          3,
         "missionId":       LEVEL4MISSION1ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM3MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL4MISSION1MASK,
         "type":            "",
     },
     {
@@ -386,11 +359,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 4 Mission 2",
         "points":          3,
         "missionId":       LEVEL4MISSION2ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM4MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL4MISSION2MASK,
         "type":            "",
     },
     {
@@ -398,11 +367,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 4 Mission 3",
         "points":          3,
         "missionId":       LEVEL4MISSION3ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM5MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL4MISSION3MASK,
         "type":            "",
     },
     {
@@ -410,11 +375,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 5 Mission 1",
         "points":          3,
         "missionId":       LEVEL5MISSION1ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM6MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL5MISSION1MASK,
         "type":            "",
     },
     {
@@ -422,11 +383,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 5 Mission 2",
         "points":          3,
         "missionId":       LEVEL5MISSION2ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM7MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL5MISSION2MASK,
         "type":            "",
     },
     {
@@ -434,11 +391,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 5 Mission 3",
         "points":          3,
         "missionId":       LEVEL5MISSION3ID,
-        "mainGroup":       LevelGroup2(),
-        "mainGroupMask":   ROOM8MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup3(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL5MISSION3MASK,
         "type":            "",
     },
     {
@@ -446,11 +399,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 6 Mission 1",
         "points":          3,
         "missionId":       LEVEL6MISSION1ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM1MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL6MISSION1MASK,
         "type":            "",
     },
     {
@@ -458,11 +407,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 6 Mission 2",
         "points":          3,
         "missionId":       LEVEL6MISSION2ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM2MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL6MISSION2MASK,
         "type":            "",
     },
     {
@@ -470,11 +415,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 6 Mission 3",
         "points":          3,
         "missionId":       LEVEL6MISSION3ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM3MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL6MISSION3MASK,
         "type":            "",
     },
     {
@@ -482,11 +423,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 7 Mission 1",
         "points":          3,
         "missionId":       LEVEL7MISSION1ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM4MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL7MISSION1MASK,
         "type":            "",
     },
     {
@@ -494,11 +431,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 7 Mission 2",
         "points":          3,
         "missionId":       LEVEL7MISSION2ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM5MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL7MISSION2MASK,
         "type":            "",
     },
     {
@@ -506,11 +439,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 7 Mission 3",
         "points":          3,
         "missionId":       LEVEL7MISSION3ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM6MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL7MISSION3MASK,
         "type":            "",
     },
     {
@@ -518,11 +447,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 8 Mission 1",
         "points":          3,
         "missionId":       LEVEL8MISSION1ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM7MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL8MISSION1MASK,
         "type":            "",
     },
     {
@@ -530,11 +455,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 8 Mission 2",
         "points":          3,
         "missionId":       LEVEL8MISSION2ID,
-        "mainGroup":       LevelGroup3(),
-        "mainGroupMask":   ROOM8MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup4(),
+        "missionMask":     LEVEL8MISSION2MASK,
         "type":            "",
     },
     {
@@ -542,11 +463,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 8 Mission 3",
         "points":          3,
         "missionId":       LEVEL8MISSION3ID,
-        "mainGroup":       LevelGroup4(),
-        "mainGroupMask":   ROOM1MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup3(),
+        "missionMask":     LEVEL8MISSION3MASK,
         "type":            "",
     },
     {
@@ -554,11 +471,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 9 Mission 1",
         "points":          3,
         "missionId":       LEVEL9MISSION1ID,
-        "mainGroup":       LevelGroup4(),
-        "mainGroupMask":   ROOM2MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup3(),
+        "missionMask":     LEVEL9MISSION1MASK,
         "type":            "",
     },
     {
@@ -566,11 +479,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 9 Mission 2",
         "points":          3,
         "missionId":       LEVEL9MISSION2ID,
-        "mainGroup":       LevelGroup4(),
-        "mainGroupMask":   ROOM3MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup3(),
+        "missionMask":     LEVEL9MISSION2MASK,
         "type":            "",
     },
     {
@@ -578,11 +487,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Level 9 Mission 3",
         "points":          3,
         "missionId":       LEVEL9MISSION3ID,
-        "mainGroup":       LevelGroup4(),
-        "mainGroupMask":   ROOM4MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup3(),
+        "missionMask":     LEVEL9MISSION3MASK,
         "type":            "",
     },
     {
@@ -590,11 +495,7 @@ NormalMissionAchievementConfigs = [
         "description":     "Beat Krond in level 10",
         "points":          10,
         "missionId":       LEVEL10MISSON1ID,
-        "mainGroup":       LevelGroup4(),
-        "mainGroupMask":   ROOM5MASK,
-        "secondaryGroup1": LevelGroup1(),
-        "secondaryGroup2": LevelGroup2(),
-        "secondaryGroup3": LevelGroup3(),
+        "missionMask":     LEVEL10MISSION1MASK,
         "type":            "",
     }
 ]
@@ -608,11 +509,7 @@ for config in NormalMissionAchievementConfigs
         trigger = measured(
             MissionCompleteCondition(
                 config["missionId"],
-                config["mainGroupMask"],
-                config["mainGroup"],
-                config["secondaryGroup1"],
-                config["secondaryGroup2"],
-                config["secondaryGroup3"]
+                config["missionMask"]
             )
         ) &&
         never( OpenPasswordMenu() ) &&
@@ -620,8 +517,6 @@ for config in NormalMissionAchievementConfigs
         type = config["type"]
     )
 }
-
-// WIP
 
 // Progression Level Achievements
 
@@ -736,8 +631,6 @@ achievement(
     type = "win_condition"
 )
 
-// END WIP
-
 // Rich Presence
 
 levelPass = {
@@ -821,7 +714,7 @@ leaderboard(
     GameStarts(),
     cancel = OpenPasswordMenu(),
     submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
-    value = measured( always_true() ) && unless( inMainLobby() || inTitleScreen() || inConcertScreen() ),
+    value = measured( always_true() ) && unless( inTitleScreen() || inConcertScreen() ),
     format = "FRAMES",
     lower_is_better = true
 )
