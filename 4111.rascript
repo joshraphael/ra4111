@@ -46,6 +46,9 @@ function PasswordChar7() => byte( 0xD3F6 )
 // $D3F7 - Password eigth char
 function PasswordChar8() => byte( 0xD3F7 )
 
+// $D402 - Mission Bonus
+function Bonus() => word( 0xD402 )
+
 // Doors
 CLOSED = 0x00
 
@@ -161,8 +164,8 @@ function playerHurt()
     // Player loses a star, or heart
     return (
         !inTitleScreen() && !inConcertScreen() && !inMainLobby() &&
-        ( prev( LuckyStars() ) == ( LuckyStars() - 1 ) ) ||
-        ( prev( Health() ) == ( Health() - 1 ) )
+        ( LuckyStars() == ( prev( LuckyStars() ) - 1 ) ) ||
+        ( Health() == ( prev( Health() ) - 1 ) )
     )
 }
 
@@ -254,17 +257,21 @@ function MissionCompleteCondition( missionId, missionMask )
         )
 }
 
-function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars ) 
+function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars, bonus, gold ) 
 {
-    return tally( 3, [
+    return tally(
+        3,
+        [
             once( PlayerEntersMission( missionId ) ),
             once(
                 missionMarkedComplete( missionMask ) &&
                 onlyMissionUnlocked( missionMask ) &&
-                Health() == hearts
+                Health() == hearts &&
+                Bonus() == ( gold * bonus )
             ),
-            repeated(stars, LuckyStars() == prev( LuckyStars() ) + 1 )
-        ])
+            repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 )
+        ]
+    )
 }
 
 function GameStarts()
@@ -585,7 +592,9 @@ for config in NormalMissionAchievementConfigs
                     config["missionId"],
                     config["missionMask"],
                     config["missionHearts"],
-                    config["missionStars"]
+                    config["missionStars"],
+                    config["missionBonus"],
+                    config["missionGold"]
                 )
             ) &&
             never( playerHurt() ) &&
