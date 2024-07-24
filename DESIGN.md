@@ -11,7 +11,7 @@
 ## About
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Monster_Max)
-* [RetroAcievements](https://retroachievements.org/game/4111)
+* [RetroAchievements](https://retroachievements.org/game/4111)
 * [Walkthrough](https://gamefaqs.gamespot.com/gameboy/585809-monster-max/faqs/36096)
 * [YouTube Video Playthrough](https://www.youtube.com/watch?v=p4EVqKSPrcs)
 
