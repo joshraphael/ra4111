@@ -141,6 +141,8 @@ LEVEL8  = 0x07
 LEVEL9  = 0x08
 LEVEL10 = 0x09
 
+achievements = {}
+
 // private functions
 
 function missionMarkedComplete( missionMask )
@@ -295,6 +297,7 @@ function GameEnds()
 
 NormalMissionAchievementConfigs = [
     {
+        "index":        1,
         "title":        "Play Pen",
         "description":  "Beat the Play Pen tutorial mission",
         "points":       1,
@@ -304,6 +307,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":                2,
         "title":                "Big Brain",
         "description":          "Destroy the mind and complete level 1 mission 1",
         "points":               3,
@@ -311,6 +315,7 @@ NormalMissionAchievementConfigs = [
         "missionMask":          LEVEL1MISSION1MASK,
         "type":                 "",
         "hasChallenge":         true,
+        "challengeIndex":       3,
         "missionHearts":        5,
         "missionBonus":         3,
         "missionStars":         1,
@@ -321,6 +326,7 @@ NormalMissionAchievementConfigs = [
         "challengeType":        "missable"
     },
     {
+        "index":                4,
         "title":                "Ice Queen",
         "description":          "Collect the ice crown and complete level 1 mission 2",
         "points":               3,
@@ -328,6 +334,7 @@ NormalMissionAchievementConfigs = [
         "missionMask":          LEVEL1MISSION2MASK,
         "type":                 "",
         "hasChallenge":         true,
+        "challengeIndex":       5,
         "missionHearts":        5,
         "missionBonus":         3,
         "missionStars":         1,
@@ -338,6 +345,7 @@ NormalMissionAchievementConfigs = [
         "challengeType":        "missable"
     },
     {
+        "index":                6,
         "title":                "Erase The Alchemist",
         "description":          "Destroy the alchemist and complete level 1 mission 3",
         "points":               3,
@@ -345,6 +353,7 @@ NormalMissionAchievementConfigs = [
         "missionMask":          LEVEL1MISSION3MASK,
         "type":                 "",
         "hasChallenge":         true,
+        "challengeIndex":       7,
         "missionHearts":        5,
         "missionBonus":         3,
         "missionStars":         2,
@@ -355,6 +364,7 @@ NormalMissionAchievementConfigs = [
         "challengeType":        "missable"
     },
     {
+        "index":        9,
         "title":        "Blind The Enemy",
         "description":  "Destroy the all seeing eye and complete level 2 mission 1",
         "points":       3,
@@ -364,6 +374,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        11,
         "title":        "Secret Codex",
         "description":  "Read the secret codex and complete level 2 mission 2",
         "points":       3,
@@ -373,6 +384,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        13,
         "title":        "Liftoff",
         "description":  "Launch the self destructing rocket and complete level 2 mission 3",
         "points":       3,
@@ -382,6 +394,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        16,
         "title":        "Illuminate The Way",
         "description":  "Find the flashlight and complete level 3 mission 1",
         "points":       3,
@@ -391,6 +404,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        18,
         "title":        "Circuit Breaker",
         "description":  "Find the electrical control box and complete level 3 mission 2",
         "points":       3,
@@ -400,6 +414,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        20,
         "title":        "Startup Funds",
         "description":  "Search for the piggy bank and complete level 3 mission 3",
         "points":       3,
@@ -409,6 +424,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        23,
         "title":        "Time Keeper",
         "description":  "Collect the pocketwatch adn complete level 4 mission 1",
         "points":       3,
@@ -418,6 +434,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        25,
         "title":        "Food Poisoning",
         "description":  "Get rid of the poisoned food and complete level 4 mission 2",
         "points":       3,
@@ -427,6 +444,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        27,
         "title":        "Command An Army",
         "description":  "Earn the crown of attack and complete level 4 mission 3",
         "points":       3,
@@ -436,6 +454,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        30,
         "title":        "Ghost Ship",
         "description":  "Take the ghost ship log and complete level 5 mission 1",
         "points":       3,
@@ -445,6 +464,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        32,
         "title":        "Talk To The Dead",
         "description":  "Collect the crystal ball and complete level 5 mission 2",
         "points":       3,
@@ -454,6 +474,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        34,
         "title":        "Keeping Warm",
         "description":  "Use the wood stove and complete level 5 mission 3",
         "points":       3,
@@ -463,6 +484,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        37,
         "title":        "In Safe Hands",
         "description":  "Return the safe and complete level 6 mission 1",
         "points":       3,
@@ -472,6 +494,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        39,
         "title":        "Enchantment",
         "description":  "Smash the potion vial and complete level 6 mission 2",
         "points":       3,
@@ -481,6 +504,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        41,
         "title":        "Cursed Gem",
         "description":  "Destroy the dark jewel and complete level 6 mission 3",
         "points":       3,
@@ -490,6 +514,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        44,
         "title":        "POP!",
         "description":  "Earn the fizzy soda prize and complete level 7 mission 1",
         "points":       3,
@@ -499,6 +524,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        46,
         "title":        "Waiting For A Call",
         "description":  "Collect the phone and complete level 7 Mission 2",
         "points":       3,
@@ -508,6 +534,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        48,
         "title":        "S.O.S",
         "description":  "Release the captive voyager and complete level 7 mission 3",
         "points":       3,
@@ -517,6 +544,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        51,
         "title":        "K9 Companion",
         "description":  "Rescue the dog and complete level 8 mission 1",
         "points":       3,
@@ -526,6 +554,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        53,
         "title":        "Fast Getaway",
         "description":  "Find and flee with the amphora jar when completing level 8 mission 2",
         "points":       3,
@@ -535,6 +564,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        55,
         "title":        "Piece Of Cake",
         "description":  "Eat the triple decker cake and complete level 8 Mission 3",
         "points":       3,
@@ -544,6 +574,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        58,
         "title":        "Hacking The Mainframe",
         "description":  "Destroy the computer system and complete level 9 mission 1",
         "points":       3,
@@ -553,6 +584,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        60,
         "title":        "Infestation",
         "description":  "Smash open the jar of insects and complete level 9 mission 2",
         "points":       3,
@@ -562,6 +594,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        62,
         "title":        "Home Sweet Home",
         "description":  "Find a new home and complete level 9 mission 3",
         "points":       3,
@@ -571,6 +604,7 @@ NormalMissionAchievementConfigs = [
         "hasChallenge": false,
     },
     {
+        "index":        65,
         "title":        "King Krond",
         "description":  "Defeat Krond and save the Mega Hero Academy in level 10",
         "points":       10,
@@ -583,11 +617,11 @@ NormalMissionAchievementConfigs = [
 
 for config in NormalMissionAchievementConfigs
 {
-    achievement(
-        title = config["title"],
-        description = config["description"],
-        points = config["points"],
-        trigger = measured(
+    a = {
+        "title":       config["title"],
+        "description": config["description"],
+        "points":      config["points"],
+        "trigger":     measured(
             MissionCompleteCondition(
                 config["missionId"],
                 config["missionMask"]
@@ -596,14 +630,23 @@ for config in NormalMissionAchievementConfigs
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"] ) ) &&
         never( PlayerDies() ),
-        type = config["type"]
+        "type":        config["type"]
+    }
+    achievements[config["index"]] = a
+
+    achievement(
+        title = a["title"],
+        description = a["description"],
+        points = a["points"],
+        trigger = a["trigger"],
+        type = a["type"]
     )
     if ( config["hasChallenge"] ) {
-        achievement(
-            title = config["challengeTitle"],
-            description = config["challengeDescription"],
-            points = config["challengePoints"],
-            trigger = measured(
+        a1 = {
+            "title":       config["challengeTitle"],
+            "description": config["challengeDescription"],
+            "points":      config["challengePoints"],
+            "trigger":     measured(
                 MissionCompletePerfectCondition(
                     config["missionId"],
                     config["missionMask"],
@@ -617,122 +660,156 @@ for config in NormalMissionAchievementConfigs
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
             never( PlayerQuitsMission( config["missionId"] ) ),
-            type = config["challengeType"]
+            "type":        config["challengeType"]
+        }
+        achievements[config["challengeIndex"]] = a1
+    
+        achievement(
+            title = a1["title"],
+            description = a1["description"],
+            points = a1["points"],
+            trigger = a1["trigger"],
+            type = a1["type"]
         )
     }
 }
 
 // Progression Level Achievements
 
-achievement(
-    title = "Complete Level 1",
-    description = "Complete level 1 and buy the lift pass for level 2",
-    points = 10,
-    trigger = measured(
-        tally(2,
-            once( GameStarts() ),
-            once( upgradeLiftPassLevel( LEVEL1, LEVEL2 ) )
-        )
-    ) &&
-    never( OpenPasswordMenu() )
-)
-
 LevelProgressionAchievementConfigs = [
     {
-        "title":       "Complete Level 2",
-        "description": "Complete level 2 and buy the lift pass for level 3",
-        "prevLevel":   LEVEL1,
-        "currLevel":   LEVEL2,
-        "nextLevel":   LEVEL3,
-        "type":        "progression",
+        "index":          8,
+        "title":          "Complete Level 1",
+        "description":    "Complete level 1 and buy the lift pass for level 2",
+        "startCondition": GameStarts(),
+        "endCondition":   upgradeLiftPassLevel( LEVEL1, LEVEL2 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 3",
-        "description": "Complete level 3 and buy the lift pass for level 4",
-        "prevLevel":   LEVEL2,
-        "currLevel":   LEVEL3,
-        "nextLevel":   LEVEL4,
-        "type":        "progression",
+        "index":          15,
+        "title":          "Complete Level 2",
+        "description":    "Complete level 2 and buy the lift pass for level 3",
+        "startCondition": upgradeLiftPassLevel( LEVEL1, LEVEL2 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL2, LEVEL3 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 4",
-        "description": "Complete level 4 and buy the lift pass for level 5",
-        "prevLevel":   LEVEL3,
-        "currLevel":   LEVEL4,
-        "nextLevel":   LEVEL5,
-        "type":        "progression",
+        "index":          22,
+        "title":          "Complete Level 3",
+        "description":    "Complete level 3 and buy the lift pass for level 4",
+        "startCondition": upgradeLiftPassLevel( LEVEL2, LEVEL3 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL3, LEVEL4 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 5",
-        "description": "Complete level 5 and buy the lift pass for level 6",
-        "prevLevel":   LEVEL4,
-        "currLevel":   LEVEL5,
-        "nextLevel":   LEVEL6,
-        "type":        "progression",
+        "index":          29,
+        "title":          "Complete Level 4",
+        "description":    "Complete level 4 and buy the lift pass for level 5",
+        "startCondition": upgradeLiftPassLevel( LEVEL3, LEVEL4 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL4, LEVEL5 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 6",
-        "description": "Complete level 6 and buy the lift pass for level 7",
-        "prevLevel":   LEVEL5,
-        "currLevel":   LEVEL6,
-        "nextLevel":   LEVEL7,
-        "type":        "progression",
+        "index":          36,
+        "title":          "Complete Level 5",
+        "description":    "Complete level 5 and buy the lift pass for level 6",
+        "startCondition": upgradeLiftPassLevel( LEVEL4, LEVEL5 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL5, LEVEL6 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 7",
-        "description": "Complete level 7 and buy the lift pass for level 8",
-        "prevLevel":   LEVEL6,
-        "currLevel":   LEVEL7,
-        "nextLevel":   LEVEL8,
-        "type":        "progression",
+        "index":          43,
+        "title":          "Complete Level 6",
+        "description":    "Complete level 6 and buy the lift pass for level 7",
+        "startCondition": upgradeLiftPassLevel( LEVEL5, LEVEL6 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL6, LEVEL7 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 8",
-        "description": "Complete level 8 and buy the lift pass for level 9",
-        "prevLevel":   LEVEL7,
-        "currLevel":   LEVEL8,
-        "nextLevel":   LEVEL9,
-        "type":        "progression",
+        "index":          50,
+        "title":          "Complete Level 7",
+        "description":    "Complete level 7 and buy the lift pass for level 8",
+        "startCondition": upgradeLiftPassLevel( LEVEL6, LEVEL7 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL7, LEVEL8 ),
+        "type":           "progression",
     },
     {
-        "title":       "Complete Level 9",
-        "description": "Complete level 9 and buy the lift pass for level 10",
-        "prevLevel":   LEVEL8,
-        "currLevel":   LEVEL9,
-        "nextLevel":   LEVEL10,
-        "type":        "progression",
+        "index":          57,
+        "title":          "Complete Level 8",
+        "description":    "Complete level 8 and buy the lift pass for level 9",
+        "startCondition": upgradeLiftPassLevel( LEVEL7, LEVEL8 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL8, LEVEL9 ),
+        "type":           "progression",
+    },
+    {
+        "index":          64,
+        "title":          "Complete Level 9",
+        "description":    "Complete level 9 and buy the lift pass for level 10",
+        "startCondition": upgradeLiftPassLevel( LEVEL8, LEVEL9 ),
+        "endCondition":   upgradeLiftPassLevel( LEVEL9, LEVEL10 ),
+        "type":           "progression",
     }
 ]
 
 for config in LevelProgressionAchievementConfigs
 {
+    a = {
+        "title":       config["title"],
+        "description": config["description"],
+        "points":      10,
+        "trigger":     measured(
+            tally(2,
+                once( config["startCondition"] ),
+                once( config["endCondition"] )
+            )
+        ) &&
+        never( OpenPasswordMenu() ),
+        "type":        config["type"]
+    }
+    achievements[config["index"]] = a
     achievement(
         title = config["title"],
         description = config["description"],
         points = 10,
         trigger = measured(
             tally(2,
-                once( upgradeLiftPassLevel( config["prevLevel"], config["currLevel"] ) ),
-                once( upgradeLiftPassLevel( config["currLevel"], config["nextLevel"] ) )
+                once( config["startCondition"] ),
+                once( config["endCondition"] )
             )
         ) &&
         never( OpenPasswordMenu() ),
         type = config["type"]
     )
+    if false {
+       // this is an error check, we want to fail compiling if the length of our achievement
+       // dictionary doesnt match our max index specified, meaning we are missing achievements
+       // or have more than we expect and therefore cant reliable loop over them to specify
+       // the order of the achievmenets we want
+       array_push(c442d3daaf97d28569c3eace979ee295)
+    }
 }
 
-achievement(
-    title = "Beat the Game",
-    description = "Beat every level of the game without passwords in one session",
-    points = 50,
-    trigger = measured(
+a = {
+    "title":       "Beat the Game",
+    "description": "Beat every level of the game without passwords in one session",
+    "points":      50,
+    "trigger":     measured(
         tally(2,
             once( GameStarts() ),
             once( GameEnds() )
         )
     ) &&
     never( OpenPasswordMenu() ),
-    type = "win_condition"
+    "type":        "win_condition"
+}
+achievements[67] = a
+
+achievement(
+    title = a["title"],
+    description = a["description"],
+    points = a["points"],
+    trigger = a["trigger"],
+    type = a["type"]
 )
 
 // Rich Presence
