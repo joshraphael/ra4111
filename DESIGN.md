@@ -21,6 +21,8 @@
 
 While playing through the game there is no save state for it, meaning if you play a few levels and want to quit and come back at a later time, the only way to "restore" your progress is by using the password system. The password system will place you at a specific point in the game. As far as i can tell passwords are characteristics of the player encoded. the values that are encoded seem to be a combination of: credits, levels completed, number of stars, and level pass obtained. Through some trial and error unfortunately I am unable to convert these values into passwords to try and thrwart the password system abuse for acheivements. There are no set passwords in the game, only the ability to enter 8 characters that can be any of the 32 characters supported in the system, making the game have thousands of passwords to chose from so hard coding password protection is not going to happen with no reliable way to generate passwords from the characteristics provided.
 
+Playing with passwords seems to create a new password hash any time one of those characteristics changes, but when loading the game state in the game, it removes all lucky stars. You can never enter a password and get stars or specific items in your slots. the only thing that matters is lift pass level, missions completed flags, and credits. Also while playing with the password system it appears that there is some level of anti-cheat in the game. meaning you cant start the game with 9999 credits, you will need to enter a password hash that makes a valid game state. I do notice that some of the credits I manually calculate for what you can have at that point in the game differ from what passwords allow. This may be a buffer by the developers for some reason as I see no way to earn these extra points in the game. I will note what each levels max points can be with passwords in the Level details section below.
+
 ### Levels
 
 There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with one mission to complete the game. players cant move up to the next level unless the gather credits by completing missions on the floors they have access to. there is a way around completing levels by using passwords, either using one of the well known passwords on the internet to go to the end of the game and have all the lift passes, or getting a password that just gives you all the lift passes for free.
@@ -31,59 +33,92 @@ Stars are accumulated by collecting them in the missions and displayed as a numb
 
 ### Detailed Mission Items
 
+Totals calcultion formula: `Reward + ((Given Hearts + In-Game Hearts) * Bonus Multiplier) + (Gold Bullions * Bonus Multiplier)`
+
 Play Pen:
 * Reward: 1 credit
-* Total: 1 credit max
+* Given Hearts: 0
+* Bonus Multiplier: 0 credits
+* In-Game Hearts: 0
+* Gold Bullions: 0
+* Stars: 0
+* Lightning: 0
+* Power Spring: 1
+* Power Ring: 0
+* Map: 0
+* Total: 1 + ((0 + 0) * 0) + (0 * 0) = 1 credits max
 
 Level 1 Mission 1:
-* Given: 4 hearts (3 x 4 = 12 credits)
 * Reward: 30 credits
-* In-Game Hearts: 1 (3 credits)
-* Gold Bullions: 1 (3 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 3 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
 * Stars: 1
 * Lightning: 1
-* Total: 12 + 30 + 3 + 3 = 48 credits max
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 30 + ((4 + 1) * 3) + (1 * 3) = 48 credits max
 
 Level 1 Mission 2:
-* Given: 4 hearts (3 x 4 = 12 credits)
 * Reward: 30 credits
-* In-Game Hearts: 1 (3 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 3 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
 * Stars: 1
+* Lightning: 0
 * Power Spring: 1
-* Total: 12 + 30 + 3 = 45 credits max
+* Power Ring: 0
+* Map: 0
+* Total: 30 + ((4 + 1) * 3) + (0 * 3) = 45 credits max
 
 Level 1 Mission 3:
-* Given: 4 hearts (3 x 4 = 12 credits)
 * Reward: 45 credits
-* In-Game Hearts: 1 (3 credits)
-* Gold Bullions: 1 (3 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 3 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
 * Stars: 2
 * Lightning: 2
+* Power Spring: 0
 * Power Ring: 1
 * Map: 1
-* Total: 12 + 45 + 3 + 3 = 63 credits max
+* Total: 45 + ((4 + 1) * 3) + (1 * 3) = 63 credits max
 
 Level 1 Summary:
-* Max credits: 1 + 48 + 45 + 63 = 157
+* Games Internal Max Credits With Passwords: 159
+* Max credits: 1 + 48 + 45 + 63 = 157 credits
 * Max stars: 4
-* Max credits after buying lift pass: 157 - 70 = 87
+* Lift Pass Cost: 70 credits
+* Max credits after buying lift pass: 157 - 70 = 87 credits
 
 Level 2 Mission 1:
-* Given: 4 hearts (7 x 4 = 28 credits)
 * Reward: 45 credits
-* In-Game Hearts: 1 (7 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 7 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
 * Stars: 2
 * Lightning: 1
+* Power Spring: 0
+* Power Ring: 0
 * Map: 1
-* Total: 28 + 45 + 7 = 80 credits max
+* Total: 45 + ((4 + 1) * 7) + (0 * 7) = 80 credits max
 
 Level 2 Mission 2:
-* Given: 4 hearts (7 x 4 = 28 credits)
 * Reward: 40 credits
-* In-Game Hearts: 1 (7 credits)
-* Gold Bullions: 1 (7 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 7 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
 * Stars: 3
-* Total: 28 + 40 + 7 + 7 = 82 credits max
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 40 + ((4 + 1) * 7) + (1 * 7) = 82 credits max
 
 Level 2 Mission 3:
 * Given: 4 hearts (7 x 4 = 28 credits)
@@ -103,6 +138,8 @@ Level 3 Mission 1:
 * Gold Bullions: 1 (10 credits)???
 * Stars: 2
 * Lightning: 1
+* Springs: 0
+* Power Ring: 0
 * Map: 1
 * Total: 40 + 70 + 10 + 10 = 130 credits max
 
@@ -113,8 +150,32 @@ Level 3 Mission 2:
 * Gold Bullions: 1 (10 credits)
 * Stars: 3
 * Lightning: 0
+* Springs: 0
+* Power Ring: 0
 * Map: 0
 * Total: 40 + 60 + 10 + 10 = 120 credits max
+
+Level 3 Mission 3:
+* Given: 4 hearts (10 x 4 = 40 credits)
+* Reward: 100 credits
+* In-Game Hearts: 1 (10 credits)
+* Gold Bullions: 1 (10 credits)
+* Stars: 2
+* Lightning: 1
+* Springs: 1
+* Power Ring: 0
+* Map: 0
+* Total: 40 + 100 + 10 + 10 = 160 credits max
+
+Level 4 Mission 1:
+* Given: 4 hearts (15 x 4 = 60 credits)
+* Reward: 100 credits
+* In-Game Hearts: 1 (15 credits)
+* Gold Bullions: 1 (15 credits)
+* Stars: 0
+* Lightning: 0
+* Map: 0
+* Total: 60 + 100 + 15 + 15 = 190 credits max
 
 ## Code Notes
 
