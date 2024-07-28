@@ -31,9 +31,9 @@ There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with 
 
 Stars are accumulated by collecting them in the missions and displayed as a number in the top left of th screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without loosing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we cant reliably tell if they got the star legitimatly or not.
 
-### Detailed Mission Items
+### Detailed Mission Parameters
 
-Totals calcultion formula: `Reward + ((Given Hearts + In-Game Hearts) * Bonus Multiplier) + (Gold Bullions * Bonus Multiplier)`
+Totals calcultion formula: `Reward + ((Given Hearts + In-Game Hearts + Gold Bullions) * Bonus Multiplier)`
 
 Play Pen:
 * Reward: 1 credit
@@ -46,7 +46,7 @@ Play Pen:
 * Power Spring: 1
 * Power Ring: 0
 * Map: 0
-* Total: 1 + ((0 + 0) * 0) + (0 * 0) = 1 credits max
+* Total: 1 + ((0 + 0 + 0) * 0) = 1 credits max
 
 Level 1 Mission 1:
 * Reward: 30 credits
@@ -59,7 +59,7 @@ Level 1 Mission 1:
 * Power Spring: 0
 * Power Ring: 0
 * Map: 0
-* Total: 30 + ((4 + 1) * 3) + (1 * 3) = 48 credits max
+* Total: 30 + ((4 + 1 + 1) * 3) = 48 credits max
 
 Level 1 Mission 2:
 * Reward: 30 credits
@@ -72,7 +72,7 @@ Level 1 Mission 2:
 * Power Spring: 1
 * Power Ring: 0
 * Map: 0
-* Total: 30 + ((4 + 1) * 3) + (0 * 3) = 45 credits max
+* Total: 30 + ((4 + 1 + 0) * 3) = 45 credits max
 
 Level 1 Mission 3:
 * Reward: 45 credits
@@ -85,7 +85,7 @@ Level 1 Mission 3:
 * Power Spring: 0
 * Power Ring: 1
 * Map: 1
-* Total: 45 + ((4 + 1) * 3) + (1 * 3) = 63 credits max
+* Total: 45 + ((4 + 1 + 1) * 3) = 63 credits max
 
 Level 1 Summary:
 * Games Internal Max Credits With Passwords: 159
@@ -105,7 +105,7 @@ Level 2 Mission 1:
 * Power Spring: 0
 * Power Ring: 0
 * Map: 1
-* Total: 45 + ((4 + 1) * 7) + (0 * 7) = 80 credits max
+* Total: 45 + ((4 + 1 + 0) * 7) = 80 credits max
 
 Level 2 Mission 2:
 * Reward: 40 credits
@@ -118,13 +118,20 @@ Level 2 Mission 2:
 * Power Spring: 0
 * Power Ring: 0
 * Map: 0
-* Total: 40 + ((4 + 1) * 7) + (1 * 7) = 82 credits max
+* Total: 40 + ((4 + 1 + 1) * 7) = 82 credits max
 
 Level 2 Mission 3:
-* Given: 4 hearts (7 x 4 = 28 credits)
 * Reward: 65 credits
-* In-Game Hearts: 1 (7 credits)
-* Total: 28 + 65 + 7 = 100 credits max
+* Given Hearts: 4
+* Bonus Multiplier: 7 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 0
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 65 + ((4 + 1) * 7) + (0 * 7) = 100 credits max
 
 Level 2 Summary:
 * Max credits: 87 + 80 + 82 + 100 = 349
@@ -132,50 +139,61 @@ Level 2 Summary:
 * Max credits after buying lift pass: 349 - 130 = 219
 
 Level 3 Mission 1:
-* Given: 4 hearts (10 x 4 = 40 credits)
 * Reward: 70 credits
-* In-Game Hearts: 1 (10 credits)
-* Gold Bullions: 1 (10 credits)???
+* Given Hearts: 4
+* Bonus Multiplier: 10 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
 * Stars: 2
 * Lightning: 1
-* Springs: 0
+* Power Spring: 0
 * Power Ring: 0
 * Map: 1
-* Total: 40 + 70 + 10 + 10 = 130 credits max
+* Total: 70 + ((4 + 1 + 0) * 10) = 120 credits max
 
 Level 3 Mission 2:
-* Given: 4 hearts (10 x 4 = 40 credits)
 * Reward: 60 credits
-* In-Game Hearts: 1 (0 credits)
-* Gold Bullions: 1 (10 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 10 credits
+* In-Game Hearts: 1
+* Gold Bullions: 2
 * Stars: 3
 * Lightning: 0
-* Springs: 0
+* Power Spring: 0
 * Power Ring: 0
 * Map: 0
-* Total: 40 + 60 + 10 + 10 = 120 credits max
+* Total: 60 + ((4 + 1 + 2) * 10) = 130 credits max
 
 Level 3 Mission 3:
-* Given: 4 hearts (10 x 4 = 40 credits)
 * Reward: 100 credits
-* In-Game Hearts: 1 (10 credits)
-* Gold Bullions: 1 (10 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 10 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
 * Stars: 2
 * Lightning: 1
-* Springs: 1
+* Power Spring: 1
 * Power Ring: 0
 * Map: 0
-* Total: 40 + 100 + 10 + 10 = 160 credits max
+* Total: 100 + ((4 + 1 + 1) * 10) = 160 credits max
+
+Level 3 Summary:
+* Max credits: 219 + 120 + 130 + 160 = 629
+* Max stars: 9 + 2 + 3 + 2 = 16
+* Max credits after buying lift pass: 629 - 200 = 429
 
 Level 4 Mission 1:
-* Given: 4 hearts (15 x 4 = 60 credits)
 * Reward: 100 credits
-* In-Game Hearts: 1 (15 credits)
-* Gold Bullions: 1 (15 credits)
+* Given Hearts: 4
+* Bonus Multiplier: 15 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
 * Stars: 0
 * Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
 * Map: 0
-* Total: 60 + 100 + 15 + 15 = 190 credits max
+* Total: 100 + ((4 + 1 + 1) * 15) = 190 credits max
 
 ## Code Notes
 
