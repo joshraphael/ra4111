@@ -134,9 +134,11 @@ Level 2 Mission 3:
 * Total: 65 + ((4 + 1) * 7) + (0 * 7) = 100 credits max
 
 Level 2 Summary:
-* Max credits: 87 + 80 + 82 + 100 = 349
-* Max stars: 4 + 5 = 9
-* Max credits after buying lift pass: 349 - 130 = 219
+* Games Internal Max Credits With Passwords: 354
+* Max credits: 87 + 80 + 82 + 100 = 349 credits
+* Max stars: 4 + 2 + 3 + 0 = 9
+* Lift Pass Cost: 130 credits
+* Max credits after buying lift pass: 349 - 130 = 219 credits
 
 Level 3 Mission 1:
 * Reward: 70 credits
@@ -178,9 +180,11 @@ Level 3 Mission 3:
 * Total: 100 + ((4 + 1 + 1) * 10) = 160 credits max
 
 Level 3 Summary:
-* Max credits: 219 + 120 + 130 + 160 = 629
+* Games Internal Max Credits With Passwords: 634
+* Max credits: 219 + 120 + 130 + 160 = 629 credits
 * Max stars: 9 + 2 + 3 + 2 = 16
-* Max credits after buying lift pass: 629 - 200 = 429
+* Lift Pass Cost: 200 credits
+* Max credits after buying lift pass: 629 - 200 = 429 credits
 
 Level 4 Mission 1:
 * Reward: 100 credits
@@ -194,6 +198,85 @@ Level 4 Mission 1:
 * Power Ring: 0
 * Map: 0
 * Total: 100 + ((4 + 1 + 1) * 15) = 190 credits max
+
+Level 4 Mission 2:
+* Reward: 100 credits
+* Given Hearts: 4
+* Bonus Multiplier: 15 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
+* Stars: 1
+* Lightning: 1
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 100 + ((4 + 1 + 1) * 15) = 190 credits max
+
+Level 4 Mission 3:
+* Reward: 150 credits
+* Given Hearts: 3
+* Bonus Multiplier: 15 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
+* Stars: 1
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 1
+* Total: 150 + ((3 + 1 + 1) * 15) = 225 credits max
+
+Level 4 Summary:
+* Games Internal Max Credits With Passwords: 1039
+* Max credits: 429 + 190 + 190 + 225 = 1034 credits
+* Max stars: 16 + 0 + 1 + 1 = 18
+* Lift Pass Cost: 300 credits
+* Max credits after buying lift pass: 1034 - 300 = 734 credits
+
+Level 5 Mission 1:
+* Reward: 150 credits
+* Given Hearts: 4
+* Bonus Multiplier: 20 credits
+* In-Game Hearts: 1
+* Gold Bullions: 2
+* Stars: 1
+* Lightning: 1
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 150 + ((4 + 1 + 2) * 20) = 290 credits max
+
+Level 5 Mission 2:
+* Reward: 200 credits
+* Given Hearts: 3
+* Bonus Multiplier: 20 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 0
+* Power Spring: 1
+* Power Ring: 0
+* Map: 0
+* Total: 200 + ((3 + 1 + 0) * 20) = 280 credits max
+
+Level 5 Mission 3:
+* Reward: 300 credits
+* Given Hearts: 3
+* Bonus Multiplier: 20 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 300 + ((3 + 1 + 0) * 20) = 380 credits max
+
+Level 5 Summary:
+* Games Internal Max Credits With Passwords: 1689
+* Max credits: 734 + 290 + 280 + 380 = 1684 credits
+* Max stars: 18 + 1 + 1 + 1 = 21
+* Lift Pass Cost: 450 credits
+* Max credits after buying lift pass: 1684 - 450  = 1234 credits
 
 ## Code Notes
 
