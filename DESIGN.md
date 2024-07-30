@@ -276,7 +276,53 @@ Level 5 Summary:
 * Max credits: 734 + 290 + 280 + 380 = 1684 credits
 * Max stars: 18 + 1 + 1 + 1 = 21
 * Lift Pass Cost: 450 credits
-* Max credits after buying lift pass: 1684 - 450  = 1234 credits
+* Max credits after buying lift pass: 1684 - 450 = 1234 credits
+
+Level 6 Mission 1:
+* Reward: 275 credits
+* Given Hearts: 3
+* Bonus Multiplier: 30 credits
+* In-Game Hearts: 0
+* Gold Bullions: 1
+* Stars: 0
+* Lightning: 4
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 275 + ((3 + 0 + 1) * 30) = 395 credits max
+
+Level 6 Mission 2:
+* Reward: 300 credits
+* Given Hearts: 3
+* Bonus Multiplier: 30 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 0
+* Lightning: 3
+* Power Spring: 0
+* Power Ring: 1
+* Map: 1
+* Total: 300 + ((3 + 1 + 0) * 30) = 420 credits max
+
+Level 6 Mission 3:
+* Reward: 450 credits
+* Given Hearts: 3
+* Bonus Multiplier: 30 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 0
+* Power Spring: 1
+* Power Ring: 0
+* Map: 0
+* Total: 450 + ((3 + 1 + 0) * 30) = 570 credits max
+
+Level 6 Summary:
+* Games Internal Max Credits With Passwords: 2654 (Missing Heart maybe somewhere)
+* Max credits: 1234 + 395 + 420 + 570 = 2619 credits
+* Max stars: 21 + 0 + 0 + 1 = 22
+* Lift Pass Cost: 650 credits
+* Max credits after buying lift pass: 2619 - 650 = 1969 credits
 
 ## Code Notes
 
