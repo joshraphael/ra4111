@@ -1,8 +1,8 @@
 // Monster Max
 // #ID = 4111
 
-// $C009 - Start Menu
-function StartMenu() => high4(0xC009)
+// $C009 - Select Menu
+function SelectMenu() => high4(0xC009)
 
 // $CFBF - Current mission
 function CurrentMission() => byte( 0xCFBF )
@@ -16,6 +16,12 @@ function LuckyStars() => byte( 0xD120 )
 // $D122: Health
 function Health() => byte( 0xD122 )
 
+// $D123: Speed Boost
+function SpeedBoost() => byte( 0xD123 )
+
+// $D124: Power Ring
+function PowerRing() => byte( 0xD124 )
+
 // $D125: PowerSpring
 function PowerSpring() => byte( 0xD125 )
 
@@ -27,6 +33,48 @@ function Credits() => word( 0xD129 )
 
 // $D12E: Idle Timer until Max begins playing guitar
 function IdleTimer() => byte( 0xD12E )
+
+// $D190: Start Menu Map Group 1
+function StartMenuMapGroup1() => bitcount( 0xD190 )
+
+// $D191: Start Menu Map Group 2
+function StartMenuMapGroup2() => bitcount( 0xD191 )
+
+// $D192: Start Menu Map Group 3
+function StartMenuMapGroup3() => bitcount( 0xD192 )
+
+// $D193: Start Menu Map Group 4
+function StartMenuMapGroup4() => bitcount( 0xD193 )
+
+// $D194: Start Menu Map Group 5
+function StartMenuMapGroup5() => bitcount( 0xD194 )
+
+// $D195: Start Menu Map Group 6
+function StartMenuMapGroup6() => bitcount( 0xD195 )
+
+// $D196: Start Menu Map Group 7
+function StartMenuMapGroup7() => bitcount( 0xD196 )
+
+// $D197: Mission Rooms Available Group 1
+function MissionRoomsAvailableGroup1() => bitcount( 0xD197 )
+
+// $D198: Mission Rooms Available Group 2
+function MissionRoomsAvailableGroup2() => bitcount( 0xD198 )
+
+// $D199: Mission Rooms Available Group 3
+function MissionRoomsAvailableGroup3() => bitcount( 0xD199 )
+
+// $D19A: Mission Rooms Available Group 4
+function MissionRoomsAvailableGroup4() => bitcount( 0xD19A )
+
+// $D19B: Mission Rooms Available Group 5
+function MissionRoomsAvailableGroup5() => bitcount( 0xD19B )
+
+// $D19C: Mission Rooms Available Group 6
+function MissionRoomsAvailableGroup6() => bitcount( 0xD19C )
+
+// $D19D: Mission Rooms Available Group 7
+function MissionRoomsAvailableGroup7() => bitcount( 0xD19D )
 
 // $D3F0 - Password first char
 function PasswordChar1() => byte( 0xD3F0 )
@@ -187,7 +235,7 @@ function inMainLobby()
 function inStartMenu()
 {
     return (
-        StartMenu() == 0
+        SelectMenu() == 0
     )
 }
 
@@ -218,6 +266,32 @@ function checkMaxStats( stars, credits )
     return (
         LuckyStars() <= stars &&
         Credits() <= credits
+    )
+}
+
+function countRoomsSeen()
+{
+    return (
+        StartMenuMapGroup1() +
+        StartMenuMapGroup2() +
+        StartMenuMapGroup3() +
+        StartMenuMapGroup4() +
+        StartMenuMapGroup5() +
+        StartMenuMapGroup6() +
+        StartMenuMapGroup7()
+    )
+}
+
+function countMissionRoomsAvailable()
+{
+    return (
+        MissionRoomsAvailableGroup1() +
+        MissionRoomsAvailableGroup2() +
+        MissionRoomsAvailableGroup3() +
+        MissionRoomsAvailableGroup4() +
+        MissionRoomsAvailableGroup5() +
+        MissionRoomsAvailableGroup6() +
+        MissionRoomsAvailableGroup7()
     )
 }
 
@@ -275,7 +349,7 @@ function MissionCompleteCondition( missionId, missionMask )
 function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars, bonus, gold ) 
 {
     return tally(
-        3,
+        2 + stars,
         [
             once( PlayerEntersMission( missionId ) ),
             once(
@@ -295,7 +369,12 @@ function GameStarts()
     return (
         LiftPassLevel() == 0x00 &&
         Credits() == 0x00 &&
-        MissionFlags() == 0x00000000
+        MissionFlags() == 0x00000000 &&
+        (
+            prev( CurrentMission() ) == TITLESCREENID ||
+            prev( CurrentMission() ) == CONCERTSCREENID
+        ) &&
+        CurrentMission() == MAINROOMID
     )
 }
 
@@ -307,34 +386,107 @@ function GameEnds()
     )
 }
 
-achievement(
-    title = "Jump To The Rescue",
-    description = "Pick up a power spring in any mission except the Play Pen",
-    points = 5,
-    trigger = any_of([PLAYPENID, LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && prev( PowerSpring() ) + 0x0a == PowerSpring() ) &&
-    never( prev( PowerSpring() ) > 0x0a) // can only have a max of 10 brought into a mission if youre really skilled (anti-cheat)
-)
+a = {
+    "index":       66,
+    "title":       "Speedy",
+    "description": "Pick up a lightning in any mission",
+    "points":      2,
+    "trigger":     any_of(
+        [
+            LEVEL1MISSION1ID,
+            LEVEL1MISSION3ID
+        ],
+        mid => CurrentMission() == mid &&
+        prev( SpeedBoost() ) + 0x20 == SpeedBoost()
+    ),
+    "type":        ""
+}
+achievements[a["index"]] = a
 
 achievement(
-    title = "I'm The Map",
-    description = "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
-    points = 5,
-    trigger = any_of([LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && PowerSpring() > 0x00)
+    title = a["title"],
+    description = a["description"],
+    points = a["points"],
+    trigger = a["trigger"],
+    type = a["type"]
 )
 
-achievement(
-    title = "Speedy",
-    description = "Pick up a lightning in any mission",
-    points = 5,
-    trigger = any_of([LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && PowerSpring() > 0x00)
-)
+a = {
+    "index":       66,
+    "title":       "Jump To The Rescue",
+    "description": "Pick up a power spring in any mission except the Play Pen",
+    "points":      2,
+    "trigger":     any_of(
+        [
+            LEVEL1MISSION2ID,
+            LEVEL3MISSION3ID
+        ],
+        mid => CurrentMission() == mid &&
+        prev( PowerSpring() ) + 0x0a == PowerSpring()
+    ) &&
+    never( prev( PowerSpring() ) > 0x0a ),
+    "type":        ""
+}
+achievements[a["index"]] = a
 
 achievement(
-    title = "Invincible",
-    description = "Pick up a power ring in any mission",
-    points = 5,
-    trigger = any_of([PLAYPENID, LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && prev( PowerSpring() ) == PowerSpring() + 0x0a) &&
-    never( PowerSpring() > 0x0a )
+    title = a["title"],
+    description = a["description"],
+    points = a["points"],
+    trigger = a["trigger"],
+    type = a["type"]
+)
+
+a = {
+    "index":       67,
+    "title":       "I'm The Map",
+    "description": "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
+    "points":      2,
+    "trigger":     any_of(
+        [
+            LEVEL1MISSION3ID,
+            LEVEL2MISSION1ID
+        ],
+        mid => CurrentMission() == mid &&
+        prev( countRoomsSeen() ) <= countMissionRoomsAvailable() &&
+        countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
+    ),
+    "type":        ""
+}
+achievements[a["index"]] = a
+
+achievement(
+    title = a["title"],
+    description = a["description"],
+    points = a["points"],
+    trigger = a["trigger"],
+    type = a["type"]
+)
+
+a = {
+    "index":       68,
+    "title":       "Invincible",
+    "description": "Pick up a power ring in any mission",
+    "points":      5,
+    "trigger":     any_of(
+        [
+            LEVEL1MISSION3ID,
+            LEVEL6MISSION2ID
+        ],
+        mid => CurrentMission() == mid &&
+        prev( PowerRing() ) == 0x00 &&
+        PowerRing() == 0x20
+    ),
+    "type":        ""
+}
+achievements[a["index"]] = a
+
+achievement(
+    title = a["title"],
+    description = a["description"],
+    points = a["points"],
+    trigger = a["trigger"],
+    type = a["type"]
 )
 
 // Normal Mission Achievements
@@ -931,12 +1083,7 @@ rich_presence_display("🎮 {0} | ❤️ {1} | ⭐ {2}",
 leaderboard(
     title = "Speedrun",
     description = "Complete the game from start to finish as fast as possible without using passwords",
-    start = (
-        prev( CurrentMission() ) == TITLESCREENID
-    ) && (
-        CurrentMission() == MAINROOMID
-    ) &&
-    GameStarts(),
+    start = GameStarts(),
     cancel = OpenPasswordMenu(),
     submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
     value = measured( always_true() ) &&
@@ -950,12 +1097,7 @@ leaderboard(
 leaderboard(
     title = "High Score",
     description = "Complete the game from start to finish with the most credits and stars without using passwords",
-    start = (
-        prev( CurrentMission() ) == TITLESCREENID
-    ) && (
-        CurrentMission() == MAINROOMID
-    ) &&
-    GameStarts(),
+    start = GameStarts(),
     cancel = OpenPasswordMenu(),
     submit = GameEnds(),
     value = Credits() + LuckyStars(),
