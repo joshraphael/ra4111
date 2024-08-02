@@ -1,6 +1,9 @@
 // Monster Max
 // #ID = 4111
 
+// $C009 - Start Menu
+function StartMenu() => high4(0xC009)
+
 // $CFBF - Current mission
 function CurrentMission() => byte( 0xCFBF )
 
@@ -12,6 +15,9 @@ function LuckyStars() => byte( 0xD120 )
 
 // $D122: Health
 function Health() => byte( 0xD122 )
+
+// $D125: PowerSpring
+function PowerSpring() => byte( 0xD125 )
 
 // $D128: Lift Pass Level
 function LiftPassLevel() => byte( 0xD128 )
@@ -178,6 +184,13 @@ function inMainLobby()
     )
 }
 
+function inStartMenu()
+{
+    return (
+        StartMenu() == 0
+    )
+}
+
 function inTitleScreen()
 {
     return (
@@ -269,6 +282,7 @@ function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars,
                 missionMarkedComplete( missionMask ) &&
                 onlyMissionUnlocked( missionMask ) &&
                 Health() == hearts &&
+                LuckyStars() == stars &&
                 Bonus() == ( gold * bonus )
             ),
             repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 )
@@ -292,6 +306,36 @@ function GameEnds()
         inConcertScreen()
     )
 }
+
+achievement(
+    title = "Jump To The Rescue",
+    description = "Pick up a power spring in any mission except the Play Pen",
+    points = 5,
+    trigger = any_of([PLAYPENID, LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && prev( PowerSpring() ) + 0x0a == PowerSpring() ) &&
+    never( prev( PowerSpring() ) > 0x0a) // can only have a max of 10 brought into a mission if youre really skilled (anti-cheat)
+)
+
+achievement(
+    title = "I'm The Map",
+    description = "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
+    points = 5,
+    trigger = any_of([LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && PowerSpring() > 0x00)
+)
+
+achievement(
+    title = "Speedy",
+    description = "Pick up a lightning in any mission",
+    points = 5,
+    trigger = any_of([LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && PowerSpring() > 0x00)
+)
+
+achievement(
+    title = "Invincible",
+    description = "Pick up a power ring in any mission",
+    points = 5,
+    trigger = any_of([PLAYPENID, LEVEL1MISSION2ID, LEVEL3MISSION3ID], mid => CurrentMission() == mid && prev( PowerSpring() ) == PowerSpring() + 0x0a) &&
+    never( PowerSpring() > 0x0a )
+)
 
 // Normal Mission Achievements
 
@@ -895,7 +939,10 @@ leaderboard(
     GameStarts(),
     cancel = OpenPasswordMenu(),
     submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
-    value = measured( always_true() ) && unless( inTitleScreen() || inConcertScreen() ),
+    value = measured( always_true() ) &&
+    unless( inTitleScreen() ) &&
+    unless( inConcertScreen() ) &&
+    unless( inStartMenu() ),
     format = "FRAMES",
     lower_is_better = true
 )
