@@ -383,6 +383,39 @@ Level 8 Mission 1:
 * Map: 0
 * Total: 650 + ((3 + 1 + 0) * 60) = 890 credits max
 
+Level 8 Mission 2:
+* Reward: 650 credits
+* Given Hearts: 2
+* Bonus Multiplier: 60 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 3
+* Lightning: 1
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 650 + ((2 + 1 + 0) * 60) = 830 credits max
+
+Level 8 Mission 3:
+* Reward: 850 credits
+* Given Hearts: 2
+* Bonus Multiplier: 60 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
+* Stars: 5
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 850 + ((2 + 1 + 1) * 60) = 1090 credits max
+
+Level 8 Summary:
+* Games Internal Max Credits With Passwords: 5859
+* Max credits: 3015 + 890 + 830 + 1090 = 5825
+* Max stars: 32 + 1 + 3 + 5 = 41
+* Lift Pass Cost: 1500 credits
+* Max credits after buying lift pass: 5825 - 1500 = 4325 credits
+
 ## Code Notes
 
 ### Code Notes Navigation
