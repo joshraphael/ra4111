@@ -324,6 +324,52 @@ Level 6 Summary:
 * Lift Pass Cost: 650 credits
 * Max credits after buying lift pass: 2619 - 650 = 1969 credits
 
+Level 7 Mission 1:
+* Reward: 450 credits
+* Given Hearts: 3
+* Bonus Multiplier: 42 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
+* Stars: 4
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 450 + ((3 + 1 + 1) * 42) = 660 credits max
+
+Level 7 Mission 2:
+* Reward: 450 credits
+* Given Hearts: 3
+* Bonus Multiplier: 42 credits
+* In-Game Hearts: 1
+* Gold Bullions: 1
+* Stars: 3
+* Lightning: 1
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 450 + ((3 + 1 + 1) * 42) = 660 credits max
+
+Level 7 Mission 3:
+* Reward: 600 credits
+* Given Hearts: 2
+* Bonus Multiplier: 42 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 3
+* Lightning: 0
+* Power Spring: 1
+* Power Ring: 1
+* Map: 0
+* Total: 600 + ((2 + 1 + 0) * 42) = 726 credits max
+
+Level 7 Summary:
+* Games Internal Max Credits With Passwords: 4049
+* Max credits: 1969 + 660 + 660 + 726 = 4015
+* Max stars: 22 + 4 + 3 + 3 = 32
+* Lift Pass Cost: 1000 credits
+* Max credits after buying lift pass: 4015 - 1000 = 3015 credits
+
 ## Code Notes
 
 ### Code Notes Navigation

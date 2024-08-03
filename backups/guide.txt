@@ -1,0 +1,1938 @@
+BACKUP: https://gamefaqs.gamespot.com/gameboy/585809-monster-max/faqs/36096
+
+---------------------------
+Monster Max
+FAQ
+Version FINAL
+For Nintendo Gameboy
+By chandlerbing
+wing_pui[at]hotmail[dot]com
+---------------------------
+
+This FAQ was started on 2nd January 2005
+This FAQ was updated on 4th August 2005
+
+===========
+Legal Info!
+===========
+
+This guide is the sole property of chandlerbing and may not be 
+reproduced unless it is in its whole form. This FAQ may not be used 
+in commercial/promotional/profitable transactions. If you wish to 
+post this guide on your website, please email me for permission first 
+and you may do so only if I give permission and as long as nothing is 
+altered.
+
+Monster Max is copyright Rare 1994
+This guide copyright 2005 chandlerbing
+
++-+-+-+-+-+-+-+-+-
+Table of Contents
++-+-+-+-+-+-+-+-+-
+                    
+                SEARCH (CTR + F)
+Faq History
+Story
+Controls
+Walkthrough
+- Playpen
+- Level 1            [LVL1]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 2            [LVL2]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 3            [LVL3]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 4            [LVL4]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 5            [LVL5]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 6            [LVL6]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 7            [LVL7]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 8            [LVL8]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 9            [LVL9]
+
+  [Stage 1]
+  [Stage 2]
+  [Stage 3]
+
+- Level 10           [LVL10]
+
+Conclusion
+
+====================================================================
+                         F A Q   H I S T O R Y
+====================================================================
+
+Version FINAL - Completed entire walkthrough. Done and dusted. 
+
+Version 0.2 - Walkthrough updated: Completed Level 7
+
+Version 0.1 - First release: FAQ written up to Level 6-3
+
+
+=====================================================================
+                                S T O R Y
+=====================================================================
+
+Max was an aspiring rock star quietly (well, maybe not so quietly) 
+minding his own business when a nasty human called Krond took over 
+his planet and banned all music!
+
+This infringement of monster rights so annoyed Max that he sets out 
+to rid the planet of the horrid king Krond. Before confronting Krond, 
+Max must complete 9 levels of training at the Mega Hero Academy.
+
+
+=====================================================================
+                             C O N T R O L S
+=====================================================================
+
+There are two control schemes available to use. I personally find the 
+default [A] the most comfortable to use.
+    
+- Control Scheme A -                   - Control Scheme B -
+
+      UP - NE                                 UP - NW
+    DOWN - SW                               DOWN - SE
+    LEFT - NW                               LEFT - SW
+   RIGHT - SE                              RIGHT - NE
+
+Throughout the walkthrough, I will be referring to the directions by 
+NE/SW/NW/SE rather than the directional pad buttons. This is to allow 
+users of either control schemes to follow the instructions easier.
+
+=====================================================================
+                        I T E M  F U N C T I O N S
+=====================================================================
+
+
+                           =================
+                           - Jumping Boots - 
+                           =================
+
+Self explanatory. Press the button you collected the boots on to 
+jump.
+
+                                =======
+                                - Bag -
+                                =======
+
+                      To pick up or drop items in.
+
+
+                               =========
+                               - Sword -
+                               =========
+
+                   To attack enemies in front of you.
+
+
+                            ===============
+                            - Super Spell -
+                            ===============
+
+                 To cast one spell to destroy anything. 
+                    Becomes Magic Spell after 1 use.
+
+
+                            ===============
+                            - Magic Spell -
+                            ===============
+
+              To cast magic spell to destroy some enemies.
+
+
+                               ========
+                               - Duck -
+                               ========
+
+                         To crouch and duck.
+
+
+                           ===============
+                           - Force Field -
+                           ===============
+
+    To becomes totally invincible, but cannot move while activated.
+
+
+
+                              =========
+                              - Mines -
+                              =========
+
+           To lay a mine which explodes after a short delay.
+
+
+                           ==============
+                           - Lucky Star -
+                           ==============
+
+        Allows you to touch deadly obstacles once without damage. 
+                    Lucky Stars can be stacked.
+
+
+                            =============
+                            - Lightning - 
+                            =============
+
+                 To be able to run at double speed.
+
+
+                            ==============
+                            - Power Ring -
+                            ==============
+
+          Protects against all deadly objects for a short time.
+
+
+                           ================
+                           - Power Spring -
+                           ================
+
+                  Allows you ten double height jumps.
+
+
+                               =======
+                               - Map -
+                               =======
+
+               Shows the entire map of current area.
+
+
+                          ================
+                          - Gold Bullion -
+                          ================
+
+            Give credit bonus if you complete the mission.
+
+
+
+=====================================================================
+                           W A L K T H R O U G H
+=====================================================================
+
+
+PLAYPEN--------------------------------------------------------
+||                                                            ||
+|| Reward # 1                                                 ||
+||                                                            ||
+|| Safety reigns as Max trains                                ||
+|| Learn the skill for later thrill                           ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW
+* Push block NW 3 spaces to reach exit NW.
+* Head NW and leap over the third tile (collapsible).
+* NE
+* Collect DUCK and crouch under blocks to reach NE exit.
+* Drop the DUCK and use the two weights to form steps to reach NW. 
+* Exit stage NW. Be aware of collapsing tile right before the exit.
+
+Password [-?NRX*49]
+
+
+                             ==============
+                             L E V E L   1  - [LVL1]
+                             ==============
+
+                    Requirements for Level 2 - # 70
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 30                                                ||
+|| In forest deep                                             ||
+|| Seek and find                                              ||
+|| Destroy Pahal                                              ||
+|| Binary mind                Heart Bonus # 3                 ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW
+* NE - Leap from tile to tile to reach NE exit. 
+* Collect Gold Bullion, head back to previous room and drop down.
+* NW
+* NW - Keep out of the skeleton's way and exit NW.
+* NW - Leap over spikes to reach the door.
+* NW - Collect the lucky star.
+* The floor in this room emits electricity every now and again
+  Make your way to the tombstone in the SW/E corner and pick up when 
+  the floor is clear. Push the big block in the centre of the room NW  
+  all the way and SW one space. Drop the tombstone on top to reach NW  
+  exit.
+* NW - Carefully make your way past the electric blocks to NW exit.
+* There are moving blocks amidst a maze of electric blocks. Be 
+  careful not to let one of the moving blocks nudge your against the 
+  electric ones. Leap on the moving blocks or push against them as 
+  you make your way to the SW exit, picking up the HEART on the way.
+* Use the moving tile to make your way across a sea of electric floor 
+* NW - Collect DUCK and crouch under blocks to reach the door.
+* NW - Drop DUCK and collect the BOMBS to blow up the blocks.
+* SW - Blow up tower of blocks situated in the NE/W corner
+  collect LIGHTNING.
+* NW
+* NW - Dash past 2 skeletons.
+* SW - Jump over spikes.
+* Blow up tower in NW/E corner and blow up the object. Exit NW.
+
+Credit # 49
+Password [!*K269KM]
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 30                                                ||
+|| Many dangers                                               ||
+|| Are to pass                                                ||
+|| In finding crown                                           ||
+|| Of Iced Acrutine                Heart Bonus # 3            ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW - Pick MINES.
+* NE - Bomb electric blocks (and monster if possible).
+  Bomb the 3 block tower and collect STAR.
+* Dump MINES. Pick CUBE and leap across big blocks over the cauldrons 
+  towards NE exit. 
+* NE - Collect DUCK. Crouch underneath the electric blocks to NE 
+exit.
+* NE - Enter NE room immediately opposite entrance.
+* Take the lift and leap across blocks (3 collapsible) to reach SWORD
+  Go back to previous room.
+* SW - Stab monsters if they are getting too close for comfort.
+* NE - Drop DUCK/SWORD.
+* NE - Pick CUBE, jump on lift and drop the CUBE to give you a height 
+  boost to reach the FORCE FIELD.
+* NW - As you make your way to NW, stop periodically and use 
+  FORCE FIELD to protect against being zapped. 
+* NW - Pick SUPER SPELL, jump across and blast monster.
+* NE - Pick heart and take the lower NE exit.
+* Jump up to third block, jump SE, jump NE and land immediately NW 
+(left), NE
+* NW
+* NW - Use the control stick to manoeuvre the robot to the centre 
+  between the SW platforms to jump across and exit NW.
+* If you have any more spells, shoot the monster, pick up the CUBES    
+  and form steps to reach NE exit.
+* NE
+* Take the crown and exit NE.
+
+Credit # 94
+Password [BD4KPRZ1]
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 45                                                ||
+|| Faces cruel                                                ||
+|| Jeer and twisted                                           ||
+|| On mad Ewjel                                               ||
+|| Erase alchemist                Heart Bonus # 3             ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - Use the two blocks to form steps NE exit.
+* NE - Collect gold bullion, push the trampoline NE to each exit.
+* NW - Manoeuvre robot in SE direction 
+  Push big block onto its head
+  Move robot towards incomplete stairs to reach NW exit
+* NE - Pick DUCK and jump onto the block.
+  Press and hold DUCK and jump into the gap to reach POWER RING  
+  Head through NE exit.
+* NW - Collect MAP.
+* NW - Head upstairs. 
+* NW - Collect STAR.
+* NE
+* NE - Collect STAR.
+* NE - Collect heart.
+  Press and hold A to hop across all the collapsible blocks
+* NE - Use moving blocks as platforms. 
+* SE - Dump DUCK.
+* NW - Carefully push block to NW/E corner. (below door)
+  Grab CUBES to form steps to reach top NW door.
+* NW
+* NE - Give block a push NE and it will slide towards exit.
+  Exit and enter if the ghost knocks block out of the way.
+* NE - Collect LIGHTNING and zoom past the ghost.
+* Pick up BOMBS, drop one and quickly nudge it over the edge. 
+  Make way NW in case bomb blows up the path.
+  Exit NE.
+
+Credits # 145
+Password [9BZY*2W!]
+
+
+                            =============
+                            L E V E L   2 - [LVL2]
+                            =============
+
+                   Requirements for level 3 - # 130
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 45                                                ||
+|| The forest of Fo                                           ||
+|| Is deep and wide                                           ||
+|| All seeing eye                                             ||
+|| Is now destroyed                Heart Bonus # 7            ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NW - Collect the MAP sitting in S/NE corner.
+  Keep hugging the wall as you make your way to the NW exit.
+* The WEIGHT is placed directly on the electric floor. Stand on the
+  edge of the object closest to the platform so you can land safely
+  on the platform just as you pick up the weight. 
+  Place WEIGHT onto moving platform to make way to NW exit
+* Keep doing consecutive leaps onto the collapsible logs to reach
+  SUPER SCROLL. Take the NE exit.
+* NW - Blast the monster if you wish.
+* NE - Leap across spikes and out the way of the Lure monster. 
+* Immediately move out the way of Lure monster. If you decide to take
+  the North path around the mass of electric blocks, make sure you
+  lure the Lure monster towards the opposite direction you're heading
+  and take SE exit.
+* NE - Do consecutive leaps on the collapsible steps to LIGHTNING.
+  * If you want the heart, head to the NW door first:
+  - Head to SE/NE corner to lure LURE #1 
+  - Quickly go around (clockwise) and collect heart. Lure LURE #2 to
+    NW/E corner
+  - Lure LURE #1 to SE/W corner and then to S/NW corner and exit room
+* NE - The objective here is to slide the log between the stars.
+  Pick up the WEIGHT and place 2 tiles left (NW of the log).
+  Push log NW and then NE.
+  Pick weight and place on the lodged log to reach NE exit.  
+* Lure LURE #1 to SW/E corner to clear way to centre path.
+  Lure LURE #2 in SW direction to clear path to NE exit.
+* NE Go around the cauldrons. 
+* Enter the centre NW door.
+* NW - Make sure you keep hold of JUMP to leap across to NW door.
+* SW - Pick BOMBS.
+* NW
+* NW - Bomb monster, bomb EYE and exit NW
+
+Credit: 134
+Password [M2LVZ!Z5]
+
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 40                                                ||
+|| Planet Het where                                           ||
+|| Ancients met                                               ||
+|| Written secret                                             ||
+|| In codex detect                 Heart Bonus # 7            ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE - Grab FORCE FIELD.
+* NE - The spiky conveyor belt means you must jump/activate the FF 
+  before landing. Grab the star and exit NE.
+* NE - Just walk past all the lures without stopping to NE exit.
+* NE - Grab gold bullion and SUPER SCROLL and exit NE.
+* SW - Take the lift to upper floor and exit top SW. 
+* NW - Easy to avoid LURE.
+* DO NOT step on moving tile on its first run as it'll slam you right 
+  up against an electric block. Wait for second run and exit NW.
+* NW - Shoot the skeleton, grab star and exit NW.
+* Get the robot to push block off top ledge.
+  Grab the CUBE.
+  Move robot off top ledge and position it under out of reach NE exit
+  Place CUBE on robot's head.  
+  NE
+* There are 3 skeletons here; one will follow you for sure. There is
+  a row of electric blocks so you can lure the follower to one side 
+  and take the other towards NE exit.
+* NE
+* NW - Grab HEART.
+* NW - Electric floor galore! Quickly make way to the FORCE FIELD. 
+  You may want to jump as you reach FF in case the floor gets the 
+  better of you.
+* NE - More electric floor.
+* NE - Drop the FF. Use three CUBES to form steps to top ground.
+  Dodge the skeleton (or lure it off the top ledge)
+* NE - 2 CUBES. Take one and drop on moving platform but don't go
+  with the moving tile just yet. Pick up the second, wait for the
+  tile to come around again and place on top of the first CUBE. 
+* Lure LURE and enter centre row towards the BOOK and exit stage.
+
+Credits
+Password [8XXG379PZ]
+
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 65                                                ||
+|| Xyglar Wood past                                           ||
+|| Monster and hut                                            ||
+|| Switch on rocket                                           ||
+|| To self destruct                 Heart Bonus # 7           ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SE
+* Head through the door on the middle floor.
+  Press switches 1 + 3 to collect DUCK, go back to previous floor.
+* Head through the door on ground floor.
+  Duck under the electric block and collect BOMBS.
+* Middle floor - SW door.
+* Quick move forward (SW) 3-4 tiles and place a bomb.
+  Retreat against the NE corner wall until bomb kills a monster.
+  Make way to the far NW exit.
+* Flick the two switches furthest away from you (ignore lone switch)
+  Push the log to reach NE exit.
+* Push log up (NE) towards switch to activate platform to carry you 
+  to NE exit.
+* Place bomb on the moving platform so it blasts the electric blocks
+  guarding the NE exit.
+* Place a bomb between the cauldrons and the electric blocks to clear
+  an easy path to NW.
+* There is a heart in the far NW corner if you want, exit NE.
+* GROUND FLOOR - Touch switches 1 + 2 to get rid of electric block
+               - Touch switch 2
+               - Touch switch 1 to activate platform with bag slot
+               - Now drop either the BOMBS or the JUMPING SHOES
+
+  MIDDLE FLOOR - Touch switches 1 + 3
+               - Replace whichever item you didn't drop on the ground
+                 floor with the SWORD (remember, keep one slot empty)
+
+  TOP FLOOR    - Use sword to kill the two monsters
+               - Grab the JUMPING SHOES and drop the sword       
+               - Pick up CUBE to form step to NE exit
+* Drop through the gaping hole.
+* NE
+* Press the centre two switches and grab spring (not essential), SE
+* SE
+* Press the centre switch in the row of three. 
+  Press lone switch to destroy rocket and exit stage.
+
+Credit # 281
+Password [P4V#?8QZ]
+
+
+                            =============
+                            L E V E L   3 - [LVL3]
+                            =============
+
+                   Requirement for level 4 - # 200
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 70                                                ||
+|| Flashlight find                                            ||
+|| To be not blind                                            ||
+|| In Icy tunnel                                              ||
+|| To halls of Liwl                 Heart Bonus # 10          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+                                  +++++++++++++++++++++++
+                                          Key
+
+                                    S = Entrance
+                                    E = Exit
+                                    P = Spiky block
+                                    * = Star
+                                    < > V ^ = Directions
+
+                                  +++++++++++++++++++++++
+
+* NW
+* NW
+                                                E
+                                      [^][ ][ ][ ]
+                                      [^]
+                                      [^]
+                                      [P]
+                                      [^]
+                                      [^]
+                                      [^][ ][ ][ ]
+                                                S
+
+* More invisible conveyor belts
+                                                E
+                                           B[<][<][<][^]
+                                                     [^]
+                                                     [^]
+                                                     [^]
+                                                      P
+                                                     [^]
+                                      [*]            [^]
+                                      [v]            [^]
+                                      [>][>][>][>][>][V]
+                                      [^]             P
+                                      [^]
+                                      [P]
+                                      [^]
+                                      [^]     
+                                      [^] 
+                                      [^][ ][ ][ ]
+                                                S
+
+* There are two doors. Take the bottom NW door (other ultimately lead
+  to dead ends). Grab the star.
+*
+
+                    [>]
+               E [ ][>]
+                    [<]
+                    [>]            [ ]
+                    [V][^][V][^][V][ ]S
+                                   [ ]
+  
+* Grab DUCK, duck and jump simultaneously against the block wall. 
+  second tile from SW to push a loose block off and head to NW exit.
+* SW
+* SW - To get the heart, duck and position Max in the centre of the
+  tunnel, jump to break the block immediately above you, jump against    
+  SE blocks and hop to the top.
+* SE
+* Stroll across to lure the 3 LURES to the switches, walk back to 
+  lure them back to starting positions. Then lure the first LURE only 
+  to the switch and the path will be clear to exit SW.
+* Hop across spikes, touch the object and exit stage.
+
+Credit: 261
+Password [1B?15DLR]
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 60                                                ||
+|| People of Onso                                             ||
+|| Gone to ground                                             ||
+|| The control box                                            ||
+|| Must be found                    Heart Bonus # 10          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SW
+* NW - Jump over the LURE, grab the star.
+* NW - Wait for the spikes to raise before proceeding NW.
+* NW - Stand on the thin poles to make way across the electric floor
+* Position your head underneath block and carry it over to NW stairs
+  to reach NW exit.
+* NW - Press the nearest switch and get on conveyor belt.
+  Press the switch in front of you and get on conveyor belt.
+* NE - Pick up the scroll. 
+* Blast the 3 LURES whilst they're positioned on electric blocks.
+  Only then should you attempt to pick up the 2 stars in this room. 
+* NE
+* Position the cube on the ground so that the top cube can be pushed
+  on top of it to form steps to NE exit (Gold in NW corner).
+* NE - Collect DUCK.
+* Lure LURE out of the way. Lure it to S/NW corner to be safe. NE
+* Drop the DUCK and pick up CUBE and jump to highest platform.
+  Drop the CUBE and wait for the monster to pass by to push onto head
+  Leap on top of the cube and let the monster take you to NW exit.
+* Don't push the trampoline (with heart) yet, move NW a bit and push
+  the cube off the platform. Push trampoline onto this cube and push
+  them NW to reach exit.
+* NE
+* SW - Go anti-clockwise to avoid bumping into monster.
+* Step on the 4th block of the row of blocks to break it.
+  Push the ground cube into the gap where it was.
+  Push the top cube across safely to reach and collect object.
+  Exit the stage.
+
+Credit: 361
+Password [P#L9HP8-]
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 100                                               ||
+|| On eb pipe lined                                           ||
+|| Is store of cash                                           ||
+|| Search and find                                            ||
+|| In plumber trash                 Heart Bonus # 10          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW
+* NW
+* SW - Hop on collapsible blocks to reach star and exit SW.
+* Push the block on spiky conveyor belt.
+  Use the switches to manoeuvre the block to the tip in the centre
+  First switch = NE flow
+  Second switch = SW flow
+  The diagram below indicates when you should press switch 1 and 2
+
+
+                         Sw1 Sw2
+           [1][ ][2]  
+        E  [ ]   [ ]  
+           [ ]
+           [ ]
+           [ ][ ][ ][ ]CUBE
+
+* NW - Tricky here. You're likely gonna lose your star here so be
+  sure you are quick here to pick up the two CUBES to form steps NW
+* Push the sliding block in this order: NW, SW, SE, SW, NW
+* Press the switch first and foremost. Your aim in this room is to 
+  lure LURE down onto the row of white blocks and ultimately to the
+  switch sitting on top of a bunch of electric blocks. Be sure to 
+  pick up the star if you lost the earlier one. NW exit.
+* NW
+* NW - Push the white block in between the other two blocks.
+  Push the sliding block across to reach NW exit.
+* First pick up the CUBE in SE corner and place alongside the white
+  block tower. Next, pick up BOMBS and place one on the CUBE. Now
+  dump the bombs and use the cubes to form steps to NE exit (pick 
+  up BOMBS again before you exit.
+* NE - Carefully manoeuvre your way through the maze and monster. 
+  Pick up the heart if you wish along the way to NE.
+* NW - Pick up the CUBE and use it to reach the NW exit.
+  Use BOMBS to blow tower and pick up Gold if you want.
+* NE - Use up your extra star to leap on and over the spikes.
+* Pick up scroll and shoot the skeleton between the gaps of the spike
+* You can pick up the SPRING if you want to take a small short cut 
+  to the end of the stage by taking the high NE door in the next room
+* NE (if you have spring) or SE otherwise.
+* Pick up the piggy and exit stage.
+
+Credit # 511
+Password [6KLHMV4V]
+
+
+
+                          =============
+                          L E V E L   4 - [LVL4]
+                          =============
+
+                 Requirements for Level 5 - # 300
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 100                                               ||
+|| Ystredeod royal                                            ||
+|| Aliens not loyal                                           ||
+|| So hard to trace                                           ||
+|| Time piece ablaze                Heart Bonus # 15          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+Additional Notes: The general design of this stage is to test how you 
+can cope without your jumping skills.
+
+* NW
+* NW - Walk past the two Bits.
+* NE - Use the spikes to manoeuvre around the Bit.
+* Push the CUBE on top of the trapped Bit's head.
+  Hop on collapsible block and onto the CUBE.
+  Use the directional buttons to direct Bit towards NE exit.
+* NE - Collect DUCK.
+* NE - Collect BOMB and drop JUMPING SHOES.
+* Make your way to the top of the white block and place a bomb.
+  Head towards the SE corner and duck to avoid explosion, NE
+* Drop DUCK and push the cube to the right (SE) of low platform
+  Use the low platform to climb on top of the CUBE and pick it up.
+  To reach NE door, place a bomb quickly to use as a step to first 
+  white block. Then drop the CUBE to reach the door.
+* NE - Bomb obstacles.
+* NE - Collect scroll.
+* NW - Bomb 3 Bits, drop bomb and use as a step to reach the heart
+* There are 3 LURES hidden behind the cauldrons:
+  The first is hidden in the top-most cauldron so lure it NE, then SE
+  The second should be heading your direction so lure it out the way
+  The third can be avoided by making your way SW to the left (NW) of
+  the row of cauldrons.
+* NW - Bomb obstacles and shoot/bomb the guardian.
+  Drop SCROLL and pick up the JUMPING SHOES.
+* NW - Bomb obstacle and drop the BOMB in the bag
+* There is no need to control the robot here:
+  
+               [1]
+               [2][3]
+
+  Push the stack of CUBES into the pit (NW)
+  Pick up [1], jump on robot and onto ledge, place and push off SW
+  Pick up [3] (position yourself between the cube and solid ground to
+  ensure you don't fall into the pit.
+  Hop across and use [1] and [3] to form steps to NW exit.
+* NE
+* Pick up CUBE and climb up rows of collapsible blocks (placing CUBE
+  to reach one of the higher platforms) to reach NE.
+* Make to your to the NW ledges, fall down with the last collapsible
+  tile to reach the object and exit.
+
+Credit # 486
+Password [GRZ48LDP]
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 100                                               ||
+|| Poisoned burger                                            ||
+|| Threatens lives                                            ||
+|| Demolish further                                           ||
+|| Before YB dies                   Heart Bonus # 15          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* Head through NW door first.
+  Pick up SUPER SCROLL and head back out.
+  NE
+* If you can, avoid the erratic tube creature to preserve SC for
+  the next room.
+* NW - Blast the log and collect the star, dump scroll and head NW.
+* NE - Push the sliding log NW and use the 2 tombstones to reach NE
+* Go through either one of the NE doors.
+* Collect BOMBS, NE.
+* NE - Push the ABC block to the second spiky conveyor belt.
+  Place a bomb on top and quickly push it onto the conveyor belt.
+  Grab the FORCE FIELD heading your way from the explosion.
+  Jump over and use FF to get across the spiky belt safely.
+* NW
+* NE - Collect the heart and go through NE door.
+* NE - First fall down to the ground platform.
+  Wait on the middle tile for the lift. 
+  Wait until the lift is raised as high as it can go before jumping
+  towards NE door.
+* NE
+* Control the magnetic top to make your way across the room to NE.
+  A good tip to manoeuvre the top so it doesn't act erratically is to 
+  jump to halt (and adjust your direction) before making each move.        
+  This way, you won't find yourself banging straight into one of the  
+  electric blocks.
+* Don't try to dodge the magnetic top here. Jump on top of it first.
+  Carefully head up towards one of the ground spikes and leap over it
+  NE
+* NE - There is a guard guarding the NW door, ignore it and head NE.
+* Collect LIGHTNING and drop the FORCE FIELD, NE.
+* Use tombstones to reach the BOMBS and head back out to the room
+  with the guard.
+* NW - Kill the guard.
+* Bomb the BURGER and exit stage.
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 150                                               ||
+|| By guarded door                                            ||
+|| Can be reached                                             ||
+|| Ancient store to                                           ||
+|| Crown of Ktacat                  Heart Bonus # 15          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+Additional Notes: Be prepared for a ton of backtracking in this 
+stage!
+
+* SE
+* Pick up CUBE, leap on collapsible block and place CUBE to NE door.
+* Pick up MAP and go through SE door first.
+* There are 3 doors to choose from; go with the SW door first.
+* SW
+* SW - Hop across rows of collapsible blocks.
+* Head SE first.
+* Hop across rows of collapsible blocks to reach the SWORD, head back
+  to the initial room with 3 doors.
+* Now go through NE door.
+* NE
+* NE 
+* Kill the three skeletons, collect DUCK and head back to initial 
+  hallway.
+* Go through SW passage once again to the room before the SWORD room
+  Duck underneath the obstacle to SW.
+* First push the row of white blocks so it forms a step back towards
+  the platform where you first entered.
+  Drop JUMPING SHOES and pick up FORCE FIELD
+* Drop DUCK and pick up JUMPING SHOES before making way back to 
+  initial hallway.
+* Now head through SE door finally.
+* Use the FORCE FIELD to make your way to SE.
+* The magnetic top returns! Drop FF, pick up the 2 CUBES one and use 
+  them as steps to reach NE door.
+* Quickly head to the trampoline and jump to higher platform.
+  Pick up BOMBS and the HEART.
+  Wait for the Eyeball to pass by before dropping CUBE on its head.
+  NW
+* NW
+* Wahey! We're back in familiar territory again! SW back to hallway.
+  Bomb tower to collect STAR.
+  Head SW door and bomb tower to collect Gold bullion.
+  From the hallway, go NW back to the room where you first picked MAP
+  Bomb the guard and head NE.
+* Easy peasy! Head NE.
+* The Crown is on the skeleton's head, lure it against the floating
+  block to knock it off its head. Pick up the crown and exit stage.
+
+Credit # 811
+Password [#5!HMV4V]
+
+
+
+                      =================
+                       L E V E L    5 - [LVL5]
+                      =================
+
+                 Requirements for Level 6 # 450
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 150                                               ||
+|| Ghost ship spied                                           ||
+|| On ocean of Frmo                                           ||
+|| Secrets may hide                                           ||
+|| Take log then go                 Heart Bonus # 20          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - The cannonballs should pose no problems here.
+* NE - Slip between the anchors carefully and the skeletons.
+* NE - If you want the gold, wait for the scrolling monster to 
+       make one round and the cannon blast one shot before going.
+* NE - Timing is crucial here. Make sure the cannonball blasts a 
+       shot before slipping in the gap to avoid the scroller.
+* NW - It is easy to collect the star here and avoid the skeleton.
+* SW - Pick up the CUBE. The purpose here is not to make any jumps
+       while climbing the staircase. Use the cube to propel yourself
+       up each step, picking it up...etc       
+* SW - Grab the LIGHTNING before leaving the room.
+* Grab the heart, dodge the skeleton and take the top NE door.
+* Use the cannons on the side to leap across to the DUCK.
+* Now head to the lower SW door.
+* SW - Duck under electric blocks and pick up MINES.
+* Head through the lower SW door if you want the Gold, if not, go
+  bomb the anchors and take the upper SW door.
+* SW
+* Make your way around and take the upper SW door.
+* SE - Be careful here as the raising spikes and 2 unpredictable tops
+  will make your life difficult. Use the cannons on the side as safe
+  spots to retreat to as you try and edge out some mines in the 
+  centre of the screen and try to destroy both the tops before moving
+  on.
+* Again, place a mine as far to the SE of the screen to destroy the 
+  dangerous top and retreat as far as possible so as to not get 
+  caught in the blast. Collect the object and exit this horrid stage.
+
+Credit # 701
+Password [41TJNT5D]
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 200                                               ||
+|| In mages foundry                                           ||
+|| For necromancy                                             ||
+|| Explore for the                                            ||
+|| Crystal of Nitre                 Heart Bonus # 20          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - Use the control stick for the robot to push a weight and 
+       itself down to your level. Pick up the weight, jump on the
+       robot head to reach higher ground. Use the weights to reach
+       even higher ground and pick up MINES. 
+* NE - Use the magnetic top to reach the platform on the other side
+       Place a bomb and head back to avoid explosion.
+       Once the monster is dead, head for the NE door.
+* NW - Bomb the tower and pick up SUPER SPELL.
+* NW - Head next to the SPRING and blast the block so you can reach. 
+* NW - Use super jump to reach the top door.
+* NW - Collect STAR.
+* NW - Blast the ghosts.
+* NW - Drop MAGIC SCROLL.
+       Place 1 weight next to the electric blocks.
+       Place another on top and push onto electric block.
+       Keep hold of JUMP, leap onto the heart and leap straight back.
+* NW
+* NW - Drop scroll if you still have it.
+* NW - The purpose here is push the two blocks and knock the FF from
+       under the stair blocks.
+       Pick up the weight and drop it so that you can push one of the       
+       sliding blocks against it without it hitting against the wall
+       Push the block NE and push SE.
+       Do the same with the other sliding block and collect the FF.
+* NE - Use FF to protect yourself as you make your way across.
+* NW - Immediate walk forward and out the way of the LURE.
+* First trap the upper most MAGSPARK between the two X blocks and 
+  behind the X block closest to the entrance.
+  Now carefully lure the second MAGSPARK between the two X blocks
+  Now the path is clear to pick up the two weights to reach the
+  higher platforms and eventually to the exit.
+  
+
+Credit # 961
+Password [74TW#4VD] 
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 300                                               ||
+|| Actacgli sewers                                            ||
+|| All power hold                                             ||
+|| In danger untold                                           ||
+|| of extinct stove                 Heart Bonus # 20          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - Hop up and take the lift to reach the door.
+* NE - Jump over the LURE heading your direction.
+* NE - LOL! Easiest. Star. Ever! 
+* NE - The electric blocks here can be destroyed by pushing cubes
+       on top of them. Use the 2 cubes here to make your way to the
+       DUCK.
+* NE
+* NW - Replace SHOES with MINES and climb up stairs ducking under and
+       blowing the electric blocks respectively.
+* NW
+* NW - Blow up the 4 block tower. 
+       Push the single block with SHOES against the wall next to the
+       Low platform and pick up SHOES.
+* NW - This is really tricky as you have one chance to leap on the  
+       moving collapsible blocks or be electrocuted.
+* NW
+* There's a MAGSPARK here so circle around the room anti-clockwise 
+  place a bomb near to the boiler to blow it up. Proceed to the exit
+  without luring the monster.
+
+Credit # 1281
+Password [KG*3VX2P]
+
+
+
+                      ==================
+                      L E V E L    6 - [LVL6]
+                      ==================
+
+                 Requirement for Level 7 # 650
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 275                                               ||
+|| If raw is safe                                             ||
+|| Then safe it be                                            ||
+|| Return its safe                                            ||
+|| For safety to me                 Heart Bonus # 30          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SW
+* SE - Push the sliding block against the monster to knock it NW.
+       Push the block higher ground on top of the scroller's head.
+* NE - LIGHTNING       
+* NE - First, you need to build a tower of blocks by adding a 4th 
+       cube to the tower. Do this by forming steps next to the 
+       lowest black block tower and edge the cube on top of 
+       your cube tower. Now, push your tower all the way up against
+       the NE wall and now, form steps so you can push the cube on 
+       top of the second black block tower to upper ground.
+       There is a hidden switch surrounded by a massive electric 
+       block tower to the SE. Push the cube into the gap and exit NE
+* NE - Push the cube tower against the overhead electric block to 
+       drop one of your head. Make your way over and try to place it 
+       on high ground. 
+* A maze here so follow the following directions:
+  
+       NW, NW, NW, NE, SE, NE, SW, SW, NE, NW, NW, NE, NE
+
+* NE - Place CUBE on the switch.
+* NE - Press the second switch and step on the button.
+       Place CUBE on button and press switches until levers face NW.
+       This will cause the moving white cube on upper ground to fall. 
+       Place both CUBES on moving white block to reach upper ground.
+
+Credit # 1196
+Password [-GGZKMBP]
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 300                                               ||
+|| Spagyric food                                              ||
+|| May bring bliss                                            ||
+|| But its vials                                              ||
+|| Smash on phiss                   Heart Bonus # 30          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SW
+* Push the white block onto spiky conveyor belt.
+  Press the switch to activate the block with FF on it.
+  Press the switch again so your first block pushes the FF block
+  towards you. Now head back and through the NE door of the start.
+* NE - Use the FF to protect you from electrocution.
+* NE - Dump the FF and form steps using the 3 cubes available.
+* NE - Walk around the edge of the room so you don't lure MAGSPK.
+* NE - You'll need to take the 2 cubes to the other side of the room.
+       Make sure you move both gradually and not one at a time as  
+       you'll need one to keep out of harms way. 
+* NW
+* NW - Keep hoping across the collapsible to collect MAP.
+* NW - Manoeuvre the robot under the electric block and press button.
+       Jump on the block and collect SWORD.
+* NW
+* NW - There are 3 routes to take. The NW route is the correct way.
+       Collect LIGHTNING and heart.
+
+Far North East Route
+--------------------
+* NW - Bolt around the left hand side to avoid LUREs.
+* NW - Push block onto conveyor belt and quickly stand on robot head.
+* NW - Dash past the damn tops.
+* NW
+* NW - Dash on top of collapsible blocks to the other side.
+* Collect LIGHTNING and POWER RING and head back to original room.
+
+Centre North East Route
+-----------------------
+* NE
+* NE past the top.
+* NE - Lure LURE out the way and proceed across and under spikes.
+* NE - Use SWORD to kill MAGSPARK.
+* Collect LIGHTNING and return to original room.
+
+North West Route
+----------------
+* NE
+* NE - Kill monsters if they pose a threat.
+* NE
+* NE - Careful timing 
+* NE - Watch the pattern carefully. Step onto the block as it makes 
+       way towards the NW part of the room and use the safe X block 
+       as a breather and step on the white block again as it makes 
+       its way towards the exit.
+* SE - Kill the ghosts.
+* NE
+* Push CUBE onto the EYE's head and manoeuvre it towards the POTION.
+  Push POTION off the ledge, ensure the EYE is trapped before 
+exiting.
+
+Credit # 1526
+Password [JZND-1YV]
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 450                                               ||
+|| Darkly brilliant                                           ||
+|| Jewel of Rheet                                             ||
+|| A guarded secret                                           ||
+|| Located in Mint                  Heart Bonus # 30          ||
+|| Accept and defeat                                          ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW
+* NE
+* NW - Stroll under and past the spiky trap and quickly move into 
+       the gap and jump over the cannonball blast.
+* SW 
+  - Hop across the collapsible blocks and collect the SPRING.
+    Now go back to previous room and take the NE route.
+* NE - STAR
+* SE
+* SE - Take advantage of the giant leap to hop across to other side.
+* SE
+* NE - Hopefully the SPRING hasn't run out so jump and collect MINES.
+* Bomb the tower and the object, then exit.
+
+Credit # 2066
+Password [ZLX#VX2P]
+
+
+                      ==================
+                      L E V E L    7 - [LVL7]
+                      ==================
+
+Requirement for Level 8 # 1000
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 450                                               ||
+|| Secretive Si                                               ||
+|| With prize fizzy                                           ||
+|| Keeps surprises                                            ||
+|| For all laziness                 Heart Bonus # 30          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NW
+* NW - You see a little gap in that pot tower? You need to insert
+       a cube in there as a step to the top. Pick up the second CUBE
+       and use the trampoline to leap on top of the insert. 
+* NE
+* NW - There's a STAR and a GOLD BULLION here if you wish to collect
+       them. Make your way across the room to the exit.
+* NW - Collect SUPER SCROLL.
+* NW - Dump SUPER SCROLL for the time being and use the cubes to form 
+       a ledge in order to leap over the electric blocks. Collect the
+       SUPER SCROLL again and exit NW.
+* NE - Use the scroll to blast those blocks to reach two STARS. Whoo!
+* NE - Blast the foes from behind the blocks to save 
+       your butt. Heh. Collect the HEART and exit NE.
+* NW - A tricky part here. You must manoeuvre two robots in order to
+       form a path to the DUCK in the upper right hand corner.
+       Sandwiching one robot in between blocks X is one way to 
+       Arrange the robots as shown in the illustration below:
+
++++++++++++++++++++++++++
+          Key
+
+    D = Duck
+    R = Robot
+    C = Control Stick
+
++++++++++++++++++++++++++
+
+[D]
+
+[R] 
+            [X]
+   [R]       
+            [X]
+      [ ][ ][ ]
+      [ ][C][ ]
+      [ ][ ][ ] 
+
+
+* NW - Duck under the electric blocks
+* NW - There is an disappearing block that you must stand on in order
+       to avoid being hit by the patrol guard. 
+* NE
+* NE - Quickly position yourself so the block lands on your head.
+       Drop this block on the ledge opposite the entrance to reach
+       the STAR.
+
+* NE - The only block that doesn't disappear is in the NE corner. 
+* NE - Position yourself so the block lands on your head.
+       Head over to a floating breakable block with another big block
+       and jump. The breakable block will disappear and now you have 
+       2 blocks balanced on yer head. 
+       Head over the ledge to the NW and drop the blocks on the 
+       highest level possible. Jump up and reach the key object.
+
+Credit # 2076
+Password [RY!?DHJR]
+
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 450                                               ||
+|| Reptile Kingdom                                            ||
+|| Lyno Frown                                                 ||
+|| Await A Call                                               ||
+|| Collect A Phone                  Heart Bonus # 42          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NW - Pick CUBE and place on the top ledge to reach exit.
+* NW - Time your jump so you land on the moving block. There are
+       two breakable blocks between the entrance and exit, so any
+       mistakes in judgement will prove rather fatal.
+* NW
+* NW - Easy to dodge both spikes and the eyeball creatures. 
+       If you want a STAR first, take NE door, otherwise, take NW
+* NW
+* NW - Quickly push the egg towards NW towards the unreachable door
+       Use the two CUBES to form a ledge to reach the door.
+* NW - BE EXTREMELY QUICK! Completely ignore the egg. 
+       Push the big block against the wall NW
+       Quickly pick up the three cubes and place them onto the big
+       cube to reach the door. 
+* NW - Another race against the clock before the egg monster hatches.
+       Collect HEART and time yourself carefully before you dash 
+       under those spikes.      
+* NW - Collect LIGHTNING
+* NE - With your lightning speed, leap onto the egg and onto the 
+       other side for 2 STARS.
+* NE 
+* NW - Collect the CUBE and place on top of the egg.
+       Wait for the monster to hatch and manoeuvre it towards NW. 
+* NW - Dodge spike traps and make your way over.
+* NE - Take this door (NW leads to room with Gold Bullion.)
+* NE
+* Exit - Same trick as before; place CUBE on egg, wait for monster
+         to hatch and manoeuvre your way over to NE side of room.
+         Lure the ***** of a monster to the NW end of the room and
+         dash to the other end, drop the CUBE onto its head and make         
+         your way to the key item: Telephone. Exit NW.
+
+
+Credit #  2568 
+Password  WRRVPR6Z
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 600                                               ||
+|| Pirate Ship Eno                                            ||
+|| Sails High Sea                                             ||
+|| Captive Voyager                                            ||
+|| Must Be Set Free                 Heart Bonus # 42          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - Slowly dodge the cannonballs and make your way over.
+* NE - wait for the bomb to hatch, explode and clear the wall of
+       electric blocks.
+* NE - Push the bomb egg NW just south of the block.
+       Make your way SE and keep clear until it explodes.
+* NE - Quickly take the right-most route to the other end.
+* NW 
+* SW - Push the bomb to SW corner. Head to NW corner and wait.
+* NW - Careful of the cannonballs. Don't try to outrun the second
+       cannonballs, leap over and make your way to the other end.
+* SW - Collect DUCK and keep out of the way of the bomb. There's 
+       a HEART near the SW exit.
+* SW - Sit on top of the bomb egg and DUCK. 
+* SW 
+* SW - DUCK and collect POWER RING.
+* SE - Jump over the electric blocks and exit.
+* NE - Push the egg towards the lowest tower and collect STAR.
+* NE 
+* NE - Drop DUCK and collect MINES.
+* NE
+* Bomb tower and collect the key item. Exit NW.
+
+
+Credit #  3210
+Password  4918Q#--
+
+
+
+                      ==================
+                      L E V E L    8 - [LVL8]
+                      ==================
+
+Requirement for Level 9 # 1500
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 650                                               ||
+|| Mans Best Friend                                           ||
+|| In Artic Ice                                               ||
+|| Of Salma Forfend                                           ||
+|| A Rescue Thrice                  Heart Bonus # 60          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+NOTES: A huge maze here so be sure to consult you map often. You'll 
+need to backtrack often so keep a close eye on the important rooms. 
+Tread carefully, as there are a number of unseen obstacles that might 
+surprise you. It's a fun stage nonetheless, with an absolute CRAPLOAD 
+of lightning bolts for you to zoom across the long and narrow 
+corridors.
+
+* NE
+* NE
+* Collect LIGHTNING and Enter SE room first.
+* Insert a cube in the gap in Ice cube tower (exact same strategy
+  as Level 7-1 room 2), Collect SWORD. Go back to previous room.
+* NE - Take the long passage NE, keep hold of SWORD button.
+* NW - Keep hold of SWORD button, grab LIGHTNING.
+* NW - Jump on the trampoline to leap over the ice wall.
+       Take care not to walk along centre of the path as there is
+       a cannon that can take a clear shot of you. If you prefer, 
+       keep hold of SWORD button to destroy the cannonball.
+* NE - Before you jump on the trampoline, head NW to collect HEART.
+* SE - Same as before, head NW first, this time to collect a STAR.
+       Optional - head NE to a room with 4 LIGHTNING.
+* NE - Ignore first door you come across (it's the exit, but you
+       first need to dump your SWORD somewhere...)
+       There's a tricky part here as you head NE. Two eyeballs will 
+       lurk behind the ice wall, and seeing how well homed they are
+       towards your position, jumping over them will simply result in
+       getting hit. Now, the trick is getting past them without 
+       super speed is to rely on the second eyeball to push the 
+       LIGHTNING towards your direction. Try to lure this particular
+       eyeball to drag the LIGHTNING against the wall. This should 
+       leave you an opening to fall, pull out your SWORD and poke
+       the hell out of them. 
+* SE - Dash past the cauldrons and bombs.
+* SE - Ah, finally a bag! Dump the SWORD, grab the LIGHTNING.
+* SW - Zig zag across past the homing monsters.
+* NW - Careful not the tread the centre of the path as there's a 
+       cannon waiting for you on the other side. 
+* SW 
+* NW - Dash past the cannons. Again, don't tread the centre of the
+       path as you're heading NW.
+* NE - And over you go!
+* SE
+* Take the first door you see.
+* Phew! Now pick up those darn weights and grab the key item. Exit!
+
+Credit #  2860
+Password  ?!X95DLP
+
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 650                                               ||
+|| Fleet of Foot                                              ||
+|| On Flying Floor                                            ||
+|| Find Amphora                                               ||
+|| Hancec Flee                      Heart Bonus # 60          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+
+* SE
+* NE - Push trampoline NW 2 spaces.
+       Hop across narrow path (1st tile is collapsible; 3rd tile 
+       is the lift, but ignore this for now) and collect DUCK.
+       Go back to the third tile and take this lift up.
+* NE - Timing is crucial here. There are 3 lifts and a mistake on
+       any of them will cost you a life. Note that you must DUCK on 
+       the last lift tile to avoid smacking straight into the elec
+       block.
+* NE - The hidden lift is in the NW-most corner. As the lift makes 
+       its way to the higher ground with the 2 STARS, jump before it 
+       disappears.
+* SE - Step on the third tile from the left. Make sure you duck
+       to avoid hitting the electric block as the lift makes its way
+       past the cauldrons. In the next room, use the trampoline to 
+       leap over the row of electric blocks and return to the 
+       previous room, safe and sound.
+* NE - Pick up the MINES, place a bomb on top of one of the ground
+       floor black blocks to reveal a lift. Take the lift to higher 
+       ground with the trampoline. Use this trampoline to propel 
+       yourself to even higher ground where you need to plant a mine
+       to blast the already hatched egg monster. Lure it to the edge,
+       plant a mine, go and hug the wall to keep your distance.
+* NE - Hop across the rows of collapsible tiles.
+* NE - Push the second lever from the bottom so it faces right. 
+       Get onto the lift and collect the HEART.
+* NE - Pick up the LIGHTNING.
+* NE - Bomb the wall of electric blocks.
+* NE - Dump MINES and pick up the CUBE to form a step to the door.
+* NE - The lift to the other end of the room is the on the top step 
+       of the stair. Hop over it to grab the CUBE first.
+* SE - Use the CUBE and the SPRING to reach the door.
+* Make your way to the stairs of collapsible blocks to the right hand
+  side of the room and pick up the SPRING. There is a lift hidden 
+  beneath a collapsible block right by the closed exit. Use it to be 
+  taken back to the entrance. Use the SPRING to leap to higher ground
+  and nab the key item. Exit.
+
+Credit #  4540
+Password  JPQ117Q7
+
+*NOTE* - Level 8-3 also completed.
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 850                                               ||
+|| Have Your Cake                                             ||
+|| And Eat It                                                 ||
+|| But Beware                                                 ||
+|| Attraction On OT                 Heart Bonus # 60          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SE
+* SE - Collect STARS. If the magnet starts pulling you in, move in
+       the opposite direction to avoid being dragged in.
+* SE - Manoeuvre your way through the cauldrons. Zig zag your way 
+       through as soon after every magnetic interval.
+* NE - Quickly slide the log into the gap between the cauldrons. 
+       The magnet will start pulling the FF out of harm's way.
+       Pick it up once it's in safe reaches.
+* NE - Put your shield up as the magnet drags you towards it into
+       the maze of electric blocks. WAIT after every interval before
+       moving, otherwise you'll smash into the blocks.
+* SE - Keep hopping across and hug the wall as you do so.
+* SW - Allow the magnet to drag you over to the other side.
+* SE - There are 3 magnets here and a Gold Bullion. Don't rush; at
+       every opportunity, edge your way towards the exit, but put 
+       your shield up if you get dragged dangerously close to the
+       electric blocks.
+* SW - Collect MINES.
+* NW - Collect HEART.
+* SW - Push the logs to form steps to the top door. Don't attempt to
+       jump when the magnet starts to pull.
+* SE - Quick run to the exit.
+* SE - Same as above.
+* SE - Collect 3 STARS.
+* SE - Run forward and plant a mine to blast the BIT.
+* NE
+* NE
+* Place a bomb next to the magnet (on top of tiles). One of the tiles 
+  is a lift. Take it to bash the collapsible block on the NW corner.
+  Collect the key item and exit the stage.
+
+Credit #  3710
+Password  MJ1Z7X21
+
+
+
+                      ==================
+                      L E V E L    9 - [LVL9]
+                      ==================
+
+Requirement for Level 10: 2500
+
+STAGE 1--------------------------------------------------------
+||                                                            ||
+|| Reward # 900                                               ||
+|| Royal Evas                                                 ||
+|| Modern World                                               ||
+|| Get A Screen Its                                           ||
+|| Chip Installed                   Heart Bonus # 90          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - Use the CUBE as a step to the door.
+* NE - Teleport to the other side.
+* There are two doors here. Head NE first:
+* SE - Use the teleport to transport the 2 CUBES over to the 
+       other end to form steps up to the door.
+* Place the CUBE on top of either teleport. Then use the open
+  teleport to reach 3 STARS. Return to the room with 2 doors.
+* Take the SE door.
+* SE - Time your teleportation so you don't smack bang in the middle
+       of the guard.
+* SE - You'll need to hit the collapsible block to drop the cauldron
+       onto one of the teleports. Keep to the edge and move away 
+       so it doesn't drop onto you.
+* NE - Carefully use the teleport to make the 2 trips necessary to
+       bring the 2 weights over to the other side. Make a platform on
+       top of the teleport to reach the higher ground.
+
+* NE - Use the teleport and nab the MINES on the other end.
+* NE - Blow up the wall and grab the HEART.
+* SE - Blow up the top teleport. 
+       Now use the teleport on the ground floor to reach 2 STARS.
+       Drop the MINES.
+* SE - Use the CUBES to build a bridge across the electric floor.
+* SE - Use the teleport to warp to the CUBE. Place this cube half-
+       way on the first teleport so that you can teleport to the
+       teleport in the middle of the room. 
+       Push the big block onto the teleport you're warped to and
+       leap back over to the starting point. Now, use the teleports
+       until you reach your destination.
+* NE - Wait for the egg monster to hatch. Lure the monster to push 
+       the big white block off the teleport.
+* NE 
+* Push the bottom switch and take the 1st teleport up.
+  Press the switch here and push the white cube enough so you can 
+  Leap over SE without harm. 
+  Push the white block here onto the teleport and press the switch.
+  Jump back over NW and push the white block down so it lands on the
+  bottom (1st) teleport.
+  Now, use the 2nd teleport and hopefully, you should be taken over   
+  to the exit and the key item.
+
+Credit #  4120
+Password  YXY!6Y15
+
+
+STAGE 2--------------------------------------------------------
+||                                                            ||
+|| Reward # 800                                               ||
+|| Future Of Oru                                              ||
+|| All Bottled Up                                             ||
+|| Smash Jar Open                                             ||
+|| To Stop Corrupt                  Heart Bonus # 90          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* NE
+* NE - There is a hidden lift in the collapsible block of stairs.
+  Take this lift up, hop across the disappearing blocks and collect
+  the SUPER SCROLL. 
+
+* Three doors here; take the SOUTH-EAST route first, then take the
+  NORTH-EAST route:
+
+----------------
+NORTH WEST ROUTE
+----------------
+* NW
+* Room with STARS, GOLD BULLION and LIGHTNING.
+
+----------------
+SOUTH EAST ROUTE
+----------------
+* SE
+* Room with DUCK, STARS and GOLDEN BULLION. 
+
+----------------                      
+NORTH EAST ROUTE
+----------------
+* Duck under the electric blocks.
+
+
+* Two doors here:
+
+----------------
+SOUTH EAST ROUTE
+----------------
+* SE - Duck under the electric blocks.
+       Pick up the SWORD and kill the ghosts.
+* NE - Hop across the conveyor belts to the other side.
+* NE -        
+* NE - Wait for the egg monsters to hatch, and kill them.
+       Drop your SWORD and pick up the SPRING.
+       Take the SRPING and drop it on the black block.
+       Pick up the WEIGHT, use the spring to reach higher 
+       ground. Drop the WEIGHT and push it so the eyeball 
+       creature falls off the ledge.
+       Place the WEIGHT next to the electric block and jump.
+* Time your teleportation just as the ghost floats over the
+  second teleport in the room. This will enable you to reach
+  the key item. Exit this rather short and easy stage.
+ 
+Credit #  5280
+Password  QVXL8LD3
+
+
+
+STAGE 3--------------------------------------------------------
+||                                                            ||
+|| Reward # 1100                                              ||
+|| Lions of Sarlo                                             ||
+|| Need A New Home                                            ||
+|| Its Up To You                                              ||
+|| To Find It Alone                 Heart Bonus # 90          ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+* SW
+* SW - Hop across the tiles.
+* SE  
+* SE - Time you jump so the cylinder is down as you jump over it.
+* Three rooms here; Take the SOUTH-WEST door first:
+
+---------------
+SOUTH WEST ROUTE
+----------------
+* SW - Keep walking and don't stop.
+* Pick up the SWORD and return to the 3-door room.
+
+----------------
+NORTH EAST ROUTE
+----------------
+* NE - Stab the monster and progress.
+* NE - Stab the monster and progress.
+* Make your way across and pick up the DUCK. Make your way back.
+
+Backtrack to the room where you picked up the SWORD.
+
+----------------
+SOUTH WEST ROUTE
+----------------
+* SW - Duck under the fence.
+* Collect the FF on the opposite end of the room and return to
+  the 3-door room.
+
+Take the SOUTH EAST route:
+
+----------------
+SOUTH EAST ROUTE
+----------------
+* SE - Use the FF to carry you safely over the spiky conveyor 
+       belt.
+* SE - Carefully make your way across and use the FF when 
+       necessary. 
+* NE - Drop the shield, take the CUBE and exit.
+* NE - Time your jump as you did in room 4 (Cylinders).
+* Grab the CUBE and drop it in the gap in between the bomb egg and
+  the block tower. Now stand in the NE/SE corner and wait for the 
+  bomb to blow up large chunks of the tower. Now use the CUBE as a
+  stepping stone to reach the key item. Exit.
+
+
+Credit #  6380
+Password  #-7TTY1-
+
+
+
+                      ==================
+                      L E V E L    10 - [LVL10]
+                      ==================
+
+
+===================================================================
+-------------------------------------------------------------------
+
+OK, here it is - The Final and only stage on this floor. It's a 
+massive culmination of everything you've been working on up to this 
+point collected together. 
+
+Your goal here is to collect 4 key items by the time you reach the 
+final boss. If you reach him before doing so, the bridge leading up 
+to the sod will automatically be dismantled. There are many diverging 
+routes here, so follow my advice and you should do ok. 
+
+--------------------------------------------------------------------
+====================================================================
+
+
+ FINAL --------------------------------------------------------
+||                                                            ||
+|| Reward # 3500                                              ||
+|| King Of Stemys                                             ||
+|| To Be Deposed                                              ||
+|| When Items Four                                            ||
+|| Are In Your Paw                  Heart Bonus # 120         ||
+||                                                            ||
+||                                                            ||
+---------------------------------------------------------------
+
+
+
+The first thing that might pop into your mind when you first enter 
+the stage is "WTF! It's the training stage!" Indeed, it starts off 
+easy enough, with enough breathing space for you to collect HEARTS to 
+help you survive till the end.
+
+* NW
+* NW
+* NW
+* NE - Drop down and collect the SPRING if you wish.
+* NW - Super jump to the HEART.
+* NW - Drop the DUCK (if you collected) and use the WEIGHTS to make
+       your way to the door. 
+* SW - Simply fall down. Take the NW door first to collect the SCROLL
+* NW - Blast the skeleton and use the teleport to warp to the exit.
+
+
+  ---------------------------------------
+  <<<<<<<<<<KEY ITEM 1 ALERT!!>>>>>>>>>>>
+  ---------------------------------------
+
+* First head through the SW door:
+     - NW 
+     - SW 
+     - NW - Push the egg towards the NW exit.
+          - Wait for the monster to hatch and blast it.
+          - Hop onto the cube and exit.
+     - NE - Slide the log: NE, NW, NE, SE to exit.
+     - Collect the DUCK. You can blast a hole in the fence. 
+       Do so, duck through it and take NW door.
+     - NE - Collect the Key Item here and exit.
+
+* First head through the NE door, ducking under the cauldrons:
+     - NE - Trampoline over to the other side.
+     - There are 3 doors here: NW, SE, and NE: 
+  
+  NORTH WEST ROUTE
+  ----------------
+  * NW - Sneak past the BIT. 
+  * Push the white block on the ground in the gap between the 
+    teleport and the black block with another white cube on top.
+    Now push the white cube across over the newly formed bridge onto
+    the teleport. Use the additional teleport in the room to warp to
+    the FORCE FIELD. Now return to the room with the 3 routes.
+
+  SOUTH EAST ROUTE
+  ----------------
+  * SE - Make your way across the electric floor.
+  * Collect MINES and drop your JUMPING SHOES. Return to the room 
+    with the 3 routes. Drop the FF and pick up the SHOES.
+
+  NORTH EAST ROUTE
+  ----------------
+  * Blast the wall.
+  
+  ---------------------------------------
+  <<<<<<<<<<KEY ITEM 2 ALERT!!>>>>>>>>>>>
+  ---------------------------------------
+
+  * Lure the LURE monster on the higher ground to push the block down
+  Push this block to form a step to reach and shove the 3 blocks 
+  in the centre of the room down on top of one another. Use these
+  to form a stairway for you to reach the upper ground. Collect the
+  KEY ITEM and drop down again.
+
+  Now, there is a hidden lift (and a hidden LURE) to the NE/SE part 
+  of the room. Take this lift up to NE exit.
+
+  * NE - Fall down.
+  * SE
+  * NE - Make your way through and collect the POWER RING.
+  * Now we're in an icy area with long corridors. First head in
+    the NE direction and take the second door to the left.
+  * Place a MINE on the white block to blast the ice block tower  
+    down to size. Drop MINES in the bag. Head back out for now.
+  * Take the 1st door that you had passed by.  
+  * Collect the LIGHTNING and pick up the DUCK. Head back out and 
+    now head all the way to the NE door.
+  
+  ---------------------------------------
+  <<<<<<<<<<KEY ITEM 3 ALERT!!>>>>>>>>>>>
+  ---------------------------------------
+
+  * Duck in between the gap and head in NW direction. Keeping hold
+    of DUCK, jump in between the tiles until you reach the KEY ITEM!
+    Head back out.
+  * Enter the door (second) where you dropped off the MINES earlier.
+    Head through the NW door and collect the SWORD. Head back out.
+  * Head back down the corridor, poking the monsters out the way.
+    Head up the NE passageway for a HEART.
+  * Now, backtrack *all* the way back to the woods. :)
+
+
+* Phew! Now head NW.
+* NW - Avoid the skeletons easily enough.
+* NE - Hop on the treetops to reach HEART.
+* SE - Take the NW door if you want to collect a HEART at the end. 
+       Otherwise, take the SE door at the bottom instead.
+* NE - Pick up the CUBE and place it next to the opening in the wall
+       of electric blocks. Quickly leap across before the guard on 
+       the other side pushes a cauldron in your way.
+* NE - Press the nearest switch to you to operate the lift to CUBE.
+     - Place the CUBE on the button in between the switches to 
+       operate the lift to the exit.
+
+* Two doors here: The North West route takes you to the boss.
+                 The North East route takes you to the last KEY ITEM.
+
+  ----------------
+  NORTH EAST ROUTE
+  ----------------
+
+  * SE - Dodge the LURE and collect the STAR.
+  * SE - Rest on top of the magnet in between intervals.
+  * NE - Push the CUBE on top of the eyeball to use as a lift to
+         the exit.
+  
+  ---------------------------------------
+  <<<<<<<<<<KEY ITEM 4 ALERT!!>>>>>>>>>>>
+  ---------------------------------------
+ 
+  * Dash as far right as possible to pick up the CUBE. 
+    Now, you can see a row of electric blocks in the middle of the
+    room with a white block at the tip of them. Now, you need
+    to lure the egg monster so it pushes the block you're standing on
+    NW. Place the CUBE and jump up to higher ground. Collect the Key
+    Item and return back to the room with multiple doors.
+
+  ----------------
+  NORTH WEST ROUTE
+  ----------------
+  
+  * NW - Jump between the gaps to NW.
+  * NW - Simply hop across the room, ensure that you don't stop and
+         hug the wall if it helps maintain your control and balance.
+  * NE - Move the robot just to the SW of the black cubes. Push the
+         white block on its head and manoeuvre the robot into this 
+         position.
+ 
+  +++++++++++++++++++++++++
+          Key
+
+      E = Electric Blocks
+      R = Robot
+      
+  +++++++++++++++++++++++++
+
+
+
+            EXIT
+   
+   [ ][ ][E][ ][ ]
+   [ ][ ][E][ ][ ]
+   [E][E]
+   [ ][ ]   [R]
+   [ ][ ]
+
+         Jump on the collapsible block to higher ground, leap on to
+         the white block on top of the robot's head to cross safely.
+
+  * NE - Just keep going and don't stop.
+  * NE
+  * NE - OK, the boss room! If you've collected all the key items, 
+         the bridge will remain intact. Cross over, pick up the MINES
+         and blast the living crap out of Krond! 
+
+         Exit the door and enjoy the ending! 
+
+Credit #  7500
+Password  V62KKMBP
+
+
+
+==========
+CONCLUSION
+==========
+
+We've come to the end of this fantastic journey and the end of one of 
+my favourite Gameboy titles. A big thanks to the creator of this 
+title, Jon Ritman, for developing this awesome adventure game. It's a 
+real shame that this was his last game ever.
+
+If you spot any mistakes or critical errors in my walkthrough, please 
+email me and let me know so I can make corrections. Anyway folks, 
+that's a wrap for now!
