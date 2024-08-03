@@ -1186,7 +1186,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 2_
 
@@ -1226,7 +1226,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 3_
 
@@ -1266,7 +1266,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 4_
 
@@ -1306,7 +1306,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 5_
 
@@ -1346,7 +1346,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 6_
 
@@ -1386,7 +1386,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 7_
 
@@ -1426,7 +1426,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Password Character 8_
 
@@ -1466,7 +1466,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * 0x1d = *
 * 0x1e = -
 * 0x1f = ?
-* 0xff = <blank>
+* 0xff = \<blank\>
 
 ### _Mission Bonus Credits_
 
