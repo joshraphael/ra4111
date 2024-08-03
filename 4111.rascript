@@ -1066,7 +1066,7 @@ rich_presence_conditional_display(
 
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby | ⭐ {0} | 🎟 {1} | 💰 #{2}",
+    "Main Lobby | ⭐ {0} | 🎫 {1} | 💰 #{2}",
     rich_presence_value( "Lucky Stars", LuckyStars() ),
     rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
     rich_presence_value( "Credits", Credits() )

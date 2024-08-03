@@ -370,6 +370,19 @@ Level 7 Summary:
 * Lift Pass Cost: 1000 credits
 * Max credits after buying lift pass: 4015 - 1000 = 3015 credits
 
+Level 8 Mission 1:
+* Reward: 650 credits
+* Given Hearts: 3
+* Bonus Multiplier: 60 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 16
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 650 + ((3 + 1 + 0) * 60) = 890 credits max
+
 ## Code Notes
 
 ### Code Notes Navigation
