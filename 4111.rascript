@@ -356,7 +356,6 @@ function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars,
                 missionMarkedComplete( missionMask ) &&
                 onlyMissionUnlocked( missionMask ) &&
                 Health() == hearts &&
-                LuckyStars() == stars &&
                 Bonus() == ( gold * bonus )
             ),
             repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 )

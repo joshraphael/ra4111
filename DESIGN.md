@@ -285,7 +285,7 @@ Level 6 Mission 1:
 * In-Game Hearts: 0
 * Gold Bullions: 1
 * Stars: 0
-* Lightning: 4
+* Lightning: 5
 * Power Spring: 0
 * Power Ring: 0
 * Map: 0
@@ -318,7 +318,7 @@ Level 6 Mission 3:
 * Total: 450 + ((3 + 1 + 0) * 30) = 570 credits max
 
 Level 6 Summary:
-* Games Internal Max Credits With Passwords: 2654 (Missing Heart maybe somewhere)
+* Games Internal Max Credits With Passwords: 2654
 * Max credits: 1234 + 395 + 420 + 570 = 2619 credits
 * Max stars: 21 + 0 + 0 + 1 = 22
 * Lift Pass Cost: 650 credits
