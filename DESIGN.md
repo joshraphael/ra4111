@@ -416,6 +416,52 @@ Level 8 Summary:
 * Lift Pass Cost: 1500 credits
 * Max credits after buying lift pass: 5825 - 1500 = 4325 credits
 
+Level 9 Mission 1:
+* Reward: 900 credits
+* Given Hearts: 2
+* Bonus Multiplier: 90 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 5
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 0
+* Total: 900 + ((2 + 1 + 0) * 90) = 1170 credits max
+
+Level 9 Mission 2:
+* Reward: 800 credits
+* Given Hearts: 2
+* Bonus Multiplier: 90 credits
+* In-Game Hearts: 1
+* Gold Bullions: 2
+* Stars: 3
+* Lightning: 1
+* Power Spring: 0
+* Power Ring: 1
+* Map: 0
+* Total: 800 + ((2 + 1 + 2) * 90) = 1250 credits max
+
+Level 9 Mission 3:
+* Reward: 1100 credits
+* Given Hearts: 2
+* Bonus Multiplier: 90 credits
+* In-Game Hearts: 1
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 0
+* Power Spring: 0
+* Power Ring: 0
+* Map: 1
+* Total: 1100 + ((2 + 1 + 0) * 90) = 1370 credits max
+
+Level 9 Summary:
+* Games Internal Max Credits With Passwords: 8149
+* Max credits: 4325 + 1170 + 1250 + 1370 = 8115
+* Max stars: 41 + 5 + 3 + 1 = 50
+* Lift Pass Cost: 2500 credits
+* Max credits after buying lift pass: 8115 - 2500 = 5615 credits
+
 ## Code Notes
 
 ### Code Notes Navigation
