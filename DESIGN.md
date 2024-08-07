@@ -462,6 +462,24 @@ Level 9 Summary:
 * Lift Pass Cost: 2500 credits
 * Max credits after buying lift pass: 8115 - 2500 = 5615 credits
 
+Level 10 Mission 1:
+* Reward: 3500 credits
+* Given Hearts: 3
+* Bonus Multiplier: 120 credits
+* In-Game Hearts: 4
+* Gold Bullions: 0
+* Stars: 1
+* Lightning: 2
+* Power Spring: 1
+* Power Ring: 1
+* Map: 0
+* Total: 3500 + ((3 + 4 + 0) * 120) = 4340 credits max
+
+Level 10 Summary:
+* Games Internal Max Credits With Passwords: 9998
+* Max credits: 5615 + 4340 = 9955
+* Max stars: 50 + 4 = 54
+
 ## Code Notes
 
 ### Code Notes Navigation
