@@ -2083,30 +2083,3 @@ Rich presence is available and will change depending on where you are in the gam
     * current stars
     * item A
     * item B
-
-
-Scratch notes:
-
-progression:
-level X pass - 10pts * 9 = 90
-
-win condition:
-beat all levels in order no paswords - 50pts
-
-normal achievements:
-play pen - 1pt
-beat lXmY - 3pts * 27 = 81
-beat krond - 10pts
-
-challenge (missable):
-beat lXmY perfect - 5pts * 27 = 135pts
-beat krond perfect - 15pts
-
-67 achievements
-382pts
-
-V8Z?31XZ
-
-TVX#-4BV
-
-KL#KQZ11
