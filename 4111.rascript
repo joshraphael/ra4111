@@ -2,106 +2,106 @@
 // #ID = 4111
 
 // $C009 - Select Menu
-function SelectMenu() => high4(0xC009)
+function SelectMenu() => high4(0xc009)
 
 // $CFBF - Current mission
-function CurrentMission() => byte( 0xCFBF )
+function CurrentMission() => byte( 0xcfbf )
 
 // $D00A: Mission Flags for marking completed missions
-function MissionFlags() => dword( 0xD00A )
+function MissionFlags() => dword( 0xd00a )
 
 // $D120: Lucky Star Count
-function LuckyStars() => byte( 0xD120 )
+function LuckyStars() => byte( 0xd120 )
 
 // $D122: Health
-function Health() => byte( 0xD122 )
+function Health() => byte( 0xd122 )
 
 // $D123: Speed Boost
-function SpeedBoost() => byte( 0xD123 )
+function SpeedBoost() => byte( 0xd123 )
 
 // $D124: Power Ring
-function PowerRing() => byte( 0xD124 )
+function PowerRing() => byte( 0xd124 )
 
 // $D125: PowerSpring
-function PowerSpring() => byte( 0xD125 )
+function PowerSpring() => byte( 0xd125 )
 
 // $D128: Lift Pass Level
-function LiftPassLevel() => byte( 0xD128 )
+function LiftPassLevel() => byte( 0xd128 )
 
 // $D129: Number of credits earned
-function Credits() => word( 0xD129 )
+function Credits() => word( 0xd129 )
 
 // $D12E: Idle Timer until Max begins playing guitar
-function IdleTimer() => byte( 0xD12E )
+function IdleTimer() => byte( 0xd12e )
 
 // $D190: Start Menu Map Group 1
-function StartMenuMapGroup1() => bitcount( 0xD190 )
+function StartMenuMapGroup1() => bitcount( 0xd190 )
 
 // $D191: Start Menu Map Group 2
-function StartMenuMapGroup2() => bitcount( 0xD191 )
+function StartMenuMapGroup2() => bitcount( 0xd191 )
 
 // $D192: Start Menu Map Group 3
-function StartMenuMapGroup3() => bitcount( 0xD192 )
+function StartMenuMapGroup3() => bitcount( 0xd192 )
 
 // $D193: Start Menu Map Group 4
-function StartMenuMapGroup4() => bitcount( 0xD193 )
+function StartMenuMapGroup4() => bitcount( 0xd193 )
 
 // $D194: Start Menu Map Group 5
-function StartMenuMapGroup5() => bitcount( 0xD194 )
+function StartMenuMapGroup5() => bitcount( 0xd194 )
 
 // $D195: Start Menu Map Group 6
-function StartMenuMapGroup6() => bitcount( 0xD195 )
+function StartMenuMapGroup6() => bitcount( 0xd195 )
 
 // $D196: Start Menu Map Group 7
-function StartMenuMapGroup7() => bitcount( 0xD196 )
+function StartMenuMapGroup7() => bitcount( 0xd196 )
 
 // $D197: Mission Rooms Available Group 1
-function MissionRoomsAvailableGroup1() => bitcount( 0xD197 )
+function MissionRoomsAvailableGroup1() => bitcount( 0xd197 )
 
 // $D198: Mission Rooms Available Group 2
-function MissionRoomsAvailableGroup2() => bitcount( 0xD198 )
+function MissionRoomsAvailableGroup2() => bitcount( 0xd198 )
 
 // $D199: Mission Rooms Available Group 3
-function MissionRoomsAvailableGroup3() => bitcount( 0xD199 )
+function MissionRoomsAvailableGroup3() => bitcount( 0xd199 )
 
 // $D19A: Mission Rooms Available Group 4
-function MissionRoomsAvailableGroup4() => bitcount( 0xD19A )
+function MissionRoomsAvailableGroup4() => bitcount( 0xd19a )
 
 // $D19B: Mission Rooms Available Group 5
-function MissionRoomsAvailableGroup5() => bitcount( 0xD19B )
+function MissionRoomsAvailableGroup5() => bitcount( 0xd19b )
 
 // $D19C: Mission Rooms Available Group 6
-function MissionRoomsAvailableGroup6() => bitcount( 0xD19C )
+function MissionRoomsAvailableGroup6() => bitcount( 0xd19c )
 
 // $D19D: Mission Rooms Available Group 7
-function MissionRoomsAvailableGroup7() => bitcount( 0xD19D )
+function MissionRoomsAvailableGroup7() => bitcount( 0xd19d )
 
 // $D3F0 - Password first char
-function PasswordChar1() => byte( 0xD3F0 )
+function PasswordChar1() => byte( 0xd3f0 )
 
 // $D3F1 - Password second char
-function PasswordChar2() => byte( 0xD3F1 )
+function PasswordChar2() => byte( 0xd3f1 )
 
 // $D3F2 - Password third char
-function PasswordChar3() => byte( 0xD3F2 )
+function PasswordChar3() => byte( 0xd3f2 )
 
 // $D3F3 - Password fourth char
-function PasswordChar4() => byte( 0xD3F3 )
+function PasswordChar4() => byte( 0xd3f3 )
 
 // $D3F4 - Password fifth char
-function PasswordChar5() => byte( 0xD3F4 )
+function PasswordChar5() => byte( 0xd3f4 )
 
 // $D3F5 - Password sixth char
-function PasswordChar6() => byte( 0xD3F5 )
+function PasswordChar6() => byte( 0xd3f5 )
 
 // $D3F6 - Password seventh char
-function PasswordChar7() => byte( 0xD3F6 )
+function PasswordChar7() => byte( 0xd3f6 )
 
 // $D3F7 - Password eigth char
-function PasswordChar8() => byte( 0xD3F7 )
+function PasswordChar8() => byte( 0xd3f7 )
 
 // $D402 - Mission Bonus
-function Bonus() => word( 0xD402 )
+function Bonus() => word( 0xd402 )
 
 // Doors
 CLOSED = 0x00
@@ -151,38 +151,38 @@ LEVEL9MISSION3MASK  = 0x08000000
 LEVEL10MISSION1MASK = 0x10000000
 
 // Mission IDs
-MAINROOMID       = 0x00
-PLAYPENID        = 0x01
-LEVEL1MISSION1ID = 0x02
-LEVEL1MISSION2ID = 0x03
-LEVEL1MISSION3ID = 0x04
-LEVEL2MISSION1ID = 0x05
-LEVEL2MISSION2ID = 0x06
-LEVEL2MISSION3ID = 0x07
-LEVEL3MISSION1ID = 0x08
-LEVEL3MISSION2ID = 0x09
-LEVEL3MISSION3ID = 0x0A
-LEVEL4MISSION1ID = 0x0B
-LEVEL4MISSION2ID = 0x0C
-LEVEL4MISSION3ID = 0x0D
-LEVEL5MISSION1ID = 0x0E
-LEVEL5MISSION2ID = 0x0F
-LEVEL5MISSION3ID = 0x10
-LEVEL6MISSION1ID = 0x11
-LEVEL6MISSION2ID = 0x12
-LEVEL6MISSION3ID = 0x13
-LEVEL7MISSION1ID = 0x14
-LEVEL7MISSION2ID = 0x15
-LEVEL7MISSION3ID = 0x16
-LEVEL8MISSION1ID = 0x17
-LEVEL8MISSION2ID = 0x18
-LEVEL8MISSION3ID = 0x19
-LEVEL9MISSION1ID = 0x1A
-LEVEL9MISSION2ID = 0x1B
-LEVEL9MISSION3ID = 0x1C
-LEVEL10MISSON1ID = 0x1D
-TITLESCREENID    = 0x1E
-CONCERTSCREENID  = 0x1F
+MAINROOMID        = 0x00
+PLAYPENID         = 0x01
+LEVEL1MISSION1ID  = 0x02
+LEVEL1MISSION2ID  = 0x03
+LEVEL1MISSION3ID  = 0x04
+LEVEL2MISSION1ID  = 0x05
+LEVEL2MISSION2ID  = 0x06
+LEVEL2MISSION3ID  = 0x07
+LEVEL3MISSION1ID  = 0x08
+LEVEL3MISSION2ID  = 0x09
+LEVEL3MISSION3ID  = 0x0A
+LEVEL4MISSION1ID  = 0x0B
+LEVEL4MISSION2ID  = 0x0C
+LEVEL4MISSION3ID  = 0x0D
+LEVEL5MISSION1ID  = 0x0E
+LEVEL5MISSION2ID  = 0x0F
+LEVEL5MISSION3ID  = 0x10
+LEVEL6MISSION1ID  = 0x11
+LEVEL6MISSION2ID  = 0x12
+LEVEL6MISSION3ID  = 0x13
+LEVEL7MISSION1ID  = 0x14
+LEVEL7MISSION2ID  = 0x15
+LEVEL7MISSION3ID  = 0x16
+LEVEL8MISSION1ID  = 0x17
+LEVEL8MISSION2ID  = 0x18
+LEVEL8MISSION3ID  = 0x19
+LEVEL9MISSION1ID  = 0x1A
+LEVEL9MISSION2ID  = 0x1B
+LEVEL9MISSION3ID  = 0x1C
+LEVEL10MISSION1ID = 0x1D
+TITLESCREENID     = 0x1E
+CONCERTSCREENID   = 0x1F
 
 LEVEL1  = 0x00
 LEVEL2  = 0x01
@@ -194,6 +194,19 @@ LEVEL7  = 0x06
 LEVEL8  = 0x07
 LEVEL9  = 0x08
 LEVEL10 = 0x09
+
+levelLookup = {
+    1:  LEVEL1,
+    2:  LEVEL2,
+    3:  LEVEL3,
+    4:  LEVEL4,
+    5:  LEVEL5,
+    6:  LEVEL6,
+    7:  LEVEL7,
+    8:  LEVEL8,
+    9:  LEVEL9,
+    10: LEVEL10
+}
 
 achievements = {}
 
@@ -338,28 +351,31 @@ function PlayerEntersMission( missionId )
 function MissionCompleteCondition( missionId, missionMask ) 
 {
     return tally( 2,
-            once( PlayerEntersMission( missionId ) ),
-            once(
-                missionMarkedComplete( missionMask ) &&
-                onlyMissionUnlocked( missionMask )
-            )
+        once( PlayerEntersMission( missionId ) ),
+        once(
+            missionMarkedComplete( missionMask ) &&
+            onlyMissionUnlocked( missionMask )
         )
+    )
 }
 
 function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars, bonus, gold ) 
 {
+    conditions = [
+        once( PlayerEntersMission( missionId ) ),
+        once(
+            missionMarkedComplete( missionMask ) &&
+            onlyMissionUnlocked( missionMask ) &&
+            Health() == hearts &&
+            Bonus() == ( gold * bonus )
+        )
+    ]
+    if stars > 0 {
+        array_push( conditions, repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 ) )
+    }
     return tally(
         2 + stars,
-        [
-            once( PlayerEntersMission( missionId ) ),
-            once(
-                missionMarkedComplete( missionMask ) &&
-                onlyMissionUnlocked( missionMask ) &&
-                Health() == hearts &&
-                Bonus() == ( gold * bonus )
-            ),
-            repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 )
-        ]
+        conditions
     )
 }
 
@@ -385,436 +401,718 @@ function GameEnds()
     )
 }
 
-a = {
-    "index":       66,
-    "title":       "Speedy",
-    "description": "Pick up a lightning in any mission",
-    "points":      2,
-    "trigger":     any_of(
-        [
-            LEVEL1MISSION1ID,
-            LEVEL1MISSION3ID
-        ],
-        mid => CurrentMission() == mid &&
-        prev( SpeedBoost() ) + 0x20 == SpeedBoost()
-    ),
-    "type":        ""
-}
-achievements[a["index"]] = a
+// Achievement Configs
 
-achievement(
-    title = a["title"],
-    description = a["description"],
-    points = a["points"],
-    trigger = a["trigger"],
-    type = a["type"]
-)
-
-a = {
-    "index":       66,
-    "title":       "Jump To The Rescue",
-    "description": "Pick up a power spring in any mission except the Play Pen",
-    "points":      2,
-    "trigger":     any_of(
-        [
-            LEVEL1MISSION2ID,
-            LEVEL3MISSION3ID
-        ],
-        mid => CurrentMission() == mid &&
-        prev( PowerSpring() ) + 0x0a == PowerSpring()
-    ) &&
-    never( prev( PowerSpring() ) > 0x0a ),
-    "type":        ""
-}
-achievements[a["index"]] = a
-
-achievement(
-    title = a["title"],
-    description = a["description"],
-    points = a["points"],
-    trigger = a["trigger"],
-    type = a["type"]
-)
-
-a = {
-    "index":       67,
-    "title":       "I'm The Map",
-    "description": "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
-    "points":      2,
-    "trigger":     any_of(
-        [
-            LEVEL1MISSION3ID,
-            LEVEL2MISSION1ID
-        ],
-        mid => CurrentMission() == mid &&
-        prev( countRoomsSeen() ) <= countMissionRoomsAvailable() &&
-        countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
-    ),
-    "type":        ""
-}
-achievements[a["index"]] = a
-
-achievement(
-    title = a["title"],
-    description = a["description"],
-    points = a["points"],
-    trigger = a["trigger"],
-    type = a["type"]
-)
-
-a = {
-    "index":       68,
-    "title":       "Invincible",
-    "description": "Pick up a power ring in any mission",
-    "points":      5,
-    "trigger":     any_of(
-        [
-            LEVEL1MISSION3ID,
-            LEVEL6MISSION2ID
-        ],
-        mid => CurrentMission() == mid &&
-        prev( PowerRing() ) == 0x00 &&
-        PowerRing() == 0x20
-    ),
-    "type":        ""
-}
-achievements[a["index"]] = a
-
-achievement(
-    title = a["title"],
-    description = a["description"],
-    points = a["points"],
-    trigger = a["trigger"],
-    type = a["type"]
-)
-
-// Normal Mission Achievements
-
-NormalMissionAchievementConfigs = [
+NewNormalMissionConfigs = [
     {
-        "index":        1,
-        "title":        "Play Pen",
-        "description":  "Beat the Play Pen tutorial mission",
-        "points":       1,
-        "missionId":    PLAYPENID,
-        "missionMask":  PLAYPENMASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           1,
+        "level":           1,
+        "mission":         0,
+        "title":           "Play Pen",
+        "description":     "Beat the play pen tutorial",
+        "reward":          1,
+        "startingHearts":  0,
+        "bonus":           0,
+        "inGameHearts":    0,
+        "gold":            0,
+        "stars":           0,
+        "lightning":       0,
+        "powerSpring":     1,
+        "powerRing":       0,
+        "map":             0,
+        "points":          1,
+        "missionId":       PLAYPENID,
+        "missionMask":     PLAYPENMASK,
+        "hasChallenge":    false
     },
     {
-        "index":                2,
-        "title":                "Big Brain",
-        "description":          "Destroy the mind and complete level 1 mission 1",
-        "points":               3,
-        "missionId":            LEVEL1MISSION1ID,
-        "missionMask":          LEVEL1MISSION1MASK,
-        "type":                 "",
-        "hasChallenge":         true,
-        "challengeIndex":       3,
-        "missionHearts":        5,
-        "missionBonus":         3,
-        "missionStars":         1,
-        "missionGold":          1,
-        "challengeTitle":       "Perfect Level 1 Mission 1",
-        "challengeDescription": "Take no damage, and collect all stars and hearts in level 1 mission 1",
-        "challengePoints":      5,
-        "challengeType":        "missable"
+        "index":           2,
+        "level":           1,
+        "mission":         1,
+        "title":           "Big Brain",
+        "description":     "Destroy the mind",
+        "reward":          30,
+        "startingHearts":  4,
+        "bonus":           3,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           1,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL1MISSION1ID,
+        "missionMask":     LEVEL1MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  3,
+        "challengePoints": 5,
     },
     {
-        "index":                4,
-        "title":                "Ice Queen",
-        "description":          "Collect the ice crown and complete level 1 mission 2",
-        "points":               3,
-        "missionId":            LEVEL1MISSION2ID,
-        "missionMask":          LEVEL1MISSION2MASK,
-        "type":                 "",
-        "hasChallenge":         true,
-        "challengeIndex":       5,
-        "missionHearts":        5,
-        "missionBonus":         3,
-        "missionStars":         1,
-        "missionGold":          0,
-        "challengeTitle":       "Perfect Level 1 Mission 2",
-        "challengeDescription": "Take no damage, and collect all stars and hearts in level 1 mission 2",
-        "challengePoints":      5,
-        "challengeType":        "missable"
+        "index":           4,
+        "level":           1,
+        "mission":         2,
+        "title":           "Ice Queen",
+        "description":     "Collect the ice crown",
+        "reward":          30,
+        "startingHearts":  4,
+        "bonus":           3,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     1,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL1MISSION2ID,
+        "missionMask":     LEVEL1MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  5,
+        "challengePoints": 5,
     },
     {
-        "index":                6,
-        "title":                "Erase The Alchemist",
-        "description":          "Destroy the alchemist and complete level 1 mission 3",
-        "points":               3,
-        "missionId":            LEVEL1MISSION3ID,
-        "missionMask":          LEVEL1MISSION3MASK,
-        "type":                 "",
-        "hasChallenge":         true,
-        "challengeIndex":       7,
-        "missionHearts":        5,
-        "missionBonus":         3,
-        "missionStars":         2,
-        "missionGold":          1,
-        "challengeTitle":       "Perfect Level 1 Mission 3",
-        "challengeDescription": "Take no damage, and collect all stars and hearts in level 1 mission 3",
-        "challengePoints":      5,
-        "challengeType":        "missable"
+        "index":           6,
+        "level":           1,
+        "mission":         3,
+        "title":           "Erase The Alchemist",
+        "description":     "Destroy the alchemist",
+        "reward":          45,
+        "startingHearts":  4,
+        "bonus":           3,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           2,
+        "lightning":       2,
+        "powerSpring":     0,
+        "powerRing":       1,
+        "map":             1,
+        "missionId":       LEVEL1MISSION3ID,
+        "missionMask":     LEVEL1MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  7,
+        "challengePoints": 5,
     },
     {
-        "index":        9,
-        "title":        "Blind The Enemy",
-        "description":  "Destroy the all seeing eye and complete level 2 mission 1",
-        "points":       3,
-        "missionId":    LEVEL2MISSION1ID,
-        "missionMask":  LEVEL2MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           9,
+        "level":           2,
+        "mission":         1,
+        "title":           "Blind The Enemy",
+        "description":     "Destroy the all seeing eye",
+        "reward":          45,
+        "startingHearts":  4,
+        "bonus":           7,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           2,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             1,
+        "missionId":       LEVEL2MISSION1ID,
+        "missionMask":     LEVEL2MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  10,
+        "challengePoints": 5,
     },
     {
-        "index":        11,
-        "title":        "Secret Codex",
-        "description":  "Read the secret codex and complete level 2 mission 2",
-        "points":       3,
-        "missionId":    LEVEL2MISSION2ID,
-        "missionMask":  LEVEL2MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           11,
+        "level":           2,
+        "mission":         2,
+        "title":           "Secret Codex",
+        "description":     "Read the secret codex",
+        "reward":          40,
+        "startingHearts":  4,
+        "bonus":           7,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           3,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL2MISSION2ID,
+        "missionMask":     LEVEL2MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  12,
+        "challengePoints": 5,
     },
     {
-        "index":        13,
-        "title":        "Liftoff",
-        "description":  "Launch the self destructing rocket and complete level 2 mission 3",
-        "points":       3,
-        "missionId":    LEVEL2MISSION3ID,
-        "missionMask":  LEVEL2MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           13,
+        "level":           2,
+        "mission":         3,
+        "title":           "Liftoff",
+        "description":     "Launch the self destructing rocket",
+        "reward":          65,
+        "startingHearts":  4,
+        "bonus":           7,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           0,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL2MISSION3ID,
+        "missionMask":     LEVEL2MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  14,
+        "challengePoints": 5,
     },
     {
-        "index":        16,
-        "title":        "Illuminate The Way",
-        "description":  "Find the flashlight and complete level 3 mission 1",
-        "points":       3,
-        "missionId":    LEVEL3MISSION1ID,
-        "missionMask":  LEVEL3MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           16,
+        "level":           3,
+        "mission":         1,
+        "title":           "Illuminate The Way",
+        "description":     "Find the flashlight",
+        "reward":          70,
+        "startingHearts":  4,
+        "bonus":           10,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           2,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             1,
+        "missionId":       LEVEL3MISSION1ID,
+        "missionMask":     LEVEL3MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  17,
+        "challengePoints": 5,
     },
     {
-        "index":        18,
-        "title":        "Circuit Breaker",
-        "description":  "Find the electrical control box and complete level 3 mission 2",
-        "points":       3,
-        "missionId":    LEVEL3MISSION2ID,
-        "missionMask":  LEVEL3MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           18,
+        "level":           3,
+        "mission":         2,
+        "title":           "Circuit Breaker",
+        "description":     "Find the electrical control box",
+        "reward":          60,
+        "startingHearts":  4,
+        "bonus":           10,
+        "inGameHearts":    1,
+        "gold":            2,
+        "stars":           3,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL3MISSION2ID,
+        "missionMask":     LEVEL3MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  19,
+        "challengePoints": 5,
     },
     {
-        "index":        20,
-        "title":        "Startup Funds",
-        "description":  "Search for the piggy bank and complete level 3 mission 3",
-        "points":       3,
-        "missionId":    LEVEL3MISSION3ID,
-        "missionMask":  LEVEL3MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           20,
+        "level":           3,
+        "mission":         3,
+        "title":           "Startup Funds",
+        "description":     "Search for the piggy bank",
+        "reward":          100,
+        "startingHearts":  4,
+        "bonus":           10,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           2,
+        "lightning":       1,
+        "powerSpring":     1,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL3MISSION3ID,
+        "missionMask":     LEVEL3MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  21,
+        "challengePoints": 5,
     },
     {
-        "index":        23,
-        "title":        "Time Keeper",
-        "description":  "Collect the pocketwatch adn complete level 4 mission 1",
-        "points":       3,
-        "missionId":    LEVEL4MISSION1ID,
-        "missionMask":  LEVEL4MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           23,
+        "level":           4,
+        "mission":         1,
+        "title":           "Time Keeper",
+        "description":     "Collect the pocketwatch",
+        "reward":          100,
+        "startingHearts":  4,
+        "bonus":           15,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           0,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL4MISSION1ID,
+        "missionMask":     LEVEL4MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  24,
+        "challengePoints": 5,
     },
     {
-        "index":        25,
-        "title":        "Food Poisoning",
-        "description":  "Get rid of the poisoned food and complete level 4 mission 2",
-        "points":       3,
-        "missionId":    LEVEL4MISSION2ID,
-        "missionMask":  LEVEL4MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           25,
+        "level":           4,
+        "mission":         2,
+        "title":           "Food Poisoning",
+        "description":     "Get rid of the poisoned food",
+        "reward":          100,
+        "startingHearts":  4,
+        "bonus":           15,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           1,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL4MISSION2ID,
+        "missionMask":     LEVEL4MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  26,
+        "challengePoints": 5,
     },
     {
-        "index":        27,
-        "title":        "Command An Army",
-        "description":  "Earn the crown of attack and complete level 4 mission 3",
-        "points":       3,
-        "missionId":    LEVEL4MISSION3ID,
-        "missionMask":  LEVEL4MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           27,
+        "level":           4,
+        "mission":         3,
+        "title":           "Command An Army",
+        "description":     "Earn the crown of attack",
+        "reward":          150,
+        "startingHearts":  3,
+        "bonus":           15,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             1,
+        "missionId":       LEVEL4MISSION3ID,
+        "missionMask":     LEVEL4MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  28,
+        "challengePoints": 5,
     },
     {
-        "index":        30,
-        "title":        "Ghost Ship",
-        "description":  "Take the ghost ship log and complete level 5 mission 1",
-        "points":       3,
-        "missionId":    LEVEL5MISSION1ID,
-        "missionMask":  LEVEL5MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           30,
+        "level":           5,
+        "mission":         1,
+        "title":           "Ghost Ship",
+        "description":     "Take the ghost ship log",
+        "reward":          150,
+        "startingHearts":  4,
+        "bonus":           20,
+        "inGameHearts":    1,
+        "gold":            2,
+        "stars":           1,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL5MISSION1ID,
+        "missionMask":     LEVEL5MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  31,
+        "challengePoints": 5,
     },
     {
-        "index":        32,
-        "title":        "Talk To The Dead",
-        "description":  "Collect the crystal ball and complete level 5 mission 2",
-        "points":       3,
-        "missionId":    LEVEL5MISSION2ID,
-        "missionMask":  LEVEL5MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           32,
+        "level":           5,
+        "mission":         2,
+        "title":           "Talk To The Dead",
+        "description":     "Collect the crystal ball",
+        "reward":          200,
+        "startingHearts":  3,
+        "bonus":           20,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     1,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL5MISSION2ID,
+        "missionMask":     LEVEL5MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  33,
+        "challengePoints": 5,
     },
     {
-        "index":        34,
-        "title":        "Keeping Warm",
-        "description":  "Use the wood stove and complete level 5 mission 3",
-        "points":       3,
-        "missionId":    LEVEL5MISSION3ID,
-        "missionMask":  LEVEL5MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           34,
+        "level":           5,
+        "mission":         3,
+        "title":           "Keeping Warm",
+        "description":     "Use the wood stove",
+        "reward":          300,
+        "startingHearts":  3,
+        "bonus":           20,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL5MISSION3ID,
+        "missionMask":     LEVEL5MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  35,
+        "challengePoints": 5,
     },
     {
-        "index":        37,
-        "title":        "In Safe Hands",
-        "description":  "Return the safe and complete level 6 mission 1",
-        "points":       3,
-        "missionId":    LEVEL6MISSION1ID,
-        "missionMask":  LEVEL6MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           37,
+        "level":           6,
+        "mission":         1,
+        "title":           "In Safe Hands",
+        "description":     "Return the safe",
+        "reward":          275,
+        "startingHearts":  3,
+        "bonus":           30,
+        "inGameHearts":    0,
+        "gold":            1,
+        "stars":           0,
+        "lightning":       5,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL6MISSION1ID,
+        "missionMask":     LEVEL6MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  38,
+        "challengePoints": 5,
     },
     {
-        "index":        39,
-        "title":        "Enchantment",
-        "description":  "Smash the potion vial and complete level 6 mission 2",
-        "points":       3,
-        "missionId":    LEVEL6MISSION2ID,
-        "missionMask":  LEVEL6MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           39,
+        "level":           6,
+        "mission":         2,
+        "title":           "Enchantment",
+        "description":     "Smash the potion vial",
+        "reward":          300,
+        "startingHearts":  3,
+        "bonus":           30,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           0,
+        "lightning":       3,
+        "powerSpring":     0,
+        "powerRing":       1,
+        "map":             1,
+        "missionId":       LEVEL6MISSION2ID,
+        "missionMask":     LEVEL6MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  40,
+        "challengePoints": 5,
     },
     {
-        "index":        41,
-        "title":        "Cursed Gem",
-        "description":  "Destroy the dark jewel and complete level 6 mission 3",
-        "points":       3,
-        "missionId":    LEVEL6MISSION3ID,
-        "missionMask":  LEVEL6MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           41,
+        "level":           6,
+        "mission":         3,
+        "title":           "Cursed Gem",
+        "description":     "Destroy the dark jewel",
+        "reward":          450,
+        "startingHearts":  3,
+        "bonus":           30,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     1,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL6MISSION3ID,
+        "missionMask":     LEVEL6MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  42,
+        "challengePoints": 5,
     },
     {
-        "index":        44,
-        "title":        "POP!",
-        "description":  "Earn the fizzy soda prize and complete level 7 mission 1",
-        "points":       3,
-        "missionId":    LEVEL7MISSION1ID,
-        "missionMask":  LEVEL7MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           44,
+        "level":           7,
+        "mission":         1,
+        "title":           "POP!",
+        "description":     "Earn the fizzy soda prize",
+        "reward":          450,
+        "startingHearts":  3,
+        "bonus":           42,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           4,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL7MISSION1ID,
+        "missionMask":     LEVEL7MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  45,
+        "challengePoints": 5,
     },
     {
-        "index":        46,
-        "title":        "Waiting For A Call",
-        "description":  "Collect the phone and complete level 7 Mission 2",
-        "points":       3,
-        "missionId":    LEVEL7MISSION2ID,
-        "missionMask":  LEVEL7MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           46,
+        "level":           7,
+        "mission":         2,
+        "title":           "Waiting For A Call",
+        "description":     "Collect the phone",
+        "reward":          450,
+        "startingHearts":  3,
+        "bonus":           42,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           3,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL7MISSION2ID,
+        "missionMask":     LEVEL7MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  47,
+        "challengePoints": 5,
     },
     {
-        "index":        48,
-        "title":        "S.O.S",
-        "description":  "Release the captive voyager and complete level 7 mission 3",
-        "points":       3,
-        "missionId":    LEVEL7MISSION3ID,
-        "missionMask":  LEVEL7MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           48,
+        "level":           7,
+        "mission":         3,
+        "title":           "S.O.S",
+        "description":     "Release the captive voyager",
+        "reward":          600,
+        "startingHearts":  2,
+        "bonus":           42,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           3,
+        "lightning":       0,
+        "powerSpring":     1,
+        "powerRing":       1,
+        "map":             0,
+        "missionId":       LEVEL7MISSION3ID,
+        "missionMask":     LEVEL7MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  49,
+        "challengePoints": 5,
     },
     {
-        "index":        51,
-        "title":        "K9 Companion",
-        "description":  "Rescue the dog and complete level 8 mission 1",
-        "points":       3,
-        "missionId":    LEVEL8MISSION1ID,
-        "missionMask":  LEVEL8MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           51,
+        "level":           8,
+        "mission":         1,
+        "title":           "K9 Companion",
+        "description":     "Rescue the dog",
+        "reward":          650,
+        "startingHearts":  3,
+        "bonus":           60,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       16,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL8MISSION1ID,
+        "missionMask":     LEVEL8MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  52,
+        "challengePoints": 5,
     },
     {
-        "index":        53,
-        "title":        "Fast Getaway",
-        "description":  "Find and flee with the amphora jar when completing level 8 mission 2",
-        "points":       3,
-        "missionId":    LEVEL8MISSION2ID,
-        "missionMask":  LEVEL8MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           53,
+        "level":           8,
+        "mission":         2,
+        "title":           "Fast Getaway",
+        "description":     "Find and flee with the amphora jar",
+        "reward":          650,
+        "startingHearts":  2,
+        "bonus":           60,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           3,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL8MISSION2ID,
+        "missionMask":     LEVEL8MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  54,
+        "challengePoints": 5,
     },
     {
-        "index":        55,
-        "title":        "Piece Of Cake",
-        "description":  "Eat the triple decker cake and complete level 8 Mission 3",
-        "points":       3,
-        "missionId":    LEVEL8MISSION3ID,
-        "missionMask":  LEVEL8MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           55,
+        "level":           8,
+        "mission":         3,
+        "title":           "Piece Of Cake",
+        "description":     "Eat the triple decker cake",
+        "reward":          850,
+        "startingHearts":  2,
+        "bonus":           60,
+        "inGameHearts":    1,
+        "gold":            1,
+        "stars":           5,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL8MISSION3ID,
+        "missionMask":     LEVEL8MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  56,
+        "challengePoints": 5,
     },
     {
-        "index":        58,
-        "title":        "Hacking The Mainframe",
-        "description":  "Destroy the computer system and complete level 9 mission 1",
-        "points":       3,
-        "missionId":    LEVEL9MISSION1ID,
-        "missionMask":  LEVEL9MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           58,
+        "level":           9,
+        "mission":         1,
+        "title":           "Hacking The Mainframe",
+        "description":     "Destroy the computer system",
+        "reward":          900,
+        "startingHearts":  2,
+        "bonus":           90,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           5,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             0,
+        "missionId":       LEVEL9MISSION1ID,
+        "missionMask":     LEVEL9MISSION1MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  59,
+        "challengePoints": 5,
     },
     {
-        "index":        60,
-        "title":        "Infestation",
-        "description":  "Smash open the jar of insects and complete level 9 mission 2",
-        "points":       3,
-        "missionId":    LEVEL9MISSION2ID,
-        "missionMask":  LEVEL9MISSION2MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           60,
+        "level":           9,
+        "mission":         2,
+        "title":           "Infestation",
+        "description":     "Smash open the jar of insects",
+        "reward":          800,
+        "startingHearts":  2,
+        "bonus":           90,
+        "inGameHearts":    1,
+        "gold":            2,
+        "stars":           3,
+        "lightning":       1,
+        "powerSpring":     0,
+        "powerRing":       1,
+        "map":             0,
+        "missionId":       LEVEL9MISSION2ID,
+        "missionMask":     LEVEL9MISSION2MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  61,
+        "challengePoints": 5,
     },
     {
-        "index":        62,
-        "title":        "Home Sweet Home",
-        "description":  "Find a new home and complete level 9 mission 3",
-        "points":       3,
-        "missionId":    LEVEL9MISSION3ID,
-        "missionMask":  LEVEL9MISSION3MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           62,
+        "level":           9,
+        "mission":         3,
+        "title":           "Home Sweet Home",
+        "description":     "Find a new home",
+        "reward":          1100,
+        "startingHearts":  2,
+        "bonus":           90,
+        "inGameHearts":    1,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       0,
+        "powerSpring":     0,
+        "powerRing":       0,
+        "map":             1,
+        "missionId":       LEVEL9MISSION3ID,
+        "missionMask":     LEVEL9MISSION3MASK,
+        "points":          3,
+        "hasChallenge":    true,
+        "challengeIndex":  63,
+        "challengePoints": 5,
     },
     {
-        "index":        65,
-        "title":        "King Krond",
-        "description":  "Defeat Krond and save the Mega Hero Academy in level 10",
-        "points":       10,
-        "missionId":    LEVEL10MISSON1ID,
-        "missionMask":  LEVEL10MISSION1MASK,
-        "type":         "",
-        "hasChallenge": false,
+        "index":           65,
+        "level":           10,
+        "mission":         1,
+        "title":           "King Krond",
+        "description":     "Defeat Krond and save the Mega Hero Academy!",
+        "reward":          3500,
+        "startingHearts":  3,
+        "bonus":           120,
+        "inGameHearts":    4,
+        "gold":            0,
+        "stars":           1,
+        "lightning":       2,
+        "powerSpring":     1,
+        "powerRing":       1,
+        "map":             0,
+        "missionId":       LEVEL10MISSION1ID,
+        "missionMask":     LEVEL10MISSION1MASK,
+        "points":          10,
+        "hasChallenge":    false
     }
 ]
 
-for config in NormalMissionAchievementConfigs
+newAchievements = {}
+currentLevel = 1
+count = 0
+lightningMissions = []
+powerSpringMissions = []
+powerRingMissions = []
+mapMissions = []
+
+for config in NewNormalMissionConfigs
 {
+    // Progression level achievements
+    if currentLevel + 1 == config["level"] {
+        levelIndex = config["index"] - 1
+        startCondition = GameStarts()
+        if currentLevel != 1 {
+            startCondition = upgradeLiftPassLevel( levelLookup[currentLevel-1], levelLookup[currentLevel] )
+        }
+        levelAchievement = {
+            "title":       format("Complete Level {0}", currentLevel),
+            "description": format("Complete level {0} and buy the lift pass for level {1}", currentLevel, config["level"]),
+            "points":      10,
+            "trigger":     measured(
+                tally(2,
+                    once( startCondition ),
+                    once( upgradeLiftPassLevel( levelLookup[currentLevel], levelLookup[config["level"]] ) )
+                )
+            ) &&
+            never( OpenPasswordMenu() ),
+            "type":        "progression"
+        }
+        count = count + 1
+        newAchievements[levelIndex] = levelAchievement
+        currentLevel = config["level"]
+    }
+    
+    // Standard mission completion achievements
+    currIndex = config["index"]  
+    desc = format( "{0} and complete level {1} mission {2}", config["description"], config["level"], config["mission"])
+    if ( ( config["level"] == 1 && config["mission"] == 0 ) || ( config["level"] == 10 && config["mission"] == 1 ) ) { // Play pen & king krond
+        desc = config["description"]
+    }
     a = {
         "title":       config["title"],
-        "description": config["description"],
+        "description": desc,
         "points":      config["points"],
         "trigger":     measured(
             MissionCompleteCondition(
@@ -825,165 +1123,105 @@ for config in NormalMissionAchievementConfigs
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"] ) ) &&
         never( PlayerDies() ),
-        "type":        config["type"]
+        "type":        ""
     }
-    achievements[config["index"]] = a
-
-    achievement(
-        title = a["title"],
-        description = a["description"],
-        points = a["points"],
-        trigger = a["trigger"],
-        type = a["type"]
-    )
-    if ( config["hasChallenge"] ) {
+    newAchievements[currIndex] = a
+    count = count + 1
+    
+    // Missable challenge mission achievements
+    if config["hasChallenge"] {
+        currIndex = currIndex + 1
+        items = ""
+        if config["inGameHearts"] > 0 || config["gold"] > 0 || config["stars"] > 0 {
+            items = " and collect "
+            heartLabel = "heart"
+            if config["inGameHearts"] > 1 {
+                heartLabel = "hearts"
+            }
+            goldLabel = "gold bullion"
+            if config["gold"] > 1 {
+                goldLabel = "gold bullions"
+            }
+            starLabel = "star"
+            if config["stars"] > 1 {
+                starLabel = "stars"
+            }
+            args = []
+            if config["inGameHearts"] > 0 {
+                array_push(args, config["inGameHearts"])
+                array_push(args, heartLabel)
+            }
+            if config["gold"] > 0 {
+                array_push(args, config["gold"])
+                array_push(args, goldLabel)
+            }
+            if config["stars"] > 0 {
+                array_push(args, config["stars"])
+                array_push(args, starLabel)
+            }
+            for index in range(0, length(args) - 1, 2) {
+                atEnd = true
+                if length(args) > 2 {
+                    if index == length(args) - 2 {
+                        items = items + " and "
+                    } else {
+                        if index != 0 {
+                            items = items + ", "
+                        }
+                    }
+                }
+                items = items + args[index] + " " + args[index + 1]
+            }
+        }
         a1 = {
-            "title":       config["challengeTitle"],
-            "description": config["challengeDescription"],
+            "title":       format("Perfect Level {0} Mission {1}", config["level"], config["mission"]),
+            "description": format("Take no damage{0} all while completing level {1} mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
             "trigger":     measured(
                 MissionCompletePerfectCondition(
                     config["missionId"],
                     config["missionMask"],
-                    config["missionHearts"],
-                    config["missionStars"],
-                    config["missionBonus"],
-                    config["missionGold"]
+                    config["startingHearts"] + config["inGameHearts"],
+                    config["stars"],
+                    config["bonus"],
+                    config["gold"]
                 )
             ) &&
             never( playerHurt() ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
             never( PlayerQuitsMission( config["missionId"] ) ),
-            "type":        config["challengeType"]
+            "type":        "missable"
         }
-        achievements[config["challengeIndex"]] = a1
+        count = count + 1
+        newAchievements[currIndex] = a1
+    }
     
-        achievement(
-            title = a1["title"],
-            description = a1["description"],
-            points = a1["points"],
-            trigger = a1["trigger"],
-            type = a1["type"]
-        )
+    // Build lists for "fun" achievements
+    
+    // lightnings
+    if config["lightning"] > 0 {
+        array_push( lightningMissions, config["missionId"] )
+    }
+    
+    // power springs
+    if config["powerSpring"] > 0 && config["missionId"] != PLAYPENID { // gather all power spring missions that are not the playpen
+        array_push( powerSpringMissions, config["missionId"] )
+    }
+    
+    // power rings
+    if config["powerRing"] > 0 {
+        array_push( powerRingMissions, config["missionId"] )
+    }
+    
+    // maps
+    if config["map"] > 0 {
+        array_push( mapMissions, config["missionId"] )
     }
 }
 
-// Progression Level Achievements
-
-LevelProgressionAchievementConfigs = [
-    {
-        "index":          8,
-        "title":          "Complete Level 1",
-        "description":    "Complete level 1 and buy the lift pass for level 2",
-        "startCondition": GameStarts(),
-        "endCondition":   upgradeLiftPassLevel( LEVEL1, LEVEL2 ),
-        "type":           "progression",
-    },
-    {
-        "index":          15,
-        "title":          "Complete Level 2",
-        "description":    "Complete level 2 and buy the lift pass for level 3",
-        "startCondition": upgradeLiftPassLevel( LEVEL1, LEVEL2 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL2, LEVEL3 ),
-        "type":           "progression",
-    },
-    {
-        "index":          22,
-        "title":          "Complete Level 3",
-        "description":    "Complete level 3 and buy the lift pass for level 4",
-        "startCondition": upgradeLiftPassLevel( LEVEL2, LEVEL3 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL3, LEVEL4 ),
-        "type":           "progression",
-    },
-    {
-        "index":          29,
-        "title":          "Complete Level 4",
-        "description":    "Complete level 4 and buy the lift pass for level 5",
-        "startCondition": upgradeLiftPassLevel( LEVEL3, LEVEL4 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL4, LEVEL5 ),
-        "type":           "progression",
-    },
-    {
-        "index":          36,
-        "title":          "Complete Level 5",
-        "description":    "Complete level 5 and buy the lift pass for level 6",
-        "startCondition": upgradeLiftPassLevel( LEVEL4, LEVEL5 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL5, LEVEL6 ),
-        "type":           "progression",
-    },
-    {
-        "index":          43,
-        "title":          "Complete Level 6",
-        "description":    "Complete level 6 and buy the lift pass for level 7",
-        "startCondition": upgradeLiftPassLevel( LEVEL5, LEVEL6 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL6, LEVEL7 ),
-        "type":           "progression",
-    },
-    {
-        "index":          50,
-        "title":          "Complete Level 7",
-        "description":    "Complete level 7 and buy the lift pass for level 8",
-        "startCondition": upgradeLiftPassLevel( LEVEL6, LEVEL7 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL7, LEVEL8 ),
-        "type":           "progression",
-    },
-    {
-        "index":          57,
-        "title":          "Complete Level 8",
-        "description":    "Complete level 8 and buy the lift pass for level 9",
-        "startCondition": upgradeLiftPassLevel( LEVEL7, LEVEL8 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL8, LEVEL9 ),
-        "type":           "progression",
-    },
-    {
-        "index":          64,
-        "title":          "Complete Level 9",
-        "description":    "Complete level 9 and buy the lift pass for level 10",
-        "startCondition": upgradeLiftPassLevel( LEVEL8, LEVEL9 ),
-        "endCondition":   upgradeLiftPassLevel( LEVEL9, LEVEL10 ),
-        "type":           "progression",
-    }
-]
-
-for config in LevelProgressionAchievementConfigs
-{
-    a = {
-        "title":       config["title"],
-        "description": config["description"],
-        "points":      10,
-        "trigger":     measured(
-            tally(2,
-                once( config["startCondition"] ),
-                once( config["endCondition"] )
-            )
-        ) &&
-        never( OpenPasswordMenu() ),
-        "type":        config["type"]
-    }
-    achievements[config["index"]] = a
-    achievement(
-        title = config["title"],
-        description = config["description"],
-        points = 10,
-        trigger = measured(
-            tally(2,
-                once( config["startCondition"] ),
-                once( config["endCondition"] )
-            )
-        ) &&
-        never( OpenPasswordMenu() ),
-        type = config["type"]
-    )
-    if false {
-       // this is an error check, we want to fail compiling if the length of our achievement
-       // dictionary doesnt match our max index specified, meaning we are missing achievements
-       // or have more than we expect and therefore cant reliable loop over them to specify
-       // the order of the achievmenets we want
-       array_push(c442d3daaf97d28569c3eace979ee295)
-    }
-}
-
+// Win condition achievement
+currIndex = count + 1
 a = {
     "title":       "Beat the Game",
     "description": "Beat every level of the game without passwords in one session",
@@ -997,15 +1235,88 @@ a = {
     never( OpenPasswordMenu() ),
     "type":        "win_condition"
 }
-achievements[67] = a
+count = count + 1
+newAchievements[currIndex] = a
 
-achievement(
-    title = a["title"],
-    description = a["description"],
-    points = a["points"],
-    trigger = a["trigger"],
-    type = a["type"]
-)
+// Lightning achievement
+currIndex = count + 1
+a = {
+    "index":       66,
+    "title":       "Speedy",
+    "description": "Pick up a lightning in any mission",
+    "points":      2,
+    "trigger":     any_of(
+        lightningMissions,
+        mid => CurrentMission() == mid &&
+        prev( SpeedBoost() ) + 0x20 == SpeedBoost()
+    ),
+    "type":        ""
+}
+count = count + 1
+newAchievements[currIndex] = a
+
+// Power Spring achievement
+currIndex = count + 1
+a = {
+    "title":       "Jump To The Rescue",
+    "description": "Pick up a power spring in any mission except the Play Pen",
+    "points":      2,
+    "trigger":     any_of(
+        powerSpringMissions,
+        mid => CurrentMission() == mid &&
+        prev( PowerSpring() ) + 0x0a == PowerSpring()
+    ) &&
+    never( prev( PowerSpring() ) > 0x0a ),
+    "type":        ""
+}
+count = count + 1
+newAchievements[currIndex] = a
+
+// Power Ring achievement
+currIndex = count + 1
+a = {
+    "title":       "Invincible",
+    "description": "Pick up a power ring in any mission",
+    "points":      2,
+    "trigger":     any_of(
+        powerRingMissions,
+        mid => CurrentMission() == mid &&
+        prev( PowerRing() ) + 0x20 == PowerRing()
+    ),
+    "type":        ""
+}
+count = count + 1
+newAchievements[currIndex] = a
+
+// Map achievement
+currIndex = count + 1
+a = {
+    "title":       "I'm The Map",
+    "description": "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
+    "points":      2,
+    "trigger":     any_of(
+        mapMissions,
+        mid => CurrentMission() == mid &&
+        prev( countRoomsSeen() ) <= countMissionRoomsAvailable() &&
+        countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
+    ),
+    "type":        ""
+}
+count = count + 1
+newAchievements[currIndex] = a
+
+if length(newAchievements) == count { // This check is to ensure the amount of achievements I expect when building the order of them
+    for index in range(1, count) {
+        a = newAchievements[index]
+        achievement(
+            title = a["title"],
+            description = a["description"],
+            points = a["points"],
+            trigger = a["trigger"],
+            type = a["type"]
+        )
+    }
+}
 
 // Rich Presence
 
@@ -1084,7 +1395,7 @@ leaderboard(
     description = "Complete the game from start to finish as fast as possible without using passwords",
     start = GameStarts(),
     cancel = OpenPasswordMenu(),
-    submit = prev( CurrentMission() ) == LEVEL10MISSON1ID && CurrentMission() == CONCERTSCREENID,
+    submit = prev( CurrentMission() ) == LEVEL10MISSION1ID && CurrentMission() == CONCERTSCREENID,
     value = measured( always_true() ) &&
     unless( inTitleScreen() ) &&
     unless( inConcertScreen() ) &&
