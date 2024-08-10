@@ -1069,7 +1069,6 @@ NewNormalMissionConfigs = [
     }
 ]
 
-newAchievements = {}
 currentLevel = 1
 count = 0
 lightningMissions = []
@@ -1100,7 +1099,7 @@ for config in NewNormalMissionConfigs
             "type":        "progression"
         }
         count = count + 1
-        newAchievements[levelIndex] = levelAchievement
+        achievements[levelIndex] = levelAchievement
         currentLevel = config["level"]
     }
     
@@ -1125,7 +1124,7 @@ for config in NewNormalMissionConfigs
         never( PlayerDies() ),
         "type":        ""
     }
-    newAchievements[currIndex] = a
+    achievements[currIndex] = a
     count = count + 1
     
     // Missable challenge mission achievements
@@ -1148,21 +1147,21 @@ for config in NewNormalMissionConfigs
             }
             args = []
             if config["inGameHearts"] > 0 {
-                array_push(args, config["inGameHearts"])
-                array_push(args, heartLabel)
+                array_push( args, config["inGameHearts"] )
+                array_push( args, heartLabel )
             }
             if config["gold"] > 0 {
-                array_push(args, config["gold"])
-                array_push(args, goldLabel)
+                array_push( args, config["gold"] )
+                array_push( args, goldLabel )
             }
             if config["stars"] > 0 {
-                array_push(args, config["stars"])
-                array_push(args, starLabel)
+                array_push( args, config["stars"] )
+                array_push( args, starLabel )
             }
-            for index in range(0, length(args) - 1, 2) {
+            for index in range( 0, length( args ) - 1, 2) {
                 atEnd = true
-                if length(args) > 2 {
-                    if index == length(args) - 2 {
+                if length( args ) > 2 {
+                    if index == length( args ) - 2 {
                         items = items + " and "
                     } else {
                         if index != 0 {
@@ -1194,7 +1193,7 @@ for config in NewNormalMissionConfigs
             "type":        "missable"
         }
         count = count + 1
-        newAchievements[currIndex] = a1
+        achievements[currIndex] = a1
     }
     
     // Build lists for "fun" achievements
@@ -1236,7 +1235,7 @@ a = {
     "type":        "win_condition"
 }
 count = count + 1
-newAchievements[currIndex] = a
+achievements[currIndex] = a
 
 // Lightning achievement
 currIndex = count + 1
@@ -1253,7 +1252,7 @@ a = {
     "type":        ""
 }
 count = count + 1
-newAchievements[currIndex] = a
+achievements[currIndex] = a
 
 // Power Spring achievement
 currIndex = count + 1
@@ -1270,7 +1269,7 @@ a = {
     "type":        ""
 }
 count = count + 1
-newAchievements[currIndex] = a
+achievements[currIndex] = a
 
 // Power Ring achievement
 currIndex = count + 1
@@ -1286,7 +1285,7 @@ a = {
     "type":        ""
 }
 count = count + 1
-newAchievements[currIndex] = a
+achievements[currIndex] = a
 
 // Map achievement
 currIndex = count + 1
@@ -1303,11 +1302,11 @@ a = {
     "type":        ""
 }
 count = count + 1
-newAchievements[currIndex] = a
+achievements[currIndex] = a
 
-if length(newAchievements) == count { // This check is to ensure the amount of achievements I expect when building the order of them
-    for index in range(1, count) {
-        a = newAchievements[index]
+if length( achievements ) == count { // This check is to ensure the amount of achievements I expect when building the order of them
+    for index in range( 1, count ) {
+        a = achievements[index]
         achievement(
             title = a["title"],
             description = a["description"],
@@ -1377,12 +1376,13 @@ rich_presence_conditional_display(
 
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby | ⭐ {0} | 🎫 {1} | 💰 #{2}",
+    "Main Lobby • ⭐ {0} • 🎫 {1} • 💰 #{2}",
     rich_presence_value( "Lucky Stars", LuckyStars() ),
     rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
     rich_presence_value( "Credits", Credits() )
 )
-rich_presence_display("🎮 {0} | ❤️ {1} | ⭐ {2}",
+rich_presence_display(
+    "🎮 {0} • ❤️ {1} • ⭐ {2}",
     rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
     rich_presence_value( "Health", Health() ),
     rich_presence_value( "Lucky Stars", LuckyStars() )
