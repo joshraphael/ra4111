@@ -445,7 +445,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL1MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  3,
         "challengePoints": 5,
     },
     {
@@ -468,7 +467,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL1MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  5,
         "challengePoints": 5,
     },
     {
@@ -491,7 +489,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL1MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  7,
         "challengePoints": 5,
     },
     {
@@ -514,7 +511,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL2MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  10,
         "challengePoints": 5,
     },
     {
@@ -537,7 +533,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL2MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  12,
         "challengePoints": 5,
     },
     {
@@ -560,7 +555,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL2MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  14,
         "challengePoints": 5,
     },
     {
@@ -583,7 +577,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL3MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  17,
         "challengePoints": 5,
     },
     {
@@ -606,7 +599,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL3MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  19,
         "challengePoints": 5,
     },
     {
@@ -629,7 +621,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL3MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  21,
         "challengePoints": 5,
     },
     {
@@ -652,7 +643,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL4MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  24,
         "challengePoints": 5,
     },
     {
@@ -675,7 +665,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL4MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  26,
         "challengePoints": 5,
     },
     {
@@ -698,7 +687,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL4MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  28,
         "challengePoints": 5,
     },
     {
@@ -721,7 +709,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL5MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  31,
         "challengePoints": 5,
     },
     {
@@ -744,7 +731,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL5MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  33,
         "challengePoints": 5,
     },
     {
@@ -767,7 +753,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL5MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  35,
         "challengePoints": 5,
     },
     {
@@ -790,7 +775,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL6MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  38,
         "challengePoints": 5,
     },
     {
@@ -813,7 +797,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL6MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  40,
         "challengePoints": 5,
     },
     {
@@ -836,7 +819,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL6MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  42,
         "challengePoints": 5,
     },
     {
@@ -859,7 +841,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL7MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  45,
         "challengePoints": 5,
     },
     {
@@ -882,7 +863,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL7MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  47,
         "challengePoints": 5,
     },
     {
@@ -905,7 +885,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL7MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  49,
         "challengePoints": 5,
     },
     {
@@ -928,7 +907,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL8MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  52,
         "challengePoints": 5,
     },
     {
@@ -951,7 +929,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL8MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  54,
         "challengePoints": 5,
     },
     {
@@ -974,7 +951,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL8MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  56,
         "challengePoints": 5,
     },
     {
@@ -997,7 +973,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL9MISSION1MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  59,
         "challengePoints": 5,
     },
     {
@@ -1020,7 +995,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL9MISSION2MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  61,
         "challengePoints": 5,
     },
     {
@@ -1043,7 +1017,6 @@ NewNormalMissionConfigs = [
         "missionMask":     LEVEL9MISSION3MASK,
         "points":          3,
         "hasChallenge":    true,
-        "challengeIndex":  63,
         "challengePoints": 5,
     },
     {
