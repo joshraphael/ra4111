@@ -109,16 +109,6 @@ CLOSED = 0x00
 // Life
 DEAD = 0xFF
 
-// Room Level Group Masks
-ROOM1MASK = 0x01
-ROOM2MASK = 0x02
-ROOM3MASK = 0x04
-ROOM4MASK = 0x08
-ROOM5MASK = 0x10
-ROOM6MASK = 0x20
-ROOM7MASK = 0x40
-ROOM8MASK = 0x80
-
 // Mission Masks
 PLAYPENMASK         = 0x00000001
 LEVEL1MISSION1MASK  = 0x00000002
@@ -271,14 +261,6 @@ function upgradeLiftPassLevel( prevLevel, newLevel )
     return (
         prev( LiftPassLevel() ) == prevLevel &&
         LiftPassLevel() == newLevel
-    )
-}
-
-function checkMaxStats( stars, credits )
-{
-    return (
-        LuckyStars() <= stars &&
-        Credits() <= credits
     )
 }
 
@@ -452,7 +434,7 @@ MissionConfigs = [
         "level":           1,
         "mission":         2,
         "title":           "Ice Queen",
-        "description":     "Collect the ice crown",
+        "description":     "Steal the Ice Queen's crown",
         "reward":          30,
         "startingHearts":  4,
         "bonus":           3,
@@ -518,7 +500,7 @@ MissionConfigs = [
         "level":           2,
         "mission":         2,
         "title":           "Secret Codex",
-        "description":     "Read the secret codex",
+        "description":     "Read the secret code",
         "reward":          40,
         "startingHearts":  4,
         "bonus":           7,
@@ -694,7 +676,7 @@ MissionConfigs = [
         "level":           5,
         "mission":         1,
         "title":           "Ghost Ship",
-        "description":     "Take the ghost ship log",
+        "description":     "Take the ghost ship wood log",
         "reward":          150,
         "startingHearts":  4,
         "bonus":           20,
@@ -1195,12 +1177,13 @@ for config in MissionConfigs
 // Win condition achievement
 currIndex = count + 1
 a = {
-    "title":       "Beat the Game",
+    "title":       "Beat The Game",
     "description": "Beat every level of the game without passwords in one session",
     "points":      50,
     "trigger":     measured(
         tally(2,
             once( GameStarts() ),
+            // TODO: add checks to check each level is upgraded
             once( GameEnds() )
         )
     ) &&

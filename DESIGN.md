@@ -10,12 +10,16 @@
 
 ## About
 
+<sub>[Back to Table of Contents](#table-of-contents)</sub>
+
 * [Wikipedia](https://en.wikipedia.org/wiki/Monster_Max)
 * [RetroAchievements](https://retroachievements.org/game/4111)
 * [Walkthrough](https://gamefaqs.gamespot.com/gameboy/585809-monster-max/faqs/36096)
 * [YouTube Video Playthrough](https://www.youtube.com/watch?v=p4EVqKSPrcs)
 
 ## Learnings
+
+<sub>[Back to Table of Contents](#table-of-contents)</sub>
 
 ### Passwords
 
@@ -482,6 +486,8 @@ Level 10 Summary:
 
 ## Code Notes
 
+<sub>[Back to Table of Contents](#table-of-contents)</sub>
+
 ### Code Notes Navigation
 
 1. [Select Menu](#select-menu)
@@ -745,7 +751,8 @@ Notes: number count, can hold 254 but can only display 5
 * 0x02 = 2
 * 0x03 = 3
 * ...
-* 0xff = 255
+* 0xfe = 254
+* 0xff = Dead
 
 ### _Speed Boost_
 
@@ -1546,38 +1553,40 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 
 ## Achievements
 
+<sub>[Back to Table of Contents](#table-of-contents)</sub>
+
 ### Achievements navigation
 
 1. [Play Pen](#play-pen)
-2. [Level 1 Mission 1](#level-1-mission-1)
-3. [Level 1 Mission 2](#level-1-mission-2)
-4. [Level 1 Mission 3](#level-1-mission-3)
-5. [Level 2 Mission 1](#level-2-mission-1)
-6. [Level 2 Mission 2](#level-2-mission-2)
-7. [Level 2 Mission 3](#level-2-mission-3)
-8. [Level 3 Mission 1](#level-3-mission-1)
-9. [Level 3 Mission 2](#level-3-mission-2)
-10. [Level 3 Mission 3](#level-3-mission-3)
-11. [Level 4 Mission 1](#level-4-mission-1)
-12. [Level 4 Mission 2](#level-4-mission-2)
-13. [Level 4 Mission 3](#level-4-mission-3)
-14. [Level 5 Mission 1](#level-5-mission-1)
-15. [Level 5 Mission 2](#level-5-mission-2)
-16. [Level 5 Mission 3](#level-5-mission-3)
-17. [Level 6 Mission 1](#level-6-mission-1)
-18. [Level 6 Mission 2](#level-6-mission-2)
-19. [Level 6 Mission 3](#level-6-mission-3)
-20. [Level 7 Mission 1](#level-7-mission-1)
-21. [Level 7 Mission 2](#level-7-mission-2)
-22. [Level 7 Mission 3](#level-7-mission-3)
-23. [Level 8 Mission 1](#level-8-mission-1)
-24. [Level 8 Mission 2](#level-8-mission-2)
-25. [Level 8 Mission 3](#level-8-mission-3)
-26. [Level 9 Mission 1](#level-9-mission-1)
-27. [Level 9 Mission 2](#level-9-mission-2)
-28. [Level 9 Mission 3](#level-9-mission-3)
-29. [Level 10 Mission 1](#level-10-mission-1)
-30. [Beat Game](#beat-game)
+2. [Big Brain](#big-brain)
+3. [Ice Queen](#ice-queen)
+4. [Erase The Alchemist](#erase-the-alchemist)
+5. [Blind The Enemy](#blind-the-enemy)
+6. [Secret Codex](#secret-codex)
+7. [Liftoff](#liftoff)
+8. [Illuminate The Way](#illuminate-the-way)
+9. [Circuit Breaker](#circuit-breaker)
+10. [Startup Funds](#startup-funds)
+11. [Time Keeper](#time-keeper)
+12. [Food Poisoning](#food-poisoning)
+13. [Command An Army](#command-an-army)
+14. [Ghost Ship](#ghost-ship)
+15. [Talk To The Dead](#talk-to-the-dead)
+16. [Keeping Warm](#keeping-warm)
+17. [In Safe Hands](#in-safe-hands)
+18. [Enchantment](#enchantment)
+19. [Cursed Gem](#cursed-gem)
+20. [POP!](#pop)
+21. [Waiting For A Call](#waiting-for-a-call)
+22. [S.O.S](#sos)
+23. [K9 Companion](#k9-companion)
+24. [Fast Getaway](#fast-getaway)
+25. [Piece Of Cake](#piece-of-cake)
+26. [Hacking The Mainframe](#hacking-the-mainframe)
+27. [Infestation](#infestation)
+28. [Home Sweet Home](#home-sweet-home)
+29. [King Krond](#king-krond)
+30. [Beat The Game](#beat-the-game)
 
 ### Play Pen
 
@@ -1593,15 +1602,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 1 Mission 1
+### Big Brain
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
-Beat Level 1 Mission 1
+Destroy the mind
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -1609,15 +1619,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 1 Mission 2
+### Ice Queen
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
 
-Beat Level 1 Mission 2
+Steal the Ice Queen's crown
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 2
@@ -1625,15 +1636,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 1 Mission 3
+### Erase The Alchemist
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
-Beat Level 1 Mission 3
+Destroy the alchemist
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 3
@@ -1641,15 +1653,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 2 Mission 1
+### Blind The Enemy
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
 
-Beat Level 2 Mission 1
+Destroy the all seeing eye
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 1
@@ -1657,15 +1670,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 2 Mission 2
+### Secret Codex
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
-Beat Level 2 Mission 2
+Read the secret code
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 2
@@ -1673,15 +1687,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 2 Mission 3
+### Liftoff
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
 
-Beat Level 2 Mission 3
+Launch the self destructing rocket
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 3
@@ -1689,15 +1704,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 3 Mission 1
+### Illuminate The Way
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
-Beat Level 3 Mission 1
+Find the flashlight
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 1
@@ -1705,15 +1721,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 3 Mission 2
+### Circuit Breaker
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
 
-Beat Level 3 Mission 2
+Find the electrical control box
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 2
@@ -1721,15 +1738,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 3 Mission 3
+### Startup Funds
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
-Beat Level 3 Mission 3
+Search for the piggy bank
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 3
@@ -1737,15 +1755,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 4 Mission 1
+### Time Keeper
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
 
-Beat Level 4 Mission 1
+Collect the pocketwatch
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 1
@@ -1753,15 +1772,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 4 Mission 2
+### Food Poisoning
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
-Beat Level 4 Mission 2
+Get rid of the poisoned food
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 2
@@ -1769,15 +1789,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 4 Mission 3
+### Command An Army
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
 
-Beat Level 4 Mission 3
+Earn the crown of attack
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 3
@@ -1785,15 +1806,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 5 Mission 1
+### Ghost Ship
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
-Beat Level 5 Mission 1
+Take the ghost ship wood log
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 1
@@ -1801,15 +1823,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 5 Mission 2
+### Talk To The Dead
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
 
-Beat Level 5 Mission 2
+Collect the crystal ball
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 2
@@ -1817,15 +1840,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 5 Mission 3
+### Keeping Warm
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
-Beat Level 5 Mission 3
+Use the wood stove
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 3
@@ -1833,15 +1857,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 6 Mission 1
+### In Safe Hands
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
 
-Beat Level 6 Mission 1
+Return the safe
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 1
@@ -1849,15 +1874,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 6 Mission 2
+### Enchantment
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
-Beat Level 6 Mission 2
+Smash the potion vial
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 2
@@ -1865,15 +1891,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 6 Mission 3
+### Cursed Gem
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
 
-Beat Level 6 Mission 3
+Destroy the dark jewel
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 3
@@ -1881,15 +1908,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 7 Mission 1
+### POP!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
-Beat Level 7 Mission 1
+Earn the fizzy soda prize
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 1
@@ -1897,15 +1925,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 7 Mission 2
+### Waiting For A Call
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
 
-Beat Level 7 Mission 2
+Collect the phone
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 2
@@ -1913,15 +1942,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 7 Mission 3
+### S.O.S
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
-Beat Level 7 Mission 3
+Release the captive voyager
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 3
@@ -1929,15 +1959,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 8 Mission 1
+### K9 Companion
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
 
-Beat Level 8 Mission 1
+Rescue the dog
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 1
@@ -1945,15 +1976,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 8 Mission 2
+### Fast Getaway
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
 
-Beat Level 8 Mission 2
+Find and flee with the amphora jar
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 2
@@ -1961,15 +1993,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 8 Mission 3
+### Piece Of Cake
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
 
-Beat Level 8 Mission 3
+Eat the triple decker cake
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 3
@@ -1977,15 +2010,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 9 Mission 1
+### Hacking The Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
 
-Beat Level 9 Mission 1
+Destroy the computer system
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 1
@@ -1993,15 +2027,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 9 Mission 2
+### Infestation
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
 
-Beat Level 9 Mission 2
+Smash open the jar of insects
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 2
@@ -2009,15 +2044,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 9 Mission 3
+### Home Sweet Home
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
 
-Beat Level 9 Mission 3
+Find a new home
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 3
@@ -2025,15 +2061,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Level 10 Mission 1
+### King Krond
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 ![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
 
-Beat Level 10 Mission 1
+Defeat Krond and save the Mega Hero Academy!
 
 Conditions:
 1. Go from the lobby to Level 10 Mission 1
@@ -2041,13 +2078,16 @@ Conditions:
 
 Reset When:
 1. Password menu opened
-2. Player Dies (spawn back in lobby)
+2. Player quits mission
+3. Player dies (spawn back in lobby)
 
-### Beat Game
+### Beat The Game
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Win Condition**_
+
+Beat every level of the game without passwords in one session
 
 ![beat game](badges/img/BeatGame.png "Beat Game")
 
@@ -2069,6 +2109,8 @@ Reset When:
 
 
 ## Rich Presence
+
+<sub>[Back to Table of Contents](#table-of-contents)</sub>
 
 Rich presence is available and will change depending on where you are in the game
 
