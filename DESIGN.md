@@ -1559,34 +1559,62 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 
 1. [Play Pen](#play-pen)
 2. [Big Brain](#big-brain)
-3. [Ice Queen](#ice-queen)
-4. [Erase The Alchemist](#erase-the-alchemist)
-5. [Blind The Enemy](#blind-the-enemy)
-6. [Secret Codex](#secret-codex)
-7. [Liftoff](#liftoff)
-8. [Illuminate The Way](#illuminate-the-way)
-9. [Circuit Breaker](#circuit-breaker)
-10. [Startup Funds](#startup-funds)
-11. [Time Keeper](#time-keeper)
-12. [Food Poisoning](#food-poisoning)
-13. [Command An Army](#command-an-army)
-14. [Ghost Ship](#ghost-ship)
-15. [Talk To The Dead](#talk-to-the-dead)
-16. [Keeping Warm](#keeping-warm)
-17. [In Safe Hands](#in-safe-hands)
-18. [Enchantment](#enchantment)
-19. [Cursed Gem](#cursed-gem)
-20. [POP!](#pop)
-21. [Waiting For A Call](#waiting-for-a-call)
-22. [S.O.S](#sos)
-23. [K9 Companion](#k9-companion)
-24. [Fast Getaway](#fast-getaway)
-25. [Piece Of Cake](#piece-of-cake)
-26. [Hacking The Mainframe](#hacking-the-mainframe)
-27. [Infestation](#infestation)
-28. [Home Sweet Home](#home-sweet-home)
-29. [King Krond](#king-krond)
-30. [Beat The Game](#beat-the-game)
+3. [Perfect Level 1 Mission 1](#perfect-level-1-mission-1)
+4. [Ice Queen](#ice-queen)
+5. [Perfect Level 1 Mission 2](#perfect-level-1-mission-2)
+6. [Erase The Alchemist](#erase-the-alchemist)
+7. [Perfect Level 1 Mission 3](#perfect-level-1-mission-3)
+8. [Blind The Enemy](#blind-the-enemy)
+9. [Perfect Level 2 Mission 1](#perfect-level-2-mission-1)
+10. [Secret Codex](#secret-codex)
+11. [Perfect Level 2 Mission 2](#perfect-level-2-mission-2)
+12. [Liftoff](#liftoff)
+13. [Perfect Level 2 Mission 3](#perfect-level-2-mission-3)
+14. [Illuminate The Way](#illuminate-the-way)
+15. [Perfect Level 3 Mission 1](#perfect-level-3-mission-1)
+16. [Circuit Breaker](#circuit-breaker)
+17. [Perfect Level 3 Mission 2](#perfect-level-3-mission-2)
+18. [Startup Funds](#startup-funds)
+19. [Perfect Level 3 Mission 3](#perfect-level-3-mission-3)
+20. [Time Keeper](#time-keeper)
+21. [Perfect Level 4 Mission 1](#perfect-level-4-mission-1)
+22. [Food Poisoning](#food-poisoning)
+23. [Perfect Level 4 Mission 2](#perfect-level-4-mission-2)
+24. [Command An Army](#command-an-army)
+25. [Perfect Level 4 Mission 3](#perfect-level-4-mission-3)
+26. [Ghost Ship](#ghost-ship)
+27. [Perfect Level 5 Mission 1](#perfect-level-5-mission-1)
+28. [Talk To The Dead](#talk-to-the-dead)
+29. [Perfect Level 5 Mission 2](#perfect-level-5-mission-2)
+30. [Keeping Warm](#keeping-warm)
+31. [Perfect Level 5 Mission 3](#perfect-level-5-mission-3)
+32. [In Safe Hands](#in-safe-hands)
+33. [Perfect Level 6 Mission 1](#perfect-level-6-mission-1)
+34. [Enchantment](#enchantment)
+35. [Perfect Level 6 Mission 2](#perfect-level-6-mission-2)
+36. [Cursed Gem](#cursed-gem)
+37. [Perfect Level 6 Mission 3](#perfect-level-6-mission-3)
+38. [POP!](#pop)
+39. [Perfect Level 7 Mission 1](#perfect-level-7-mission-1)
+40. [Waiting For A Call](#waiting-for-a-call)
+41. [Perfect Level 7 Mission 2](#perfect-level-7-mission-2)
+42. [S.O.S](#sos)
+43. [Perfect Level 7 Mission 3](#perfect-level-7-mission-3)
+44. [K9 Companion](#k9-companion)
+45. [Perfect Level 8 Mission 1](#perfect-level-8-mission-1)
+46. [Fast Getaway](#fast-getaway)
+47. [Perfect Level 8 Mission 2](#perfect-level-8-mission-2)
+48. [Piece Of Cake](#piece-of-cake)
+49. [Perfect Level 8 Mission 3](#perfect-level-8-mission-3)
+50. [Hacking The Mainframe](#hacking-the-mainframe)
+51. [Perfect Level 9 Mission 1](#perfect-level-9-mission-1)
+52. [Infestation](#infestation)
+53. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
+54. [Home Sweet Home](#home-sweet-home)
+55. [Perfect Level 9 Mission 3](#perfect-level-9-mission-3)
+56. [King Krond](#king-krond)
+57. [Perfect Level 10 Mission 1](#perfect-level-10-mission-1)
+58. [Beat The Game](#beat-the-game)
 
 ### Play Pen
 
@@ -1696,6 +1724,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 1 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level1mission3challenge](badges/img/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
+
+Destroy the mind
+
+Conditions:
+1. Go from the lobby to Level 1 Mission 3
+2. Level 1 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (losese heart or star)
 
 ### Blind The Enemy
 
