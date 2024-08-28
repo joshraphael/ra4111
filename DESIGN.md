@@ -1622,6 +1622,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 1 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level1mission1challenge](badges/img/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
+
+Destroy the mind
+
+Conditions:
+1. Go from the lobby to Level 1 Mission 1
+2. Level 1 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (losese heart or star)
+
 ### Ice Queen
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1638,6 +1658,27 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 1 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level1mission2challenge](badges/img/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
+
+Destroy the mind
+
+Conditions:
+1. Go from the lobby to Level 1 Mission 2
+2. Level 1 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (losese heart or star)
+
 
 ### Erase The Alchemist
 
@@ -2087,9 +2128,9 @@ Reset When:
 
 Type: _**Win Condition**_
 
-Beat every level of the game without passwords in one session
-
 ![beat game](badges/img/BeatGame.png "Beat Game")
+
+Beat every level of the game without passwords in one session
 
 Conditions:
 1. Start game with no levels completed

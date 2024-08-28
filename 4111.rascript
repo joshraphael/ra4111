@@ -1141,10 +1141,10 @@ for config in MissionConfigs
                     config["gold"]
                 )
             ) &&
-            never( playerHurt() ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
             never( PlayerQuitsMission( config["missionId"] ) ),
+            never( playerHurt() ) &&
             "type":        "missable"
         }
         count = count + 1
