@@ -403,7 +403,7 @@ function GameEnds()
 
 // Achievement Configs
 
-NewNormalMissionConfigs = [
+MissionConfigs = [
     {
         "index":           1,
         "level":           1,
@@ -1049,7 +1049,7 @@ powerSpringMissions = []
 powerRingMissions = []
 mapMissions = []
 
-for config in NewNormalMissionConfigs
+for config in MissionConfigs
 {
     // Progression level achievements
     if currentLevel + 1 == config["level"] {
