@@ -1564,57 +1564,66 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 5. [Perfect Level 1 Mission 2](#perfect-level-1-mission-2)
 6. [Erase The Alchemist](#erase-the-alchemist)
 7. [Perfect Level 1 Mission 3](#perfect-level-1-mission-3)
-8. [Blind The Enemy](#blind-the-enemy)
-9. [Perfect Level 2 Mission 1](#perfect-level-2-mission-1)
-10. [Secret Codex](#secret-codex)
-11. [Perfect Level 2 Mission 2](#perfect-level-2-mission-2)
-12. [Liftoff](#liftoff)
-13. [Perfect Level 2 Mission 3](#perfect-level-2-mission-3)
-14. [Illuminate The Way](#illuminate-the-way)
-15. [Perfect Level 3 Mission 1](#perfect-level-3-mission-1)
-16. [Circuit Breaker](#circuit-breaker)
-17. [Perfect Level 3 Mission 2](#perfect-level-3-mission-2)
-18. [Startup Funds](#startup-funds)
-19. [Perfect Level 3 Mission 3](#perfect-level-3-mission-3)
-20. [Time Keeper](#time-keeper)
-21. [Perfect Level 4 Mission 1](#perfect-level-4-mission-1)
-22. [Food Poisoning](#food-poisoning)
-23. [Perfect Level 4 Mission 2](#perfect-level-4-mission-2)
-24. [Command An Army](#command-an-army)
-25. [Perfect Level 4 Mission 3](#perfect-level-4-mission-3)
-26. [Ghost Ship](#ghost-ship)
-27. [Perfect Level 5 Mission 1](#perfect-level-5-mission-1)
-28. [Talk To The Dead](#talk-to-the-dead)
-29. [Perfect Level 5 Mission 2](#perfect-level-5-mission-2)
-30. [Keeping Warm](#keeping-warm)
-31. [Perfect Level 5 Mission 3](#perfect-level-5-mission-3)
-32. [In Safe Hands](#in-safe-hands)
-33. [Perfect Level 6 Mission 1](#perfect-level-6-mission-1)
-34. [Enchantment](#enchantment)
-35. [Perfect Level 6 Mission 2](#perfect-level-6-mission-2)
-36. [Cursed Gem](#cursed-gem)
-37. [Perfect Level 6 Mission 3](#perfect-level-6-mission-3)
-38. [POP!](#pop)
-39. [Perfect Level 7 Mission 1](#perfect-level-7-mission-1)
-40. [Waiting For A Call](#waiting-for-a-call)
-41. [Perfect Level 7 Mission 2](#perfect-level-7-mission-2)
-42. [S.O.S](#sos)
-43. [Perfect Level 7 Mission 3](#perfect-level-7-mission-3)
-44. [K9 Companion](#k9-companion)
-45. [Perfect Level 8 Mission 1](#perfect-level-8-mission-1)
-46. [Fast Getaway](#fast-getaway)
-47. [Perfect Level 8 Mission 2](#perfect-level-8-mission-2)
-48. [Piece Of Cake](#piece-of-cake)
-49. [Perfect Level 8 Mission 3](#perfect-level-8-mission-3)
-50. [Hacking The Mainframe](#hacking-the-mainframe)
-51. [Perfect Level 9 Mission 1](#perfect-level-9-mission-1)
-52. [Infestation](#infestation)
-53. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
-54. [Home Sweet Home](#home-sweet-home)
-55. [Perfect Level 9 Mission 3](#perfect-level-9-mission-3)
-56. [King Krond](#king-krond)
-57. [Perfect Level 10 Mission 1](#perfect-level-10-mission-1)
-58. [Beat The Game](#beat-the-game)
+8. [Complete Level 1](#complete-level-1)
+9. [Blind The Enemy](#blind-the-enemy)
+10. [Perfect Level 2 Mission 1](#perfect-level-2-mission-1)
+11. [Secret Codex](#secret-codex)
+12. [Perfect Level 2 Mission 2](#perfect-level-2-mission-2)
+13. [Liftoff](#liftoff)
+14. [Perfect Level 2 Mission 3](#perfect-level-2-mission-3)
+15. [Complete Level 2](#complete-level-2)
+16. [Illuminate The Way](#illuminate-the-way)
+17. [Perfect Level 3 Mission 1](#perfect-level-3-mission-1)
+18. [Circuit Breaker](#circuit-breaker)
+19. [Perfect Level 3 Mission 2](#perfect-level-3-mission-2)
+20. [Startup Funds](#startup-funds)
+21. [Perfect Level 3 Mission 3](#perfect-level-3-mission-3)
+22. [Complete Level 3](#complete-level-3)
+23. [Time Keeper](#time-keeper)
+24. [Perfect Level 4 Mission 1](#perfect-level-4-mission-1)
+25. [Food Poisoning](#food-poisoning)
+26. [Perfect Level 4 Mission 2](#perfect-level-4-mission-2)
+27. [Command An Army](#command-an-army)
+28. [Perfect Level 4 Mission 3](#perfect-level-4-mission-3)
+29. [Complete Level 4](#complete-level-4)
+30. [Ghost Ship](#ghost-ship)
+31. [Perfect Level 5 Mission 1](#perfect-level-5-mission-1)
+32. [Talk To The Dead](#talk-to-the-dead)
+33. [Perfect Level 5 Mission 2](#perfect-level-5-mission-2)
+34. [Keeping Warm](#keeping-warm)
+35. [Perfect Level 5 Mission 3](#perfect-level-5-mission-3)
+36. [Complete Level 5](#complete-level-5)
+37. [In Safe Hands](#in-safe-hands)
+38. [Perfect Level 6 Mission 1](#perfect-level-6-mission-1)
+39. [Enchantment](#enchantment)
+40. [Perfect Level 6 Mission 2](#perfect-level-6-mission-2)
+41. [Cursed Gem](#cursed-gem)
+42. [Perfect Level 6 Mission 3](#perfect-level-6-mission-3)
+43. [Complete Level 6](#complete-level-6)
+44. [POP!](#pop)
+45. [Perfect Level 7 Mission 1](#perfect-level-7-mission-1)
+46. [Waiting For A Call](#waiting-for-a-call)
+47. [Perfect Level 7 Mission 2](#perfect-level-7-mission-2)
+48. [S.O.S](#sos)
+49. [Perfect Level 7 Mission 3](#perfect-level-7-mission-3)
+50. [Complete Level 7](#complete-level-7)
+51. [K9 Companion](#k9-companion)
+52. [Perfect Level 8 Mission 1](#perfect-level-8-mission-1)
+53. [Fast Getaway](#fast-getaway)
+54. [Perfect Level 8 Mission 2](#perfect-level-8-mission-2)
+55. [Piece Of Cake](#piece-of-cake)
+56. [Perfect Level 8 Mission 3](#perfect-level-8-mission-3)
+57. [Complete Level 8](#complete-level-8)
+58. [Hacking The Mainframe](#hacking-the-mainframe)
+59. [Perfect Level 9 Mission 1](#perfect-level-9-mission-1)
+60. [Infestation](#infestation)
+61. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
+62. [Home Sweet Home](#home-sweet-home)
+63. [Perfect Level 9 Mission 3](#perfect-level-9-mission-3)
+64. [Complete Level 9](#complete-level-9)
+65. [King Krond](#king-krond)
+66. [Perfect Level 10 Mission 1](#perfect-level-10-mission-1)
+67. [Beat The Game](#beat-the-game)
 
 ### Play Pen
 
@@ -1745,6 +1754,23 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
 
+### Complete Level 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel1](badges/img/Level2.png "Complete Level 1")
+
+Complete level 1 and buy the lift pass for level 2 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 1->2 pass
+
+Reset When:
+1. Password menu opened
+
 ### Blind The Enemy
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1855,6 +1881,23 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
+
+### Complete Level 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel2](badges/img/Level3.png "Complete Level 2")
+
+Complete level 2 and buy the lift pass for level 3 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 2->3 pass
+
+Reset When:
+1. Password menu opened
 
 ### Illuminate The Way
 
@@ -1967,6 +2010,23 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
 
+### Complete Level 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel3](badges/img/Level4.png "Complete Level 3")
+
+Complete level 3 and buy the lift pass for level 4 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 3->4 pass
+
+Reset When:
+1. Password menu opened
+
 ### Time Keeper
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2077,6 +2137,23 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
+
+### Complete Level 4
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel4](badges/img/Level5.png "Complete Level 4")
+
+Complete level 4 and buy the lift pass for level 5 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 4->5 pass
+
+Reset When:
+1. Password menu opened
 
 ### Ghost Ship
 
@@ -2189,6 +2266,23 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
 
+### Complete Level 5
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel5](badges/img/Level6.png "Complete Level 5")
+
+Complete level 5 and buy the lift pass for level 6 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 5->6 pass
+
+Reset When:
+1. Password menu opened
+
 ### In Safe Hands
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2299,6 +2393,23 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
+
+### Complete Level 6
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel6](badges/img/Level7.png "Complete Level 6")
+
+Complete level 6 and buy the lift pass for level 7 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 6->7 pass
+
+Reset When:
+1. Password menu opened
 
 ### POP!
 
@@ -2411,6 +2522,23 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
 
+### Complete Level 7
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel7](badges/img/Level8.png "Complete Level 7")
+
+Complete level 7 and buy the lift pass for level 8 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 7->8 pass
+
+Reset When:
+1. Password menu opened
+
 ### K9 Companion
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2522,6 +2650,23 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
 
+### Complete Level 8
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel8](badges/img/Level9.png "Complete Level 8")
+
+Complete level 8 and buy the lift pass for level 9 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 8->9 pass
+
+Reset When:
+1. Password menu opened
+
 ### Hacking The Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2632,6 +2777,23 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loseses heart or star)
+
+### Complete Level 9
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Progression**_
+
+![completelevel9](badges/img/Level10.png "Complete Level 9")
+
+Complete level 9 and buy the lift pass for level 10 in one session
+
+Conditions:
+1. Start game with no levels completed
+2. Buy level 9->10 pass
+
+Reset When:
+1. Password menu opened
 
 ### King Krond
 
