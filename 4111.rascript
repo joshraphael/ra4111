@@ -186,16 +186,46 @@ LEVEL9  = 0x08
 LEVEL10 = 0x09
 
 levelLookup = {
-    1:  LEVEL1,
-    2:  LEVEL2,
-    3:  LEVEL3,
-    4:  LEVEL4,
-    5:  LEVEL5,
-    6:  LEVEL6,
-    7:  LEVEL7,
-    8:  LEVEL8,
-    9:  LEVEL9,
-    10: LEVEL10
+    1: {
+        "id":   LEVEL1,
+        "cost": 0
+    },
+    2: {
+        "id":   LEVEL2,
+        "cost": 70
+    },
+    3: {
+        "id":   LEVEL3,
+        "cost": 130
+    },
+    4: {
+        "id":   LEVEL4,
+        "cost": 200
+    },
+    5: {
+        "id":   LEVEL5,
+        "cost": 300
+    },
+    6: {
+        "id":   LEVEL6,
+        "cost": 450
+    },
+    7: {
+        "id":   LEVEL7,
+        "cost": 650
+    },
+    8: {
+        "id":   LEVEL8,
+        "cost": 1000
+    },
+    9: {
+        "id":   LEVEL9,
+        "cost": 1500
+    },
+    10: {
+        "id":   LEVEL10,
+        "cost": 2500
+    },
 }
 
 achievements = {}
@@ -256,11 +286,12 @@ function inConcertScreen()
     )
 }
 
-function upgradeLiftPassLevel( prevLevel, newLevel )
+function upgradeLiftPassLevel( prevLevel, newLevel, cost )
 {
     return (
         prev( LiftPassLevel() ) == prevLevel &&
-        LiftPassLevel() == newLevel
+        LiftPassLevel() == newLevel &&
+        prev( Credits() ) == ( Credits() + cost )
     )
 }
 
@@ -1036,18 +1067,14 @@ for config in MissionConfigs
     // Progression level achievements
     if currentLevel + 1 == config["level"] {
         levelIndex = config["index"] - 1
-        startCondition = GameStarts()
-        if currentLevel != 1 {
-            startCondition = upgradeLiftPassLevel( levelLookup[currentLevel-1], levelLookup[currentLevel] )
-        }
         levelAchievement = {
             "title":       format("Complete Level {0}", currentLevel),
-            "description": format("Complete level {0} and buy the lift pass for level {1}", currentLevel, config["level"]),
+            "description": format("Complete level {0} and buy the lift pass for level {1} in one session", currentLevel, config["level"]),
             "points":      10,
             "trigger":     measured(
                 tally(2,
-                    once( startCondition ),
-                    once( upgradeLiftPassLevel( levelLookup[currentLevel], levelLookup[config["level"]] ) )
+                    once( GameStarts() ),
+                    once( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) )
                 )
             ) &&
             never( OpenPasswordMenu() ),
@@ -1143,8 +1170,8 @@ for config in MissionConfigs
             ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
-            never( PlayerQuitsMission( config["missionId"] ) ),
-            never( PlayerHurt() ) &&
+            never( PlayerQuitsMission( config["missionId"] ) ) &&
+            never( PlayerHurt() ),
             "type":        "missable"
         }
         count = count + 1
