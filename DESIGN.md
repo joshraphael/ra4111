@@ -135,7 +135,7 @@ Level 2 Mission 3:
 * Power Spring: 0
 * Power Ring: 0
 * Map: 0
-* Total: 65 + ((4 + 1) * 7) + (0 * 7) = 100 credits max
+* Total: 65 + ((4 + 1 + 0) * 7) = 100 credits max
 
 Level 2 Summary:
 * Games Internal Max Credits With Passwords: 354
