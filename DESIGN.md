@@ -1658,7 +1658,7 @@ Type: _**Missable**_
 
 ![level1mission1challenge](badges/img/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
 
-Destroy the mind
+TODO: Update description
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -1668,7 +1668,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (losese heart or star)
+4. Player gets hurt (loseses heart or star)
 
 ### Ice Queen
 
@@ -1695,7 +1695,7 @@ Type: _**Missable**_
 
 ![level1mission2challenge](badges/img/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
 
-Destroy the mind
+TODO: Update description
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 2
@@ -1705,7 +1705,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (losese heart or star)
+4. Player gets hurt (loseses heart or star)
 
 
 ### Erase The Alchemist
@@ -1733,7 +1733,7 @@ Type: _**Missable**_
 
 ![level1mission3challenge](badges/img/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
 
-Destroy the mind
+TODO: Update description
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 3
@@ -1743,7 +1743,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (losese heart or star)
+4. Player gets hurt (loseses heart or star)
 
 ### Blind The Enemy
 
@@ -1762,6 +1762,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 2 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level2mission1challenge](badges/img/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 2 Mission 1
+2. Level 2 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 2 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Secret Codex
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1778,6 +1798,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 2 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level2mission2challenge](badges/img/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 2 Mission 2
+2. Level 2 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Liftoff
 
@@ -1796,6 +1836,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 2 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level2mission3challenge](badges/img/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 2 Mission 3
+2. Level 2 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Illuminate The Way
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1812,6 +1872,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 3 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level3mission1challenge](badges/img/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 3 Mission 1
+2. Level 3 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 2 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Circuit Breaker
 
@@ -1830,6 +1910,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 3 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level3mission2challenge](badges/img/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 3 Mission 2
+2. Level 3 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Startup Funds
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1846,6 +1946,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 3 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level3mission3challenge](badges/img/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 3 Mission 3
+2. Level 3 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 2 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Time Keeper
 
@@ -1864,6 +1984,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 4 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level4mission1challenge](badges/img/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 4 Mission 1
+2. Level 4 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 1 gold bullion in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Food Poisoning
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1880,6 +2020,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 4 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level4mission2challenge](badges/img/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 4 Mission 2
+2. Level 4 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion, and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Command An Army
 
@@ -1898,6 +2058,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 4 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level4mission3challenge](badges/img/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 4 Mission 3
+2. Level 4 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion, and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Ghost Ship
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1914,6 +2094,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 5 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level5mission1challenge](badges/img/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 5 Mission 1
+2. Level 5 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions, and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Talk To The Dead
 
@@ -1932,6 +2132,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 5 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level5mission2challenge](badges/img/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 5 Mission 2
+2. Level 5 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Keeping Warm
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1948,6 +2168,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 5 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level5mission3challenge](badges/img/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 5 Mission 3
+2. Level 5 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### In Safe Hands
 
@@ -1966,6 +2206,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 6 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level6mission1challenge](badges/img/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 6 Mission 1
+2. Level 6 Mission 1 marked complete, and no other mission status' changed AND player collected 1 gold bullion in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Enchantment
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -1982,6 +2242,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 6 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level6mission2challenge](badges/img/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 6 Mission 2
+2. Level 6 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Cursed Gem
 
@@ -2000,6 +2280,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 6 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level6mission3challenge](badges/img/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 6 Mission 3
+2. Level 6 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### POP!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2016,6 +2316,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 7 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level7mission1challenge](badges/img/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 7 Mission 1
+2. Level 7 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 4 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Waiting For A Call
 
@@ -2034,6 +2354,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 7 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level7mission2challenge](badges/img/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 7 Mission 2
+2. Level 7 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### S.O.S
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2050,6 +2390,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 7 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level7mission3challenge](badges/img/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 7 Mission 3
+2. Level 7 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### K9 Companion
 
@@ -2068,6 +2428,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 8 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level8mission1challenge](badges/img/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 8 Mission 1
+2. Level 8 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Fast Getaway
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2084,6 +2464,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 8 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level8mission2challenge](badges/img/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 8 Mission 2
+2. Level 8 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Piece Of Cake
 
@@ -2102,6 +2502,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 8 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level8mission3challenge](badges/img/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 8 Mission 3
+2. Level 8 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 5 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Hacking The Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2118,6 +2538,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 9 Mission 1
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level9mission1challenge](badges/img/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 9 Mission 1
+2. Level 9 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 5 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### Infestation
 
@@ -2136,6 +2576,26 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
+### Perfect Level 9 Mission 2
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level9mission2challenge](badges/img/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 9 Mission 2
+2. Level 9 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions and 3 stars in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
+
 ### Home Sweet Home
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
@@ -2152,6 +2612,26 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
+
+### Perfect Level 9 Mission 3
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+Type: _**Missable**_
+
+![level9mission3challenge](badges/img/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
+
+TODO: Update description
+
+Conditions:
+1. Go from the lobby to Level 9 Mission 3
+2. Level 9 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+4. Player gets hurt (loseses heart or star)
 
 ### King Krond
 

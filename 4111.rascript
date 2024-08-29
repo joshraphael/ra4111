@@ -218,7 +218,7 @@ function onlyMissionUnlocked( missionMask )
     )
 }
 
-function playerHurt()
+function PlayerHurt()
 {
     // Player loses a star, or heart
     return (
@@ -1144,7 +1144,7 @@ for config in MissionConfigs
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
             never( PlayerQuitsMission( config["missionId"] ) ),
-            never( playerHurt() ) &&
+            never( PlayerHurt() ) &&
             "type":        "missable"
         }
         count = count + 1
