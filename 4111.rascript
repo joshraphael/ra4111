@@ -1,6 +1,9 @@
 // Monster Max
 // #ID = 4111
 
+// $C006 - Start Menu
+function StartMenu() => word(0xc006)
+
 // $C009 - Select Menu
 function SelectMenu() => high4(0xc009)
 
@@ -252,7 +255,7 @@ function PlayerHurt()
 {
     // Player loses a star, or heart
     return (
-        !inTitleScreen() && !inConcertScreen() && !inMainLobby() &&
+        !inTitleScreen() && !inConcertScreen() && !inMainLobby() && // check that they are in a mission
         ( LuckyStars() == ( prev( LuckyStars() ) - 1 ) ) ||
         ( Health() == ( prev( Health() ) - 1 ) )
     )
@@ -265,10 +268,17 @@ function inMainLobby()
     )
 }
 
-function inStartMenu()
+function inSelectMenu()
 {
     return (
         SelectMenu() == 0
+    )
+}
+
+function inStartMenu()
+{
+    return (
+        StartMenu() == 0x3836
     )
 }
 
@@ -410,7 +420,8 @@ function GameEnds()
 {
     return (
         LiftPassLevel() == 0x09 &&
-        inConcertScreen()
+        prev( CurrentMission() ) == LEVEL10MISSION1ID &&
+        CurrentMission() == CONCERTSCREENID
     )
 }
 
@@ -1212,9 +1223,11 @@ for config in MissionConfigs
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
         "start":           PlayerEntersMission( config["missionId"] ),
-        "cancel":          OpenPasswordMenu(),
+        "cancel":          ( OpenPasswordMenu() || PlayerDies() ) ,
         "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
-        "value":           measured( always_true() ) && unless( inStartMenu() ),
+        "value":           measured( always_true() ) &&
+                           unless( inSelectMenu() ) &&
+                           unless( inStartMenu() ),
         "format":          "FRAMES",
         "lower_is_better": true
     }
@@ -1230,7 +1243,6 @@ a = {
     "trigger":     measured(
         tally(2,
             once( GameStarts() ),
-            // TODO: add checks to check each level is upgraded
             once( GameEnds() )
         )
     ) &&
@@ -1398,10 +1410,10 @@ speedrun = {
     "description":     "Complete the game from start to finish as fast as possible without using passwords",
     "start":           GameStarts(),
     "cancel":          OpenPasswordMenu(),
-    "submit":          prev( CurrentMission() ) == LEVEL10MISSION1ID && CurrentMission() == CONCERTSCREENID,
+    "submit":          GameEnds(),
     "value":           measured( always_true() ) &&
                        unless( inTitleScreen() ) &&
-                       unless( inConcertScreen() ) &&
+                       unless( inSelectMenu() ) &&
                        unless( inStartMenu() ),
     "format":          "FRAMES",
     "lower_is_better": true
