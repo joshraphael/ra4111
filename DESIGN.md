@@ -23,21 +23,21 @@
 
 ### Passwords
 
-While playing through the game there is no save state for it, meaning if you play a few levels and want to quit and come back at a later time, the only way to "restore" your progress is by using the password system. The password system will place you at a specific point in the game. As far as i can tell passwords are characteristics of the player encoded. the values that are encoded seem to be a combination of: credits, levels completed, number of stars, and level pass obtained. Through some trial and error unfortunately I am unable to convert these values into passwords to try and thrwart the password system abuse for acheivements. There are no set passwords in the game, only the ability to enter 8 characters that can be any of the 32 characters supported in the system, making the game have thousands of passwords to chose from so hard coding password protection is not going to happen with no reliable way to generate passwords from the characteristics provided.
+While playing through the game there is no save state for it, meaning if you play a few levels and want to quit and come back at a later time, the only way to "restore" your progress is by using the password system. The password system will place you at a specific point in the game. As far as i can tell passwords are characteristics of the player encoded. the values that are encoded seem to be a combination of: credits, levels completed, number of stars, and level pass obtained. Through some trial and error unfortunately I am unable to convert these values into passwords to try and thwart the password system abuse for achievements. There are no set passwords in the game, only the ability to enter 8 characters that can be any of the 32 characters supported in the system, making the game have thousands of passwords to chose from so hard coding password protection is not going to happen with no reliable way to generate passwords from the characteristics provided.
 
-Playing with passwords seems to create a new password hash any time one of those characteristics changes, but when loading the game state in the game, it removes all lucky stars. You can never enter a password and get stars or specific items in your slots. the only thing that matters is lift pass level, missions completed flags, and credits. Also while playing with the password system it appears that there is some level of anti-cheat in the game. meaning you cant start the game with 9999 credits, you will need to enter a password hash that makes a valid game state. I do notice that some of the credits I manually calculate for what you can have at that point in the game differ from what passwords allow. This may be a buffer by the developers for some reason as I see no way to earn these extra points in the game. I will note what each levels max points can be with passwords in the Level details section below.
+Playing with passwords seems to create a new password hash any time one of those characteristics changes, but when loading the game state in the game, it removes all lucky stars. You can never enter a password and get stars or specific items in your slots. the only thing that matters is lift pass level, missions completed flags, and credits. Also while playing with the password system it appears that there is some level of anti-cheat in the game. meaning you can't start the game with 9999 credits, you will need to enter a password hash that makes a valid game state. I do notice that some of the credits I manually calculate for what you can have at that point in the game differ from what passwords allow. This may be a buffer by the developers for some reason as I see no way to earn these extra points in the game. I will note what each levels max points can be with passwords in the Level details section below.
 
 ### Levels
 
-There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with one mission to complete the game. players cant move up to the next level unless the gather credits by completing missions on the floors they have access to. there is a way around completing levels by using passwords, either using one of the well known passwords on the internet to go to the end of the game and have all the lift passes, or getting a password that just gives you all the lift passes for free. Therefore level progression achievements need session and password protection to avoid players just going to the level prior with the max credits, and buying the next pass without playing the game since thats a valid state to get "free" points.
+There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with one mission to complete the game. players can't move up to the next level unless the gather credits by completing missions on the floors they have access to. there is a way around completing levels by using passwords, either using one of the well known passwords on the internet to go to the end of the game and have all the lift passes, or getting a password that just gives you all the lift passes for free. Therefore level progression achievements need session and password protection to avoid players just going to the level prior with the max credits, and buying the next pass without playing the game since thats a valid state to get "free" points.
 
 ### Stars
 
-Stars are accumulated by collecting them in the missions and displayed as a number in the top left of th screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without loosing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we cant reliably tell if they got the star legitimatly or not.
+Stars are accumulated by collecting them in the missions and displayed as a number in the top left of the screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without losing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we can't reliably tell if they got the star legitimately or not.
 
 ### Detailed Mission Parameters
 
-Totals calcultion formula: `Reward + ((Given Hearts + In-Game Hearts + Gold Bullions) * Bonus Multiplier)`
+Totals calculation formula: `Reward + ((Given Hearts + In-Game Hearts + Gold Bullions) * Bonus Multiplier)`
 
 Play Pen:
 * Reward: 1 credit
@@ -604,7 +604,7 @@ Notes: bit flags for items obtained in missions
 1 = obtained
 
 * [bit 0] Item 1
-* [bit 1] Misson Door
+* [bit 1] Mission Door
 * [bit 2] N/A
 * [bit 3] N/A
 * [bit 4] N/A
@@ -1677,7 +1677,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Ice Queen
 
@@ -1714,7 +1714,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 
 ### Erase The Alchemist
@@ -1752,7 +1752,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 1
 
@@ -1806,7 +1806,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Secret Codex
 
@@ -1843,7 +1843,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Liftoff
 
@@ -1880,7 +1880,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 2
 
@@ -1934,7 +1934,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Circuit Breaker
 
@@ -1971,7 +1971,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Startup Funds
 
@@ -2008,7 +2008,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 3
 
@@ -2062,7 +2062,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Food Poisoning
 
@@ -2099,7 +2099,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Command An Army
 
@@ -2136,7 +2136,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 4
 
@@ -2190,7 +2190,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Talk To The Dead
 
@@ -2227,7 +2227,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Keeping Warm
 
@@ -2264,7 +2264,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 5
 
@@ -2318,7 +2318,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Enchantment
 
@@ -2355,7 +2355,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Cursed Gem
 
@@ -2392,7 +2392,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 6
 
@@ -2446,7 +2446,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Waiting For A Call
 
@@ -2483,7 +2483,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### S.O.S
 
@@ -2520,7 +2520,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 7
 
@@ -2574,7 +2574,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Fast Getaway
 
@@ -2611,7 +2611,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Piece Of Cake
 
@@ -2648,7 +2648,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 8
 
@@ -2702,7 +2702,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Infestation
 
@@ -2739,7 +2739,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Home Sweet Home
 
@@ -2776,7 +2776,7 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-4. Player gets hurt (loseses heart or star)
+4. Player gets hurt (loses heart or star)
 
 ### Complete Level 9
 
@@ -2845,12 +2845,12 @@ Reset When:
 
 Rich presence is available and will change depending on where you are in the game
 
-1. if youre in the main lobby it will display
+1. if you're in the main lobby it will display
     * "Main Lobby"
     * Number of stars
     * level pass obtained
     * credits earned
-2. if youre in a mission it will display
+2. if you're in a mission it will display
     * "Level X Mission Y"
     * current hearts
     * current stars
