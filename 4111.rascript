@@ -1055,12 +1055,13 @@ MissionConfigs = [
     }
 ]
 
-currentLevel = 1
-count = 0
-lightningMissions = []
+currentLevel        = 1
+count               = 0
+lightningMissions   = []
 powerSpringMissions = []
-powerRingMissions = []
-mapMissions = []
+powerRingMissions   = []
+mapMissions         = []
+leaderboards        = []
 
 for config in MissionConfigs
 {
@@ -1088,8 +1089,14 @@ for config in MissionConfigs
     // Standard mission completion achievements
     currIndex = config["index"]  
     desc = format( "{0} and complete level {1} mission {2}", config["description"], config["level"], config["mission"])
+    leaderboardTitle = format( "Speedrun Level {0} Mission {1}", config["level"], config["mission"] )
+    leaderboardDescription = format( "Complete level {0} mission {1} from start to finish as fast as possible without using passwords", config["level"], config["mission"] )
     if ( ( config["level"] == 1 && config["mission"] == 0 ) || ( config["level"] == 10 && config["mission"] == 1 ) ) { // Play pen & king krond
         desc = config["description"]
+        if ( config["level"] == 1 && config["mission"] == 0 ) {
+            leaderboardTitle = format("Speedrun {0}", config["title"])
+            leaderboardDescription = format("Complete {0} from start to finish as fast as possible without using passwords", config["title"] )
+        }
     }
     a = {
         "title":       config["title"],
@@ -1199,6 +1206,19 @@ for config in MissionConfigs
     if config["map"] > 0 {
         array_push( mapMissions, config["missionId"] )
     }
+    
+    // Create leaderboard structures
+    l = {
+        "title":           leaderboardTitle,
+        "description":     leaderboardDescription,
+        "start":           PlayerEntersMission( config["missionId"] ),
+        "cancel":          OpenPasswordMenu(),
+        "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
+        "value":           measured( always_true() ) && unless( inStartMenu() ),
+        "format":          "FRAMES",
+        "lower_is_better": true
+    }
+    array_push( leaderboards, l )
 }
 
 // Win condition achievement
@@ -1373,27 +1393,43 @@ rich_presence_display(
 
 // Leaderboards
 
-leaderboard(
-    title = "Speedrun",
-    description = "Complete the game from start to finish as fast as possible without using passwords",
-    start = GameStarts(),
-    cancel = OpenPasswordMenu(),
-    submit = prev( CurrentMission() ) == LEVEL10MISSION1ID && CurrentMission() == CONCERTSCREENID,
-    value = measured( always_true() ) &&
-    unless( inTitleScreen() ) &&
-    unless( inConcertScreen() ) &&
-    unless( inStartMenu() ),
-    format = "FRAMES",
-    lower_is_better = true
-)
+speedrun = {
+    "title":           "Speedrun Monster Max",
+    "description":     "Complete the game from start to finish as fast as possible without using passwords",
+    "start":           GameStarts(),
+    "cancel":          OpenPasswordMenu(),
+    "submit":          prev( CurrentMission() ) == LEVEL10MISSION1ID && CurrentMission() == CONCERTSCREENID,
+    "value":           measured( always_true() ) &&
+                       unless( inTitleScreen() ) &&
+                       unless( inConcertScreen() ) &&
+                       unless( inStartMenu() ),
+    "format":          "FRAMES",
+    "lower_is_better": true
+}
+array_push( leaderboards, speedrun )
 
-leaderboard(
-    title = "High Score",
-    description = "Complete the game from start to finish with the most credits and stars without using passwords",
-    start = GameStarts(),
-    cancel = OpenPasswordMenu(),
-    submit = GameEnds(),
-    value = Credits() + LuckyStars(),
-    format = "VALUE",
-    lower_is_better = false
-)
+highScore = {
+    "title":           "High Score",
+    "description":     "Complete the game from start to finish with the most credits and stars without using passwords",
+    "start":           GameStarts(),
+    "cancel":          OpenPasswordMenu(),
+    "submit":          GameEnds(),
+    "value":           Credits() + LuckyStars(),
+    "format":          "VALUE",
+    "lower_is_better": false
+}
+array_push( leaderboards, highScore )
+
+for l in leaderboards
+{
+    leaderboard(
+        title       = l["title"],
+        description = l["description"],
+        start = l["start"],
+        cancel = l["cancel"],
+        submit = l["submit"],
+        value = l["value"],
+        format = l["format"],
+        lower_is_better = l["lower_is_better"]
+    )
+}
