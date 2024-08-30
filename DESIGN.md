@@ -1575,10 +1575,10 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 3. [Perfect Level 1 Mission 1](#perfect-level-1-mission-1)
 4. [Ice Queen](#ice-queen)
 5. [Perfect Level 1 Mission 2](#perfect-level-1-mission-2)
-6. [Erase The Alchemist](#erase-the-alchemist)
+6. [Erase the Alchemist](#erase-the-alchemist)
 7. [Perfect Level 1 Mission 3](#perfect-level-1-mission-3)
 8. [Complete Level 1](#complete-level-1)
-9. [Blind The Enemy](#blind-the-enemy)
+9. [Blind the Enemy](#blind-the-enemy)
 10. [Perfect Level 2 Mission 1](#perfect-level-2-mission-1)
 11. [Secret Codex](#secret-codex)
 12. [Perfect Level 2 Mission 2](#perfect-level-2-mission-2)
@@ -1596,12 +1596,12 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 24. [Perfect Level 4 Mission 1](#perfect-level-4-mission-1)
 25. [Food Poisoning](#food-poisoning)
 26. [Perfect Level 4 Mission 2](#perfect-level-4-mission-2)
-27. [Command An Army](#command-an-army)
+27. [Command an Army](#command-an-army)
 28. [Perfect Level 4 Mission 3](#perfect-level-4-mission-3)
 29. [Complete Level 4](#complete-level-4)
 30. [Ghost Ship](#ghost-ship)
 31. [Perfect Level 5 Mission 1](#perfect-level-5-mission-1)
-32. [Talk To The Dead](#talk-to-the-dead)
+32. [Talk to the Dead](#talk-to-the-dead)
 33. [Perfect Level 5 Mission 2](#perfect-level-5-mission-2)
 34. [Keeping Warm](#keeping-warm)
 35. [Perfect Level 5 Mission 3](#perfect-level-5-mission-3)
@@ -1615,7 +1615,7 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 43. [Complete Level 6](#complete-level-6)
 44. [POP!](#pop)
 45. [Perfect Level 7 Mission 1](#perfect-level-7-mission-1)
-46. [Waiting For A Call](#waiting-for-a-call)
+46. [Waiting for a Call](#waiting-for-a-call)
 47. [Perfect Level 7 Mission 2](#perfect-level-7-mission-2)
 48. [S.O.S](#sos)
 49. [Perfect Level 7 Mission 3](#perfect-level-7-mission-3)
@@ -1624,10 +1624,10 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 52. [Perfect Level 8 Mission 1](#perfect-level-8-mission-1)
 53. [Fast Getaway](#fast-getaway)
 54. [Perfect Level 8 Mission 2](#perfect-level-8-mission-2)
-55. [Piece Of Cake](#piece-of-cake)
+55. [Piece of Cake](#piece-of-cake)
 56. [Perfect Level 8 Mission 3](#perfect-level-8-mission-3)
 57. [Complete Level 8](#complete-level-8)
-58. [Hacking The Mainframe](#hacking-the-mainframe)
+58. [Hacking the Mainframe](#hacking-the-mainframe)
 59. [Perfect Level 9 Mission 1](#perfect-level-9-mission-1)
 60. [Infestation](#infestation)
 61. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
@@ -1636,7 +1636,11 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 64. [Complete Level 9](#complete-level-9)
 65. [King Krond](#king-krond)
 66. [Perfect Level 10 Mission 1](#perfect-level-10-mission-1)
-67. [Beat The Game](#beat-the-game)
+67. [Beat the Game](#beat-the-game)
+68. [Speedy](#speedy)
+69. [Jump to the Rescue](#jump-to-the-rescue)
+70. [Invincible](#invincible)
+71. [I'm the Map](#im-the-map)
 
 ### Play Pen
 
@@ -1730,7 +1734,7 @@ Reset When:
 4. Player gets hurt (loses heart or star)
 
 
-### Erase The Alchemist
+### Erase the Alchemist
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1784,7 +1788,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Blind The Enemy
+### Blind the Enemy
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2114,7 +2118,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Command An Army
+### Command an Army
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2205,7 +2209,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Talk To The Dead
+### Talk to the Dead
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2461,7 +2465,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Waiting For A Call
+### Waiting for a Call
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2626,7 +2630,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Piece Of Cake
+### Piece of Cake
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2680,7 +2684,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Hacking The Mainframe
+### Hacking the Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2825,7 +2829,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Beat The Game
+### Beat the Game
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2837,20 +2841,59 @@ Beat every level of the game without passwords in one session
 
 Conditions:
 1. Start game with no levels completed
-2. Buy level 1->2 pass
-3. Buy level 2->3 pass
-4. Buy level 3->4 pass
-5. Buy level 4->5 pass
-6. Buy level 5->6 pass
-7. Buy level 6->7 pass
-8. Buy level 7->8 pass
-9. Buy level 8->9 pass
-10. Buy level 9->10 pass
-11. Buy level 10->FINAL pass
+2. Finish Game
 
 Reset When:
 1. Password menu opened
 
+### Speedy
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+![lightning](badges/img/Lightning.png "Lightning")
+
+Pick up a lightning in any mission
+
+Conditions:
+1. Start in valid mission that has lighting powerup
+2. Gain 32 steps of speed
+
+### Jump to the Rescue
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+![powerspring](badges/img/PowerSpring.png "Power Spring")
+
+Pick up a power spring in any mission except the Play Pen
+
+Conditions:
+1. Start in valid mission that has power spring powerup
+2. Gain 10 power jumps
+
+### Invincible
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+![powerring](badges/img/PowerRing.png "Power Ring")
+
+Pick up a power ring in any mission
+
+Conditions:
+1. Start in valid mission that has power ring powerup
+2. Gain 32 seconds of invincibility
+
+### I'm the Map
+
+<sub>[Back to navigation](#achievements-navigation)</sub>
+
+![map](badges/img/Map.png "Map")
+
+If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout
+
+Conditions:
+1. Start in valid mission that has a map
+2. previously, the amount of rooms seen is no more than the max rooms available
+3. the amount of rooms seen is now 56 (max)
 
 ## Rich Presence
 

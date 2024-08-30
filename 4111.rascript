@@ -497,7 +497,7 @@ MissionConfigs = [
         "index":           6,
         "level":           1,
         "mission":         3,
-        "title":           "Erase The Alchemist",
+        "title":           "Erase the Alchemist",
         "description":     "Destroy the alchemist",
         "reward":          45,
         "startingHearts":  4,
@@ -519,7 +519,7 @@ MissionConfigs = [
         "index":           9,
         "level":           2,
         "mission":         1,
-        "title":           "Blind The Enemy",
+        "title":           "Blind the Enemy",
         "description":     "Destroy the all seeing eye",
         "reward":          45,
         "startingHearts":  4,
@@ -695,7 +695,7 @@ MissionConfigs = [
         "index":           27,
         "level":           4,
         "mission":         3,
-        "title":           "Command An Army",
+        "title":           "Command an Army",
         "description":     "Earn the crown of attack",
         "reward":          150,
         "startingHearts":  3,
@@ -739,7 +739,7 @@ MissionConfigs = [
         "index":           32,
         "level":           5,
         "mission":         2,
-        "title":           "Talk To The Dead",
+        "title":           "Talk to the Dead",
         "description":     "Collect the crystal ball",
         "reward":          200,
         "startingHearts":  3,
@@ -871,7 +871,7 @@ MissionConfigs = [
         "index":           46,
         "level":           7,
         "mission":         2,
-        "title":           "Waiting For A Call",
+        "title":           "Waiting for a Call",
         "description":     "Collect the phone",
         "reward":          450,
         "startingHearts":  3,
@@ -959,7 +959,7 @@ MissionConfigs = [
         "index":           55,
         "level":           8,
         "mission":         3,
-        "title":           "Piece Of Cake",
+        "title":           "Piece of Cake",
         "description":     "Eat the triple decker cake",
         "reward":          850,
         "startingHearts":  2,
@@ -981,7 +981,7 @@ MissionConfigs = [
         "index":           58,
         "level":           9,
         "mission":         1,
-        "title":           "Hacking The Mainframe",
+        "title":           "Hacking the Mainframe",
         "description":     "Destroy the computer system",
         "reward":          900,
         "startingHearts":  2,
@@ -1237,7 +1237,7 @@ for config in MissionConfigs
 // Win condition achievement
 currIndex = count + 1
 a = {
-    "title":       "Beat The Game",
+    "title":       "Beat the Game",
     "description": "Beat every level of the game without passwords in one session",
     "points":      50,
     "trigger":     measured(
@@ -1272,15 +1272,14 @@ achievements[currIndex] = a
 // Power Spring achievement
 currIndex = count + 1
 a = {
-    "title":       "Jump To The Rescue",
+    "title":       "Jump to the Rescue",
     "description": "Pick up a power spring in any mission except the Play Pen",
     "points":      2,
     "trigger":     any_of(
         powerSpringMissions,
         mid => CurrentMission() == mid &&
         prev( PowerSpring() ) + 0x0a == PowerSpring()
-    ) &&
-    never( prev( PowerSpring() ) > 0x0a ),
+    ),
     "type":        ""
 }
 count = count + 1
@@ -1305,7 +1304,7 @@ achievements[currIndex] = a
 // Map achievement
 currIndex = count + 1
 a = {
-    "title":       "I'm The Map",
+    "title":       "I'm the Map",
     "description": "If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout",
     "points":      2,
     "trigger":     any_of(
