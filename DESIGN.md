@@ -1635,12 +1635,11 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 63. [Perfect Level 9 Mission 3](#perfect-level-9-mission-3)
 64. [Complete Level 9](#complete-level-9)
 65. [King Krond](#king-krond)
-66. [Perfect Level 10 Mission 1](#perfect-level-10-mission-1)
-67. [Beat the Game](#beat-the-game)
-68. [Speedy](#speedy)
-69. [Jump to the Rescue](#jump-to-the-rescue)
-70. [Invincible](#invincible)
-71. [I'm the Map](#im-the-map)
+66. [Beat the Game](#beat-the-game)
+67. [Speedy](#speedy)
+68. [Jump to the Rescue](#jump-to-the-rescue)
+69. [Invincible](#invincible)
+70. [I'm the Map](#im-the-map)
 
 ### Play Pen
 
