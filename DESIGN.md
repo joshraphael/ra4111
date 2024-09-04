@@ -7,6 +7,7 @@
 3. [Code Notes](#code-notes)
 4. [Achievements](#achievements)
 5. [Rich Presence](#rich-presence)
+6. [Leaderboards](#leaderboards)
 
 ## About
 
@@ -2900,14 +2901,22 @@ Conditions:
 
 Rich presence is available and will change depending on where you are in the game
 
-1. if you're in the main lobby it will display
+1. if you're in the main menu it will display
+    * "Title Screen"
+2. if you're in the end game concert it will display
+    * "Playing in the Hero Academy Concert"
+3. if you're in the main lobby it will display
     * "Main Lobby"
     * Number of stars
     * level pass obtained
     * credits earned
-2. if you're in a mission it will display
+4. if you're in a mission it will display
     * "Level X Mission Y"
     * current hearts
     * current stars
     * item A
     * item B
+
+## Leaderboards
+
+<sub>[Back to Table of Contents](#table-of-contents)</sub>

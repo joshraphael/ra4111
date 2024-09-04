@@ -355,11 +355,12 @@ function PlayerDies()
     )
 }
 
-function PlayerQuitsMission( missionId )
+function PlayerQuitsMission( missionId, missionMask )
 {
     return (
         prev( CurrentMission() ) == missionId &&
-        CurrentMission() != missionId
+        CurrentMission() != missionId &&
+        !missionMarkedComplete( missionMask )
     )
 }
 
@@ -1126,7 +1127,7 @@ for config in MissionConfigs
             )
         ) &&
         never( OpenPasswordMenu() ) &&
-        never( PlayerQuitsMission( config["missionId"] ) ) &&
+        never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
         never( PlayerDies() ),
         "type":        ""
     }
@@ -1194,7 +1195,7 @@ for config in MissionConfigs
             ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies() ) &&
-            never( PlayerQuitsMission( config["missionId"] ) ) &&
+            never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
             never( PlayerHurt() ),
             "type":        "missable"
         }
@@ -1229,7 +1230,7 @@ for config in MissionConfigs
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
         "start":           PlayerEntersMission( config["missionId"] ),
-        "cancel":          ( OpenPasswordMenu() || PlayerDies() ) ,
+        "cancel":          ( OpenPasswordMenu() || PlayerDies() || PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) ,
         "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&
