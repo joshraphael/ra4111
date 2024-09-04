@@ -413,7 +413,7 @@ function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars,
         )
     ]
     if stars > 0 {
-        array_push( conditions, repeated( stars, LuckyStars() == prev( LuckyStars() ) + 1 ) )
+        array_push( conditions, repeated( stars, CurrentMission() == missionId && LuckyStars() == prev( LuckyStars() ) + 1 ) )
     }
     return tally(
         2 + stars,
@@ -1212,7 +1212,7 @@ for config in MissionConfigs
         levelIndex = config["index"] - 1
         levelAchievement = {
             "title":       format("Complete Level {0}", currentLevel),
-            "description": format("Complete level {0} and buy the lift pass for level {1} in one session", currentLevel, config["level"]),
+            "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords in one session", currentLevel, config["level"]),
             "points":      10,
             "trigger":     measured(
                 tally(2,
@@ -1375,7 +1375,7 @@ for config in MissionConfigs
 currIndex = count + 1
 a = {
     "title":       "Beat the Game",
-    "description": "Beat every level of the game without passwords in one session",
+    "description": "Beat every level of the game without using passwords in one session",
     "points":      50,
     "trigger":     measured(
         tally(2,
