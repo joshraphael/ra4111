@@ -194,49 +194,58 @@ levelLookup = {
         "cost": 0
     },
     2: {
-        "id":   LEVEL2,
-        "cost": 70,
-        "raID": 459891
+        "id":      LEVEL2,
+        "cost":    70,
+        "raID":    459891,
+        "raBadge": 520623
     },
     3: {
-        "id":   LEVEL3,
-        "cost": 130,
-        "raID": 459898
+        "id":      LEVEL3,
+        "cost":    130,
+        "raID":    459898,
+        "raBadge": 520630
     },
     4: {
-        "id":   LEVEL4,
-        "cost": 200,
-        "raID": 459905
+        "id":      LEVEL4,
+        "cost":    200,
+        "raID":    459905,
+        "raBadge": 520637
     },
     5: {
-        "id":   LEVEL5,
-        "cost": 300,
-        "raID": 459912
+        "id":      LEVEL5,
+        "cost":    300,
+        "raID":    459912,
+        "raBadge": 520644
     },
     6: {
-        "id":   LEVEL6,
-        "cost": 450,
-        "raID": 459919
+        "id":      LEVEL6,
+        "cost":    450,
+        "raID":    459919,
+        "raBadge": 520651
     },
     7: {
-        "id":   LEVEL7,
-        "cost": 650,
-        "raID": 459926
+        "id":      LEVEL7,
+        "cost":    650,
+        "raID":    459926,
+        "raBadge": 520658
     },
     8: {
-        "id":   LEVEL8,
-        "cost": 1000,
-        "raID": 459933
+        "id":      LEVEL8,
+        "cost":    1000,
+        "raID":    459933,
+        "raBadge": 520665
     },
     9: {
-        "id":   LEVEL9,
-        "cost": 1500,
-        "raID": 459940
+        "id":      LEVEL9,
+        "cost":    1500,
+        "raID":    459940,
+        "raBadge": 520672,
     },
     10: {
-        "id":   LEVEL10,
-        "cost": 2500,
-        "raID": 459947
+        "id":      LEVEL10,
+        "cost":    2500,
+        "raID":    459947,
+        "raBadge": 520679
     },
 }
 
@@ -507,9 +516,11 @@ MissionConfigs = [
         "missionMask":      LEVEL1MISSION2MASK,
         "points":           3,
         "raID":             459887,
+        "raBadge":          520619,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459888,
+        "challengeRABadge": 520620
     },
     {
         "index":            6,
@@ -531,9 +542,11 @@ MissionConfigs = [
         "missionMask":      LEVEL1MISSION3MASK,
         "points":           3,
         "raID":             459889,
+        "raBadge":          520621,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459890,
+        "challengeRABadge": 520622
     },
     {
         "index":            9,
@@ -555,9 +568,11 @@ MissionConfigs = [
         "missionMask":      LEVEL2MISSION1MASK,
         "points":           3,
         "raID":             459892,
+        "raBadge":          520624,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459893,
+        "challengeRABadge": 520625
     },
     {
         "index":            11,
@@ -579,9 +594,11 @@ MissionConfigs = [
         "missionMask":      LEVEL2MISSION2MASK,
         "points":           3,
         "raID":             459894,
+        "raBadge":          520626,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459895,
+        "challengeRABadge": 520627
     },
     {
         "index":            13,
@@ -603,9 +620,11 @@ MissionConfigs = [
         "missionMask":      LEVEL2MISSION3MASK,
         "points":           3,
         "raID":             459896,
+        "raBadge":          520628,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459897,
+        "challengeRABadge": 520629
     },
     {
         "index":            16,
@@ -627,9 +646,11 @@ MissionConfigs = [
         "missionMask":      LEVEL3MISSION1MASK,
         "points":           3,
         "raID":             459899,
+        "raBadge":          520631,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459900,
+        "challengeRABadge": 520632
     },
     {
         "index":            18,
@@ -651,9 +672,11 @@ MissionConfigs = [
         "missionMask":      LEVEL3MISSION2MASK,
         "points":           3,
         "raID":             459901,
+        "raBadge":          520633,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459902,
+        "challengeRABadge": 520634
     },
     {
         "index":            20,
@@ -675,9 +698,11 @@ MissionConfigs = [
         "missionMask":      LEVEL3MISSION3MASK,
         "points":           3,
         "raID":             459903,
+        "raBadge":          520635,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459904,
+        "challengeRABadge": 520636
     },
     {
         "index":            23,
@@ -699,9 +724,11 @@ MissionConfigs = [
         "missionMask":      LEVEL4MISSION1MASK,
         "points":           3,
         "raID":             459906,
+        "raBadge":          520638,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459907,
+        "challengeRABadge": 520639
     },
     {
         "index":            25,
@@ -723,9 +750,11 @@ MissionConfigs = [
         "missionMask":      LEVEL4MISSION2MASK,
         "points":           3,
         "raID":             459908,
+        "raBadge":          520640,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459909,
+        "challengeRABadge": 520641
     },
     {
         "index":            27,
@@ -747,9 +776,11 @@ MissionConfigs = [
         "missionMask":      LEVEL4MISSION3MASK,
         "points":           3,
         "raID":             459910,
+        "raBadge":          520642,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459911,
+        "challengeRABadge": 520643
     },
     {
         "index":            30,
@@ -771,9 +802,11 @@ MissionConfigs = [
         "missionMask":      LEVEL5MISSION1MASK,
         "points":           3,
         "raID":             459913,
+        "raBadge":          520645,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459914,
+        "challengeRABadge": 520646
     },
     {
         "index":            32,
@@ -795,9 +828,11 @@ MissionConfigs = [
         "missionMask":      LEVEL5MISSION2MASK,
         "points":           3,
         "raID":             459915,
+        "raBadge":          520647,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459916,
+        "challengeRABadge": 520648
     },
     {
         "index":            34,
@@ -819,9 +854,11 @@ MissionConfigs = [
         "missionMask":      LEVEL5MISSION3MASK,
         "points":           3,
         "raID":             459917,
+        "raBadge":          520649,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459918,
+        "challengeRABadge": 520650
     },
     {
         "index":            37,
@@ -843,9 +880,11 @@ MissionConfigs = [
         "missionMask":      LEVEL6MISSION1MASK,
         "points":           3,
         "raID":             459920,
+        "raBadge":          520652,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459921,
+        "challengeRABadge": 520653
     },
     {
         "index":            39,
@@ -867,9 +906,11 @@ MissionConfigs = [
         "missionMask":      LEVEL6MISSION2MASK,
         "points":           3,
         "raID":             459922,
+        "raBadge":          520654,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459923,
+        "challengeRABadge": 520655
     },
     {
         "index":            41,
@@ -891,9 +932,11 @@ MissionConfigs = [
         "missionMask":      LEVEL6MISSION3MASK,
         "points":           3,
         "raID":             459924,
+        "raBadge":          520656,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459925,
+        "challengeRABadge": 520657
     },
     {
         "index":            44,
@@ -915,9 +958,11 @@ MissionConfigs = [
         "missionMask":      LEVEL7MISSION1MASK,
         "points":           3,
         "raID":             459927,
+        "raBadge":          520659,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459928,
+        "challengeRABadge": 520660
     },
     {
         "index":            46,
@@ -939,9 +984,11 @@ MissionConfigs = [
         "missionMask":      LEVEL7MISSION2MASK,
         "points":           3,
         "raID":             459929,
+        "raBadge":          520661,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459930,
+        "challengeRABadge": 520662
     },
     {
         "index":            48,
@@ -963,9 +1010,11 @@ MissionConfigs = [
         "missionMask":      LEVEL7MISSION3MASK,
         "points":           3,
         "raID":             459931,
+        "raBadge":          520663,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459932,
+        "challengeRABadge": 520664
     },
     {
         "index":            51,
@@ -987,9 +1036,11 @@ MissionConfigs = [
         "missionMask":      LEVEL8MISSION1MASK,
         "points":           3,
         "raID":             459934,
+        "raBadge":          520666,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459935,
+        "challengeRABadge": 520667
     },
     {
         "index":            53,
@@ -1011,9 +1062,11 @@ MissionConfigs = [
         "missionMask":      LEVEL8MISSION2MASK,
         "points":           3,
         "raID":             459936,
+        "raBadge":          520668,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459937,
+        "challengeRABadge": 520669
     },
     {
         "index":            55,
@@ -1035,9 +1088,11 @@ MissionConfigs = [
         "missionMask":      LEVEL8MISSION3MASK,
         "points":           3,
         "raID":             459938,
+        "raBadge":          520670,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459939,
+        "challengeRABadge": 520671
     },
     {
         "index":            58,
@@ -1059,9 +1114,11 @@ MissionConfigs = [
         "missionMask":      LEVEL9MISSION1MASK,
         "points":           3,
         "raID":             459941,
+        "raBadge":          520673,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459942,
+        "challengeRABadge": 520674
     },
     {
         "index":            60,
@@ -1083,9 +1140,11 @@ MissionConfigs = [
         "missionMask":      LEVEL9MISSION2MASK,
         "points":           3,
         "raID":             459943,
+        "raBadge":          520675,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459944,
+        "challengeRABadge": 520676
     },
     {
         "index":            62,
@@ -1107,9 +1166,11 @@ MissionConfigs = [
         "missionMask":      LEVEL9MISSION3MASK,
         "points":           3,
         "raID":             459945,
+        "raBadge":          520677,
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459946,
+        "challengeRABadge": 520678
     },
     {
         "index":            65,
@@ -1131,6 +1192,7 @@ MissionConfigs = [
         "missionMask":      LEVEL10MISSION1MASK,
         "points":           10,
         "raID":             459948,
+        "raBadge":          520680,
         "hasChallenge":     false
     }
 ]
@@ -1160,7 +1222,8 @@ for config in MissionConfigs
             ) &&
             never( OpenPasswordMenu() ),
             "type":        "progression",
-            "id:           levelLookup[currentLevel]["raID"]
+            "id:           levelLookup[currentLevel]["raID"],
+            "badge":       levelLookup[currentLevel]["raBadge"],
         }
         count = count + 1
         achievements[levelIndex] = levelAchievement
@@ -1193,7 +1256,8 @@ for config in MissionConfigs
         never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
         never( PlayerDies() ),
         "type":        "",
-        "id":          config["raID"]
+        "id":          config["raID"],
+        "badge":       config["raBadge"],
     }
     achievements[currIndex] = a
     count = count + 1
@@ -1262,7 +1326,8 @@ for config in MissionConfigs
             never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
             never( PlayerHurt() ),
             "type":        "missable",
-            "id":          config["challengeRAID"]
+            "id":          config["challengeRAID"],
+            "badge":       config["challengeRABadge"]
         }
         count = count + 1
         achievements[currIndex] = a1
@@ -1320,7 +1385,8 @@ a = {
     ) &&
     never( OpenPasswordMenu() ),
     "type":        "win_condition",
-    "id":          459949
+    "id":          459949,
+    "badge":       520681,
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1338,7 +1404,8 @@ a = {
         prev( SpeedBoost() ) + 0x20 == SpeedBoost()
     ),
     "type":        "",
-    "id":          459950
+    "id":          459950,
+    "badge":       520682,
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1355,7 +1422,8 @@ a = {
         prev( PowerSpring() ) + 0x0a == PowerSpring()
     ),
     "type":        "",
-    "id":          459951
+    "id":          459951,
+    "badge":       520683,
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1372,7 +1440,8 @@ a = {
         prev( PowerRing() ) + 0x20 == PowerRing()
     ),
     "type":        "",
-    "id":          459952
+    "id":          459952,
+    "badge":       520684,
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1390,7 +1459,8 @@ a = {
         countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
     ),
     "type":        "",
-    "id":          459953
+    "id":          459953,
+    "badge":       520685,
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1404,7 +1474,8 @@ if length( achievements ) == count { // This check is to ensure the amount of ac
             points = a["points"],
             trigger = a["trigger"],
             type = a["type"],
-            id = a["id"]
+            id = a["id"],
+            badge = a["badge"]
         )
     }
 }
