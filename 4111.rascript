@@ -1230,7 +1230,7 @@ for config in MissionConfigs
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
         "start":           PlayerEntersMission( config["missionId"] ),
-        "cancel":          ( OpenPasswordMenu() || PlayerDies() || PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) ,
+        "cancel":          ( OpenPasswordMenu() || PlayerDies() || PlayerQuitsMission( config["missionId"], config["missionMask"] ) ),
         "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&

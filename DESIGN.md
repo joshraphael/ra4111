@@ -1646,6 +1646,8 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+Points: **1**
+
 ![play pen](badges/img/PlayPen.png "Play Pen")
 
 Beat the Play Pen mission
@@ -1662,6 +1664,8 @@ Reset When:
 ### Big Brain
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
@@ -1681,10 +1685,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level1mission1challenge](badges/img/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 1 mission 1
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -1699,6 +1705,8 @@ Reset When:
 ### Ice Queen
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
 
@@ -1718,10 +1726,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level1mission2challenge](badges/img/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 1 mission 2
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 2
@@ -1737,6 +1747,8 @@ Reset When:
 ### Erase the Alchemist
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
@@ -1756,10 +1768,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level1mission3challenge](badges/img/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 2 stars all while completing level 1 mission 3
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 3
@@ -1775,7 +1789,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel1](badges/img/Level2.png "Complete Level 1")
 
@@ -1791,6 +1807,8 @@ Reset When:
 ### Blind the Enemy
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
 
@@ -1810,10 +1828,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level2mission1challenge](badges/img/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 2 stars all while completing level 2 mission 1
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 1
@@ -1828,6 +1848,8 @@ Reset When:
 ### Secret Codex
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
@@ -1847,10 +1869,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level2mission2challenge](badges/img/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 3 stars all while completing level 2 mission 2
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 2
@@ -1865,6 +1889,8 @@ Reset When:
 ### Liftoff
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
 
@@ -1884,10 +1910,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level2mission3challenge](badges/img/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart all while completing level 2 mission 3
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 3
@@ -1903,7 +1931,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel2](badges/img/Level3.png "Complete Level 2")
 
@@ -1919,6 +1949,8 @@ Reset When:
 ### Illuminate The Way
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
@@ -1938,10 +1970,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level3mission1challenge](badges/img/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 2 stars all while completing level 3 mission 1
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 1
@@ -1956,6 +1990,8 @@ Reset When:
 ### Circuit Breaker
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
 
@@ -1975,10 +2011,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level3mission2challenge](badges/img/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 2 gold bullions and 3 stars all while completing level 3 mission 2
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 2
@@ -1993,6 +2031,8 @@ Reset When:
 ### Startup Funds
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
@@ -2012,10 +2052,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level3mission3challenge](badges/img/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 2 stars all while completing level 3 mission 3
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 3
@@ -2031,7 +2073,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel3](badges/img/Level4.png "Complete Level 3")
 
@@ -2047,6 +2091,8 @@ Reset When:
 ### Time Keeper
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
 
@@ -2066,10 +2112,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level4mission1challenge](badges/img/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 gold bullion all while completing level 4 mission 1
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 1
@@ -2084,6 +2132,8 @@ Reset When:
 ### Food Poisoning
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
@@ -2103,10 +2153,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level4mission2challenge](badges/img/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 4 mission 2
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 2
@@ -2121,6 +2173,8 @@ Reset When:
 ### Command an Army
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
 
@@ -2140,10 +2194,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level4mission3challenge](badges/img/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 4 mission 3
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 3
@@ -2159,7 +2215,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel4](badges/img/Level5.png "Complete Level 4")
 
@@ -2175,6 +2233,8 @@ Reset When:
 ### Ghost Ship
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
@@ -2194,10 +2254,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level5mission1challenge](badges/img/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 2 gold bullions and 1 star all while completing level 5 mission 1
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 1
@@ -2212,6 +2274,8 @@ Reset When:
 ### Talk to the Dead
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
 
@@ -2231,10 +2295,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level5mission2challenge](badges/img/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 5 mission 2
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 2
@@ -2249,6 +2315,8 @@ Reset When:
 ### Keeping Warm
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
@@ -2268,10 +2336,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level5mission3challenge](badges/img/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 5 mission 3
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 3
@@ -2287,7 +2357,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel5](badges/img/Level6.png "Complete Level 5")
 
@@ -2303,6 +2375,8 @@ Reset When:
 ### In Safe Hands
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
 
@@ -2322,10 +2396,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level6mission1challenge](badges/img/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 gold bullion all while completing level 6 mission 1
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 1
@@ -2340,6 +2416,8 @@ Reset When:
 ### Enchantment
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
@@ -2359,10 +2437,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level6mission2challenge](badges/img/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart all while completing level 6 mission 2
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 2
@@ -2377,6 +2457,8 @@ Reset When:
 ### Cursed Gem
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
 
@@ -2396,10 +2478,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level6mission3challenge](badges/img/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 6 mission 3
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 3
@@ -2415,7 +2499,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel6](badges/img/Level7.png "Complete Level 6")
 
@@ -2431,6 +2517,8 @@ Reset When:
 ### POP!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
@@ -2450,10 +2538,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level7mission1challenge](badges/img/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 4 stars all while completing level 7 mission 1
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 1
@@ -2468,6 +2558,8 @@ Reset When:
 ### Waiting for a Call
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
 
@@ -2487,10 +2579,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level7mission2challenge](badges/img/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 3 stars all while completing level 7 mission 2
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 2
@@ -2505,6 +2599,8 @@ Reset When:
 ### S.O.S
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
@@ -2524,10 +2620,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level7mission3challenge](badges/img/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 3 stars all while completing level 7 mission 3
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 3
@@ -2543,7 +2641,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel7](badges/img/Level8.png "Complete Level 7")
 
@@ -2559,6 +2659,8 @@ Reset When:
 ### K9 Companion
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
 
@@ -2578,10 +2680,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level8mission1challenge](badges/img/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 8 mission 1
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 1
@@ -2596,6 +2700,8 @@ Reset When:
 ### Fast Getaway
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
 
@@ -2615,10 +2721,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level8mission2challenge](badges/img/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 3 stars all while completing level 8 mission 2
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 2
@@ -2633,6 +2741,8 @@ Reset When:
 ### Piece of Cake
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
 
@@ -2652,10 +2762,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level8mission3challenge](badges/img/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 1 gold bullion and 5 stars all while completing level 8 mission 3
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 3
@@ -2671,7 +2783,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel8](badges/img/Level9.png "Complete Level 8")
 
@@ -2687,6 +2801,8 @@ Reset When:
 ### Hacking the Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
 
@@ -2706,10 +2822,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level9mission1challenge](badges/img/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 5 stars all while completing level 9 mission 1
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 1
@@ -2724,6 +2842,8 @@ Reset When:
 ### Infestation
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
 
@@ -2743,10 +2863,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level9mission2challenge](badges/img/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart, 2 gold bullions and 3 stars all while completing level 9 mission 2
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 2
@@ -2761,6 +2883,8 @@ Reset When:
 ### Home Sweet Home
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **3**
 
 ![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
 
@@ -2780,10 +2904,12 @@ Reset When:
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
+<br>
+Points: **5**
 
 ![level9mission3challenge](badges/img/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
 
-TODO: Update description
+Take no damage and collect 1 heart and 1 star all while completing level 9 mission 3
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 3
@@ -2799,7 +2925,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Progression**_
+Type: _**Missable**_
+<br>
+Points: **10**
 
 ![completelevel9](badges/img/Level10.png "Complete Level 9")
 
@@ -2815,6 +2943,8 @@ Reset When:
 ### King Krond
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **10**
 
 ![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
 
@@ -2833,7 +2963,9 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Win Condition**_
+Type: _**Missable**_
+<br>
+Points: **50**
 
 ![beat game](badges/img/BeatGame.png "Beat Game")
 
