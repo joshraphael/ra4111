@@ -34,7 +34,7 @@ There is 1 play pen, 9 levels with 3 missions each, and a final 10th level with 
 
 ### Stars
 
-Stars are accumulated by collecting them in the missions and displayed as a number in the top left of the screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without losing hearts. This is one of the ways players could cheat in the game to get achievements using the password system. they could find a password that gives you tons of stars before a mission and then the mission will be free. its hard to thward other than calculating the max amount of stars you can get before each level and ensuring they dont go over it. other than that we can't reliably tell if they got the star legitimately or not.
+Stars are accumulated by collecting them in the missions and displayed as a number in the top left of the screen. They allow you to take damage without losing a heart, its like a one hit protection and the more you collect the more hits you can take without losing hearts. Stars can only be obtained from missions, and are not given back if using a password to restore a game state.
 
 ### Detailed Mission Parameters
 
@@ -3052,3 +3052,47 @@ Rich presence is available and will change depending on where you are in the gam
 ## Leaderboards
 
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
+
+### 1. Speedrun Monster Max
+
+The Speedrun Monster Max leaderboard is measuring the time it takes a player to complete the game from start to finish. You do not need to do every level, but you do need to earn enough points to go through each level all the way to the end in one session.
+
+Conditions:
+1. Start game with no levels completed
+2. Finish Game
+
+Reset When:
+1. Password menu opened
+
+Pause When:
+* In title screen
+* In start menu
+* In select menu
+
+### 2. High Score
+
+The High Score leaderboard is a calculations of the players credits, plus stars at the end of the game. points are subtracted when you buy a lift pass. Based on _my_ calculations a player can get a max high score of 10,009.
+
+Conditions:
+1. Start game with no levels completed
+2. Finish Game
+
+Reset When:
+1. Password menu opened
+
+### 3-31. Speedrun Missions
+
+Leaderboards 3 thru 31 are individual speedrun timers for each of the 29 missions. The logic for them is the same and will generalize in the conditions below
+
+Conditions:
+1. Player enters mission
+2. Mission marked complete
+
+Reset When:
+1. Password menu opened
+2. Player quits mission
+3. Player dies (spawn back in lobby)
+
+Pause When:
+* In start menu
+* In select menu
