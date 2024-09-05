@@ -1539,13 +1539,13 @@ rich_presence_conditional_display(
 
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby • ⭐ {0} • 🎫 {1} • 💰 #{2}",
+    "Main Lobby • {0} Stars • {1} Lift Pass • #{2} Credits",
     rich_presence_value( "Lucky Stars", LuckyStars() ),
     rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
     rich_presence_value( "Credits", Credits() )
 )
 rich_presence_display(
-    "🎮 {0} • ❤️ {1} • ⭐ {2}",
+    "{0} • {1} Hearts • {2} Stars",
     rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
     rich_presence_value( "Health", Health() ),
     rich_presence_value( "Lucky Stars", LuckyStars() )
