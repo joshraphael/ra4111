@@ -1513,48 +1513,52 @@ if length( achievements ) == count { // This check is to ensure the amount of ac
 // Rich Presence
 
 levelPass = {
-    0: "Lvl 1",
-    1: "Lvl 2",
-    2: "Lvl 3",
-    3: "Lvl 4",
-    4: "Lvl 5",
-    5: "Lvl 6",
-    6: "Lvl 7",
-    7: "Lvl 8",
-    8: "Lvl 9",
-    9: "Lvl 10"
+    0: "Level 1",
+    1: "Level 2",
+    2: "Level 3",
+    3: "Level 4",
+    4: "Level 5",
+    5: "Level 6",
+    6: "Level 7",
+    7: "Level 8",
+    8: "Level 9",
+    9: "Level 10"
 }
 
 currentMission = {
     1:  "Play Pen",
-    2:  "Lvl 1 Mission 1",
-    3:  "Lvl 1 Mission 2",
-    4:  "Lvl 1 Mission 3",
-    5:  "Lvl 2 Mission 1",
-    6:  "Lvl 2 Mission 2",
-    7:  "Lvl 2 Mission 3",
-    8:  "Lvl 3 Mission 1",
-    9:  "Lvl 3 Mission 2",
-    10: "Lvl 3 Mission 3",
-    11: "Lvl 4 Mission 1",
-    12: "Lvl 4 Mission 2",
-    13: "Lvl 4 Mission 3",
-    14: "Lvl 5 Mission 1",
-    15: "Lvl 5 Mission 2",
-    16: "Lvl 5 Mission 3",
-    17: "Lvl 6 Mission 1",
-    18: "Lvl 6 Mission 2",
-    19: "Lvl 6 Mission 3",
-    20: "Lvl 7 Mission 1",
-    21: "Lvl 7 Mission 2",
-    22: "Lvl 7 Mission 3",
-    23: "Lvl 8 Mission 1",
-    24: "Lvl 8 Mission 2",
-    25: "Lvl 8 Mission 3",
-    26: "Lvl 9 Mission 1",
-    27: "Lvl 9 Mission 2",
-    28: "Lvl 9 Mission 3",
-    29: "Lvl 10 Mission 1"
+    2:  "Level 1 Mission 1",
+    3:  "Level 1 Mission 2",
+    4:  "Level 1 Mission 3",
+    5:  "Level 2 Mission 1",
+    6:  "Level 2 Mission 2",
+    7:  "Level 2 Mission 3",
+    8:  "Level 3 Mission 1",
+    9:  "Level 3 Mission 2",
+    10: "Level 3 Mission 3",
+    11: "Level 4 Mission 1",
+    12: "Level 4 Mission 2",
+    13: "Level 4 Mission 3",
+    14: "Level 5 Mission 1",
+    15: "Level 5 Mission 2",
+    16: "Level 5 Mission 3",
+    17: "Level 6 Mission 1",
+    18: "Level 6 Mission 2",
+    19: "Level 6 Mission 3",
+    20: "Level 7 Mission 1",
+    21: "Level 7 Mission 2",
+    22: "Level 7 Mission 3",
+    23: "Level 8 Mission 1",
+    24: "Level 8 Mission 2",
+    25: "Level 8 Mission 3",
+    26: "Level 9 Mission 1",
+    27: "Level 9 Mission 2",
+    28: "Level 9 Mission 3",
+    29: "Level 10 Mission 1"
+}
+
+singular_lookup = {
+    1: ""
 }
 
 rich_presence_conditional_display(
@@ -1569,16 +1573,21 @@ rich_presence_conditional_display(
 
 rich_presence_conditional_display(
     inMainLobby(),
-    "Main Lobby • {0} Stars • {1} Lift Pass • #{2} Credits",
-    rich_presence_value( "Lucky Stars", LuckyStars() ),
+    "Main Lobby • {0} Star{1} • {2} Lift Pass • #{3} Credit{4}",
+    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" ),
     rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
-    rich_presence_value( "Credits", Credits() )
+    rich_presence_value( "Credits", Credits(), "POINTS" ),
+    rich_presence_lookup( "Multiple Credits Label", Credits(), singular_lookup, "s" )
 )
+
 rich_presence_display(
-    "{0} • {1} Hearts • {2} Stars",
+    "{0} • {1} Heart{2} • {3} Star{4}",
     rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
-    rich_presence_value( "Health", Health() ),
-    rich_presence_value( "Lucky Stars", LuckyStars() )
+    rich_presence_value( "Health", Health(), "VALUE" ),
+    rich_presence_lookup( "Multiple Hearts Label", Health(), singular_lookup, "s" ),
+    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" )
 )
 
 // Leaderboards
