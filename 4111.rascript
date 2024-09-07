@@ -1260,10 +1260,10 @@ for config in MissionConfigs
     }
     
     // Standard mission completion achievements
-    currIndex = config["index"]  
-    desc = format( "{0} and complete level {1} mission {2}", config["description"], config["level"], config["mission"])
+    currIndex = config["index"]
+    desc = format( "{0} and complete Level {1} Mission {2}", config["description"], config["level"], config["mission"])
     leaderboardTitle = format( "Speedrun Level {0} Mission {1}", config["level"], config["mission"] )
-    leaderboardDescription = format( "Complete level {0} mission {1} from start to finish as fast as possible without using passwords", config["level"], config["mission"] )
+    leaderboardDescription = format( "Complete Level {0} Mission {1} from start to finish as fast as possible without using passwords", config["level"], config["mission"] )
     if ( ( config["level"] == 1 && config["mission"] == 0 ) || ( config["level"] == 10 && config["mission"] == 1 ) ) { // Play pen & king krond
         desc = config["description"]
         if ( config["level"] == 1 && config["mission"] == 0 ) {
