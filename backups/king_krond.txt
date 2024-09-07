@@ -1,0 +1,6 @@
+Speedrun King Krond mission
+
+Set 0xd008 = 0x20 // krond destroyed
+Set 0xd08a = 0x0f // all items collected
+
+The final room shouldn't break the bridge and krond is destroyed
