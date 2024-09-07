@@ -2965,7 +2965,7 @@ Reset When:
 
 Type: _**Missable**_
 <br>
-Points: **50**
+Points: **25**
 
 ![beat game](badges/img/BeatGame.png "Beat Game")
 

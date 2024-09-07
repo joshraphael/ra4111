@@ -468,7 +468,8 @@ MissionConfigs = [
         "missionMask":     PLAYPENMASK,
         "hasChallenge":    false,
         "raID":            459884,
-        "raBadge":         "520616"
+        "raBadge":         "520616",
+        "leaderboardID":   114800
     },
     {
         "index":            2,
@@ -494,7 +495,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459886,
-        "challengeRABadge": "520618"
+        "challengeRABadge": "520618",
+        "leaderboardID":    114801
     },
     {
         "index":            4,
@@ -520,7 +522,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459888,
-        "challengeRABadge": "520620"
+        "challengeRABadge": "520620",
+        "leaderboardID":    114802
     },
     {
         "index":            6,
@@ -546,7 +549,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459890,
-        "challengeRABadge": "520622"
+        "challengeRABadge": "520622",
+        "leaderboardID":    114803
     },
     {
         "index":            9,
@@ -572,7 +576,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459893,
-        "challengeRABadge": "520625"
+        "challengeRABadge": "520625",
+        "leaderboardID":    114804
     },
     {
         "index":            11,
@@ -598,7 +603,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459895,
-        "challengeRABadge": "520627"
+        "challengeRABadge": "520627",
+        "leaderboardID":    114805
     },
     {
         "index":            13,
@@ -624,7 +630,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459897,
-        "challengeRABadge": "520629"
+        "challengeRABadge": "520629",
+        "leaderboardID":    114806
     },
     {
         "index":            16,
@@ -650,7 +657,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459900,
-        "challengeRABadge": "520632"
+        "challengeRABadge": "520632",
+        "leaderboardID":    114807
     },
     {
         "index":            18,
@@ -676,7 +684,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459902,
-        "challengeRABadge": "520634"
+        "challengeRABadge": "520634",
+        "leaderboardID":    114808
     },
     {
         "index":            20,
@@ -702,7 +711,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459904,
-        "challengeRABadge": "520636"
+        "challengeRABadge": "520636",
+        "leaderboardID":    114809
     },
     {
         "index":            23,
@@ -728,7 +738,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459907,
-        "challengeRABadge": "520639"
+        "challengeRABadge": "520639",
+        "leaderboardID":    114810
     },
     {
         "index":            25,
@@ -754,7 +765,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459909,
-        "challengeRABadge": "520641"
+        "challengeRABadge": "520641",
+        "leaderboardID":    114811
     },
     {
         "index":            27,
@@ -780,7 +792,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459911,
-        "challengeRABadge": "520643"
+        "challengeRABadge": "520643",
+        "leaderboardID":    114812
     },
     {
         "index":            30,
@@ -806,7 +819,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459914,
-        "challengeRABadge": "520646"
+        "challengeRABadge": "520646",
+        "leaderboardID":    114813
     },
     {
         "index":            32,
@@ -832,7 +846,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459916,
-        "challengeRABadge": "520648"
+        "challengeRABadge": "520648",
+        "leaderboardID":    114814
     },
     {
         "index":            34,
@@ -858,7 +873,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459918,
-        "challengeRABadge": "520650"
+        "challengeRABadge": "520650",
+        "leaderboardID":    114815
     },
     {
         "index":            37,
@@ -884,7 +900,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459921,
-        "challengeRABadge": "520653"
+        "challengeRABadge": "520653",
+        "leaderboardID":    114816
     },
     {
         "index":            39,
@@ -910,7 +927,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459923,
-        "challengeRABadge": "520655"
+        "challengeRABadge": "520655",
+        "leaderboardID":    114817
     },
     {
         "index":            41,
@@ -936,7 +954,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459925,
-        "challengeRABadge": "520657"
+        "challengeRABadge": "520657",
+        "leaderboardID":    114818
     },
     {
         "index":            44,
@@ -962,7 +981,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459928,
-        "challengeRABadge": "520660"
+        "challengeRABadge": "520660",
+        "leaderboardID":    114819
     },
     {
         "index":            46,
@@ -988,7 +1008,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459930,
-        "challengeRABadge": "520662"
+        "challengeRABadge": "520662",
+        "leaderboardID":    114820
     },
     {
         "index":            48,
@@ -1014,7 +1035,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459932,
-        "challengeRABadge": "520664"
+        "challengeRABadge": "520664",
+        "leaderboardID":    114821
     },
     {
         "index":            51,
@@ -1040,7 +1062,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459935,
-        "challengeRABadge": "520667"
+        "challengeRABadge": "520667",
+        "leaderboardID":    114822
     },
     {
         "index":            53,
@@ -1066,7 +1089,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459937,
-        "challengeRABadge": "520669"
+        "challengeRABadge": "520669",
+        "leaderboardID":    114823
     },
     {
         "index":            55,
@@ -1092,7 +1116,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459939,
-        "challengeRABadge": "520671"
+        "challengeRABadge": "520671",
+        "leaderboardID":    114824
     },
     {
         "index":            58,
@@ -1118,7 +1143,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459942,
-        "challengeRABadge": "520674"
+        "challengeRABadge": "520674",
+        "leaderboardID":    114825
     },
     {
         "index":            60,
@@ -1144,7 +1170,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459944,
-        "challengeRABadge": "520676"
+        "challengeRABadge": "520676",
+        "leaderboardID":    114826
     },
     {
         "index":            62,
@@ -1170,7 +1197,8 @@ MissionConfigs = [
         "hasChallenge":     true,
         "challengePoints":  5,
         "challengeRAID":    459946,
-        "challengeRABadge": "520678"
+        "challengeRABadge": "520678",
+        "leaderboardID":    114827
     },
     {
         "index":            65,
@@ -1193,7 +1221,8 @@ MissionConfigs = [
         "points":           10,
         "raID":             459948,
         "raBadge":          "520680",
-        "hasChallenge":     false
+        "hasChallenge":     false,
+        "leaderboardID":    114828
     }
 ]
 
@@ -1366,7 +1395,8 @@ for config in MissionConfigs
                            unless( inSelectMenu() ) &&
                            unless( inStartMenu() ),
         "format":          "FRAMES",
-        "lower_is_better": true
+        "lower_is_better": true,
+        "id":              config["leaderboardID"]
     }
     array_push( leaderboards, l )
 }
@@ -1376,7 +1406,7 @@ currIndex = count + 1
 a = {
     "title":       "Beat the Game",
     "description": "Beat every level of the game without using passwords in one session",
-    "points":      50,
+    "points":      25,
     "trigger":     measured(
         tally(2,
             once( GameStarts() ),
@@ -1564,7 +1594,8 @@ speedrun = {
                        unless( inSelectMenu() ) &&
                        unless( inStartMenu() ),
     "format":          "FRAMES",
-    "lower_is_better": true
+    "lower_is_better": true,
+    "id":              114798
 }
 array_push( leaderboards, speedrun )
 
@@ -1576,20 +1607,22 @@ highScore = {
     "submit":          GameEnds(),
     "value":           Credits() + LuckyStars(),
     "format":          "VALUE",
-    "lower_is_better": false
+    "lower_is_better": false,
+    "id":              114799
 }
 array_push( leaderboards, highScore )
 
 for l in leaderboards
 {
     leaderboard(
-        title       = l["title"],
-        description = l["description"],
-        start = l["start"],
-        cancel = l["cancel"],
-        submit = l["submit"],
-        value = l["value"],
-        format = l["format"],
-        lower_is_better = l["lower_is_better"]
+        title           = l["title"],
+        description     = l["description"],
+        start           = l["start"],
+        cancel          = l["cancel"],
+        submit          = l["submit"],
+        value           = l["value"],
+        format          = l["format"],
+        lower_is_better = l["lower_is_better"],
+        id              = l["id"]
     )
 }
