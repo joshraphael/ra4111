@@ -1589,7 +1589,8 @@ speedrun = {
     "start":           GameStarts(),
     "cancel":          OpenPasswordMenu(),
     "submit":          GameEnds(),
-    "value":           measured( always_true() ) &&
+    "value":           tally(37, deduct(always_true())) && // 60 * 0.61 = ~36.6 frames unavoidable in the start, remove them to start at 0 seconds
+                       measured( always_true() ) &&
                        unless( inTitleScreen() ) &&
                        unless( inSelectMenu() ) &&
                        unless( inStartMenu() ),
