@@ -1241,7 +1241,7 @@ for config in MissionConfigs
         levelIndex = config["index"] - 1
         levelAchievement = {
             "title":       format("Complete Level {0}", currentLevel),
-            "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords in one session", currentLevel, config["level"]),
+            "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
             "points":      10,
             "trigger":     measured(
                 tally(2,
@@ -1296,7 +1296,7 @@ for config in MissionConfigs
         currIndex = currIndex + 1
         items = ""
         if config["inGameHearts"] > 0 || config["gold"] > 0 || config["stars"] > 0 {
-            items = " and collect "
+            items = ", collect "
             heartLabel = "heart"
             if config["inGameHearts"] > 1 {
                 heartLabel = "hearts"
@@ -1337,8 +1337,8 @@ for config in MissionConfigs
             }
         }
         a1 = {
-            "title":       format("Perfect Level {0} Mission {1}", config["level"], config["mission"]),
-            "description": format("Take no damage{0} all while completing level {1} mission {2}", items, config["level"], config["mission"]),
+            "title":       format("Perfect {0}", config["title"]),
+            "description": format("Without taking damage{0} and complete Level {1} Mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
             "trigger":     measured(
                 MissionCompletePerfectCondition(
@@ -1405,7 +1405,7 @@ for config in MissionConfigs
 currIndex = count + 1
 a = {
     "title":       "Beat the Game",
-    "description": "Beat every level of the game without using passwords in one session",
+    "description": "Beat every level of the game without using passwords",
     "points":      25,
     "trigger":     measured(
         tally(2,
