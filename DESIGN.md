@@ -494,49 +494,50 @@ Level 10 Summary:
 1. [Start Menu](#start-menu)
 2. [Select Menu](#select-menu)
 3. [Current Mission](#current-mission)
-4. [Mission Flags](#mission-flags)
-5. [Missions Unlocked Flags](#missions-unlocked-flags)
-6. [Mission Key Item Flags](#mission-key-item-flags)
-7. [A Button Item](#a-button-item)
-8. [B Button Item](#b-button-item)
-9. [Bag Contents](#bag-contents)
-10. [Lucky Stars](#lucky-stars)
-11. [Health](#health)
-12. [Speed Boost](#speed-boost)
-13. [Power Ring Time](#power-ring-time)
-14. [Power Spring Jumps](#power-spring-jumps)
-15. [Player Direction Facing](#player-direction-facing)
-16. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
-17. [Lift Pass Level](#lift-pass-level)
-18. [Credits](#credits)
-19. [Response Setting](#response-setting)
-20. [Idle Animation Timer](#idle-animation-timer)
-21. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
-22. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
-23. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
-24. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
-25. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
-26. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
-27. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
-28. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
-29. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
-30. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
-31. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
-32. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
-33. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
-34. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
-35. [Select Menu Option](#select-menu-option)
-36. [Language](#language)
-37. [Control Pad Setting](#control-pad-setting)
-38. [Password Character 1](#password-character-1)
-39. [Password Character 2](#password-character-2)
-40. [Password Character 3](#password-character-3)
-41. [Password Character 4](#password-character-4)
-42. [Password Character 5](#password-character-5)
-43. [Password Character 6](#password-character-6)
-44. [Password Character 7](#password-character-7)
-45. [Password Character 8](#password-character-8)
-46. [Mission Bonus Credits](#mission-bonus-credits)
+4. [Item Flags](#item-flags)
+5. [Mission Flags](#mission-flags)
+6. [Missions Unlocked Flags](#missions-unlocked-flags)
+7. [Mission Key Item Flags](#mission-key-item-flags)
+8. [A Button Item](#a-button-item)
+9. [B Button Item](#b-button-item)
+10. [Bag Contents](#bag-contents)
+11. [Lucky Stars](#lucky-stars)
+12. [Health](#health)
+13. [Speed Boost](#speed-boost)
+14. [Power Ring Time](#power-ring-time)
+15. [Power Spring Jumps](#power-spring-jumps)
+16. [Player Direction Facing](#player-direction-facing)
+17. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
+18. [Lift Pass Level](#lift-pass-level)
+19. [Credits](#credits)
+20. [Response Setting](#response-setting)
+21. [Idle Animation Timer](#idle-animation-timer)
+22. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
+23. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
+24. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
+25. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
+26. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
+27. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
+28. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
+29. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
+30. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
+31. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
+32. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
+33. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
+34. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
+35. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
+36. [Select Menu Option](#select-menu-option)
+37. [Language](#language)
+38. [Control Pad Setting](#control-pad-setting)
+39. [Password Character 1](#password-character-1)
+40. [Password Character 2](#password-character-2)
+41. [Password Character 3](#password-character-3)
+42. [Password Character 4](#password-character-4)
+43. [Password Character 5](#password-character-5)
+44. [Password Character 6](#password-character-6)
+45. [Password Character 7](#password-character-7)
+46. [Password Character 8](#password-character-8)
+47. [Mission Bonus Credits](#mission-bonus-credits)
 
 ### _Start Menu_
 
@@ -606,6 +607,32 @@ Notes: integer specifying what current mission the player is in
 * 0x1e = Title Screen
 * 0x1f = Final Concert Scene
 
+### _Item Flags_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+Notes: Does not appear to be an order of item type. There is a max 16 items that can be found of any kind and these flags are used to make them disappear when re-entering a room.
+
+0 = not obtained
+1 = obtained
+
+[bit 0] Item 1
+[bit 1] Item 2
+[bit 2] Item 3
+[bit 3] Item 4
+[bit 4] Item 5
+[bit 5] Item 6
+[bit 6] Item 7
+[bit 7] Item 8
+[bit 8] Item 9
+[bit 9] Item 10
+[bit 10] Item 11
+[bit 11] Item 12
+[bit 12] Item 13
+[bit 13] Item 14
+[bit 14] Item 15
+[bit 15] Item 16
+
 ### _Mission Flags_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
@@ -630,7 +657,7 @@ Notes: bit flags for items obtained in missions
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xd004** (32-bit)
+**0xd00a** (32-bit)
 
 Notes: bit flags for missions completed
 
