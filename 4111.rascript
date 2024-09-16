@@ -103,6 +103,9 @@ function PasswordChar7() => byte( 0xd3f6 )
 // $D3F7 - Password eigth char
 function PasswordChar8() => byte( 0xd3f7 )
 
+// $D3E5 - Current Select Menu Option Selection
+function SelectMenuOption() => byte( 0xd3e5 )
+
 // $D402 - Mission Bonus
 function Bonus() => word( 0xd402 )
 
@@ -354,6 +357,8 @@ function countMissionRoomsAvailable()
 function OpenPasswordMenu()
 {
     return (
+        inSelectMenu() &&
+        SelectMenuOption() == 0x01 && // enter password menu
         prev( PasswordChar1() ) != 0xFF && PasswordChar1() == 0xFF &&
         prev( PasswordChar2() ) != 0xFF && PasswordChar2() == 0xFF &&
         prev( PasswordChar3() ) != 0xFF && PasswordChar3() == 0xFF &&
@@ -1389,7 +1394,11 @@ for config in MissionConfigs
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
         "start":           PlayerEntersMission( config["missionId"] ),
-        "cancel":          ( OpenPasswordMenu() || PlayerDies() || PlayerQuitsMission( config["missionId"], config["missionMask"] ) ),
+        "cancel":          (
+            OpenPasswordMenu() ||
+            PlayerDies() ||
+            PlayerQuitsMission( config["missionId"], config["missionMask"] )
+        ),
         "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&
@@ -1499,13 +1508,13 @@ if length( achievements ) == count { // This check is to ensure the amount of ac
     for index in range( 1, count ) {
         a = achievements[index]
         achievement(
-            title = a["title"],
+            title       = a["title"],
             description = a["description"],
-            points = a["points"],
-            trigger = a["trigger"],
-            type = a["type"],
-            id = a["id"],
-            badge = a["badge"]
+            points      = a["points"],
+            trigger     = a["trigger"],
+            type        = a["type"],
+            id          = a["id"],
+            badge       = a["badge"]
         )
     }
 }
@@ -1598,7 +1607,7 @@ speedrun = {
     "start":           GameStarts(),
     "cancel":          OpenPasswordMenu(),
     "submit":          GameEnds(),
-    "value":           tally(37, deduct(always_true())) && // 60 * 0.61 = ~36.6 frames unavoidable in the start, remove them to start at 0 seconds
+    "value":           tally( 37, deduct( always_true() ) ) && // 60 * 0.61 = ~36.6 frames unavoidable in the start, remove them to start at 0 seconds
                        measured( always_true() ) &&
                        unless( inTitleScreen() ) &&
                        unless( inSelectMenu() ) &&
