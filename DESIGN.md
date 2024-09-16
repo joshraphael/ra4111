@@ -611,27 +611,29 @@ Notes: integer specifying what current mission the player is in
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
+**0xd002** (16-bit)
+
 Notes: Does not appear to be an order of item type. There is a max 16 items that can be found of any kind and these flags are used to make them disappear when re-entering a room.
 
 0 = not obtained
 1 = obtained
 
-[bit 0] Item 1
-[bit 1] Item 2
-[bit 2] Item 3
-[bit 3] Item 4
-[bit 4] Item 5
-[bit 5] Item 6
-[bit 6] Item 7
-[bit 7] Item 8
-[bit 8] Item 9
-[bit 9] Item 10
-[bit 10] Item 11
-[bit 11] Item 12
-[bit 12] Item 13
-[bit 13] Item 14
-[bit 14] Item 15
-[bit 15] Item 16
+* Bit0 = Item 1
+* Bit1 = Item 2
+* Bit2 = Item 3
+* Bit3 = Item 4
+* Bit4 = Item 5
+* Bit5 = Item 6
+* Bit6 = Item 7
+* Bit7 = Item 8
+* Bit8 = Item 9
+* Bit9 = Item 10
+* Bit10 = Item 11
+* Bit11 = Item 12
+* Bit12 = Item 13
+* Bit13 = Item 14
+* Bit14 = Item 15
+* Bit15 = Item 16
 
 ### _Mission Flags_
 
@@ -644,14 +646,14 @@ Notes: bit flags for items obtained in missions
 0 = not obtained<br>
 1 = obtained
 
-* [bit 0] Item 1
-* [bit 1] Mission Door
-* [bit 2] N/A
-* [bit 3] N/A
-* [bit 4] N/A
-* [bit 5] N/A
-* [bit 6] N/A
-* [bit 7] N/A
+* Bit0 = Item 1
+* Bit1 = Mission Door
+* Bit2 = N/A
+* Bit3 = N/A
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = N/A
 
 ### _Missions Unlocked Flags_
 
@@ -664,38 +666,38 @@ Notes: bit flags for missions completed
 0 = not completed<br>
 1 = completed
 
-* [bit 0] Play Pen
-* [bit 1] Level 1 Mission 1
-* [bit 2] Level 1 Mission 2
-* [bit 3] Level 1 Mission 3
-* [bit 4] Level 2 Mission 1
-* [bit 5] Level 2 Mission 2
-* [bit 6] Level 2 Mission 3
-* [bit 7] Level 3 Mission 1
-* [bit 8] Level 3 Mission 2
-* [bit 9] Level 3 Mission 3
-* [bit 10] Level 4 Mission 1
-* [bit 11] Level 4 Mission 2
-* [bit 12] Level 4 Mission 3
-* [bit 13] Level 5 Mission 1
-* [bit 14] Level 5 Mission 2
-* [bit 15] Level 5 Mission 3
-* [bit 16] Level 6 Mission 1
-* [bit 17] Level 6 Mission 2
-* [bit 18] Level 6 Mission 3
-* [bit 19] Level 7 Mission 1
-* [bit 20] Level 7 Mission 2
-* [bit 21] Level 7 Mission 3
-* [bit 22] Level 8 Mission 1
-* [bit 23] Level 8 Mission 2
-* [bit 24] Level 8 Mission 3
-* [bit 25] Level 9 Mission 1
-* [bit 26] Level 9 Mission 2
-* [bit 27] Level 9 Mission 3
-* [bit 28] Level 10 Mission 1
-* [bit 29] \<Unused\>
-* [bit 30] \<Unused\>
-* [bit 31] \<Unused\>
+* Bit0 = Play Pen
+* Bit1 = Level 1 Mission 1
+* Bit2 = Level 1 Mission 2
+* Bit3 = Level 1 Mission 3
+* Bit4 = Level 2 Mission 1
+* Bit5 = Level 2 Mission 2
+* Bit6 = Level 2 Mission 3
+* Bit7 = Level 3 Mission 1
+* Bit8 = Level 3 Mission 2
+* Bit9 = Level 3 Mission 3
+* Bit10 = Level 4 Mission 1
+* Bit11 = Level 4 Mission 2
+* Bit12 = Level 4 Mission 3
+* Bit13 = Level 5 Mission 1
+* Bit14 = Level 5 Mission 2
+* Bit15 = Level 5 Mission 3
+* Bit16 = Level 6 Mission 1
+* Bit17 = Level 6 Mission 2
+* Bit18 = Level 6 Mission 3
+* Bit19 = Level 7 Mission 1
+* Bit20 = Level 7 Mission 2
+* Bit21 = Level 7 Mission 3
+* Bit22 = Level 8 Mission 1
+* Bit23 = Level 8 Mission 2
+* Bit24 = Level 8 Mission 3
+* Bit25 = Level 9 Mission 1
+* Bit26 = Level 9 Mission 2
+* Bit27 = Level 9 Mission 3
+* Bit28 = Level 10 Mission
+* Bit29 = Unused
+* Bit30 = Unused
+* Bit31 = Unused
 
 ### _Mission Key Item Flags_
 
@@ -708,14 +710,14 @@ Notes: bit flags for key items obtained in missions
 0 = not obtained<br>
 1 = obtained
 
-* [bit 0] item 1
-* [bit 1] item 2
-* [bit 2] item 3
-* [bit 3] item 4
-* [bit 4] item 5
-* [bit 5] item 6
-* [bit 6] item 7
-* [bit 7] item 8
+* Bit0 = item 1
+* Bit1 = item 2
+* Bit2 = item 3
+* Bit3 = item 4
+* Bit4 = item 5
+* Bit5 = item 6
+* Bit6 = item 7
+* Bit7 = item 8
 
 ### _A Button Item_
 
@@ -964,14 +966,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 1
-* [bit 1] room 2
-* [bit 2] room 3
-* [bit 3] room 4
-* [bit 4] room 5
-* [bit 5] room 6
-* [bit 6] room 7
-* [bit 7] room 8
+* Bit0 = room 1
+* Bit1 = room 2
+* Bit2 = room 3
+* Bit3 = room 4
+* Bit4 = room 5
+* Bit5 = room 6
+* Bit6 = room 7
+* Bit7 = room 8
 
 ### _Start Menu Map Group 2 Flags_
 
@@ -983,14 +985,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 9
-* [bit 1] room 10
-* [bit 2] room 11
-* [bit 3] room 12
-* [bit 4] room 13
-* [bit 5] room 14
-* [bit 6] room 15
-* [bit 7] room 16
+* Bit0 = room 9
+* Bit1 = room 10
+* Bit2 = room 11
+* Bit3 = room 12
+* Bit4 = room 13
+* Bit5 = room 14
+* Bit6 = room 15
+* Bit7 = room 16
 
 ### _Start Menu Map Group 3 Flags_
 
@@ -1002,14 +1004,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 17
-* [bit 1] room 18
-* [bit 2] room 19
-* [bit 3] room 20
-* [bit 4] room 21
-* [bit 5] room 22
-* [bit 6] room 23
-* [bit 7] room 24
+* Bit0 = room 17
+* Bit1 = room 18
+* Bit2 = room 19
+* Bit3 = room 20
+* Bit4 = room 21
+* Bit5 = room 22
+* Bit6 = room 23
+* Bit7 = room 24
 
 ### _Start Menu Map Group 4 Flags_
 
@@ -1021,14 +1023,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 25
-* [bit 1] room 26
-* [bit 2] room 27
-* [bit 3] room 28
-* [bit 4] room 29
-* [bit 5] room 30
-* [bit 6] room 31
-* [bit 7] room 32
+* Bit0 = room 25
+* Bit1 = room 26
+* Bit2 = room 27
+* Bit3 = room 28
+* Bit4 = room 29
+* Bit5 = room 30
+* Bit6 = room 31
+* Bit7 = room 32
 
 ### _Start Menu Map Group 5 Flags_
 
@@ -1040,14 +1042,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 33
-* [bit 1] room 34
-* [bit 2] room 35
-* [bit 3] room 36
-* [bit 4] room 37
-* [bit 5] room 38
-* [bit 6] room 39
-* [bit 7] room 40
+* Bit0 = room 33
+* Bit1 = room 34
+* Bit2 = room 35
+* Bit3 = room 36
+* Bit4 = room 37
+* Bit5 = room 38
+* Bit6 = room 39
+* Bit7 = room 40
 
 ### _Start Menu Map Group 6 Flags_
 
@@ -1059,14 +1061,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 41
-* [bit 1] room 42
-* [bit 2] room 43
-* [bit 3] room 44
-* [bit 4] room 45
-* [bit 5] room 46
-* [bit 6] room 47
-* [bit 7] room 48
+* Bit0 = room 41
+* Bit1 = room 42
+* Bit2 = room 43
+* Bit3 = room 44
+* Bit4 = room 45
+* Bit5 = room 46
+* Bit6 = room 47
+* Bit7 = room 48
 
 ### _Start Menu Map Group 7 Flags_
 
@@ -1078,14 +1080,14 @@ Notes:<br>
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 49
-* [bit 1] room 50
-* [bit 2] room 51
-* [bit 3] room 52
-* [bit 4] room 53
-* [bit 5] room 54
-* [bit 6] room 55
-* [bit 7] room 56
+* Bit0 = room 49
+* Bit1 = room 50
+* Bit2 = room 51
+* Bit3 = room 52
+* Bit4 = room 53
+* Bit5 = room 54
+* Bit6 = room 55
+* Bit7 = room 56
 
 ### _Rooms Available In Mission Group 1_
 
@@ -1098,14 +1100,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 1
-* [bit 1] room 2
-* [bit 2] room 3
-* [bit 3] room 4
-* [bit 4] room 5
-* [bit 5] room 6
-* [bit 6] room 7
-* [bit 7] room 8
+* Bit0 = room 1
+* Bit1 = room 2
+* Bit2 = room 3
+* Bit3 = room 4
+* Bit4 = room 5
+* Bit5 = room 6
+* Bit6 = room 7
+* Bit7 = room 8
 
 ### _Rooms Available In Mission Group 2_
 
@@ -1118,14 +1120,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 9
-* [bit 1] room 10
-* [bit 2] room 11
-* [bit 3] room 12
-* [bit 4] room 13
-* [bit 5] room 14
-* [bit 6] room 15
-* [bit 7] room 16
+* Bit0 = room 9
+* Bit1 = room 10
+* Bit2 = room 11
+* Bit3 = room 12
+* Bit4 = room 13
+* Bit5 = room 14
+* Bit6 = room 15
+* Bit7 = room 16
 
 ### _Rooms Available In Mission Group 3_
 
@@ -1138,14 +1140,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 17
-* [bit 1] room 18
-* [bit 2] room 19
-* [bit 3] room 20
-* [bit 4] room 21
-* [bit 5] room 22
-* [bit 6] room 23
-* [bit 7] room 24
+* Bit0 = room 17
+* Bit1 = room 18
+* Bit2 = room 19
+* Bit3 = room 20
+* Bit4 = room 21
+* Bit5 = room 22
+* Bit6 = room 23
+* Bit7 = room 24
 
 ### _Rooms Available In Mission Group 4_
 
@@ -1158,14 +1160,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 25
-* [bit 1] room 26
-* [bit 2] room 27
-* [bit 3] room 28
-* [bit 4] room 29
-* [bit 5] room 30
-* [bit 6] room 31
-* [bit 7] room 32
+* Bit0 = room 25
+* Bit1 = room 26
+* Bit2 = room 27
+* Bit3 = room 28
+* Bit4 = room 29
+* Bit5 = room 30
+* Bit6 = room 31
+* Bit7 = room 32
 
 ### _Rooms Available In Mission Group 5_
 
@@ -1178,14 +1180,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 33
-* [bit 1] room 34
-* [bit 2] room 35
-* [bit 3] room 36
-* [bit 4] room 37
-* [bit 5] room 38
-* [bit 6] room 39
-* [bit 7] room 40
+* Bit0 = room 33
+* Bit1 = room 34
+* Bit2 = room 35
+* Bit3 = room 36
+* Bit4 = room 37
+* Bit5 = room 38
+* Bit6 = room 39
+* Bit7 = room 40
 
 ### _Rooms Available In Mission Group 6_
 
@@ -1198,14 +1200,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 41
-* [bit 1] room 42
-* [bit 2] room 43
-* [bit 3] room 44
-* [bit 4] room 45
-* [bit 5] room 46
-* [bit 6] room 47
-* [bit 7] room 48
+* Bit0 = room 41
+* Bit1 = room 42
+* Bit2 = room 43
+* Bit3 = room 44
+* Bit4 = room 45
+* Bit5 = room 46
+* Bit6 = room 47
+* Bit7 = room 48
 
 ### _Rooms Available In Mission Group 7_
 
@@ -1218,14 +1220,14 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 0 = room not visited<br>
 1 = room visited
 
-* [bit 0] room 49
-* [bit 1] room 50
-* [bit 2] room 51
-* [bit 3] room 52
-* [bit 4] room 53
-* [bit 5] room 54
-* [bit 6] room 55
-* [bit 7] room 56
+* Bit0 = room 49
+* Bit1 = room 50
+* Bit2 = room 51
+* Bit3 = room 52
+* Bit4 = room 53
+* Bit5 = room 54
+* Bit6 = room 55
+* Bit7 = room 56
 
 ### _Select Menu Option_
 
