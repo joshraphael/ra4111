@@ -1755,7 +1755,7 @@ Notes: Y coordinate of cursor in the information selection menu
 
 Points: **1**
 
-![play pen](badges/img/PlayPen.png "Play Pen")
+![play pen](badges/PlayPen.png "Play Pen")
 
 Beat the play pen tutorial
 
@@ -1774,7 +1774,7 @@ Reset When:
 
 Points: **3**
 
-![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
+![level1mission1](badges/Level1Mission1.png "Level 1 Mission 1")
 
 Destroy the mind and complete Level 1 Mission 1
 
@@ -1795,7 +1795,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level1mission1challenge](badges/img/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
+![level1mission1challenge](badges/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 1 Mission 1
 
@@ -1815,7 +1815,7 @@ Reset When:
 
 Points: **3**
 
-![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
+![level1mission2](badges/Level1Mission2.png "Level 1 Mission 2")
 
 Steal the Ice Queen's crown and complete Level 1 Mission 2
 
@@ -1836,7 +1836,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level1mission2challenge](badges/img/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
+![level1mission2challenge](badges/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 1 Mission 2
 
@@ -1857,7 +1857,7 @@ Reset When:
 
 Points: **3**
 
-![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
+![level1mission3](badges/Level1Mission3.png "Level 1 Mission 3")
 
 Destroy the alchemist and complete Level 1 Mission 3
 
@@ -1878,7 +1878,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level1mission3challenge](badges/img/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
+![level1mission3challenge](badges/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 1 Mission 3
 
@@ -1900,7 +1900,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel1](badges/img/Level2.png "Complete Level 1")
+![completelevel1](badges/Level2.png "Complete Level 1")
 
 Complete level 1 and buy the lift pass for level 2 without using passwords
 
@@ -1917,7 +1917,7 @@ Reset When:
 
 Points: **3**
 
-![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
+![level2mission1](badges/Level2Mission1.png "Level 2 Mission 1")
 
 Destroy the all seeing eye and complete Level 2 Mission 1
 
@@ -1938,7 +1938,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level2mission1challenge](badges/img/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
+![level2mission1challenge](badges/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart and 2 stars and complete Level 2 Mission 1
 
@@ -1958,7 +1958,7 @@ Reset When:
 
 Points: **3**
 
-![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
+![level2mission2](badges/Level2Mission2.png "Level 2 Mission 2")
 
 Read the secret code and complete Level 2 Mission 2
 
@@ -1979,7 +1979,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level2mission2challenge](badges/img/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
+![level2mission2challenge](badges/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 2 Mission 2
 
@@ -1999,7 +1999,7 @@ Reset When:
 
 Points: **3**
 
-![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
+![level2mission3](badges/Level2Mission3.png "Level 2 Mission 3")
 
 Launch the self destructing rocket and complete Level 2 Mission 3
 
@@ -2020,7 +2020,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level2mission3challenge](badges/img/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
+![level2mission3challenge](badges/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart and complete Level 2 Mission 3
 
@@ -2042,7 +2042,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel2](badges/img/Level3.png "Complete Level 2")
+![completelevel2](badges/Level3.png "Complete Level 2")
 
 Complete level 2 and buy the lift pass for level 3 without using passwords
 
@@ -2059,7 +2059,7 @@ Reset When:
 
 Points: **3**
 
-![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
+![level3mission1](badges/Level3Mission1.png "Level 3 Mission 1")
 
 Find the flashlight and complete Level 3 Mission 1
 
@@ -2080,7 +2080,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level3mission1challenge](badges/img/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
+![level3mission1challenge](badges/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart and 2 stars and complete Level 3 Mission 1
 
@@ -2100,7 +2100,7 @@ Reset When:
 
 Points: **3**
 
-![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
+![level3mission2](badges/Level3Mission2.png "Level 3 Mission 2")
 
 Find the electrical control box and complete Level 3 Mission 2
 
@@ -2121,7 +2121,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level3mission2challenge](badges/img/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
+![level3mission2challenge](badges/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 3 Mission 2
 
@@ -2141,7 +2141,7 @@ Reset When:
 
 Points: **3**
 
-![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
+![level3mission3](badges/Level3Mission3.png "Level 3 Mission 3")
 
 Search for the piggy bank and complete Level 3 Mission 3
 
@@ -2162,7 +2162,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level3mission3challenge](badges/img/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
+![level3mission3challenge](badges/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 3 Mission 3
 
@@ -2184,7 +2184,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel3](badges/img/Level4.png "Complete Level 3")
+![completelevel3](badges/Level4.png "Complete Level 3")
 
 Complete level 3 and buy the lift pass for level 4 without using passwords
 
@@ -2201,7 +2201,7 @@ Reset When:
 
 Points: **3**
 
-![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
+![level4mission1](badges/Level4Mission1.png "Level 4 Mission 1")
 
 Collect the pocketwatch and complete Level 4 Mission 1
 
@@ -2222,7 +2222,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level4mission1challenge](badges/img/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
+![level4mission1challenge](badges/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart and 1 gold bullion and complete Level 4 Mission 1
 
@@ -2242,7 +2242,7 @@ Reset When:
 
 Points: **3**
 
-![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
+![level4mission2](badges/Level4Mission2.png "Level 4 Mission 2")
 
 Get rid of the poisoned food and complete Level 4 Mission 2
 
@@ -2263,7 +2263,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level4mission2challenge](badges/img/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
+![level4mission2challenge](badges/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 2
 
@@ -2283,7 +2283,7 @@ Reset When:
 
 Points: **3**
 
-![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
+![level4mission3](badges/Level4Mission3.png "Level 4 Mission 3")
 
 Earn the crown of attack and complete Level 4 Mission 3
 
@@ -2304,7 +2304,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level4mission3challenge](badges/img/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
+![level4mission3challenge](badges/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 3
 
@@ -2326,7 +2326,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel4](badges/img/Level5.png "Complete Level 4")
+![completelevel4](badges/Level5.png "Complete Level 4")
 
 Complete level 4 and buy the lift pass for level 5 without using passwords
 
@@ -2343,7 +2343,7 @@ Reset When:
 
 Points: **3**
 
-![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
+![level5mission1](badges/Level5Mission1.png "Level 5 Mission 1")
 
 Take the ghost ship wood log and complete Level 5 Mission 1
 
@@ -2364,7 +2364,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level5mission1challenge](badges/img/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
+![level5mission1challenge](badges/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart, 2 gold bullions and 1 star and complete Level 5 Mission 1
 
@@ -2384,7 +2384,7 @@ Reset When:
 
 Points: **3**
 
-![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
+![level5mission2](badges/Level5Mission2.png "Level 5 Mission 2")
 
 Collect the crystal ball and complete Level 5 Mission 2
 
@@ -2405,7 +2405,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level5mission2challenge](badges/img/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
+![level5mission2challenge](badges/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 2
 
@@ -2425,7 +2425,7 @@ Reset When:
 
 Points: **3**
 
-![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
+![level5mission3](badges/Level5Mission3.png "Level 5 Mission 3")
 
 Use the wood stove and complete Level 5 Mission 3
 
@@ -2446,7 +2446,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level5mission3challenge](badges/img/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
+![level5mission3challenge](badges/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 3
 
@@ -2468,7 +2468,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel5](badges/img/Level6.png "Complete Level 5")
+![completelevel5](badges/Level6.png "Complete Level 5")
 
 Complete level 5 and buy the lift pass for level 6 without using passwords
 
@@ -2485,7 +2485,7 @@ Reset When:
 
 Points: **3**
 
-![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
+![level6mission1](badges/Level6Mission1.png "Level 6 Mission 1")
 
 Return the safe and complete Level 6 Mission 1
 
@@ -2506,7 +2506,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level6mission1challenge](badges/img/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
+![level6mission1challenge](badges/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
 
 Without taking damage, collect 1 gold bullion and complete Level 6 Mission 1
 
@@ -2526,7 +2526,7 @@ Reset When:
 
 Points: **3**
 
-![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
+![level6mission2](badges/Level6Mission2.png "Level 6 Mission 2")
 
 Smash the potion vial and complete Level 6 Mission 2
 
@@ -2547,7 +2547,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level6mission2challenge](badges/img/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
+![level6mission2challenge](badges/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart and complete Level 6 Mission 2
 
@@ -2567,7 +2567,7 @@ Reset When:
 
 Points: **3**
 
-![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
+![level6mission3](badges/Level6Mission3.png "Level 6 Mission 3")
 
 Destroy the dark jewel and complete Level 6 Mission 3
 
@@ -2588,7 +2588,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level6mission3challenge](badges/img/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
+![level6mission3challenge](badges/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 6 Mission 3
 
@@ -2610,7 +2610,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel6](badges/img/Level7.png "Complete Level 6")
+![completelevel6](badges/Level7.png "Complete Level 6")
 
 Complete level 6 and buy the lift pass for level 7 without using passwords
 
@@ -2627,7 +2627,7 @@ Reset When:
 
 Points: **3**
 
-![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
+![level7mission1](badges/Level7Mission1.png "Level 7 Mission 1")
 
 Earn the fizzy soda prize and complete Level 7 Mission 1
 
@@ -2648,7 +2648,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level7mission1challenge](badges/img/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
+![level7mission1challenge](badges/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 4 stars and complete Level 7 Mission 1
 
@@ -2668,7 +2668,7 @@ Reset When:
 
 Points: **3**
 
-![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
+![level7mission2](badges/Level7Mission2.png "Level 7 Mission 2")
 
 Collect the phone and complete Level 7 Mission 2
 
@@ -2689,7 +2689,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level7mission2challenge](badges/img/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
+![level7mission2challenge](badges/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 7 Mission 2
 
@@ -2709,7 +2709,7 @@ Reset When:
 
 Points: **3**
 
-![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
+![level7mission3](badges/Level7Mission3.png "Level 7 Mission 3")
 
 Release the captive voyager and complete Level 7 Mission 3
 
@@ -2730,7 +2730,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level7mission3challenge](badges/img/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
+![level7mission3challenge](badges/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart and 3 stars and complete Level 7 Mission 3
 
@@ -2752,7 +2752,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel7](badges/img/Level8.png "Complete Level 7")
+![completelevel7](badges/Level8.png "Complete Level 7")
 
 Complete level 7 and buy the lift pass for level 8 without using passwords
 
@@ -2769,7 +2769,7 @@ Reset When:
 
 Points: **3**
 
-![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
+![level8mission1](badges/Level8Mission1.png "Level 8 Mission 1")
 
 Rescue the dog and complete Level 8 Mission 1
 
@@ -2790,7 +2790,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level8mission1challenge](badges/img/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
+![level8mission1challenge](badges/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 8 Mission 1
 
@@ -2810,7 +2810,7 @@ Reset When:
 
 Points: **3**
 
-![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
+![level8mission2](badges/Level8Mission2.png "Level 8 Mission 2")
 
 Find and flee with the amphora jar and complete Level 8 Mission 2
 
@@ -2831,7 +2831,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level8mission2challenge](badges/img/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
+![level8mission2challenge](badges/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart and 3 stars and complete Level 8 Mission 2
 
@@ -2851,7 +2851,7 @@ Reset When:
 
 Points: **3**
 
-![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
+![level8mission3](badges/Level8Mission3.png "Level 8 Mission 3")
 
 Eat the triple decker cake and complete Level 8 Mission 3
 
@@ -2872,7 +2872,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level8mission3challenge](badges/img/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
+![level8mission3challenge](badges/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart, 1 gold bullion and 5 stars and complete Level 8 Mission 3
 
@@ -2894,7 +2894,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel8](badges/img/Level9.png "Complete Level 8")
+![completelevel8](badges/Level9.png "Complete Level 8")
 
 Complete level 8 and buy the lift pass for level 9 without using passwords
 
@@ -2911,7 +2911,7 @@ Reset When:
 
 Points: **3**
 
-![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
+![level9mission1](badges/Level9Mission1.png "Level 9 Mission 1")
 
 Destroy the computer system and complete Level 9 Mission 1
 
@@ -2932,7 +2932,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level9mission1challenge](badges/img/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
+![level9mission1challenge](badges/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
 
 Without taking damage, collect 1 heart and 5 stars and complete Level 9 Mission 1
 
@@ -2952,7 +2952,7 @@ Reset When:
 
 Points: **3**
 
-![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
+![level9mission2](badges/Level9Mission2.png "Level 9 Mission 2")
 
 Smash open the jar of insects and complete Level 9 Mission 2
 
@@ -2973,7 +2973,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level9mission2challenge](badges/img/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
+![level9mission2challenge](badges/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
 
 Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 9 Mission 2
 
@@ -2993,7 +2993,7 @@ Reset When:
 
 Points: **3**
 
-![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
+![level9mission3](badges/Level9Mission3.png "Level 9 Mission 3")
 
 Find a new home and complete Level 9 Mission 3
 
@@ -3014,7 +3014,7 @@ Type: _**Missable**_
 <br>
 Points: **5**
 
-![level9mission3challenge](badges/img/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
+![level9mission3challenge](badges/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
 
 Without taking damage, collect 1 heart and 1 star and complete Level 9 Mission 3
 
@@ -3036,7 +3036,7 @@ Type: _**Missable**_
 <br>
 Points: **10**
 
-![completelevel9](badges/img/Level10.png "Complete Level 9")
+![completelevel9](badges/Level10.png "Complete Level 9")
 
 Complete level 9 and buy the lift pass for level 10 without using passwords
 
@@ -3053,7 +3053,7 @@ Reset When:
 
 Points: **10**
 
-![level10mission1](badges/img/Level10Mission1.png "Level 10 Mission 1")
+![level10mission1](badges/Level10Mission1.png "Level 10 Mission 1")
 
 Defeat Krond and save the Mega Hero Academy!
 
@@ -3074,7 +3074,7 @@ Type: _**Missable**_
 <br>
 Points: **25**
 
-![beat game](badges/img/BeatGame.png "Beat Game")
+![beat game](badges/BeatGame.png "Beat Game")
 
 Beat every level of the game without passwords in one session
 
@@ -3089,7 +3089,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-![lightning](badges/img/Lightning.png "Lightning")
+![lightning](badges/Lightning.png "Lightning")
 
 Pick up a lightning in any mission
 
@@ -3101,7 +3101,7 @@ Conditions:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-![powerspring](badges/img/PowerSpring.png "Power Spring")
+![powerspring](badges/PowerSpring.png "Power Spring")
 
 Pick up a power spring in any mission except the Play Pen
 
@@ -3113,7 +3113,7 @@ Conditions:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-![powerring](badges/img/PowerRing.png "Power Ring")
+![powerring](badges/PowerRing.png "Power Ring")
 
 Pick up a power ring in any mission
 
@@ -3125,7 +3125,7 @@ Conditions:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-![map](badges/img/Map.png "Map")
+![map](badges/Map.png "Map")
 
 If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout
 
