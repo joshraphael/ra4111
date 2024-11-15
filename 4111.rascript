@@ -642,7 +642,7 @@ MissionConfigs = [
         "index":            16,
         "level":            3,
         "mission":          1,
-        "title":            "Illuminate The Way",
+        "title":            "Illuminate the Way",
         "description":      "Find the flashlight",
         "reward":           70,
         "startingHearts":   4,

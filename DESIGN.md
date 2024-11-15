@@ -526,18 +526,23 @@ Level 10 Summary:
 33. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
 34. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
 35. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
-36. [Select Menu Option](#select-menu-option)
-37. [Language](#language)
-38. [Control Pad Setting](#control-pad-setting)
-39. [Password Character 1](#password-character-1)
-40. [Password Character 2](#password-character-2)
-41. [Password Character 3](#password-character-3)
-42. [Password Character 4](#password-character-4)
-43. [Password Character 5](#password-character-5)
-44. [Password Character 6](#password-character-6)
-45. [Password Character 7](#password-character-7)
-46. [Password Character 8](#password-character-8)
-47. [Mission Bonus Credits](#mission-bonus-credits)
+36. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
+37. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
+38. [Select Menu Option](#select-menu-option)
+39. [Language](#language)
+40. [Control Pad Setting](#control-pad-setting)
+41. [Information Menu Selector X](#information-menu-selector-x)
+42. [Information Menu Selector Y](#information-menu-selector-y)
+43. [Password Length](#password-length)
+44. [Password Character 1](#password-character-1)
+45. [Password Character 2](#password-character-2)
+46. [Password Character 3](#password-character-3)
+47. [Password Character 4](#password-character-4)
+48. [Password Character 5](#password-character-5)
+49. [Password Character 6](#password-character-6)
+50. [Password Character 7](#password-character-7)
+51. [Password Character 8](#password-character-8)
+52. [Mission Bonus Credits](#mission-bonus-credits)
 
 ### _Start Menu_
 
@@ -1229,6 +1234,36 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 * Bit6 = room 55
 * Bit7 = room 56
 
+### _Password Menu Letter Selector X_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd3e2** (8-bit)
+
+Notes: X coordinate of cursor in password letter selection menu
+
+* 0x00 = 0
+* 0x01 = 1
+* 0x02 = 2
+* 0x03 = 3
+* 0x04 = 4
+* 0x05 = 5
+* 0x06 = 6
+* 0x07 = 7
+
+### _Password Menu Letter Selector Y_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd3e3** (8-bit)
+
+Notes: Y coordinate of cursor in password letter selection menu
+
+* 0x00 = 0
+* 0x01 = 1
+* 0x02 = 2
+* 0x03 = 3
+
 ### _Select Menu Option_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
@@ -1261,6 +1296,49 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 
 * 0x10 = A
 * 0x00 = B
+
+### _Information Menu Selector X_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd3e9** (8-bit)
+
+Notes: X coordinate of cursor in the information selection menu
+
+* 0x00 = 0
+* 0x03 = 2
+* 0x06 = 3
+* 0x09 = 4
+* 0x0c = 5
+* 0x0f = 6
+* 0x12 = 7
+
+### _Information Menu Selector Y_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd3ea** (8-bit)
+
+Notes: Y coordinate of cursor in the information selection menu
+
+* 0x04 = 1
+* 0x08 = 2
+
+### _Password Length_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd3ef** (8-bit)
+
+* 0x00 = 0
+* 0x01 = 1
+* 0x02 = 2
+* 0x03 = 3
+* 0x04 = 4
+* 0x05 = 5
+* 0x06 = 6
+* 0x07 = 7
+* 0x08 = 8
 
 ### _Password Character 1_
 
@@ -1602,67 +1680,67 @@ Notes: These act as a count of rooms in the mission, the start menu map group fl
 
 1. [Play Pen](#play-pen)
 2. [Big Brain](#big-brain)
-3. [Perfect Level 1 Mission 1](#perfect-level-1-mission-1)
+3. [Perfect Big Brain](#perfect-big-brain)
 4. [Ice Queen](#ice-queen)
-5. [Perfect Level 1 Mission 2](#perfect-level-1-mission-2)
+5. [Perfect Ice Queen](#perfect-ice-queen)
 6. [Erase the Alchemist](#erase-the-alchemist)
-7. [Perfect Level 1 Mission 3](#perfect-level-1-mission-3)
+7. [Perfect Erase the Alchemist](#perfect-erase-the-alchemist)
 8. [Complete Level 1](#complete-level-1)
 9. [Blind the Enemy](#blind-the-enemy)
-10. [Perfect Level 2 Mission 1](#perfect-level-2-mission-1)
+10. [Perfect Blind the Enemy](#perfect-blind-the-enemy)
 11. [Secret Codex](#secret-codex)
-12. [Perfect Level 2 Mission 2](#perfect-level-2-mission-2)
+12. [Perfect Secret Codex](#perfect-secret-codex)
 13. [Liftoff](#liftoff)
-14. [Perfect Level 2 Mission 3](#perfect-level-2-mission-3)
+14. [Perfect Liftoff](#perfect-liftoff)
 15. [Complete Level 2](#complete-level-2)
-16. [Illuminate The Way](#illuminate-the-way)
-17. [Perfect Level 3 Mission 1](#perfect-level-3-mission-1)
+16. [Illuminate the Way](#illuminate-the-way)
+17. [Perfect Illuminate the Way](#perfect-illuminate-the-way)
 18. [Circuit Breaker](#circuit-breaker)
-19. [Perfect Level 3 Mission 2](#perfect-level-3-mission-2)
+19. [Perfect Circuit Breaker](#perfect-circuit-breaker)
 20. [Startup Funds](#startup-funds)
-21. [Perfect Level 3 Mission 3](#perfect-level-3-mission-3)
+21. [Perfect Startup Funds](#perfect-startup-funds)
 22. [Complete Level 3](#complete-level-3)
 23. [Time Keeper](#time-keeper)
-24. [Perfect Level 4 Mission 1](#perfect-level-4-mission-1)
+24. [Perfect Time Keeper](#perfect-time-keeper)
 25. [Food Poisoning](#food-poisoning)
-26. [Perfect Level 4 Mission 2](#perfect-level-4-mission-2)
+26. [Perfect Food Poisoning](#perfect-food-poisoning)
 27. [Command an Army](#command-an-army)
-28. [Perfect Level 4 Mission 3](#perfect-level-4-mission-3)
+28. [Perfect Command an Army](#perfect-command-an-army)
 29. [Complete Level 4](#complete-level-4)
 30. [Ghost Ship](#ghost-ship)
-31. [Perfect Level 5 Mission 1](#perfect-level-5-mission-1)
+31. [Perfect Ghost Ship](#perfect-ghost-ship)
 32. [Talk to the Dead](#talk-to-the-dead)
-33. [Perfect Level 5 Mission 2](#perfect-level-5-mission-2)
+33. [Perfect Talk to the Dead](#perfect-talk-to-the-dead)
 34. [Keeping Warm](#keeping-warm)
-35. [Perfect Level 5 Mission 3](#perfect-level-5-mission-3)
+35. [Perfect Keeping Warm](#perfect-keeping-warm)
 36. [Complete Level 5](#complete-level-5)
 37. [In Safe Hands](#in-safe-hands)
-38. [Perfect Level 6 Mission 1](#perfect-level-6-mission-1)
+38. [Perfect In Safe Hands](#perfect-in-safe-hands)
 39. [Enchantment](#enchantment)
-40. [Perfect Level 6 Mission 2](#perfect-level-6-mission-2)
+40. [Perfect Enchantment](#perfect-enchantment)
 41. [Cursed Gem](#cursed-gem)
-42. [Perfect Level 6 Mission 3](#perfect-level-6-mission-3)
+42. [Perfect Cursed Gem](#perfect-cursed-gem)
 43. [Complete Level 6](#complete-level-6)
 44. [POP!](#pop)
-45. [Perfect Level 7 Mission 1](#perfect-level-7-mission-1)
+45. [Perfect POP!](#perfect-pop)
 46. [Waiting for a Call](#waiting-for-a-call)
-47. [Perfect Level 7 Mission 2](#perfect-level-7-mission-2)
+47. [Perfect Waiting for a Call](#perfect-waiting-for-a-call)
 48. [S.O.S](#sos)
-49. [Perfect Level 7 Mission 3](#perfect-level-7-mission-3)
+49. [Perfect S.O.S](#perfect-sos)
 50. [Complete Level 7](#complete-level-7)
 51. [K9 Companion](#k9-companion)
-52. [Perfect Level 8 Mission 1](#perfect-level-8-mission-1)
+52. [Perfect K9 Companion](#perfect-k9-companion)
 53. [Fast Getaway](#fast-getaway)
-54. [Perfect Level 8 Mission 2](#perfect-level-8-mission-2)
+54. [Perfect Fast Getaway](#perfect-fast-getaway)
 55. [Piece of Cake](#piece-of-cake)
-56. [Perfect Level 8 Mission 3](#perfect-level-8-mission-3)
+56. [Perfect Piece of Cake](#perfect-piece-of-cake)
 57. [Complete Level 8](#complete-level-8)
 58. [Hacking the Mainframe](#hacking-the-mainframe)
-59. [Perfect Level 9 Mission 1](#perfect-level-9-mission-1)
+59. [Perfect Hacking the Mainframe](#perfect-hacking-the-mainframe)
 60. [Infestation](#infestation)
 61. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
 62. [Home Sweet Home](#home-sweet-home)
-63. [Perfect Level 9 Mission 3](#perfect-level-9-mission-3)
+63. [Perfect Home Sweet Home](#perfect-home-sweet-home)
 64. [Complete Level 9](#complete-level-9)
 65. [King Krond](#king-krond)
 66. [Beat the Game](#beat-the-game)
@@ -1679,7 +1757,7 @@ Points: **1**
 
 ![play pen](badges/img/PlayPen.png "Play Pen")
 
-Beat the Play Pen mission
+Beat the play pen tutorial
 
 Conditions:
 1. Go from the lobby to play pen level
@@ -1698,7 +1776,7 @@ Points: **3**
 
 ![level1mission1](badges/img/Level1Mission1.png "Level 1 Mission 1")
 
-Destroy the mind
+Destroy the mind and complete Level 1 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -1709,7 +1787,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 1 Mission 1
+### Perfect Big Brain
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1719,7 +1797,7 @@ Points: **5**
 
 ![level1mission1challenge](badges/img/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 1 mission 1
+Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 1 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 1
@@ -1739,7 +1817,7 @@ Points: **3**
 
 ![level1mission2](badges/img/Level1Mission2.png "Level 1 Mission 2")
 
-Steal the Ice Queen's crown
+Steal the Ice Queen's crown and complete Level 1 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 2
@@ -1750,7 +1828,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 1 Mission 2
+### Perfect Ice Queen
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1760,7 +1838,7 @@ Points: **5**
 
 ![level1mission2challenge](badges/img/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 1 mission 2
+Without taking damage, collect 1 heart and 1 star and complete Level 1 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 2
@@ -1781,7 +1859,7 @@ Points: **3**
 
 ![level1mission3](badges/img/Level1Mission3.png "Level 1 Mission 3")
 
-Destroy the alchemist
+Destroy the alchemist and complete Level 1 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 3
@@ -1792,7 +1870,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 1 Mission 3
+### Perfect Erase the Alchemist
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1802,7 +1880,7 @@ Points: **5**
 
 ![level1mission3challenge](badges/img/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 2 stars all while completing level 1 mission 3
+Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 1 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 1 Mission 3
@@ -1824,7 +1902,7 @@ Points: **10**
 
 ![completelevel1](badges/img/Level2.png "Complete Level 1")
 
-Complete level 1 and buy the lift pass for level 2 in one session
+Complete level 1 and buy the lift pass for level 2 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -1841,7 +1919,7 @@ Points: **3**
 
 ![level2mission1](badges/img/Level2Mission1.png "Level 2 Mission 1")
 
-Destroy the all seeing eye
+Destroy the all seeing eye and complete Level 2 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 1
@@ -1852,7 +1930,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 2 Mission 1
+### Perfect Blind the Enemy
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1862,7 +1940,7 @@ Points: **5**
 
 ![level2mission1challenge](badges/img/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
 
-Take no damage and collect 1 heart and 2 stars all while completing level 2 mission 1
+Without taking damage, collect 1 heart and 2 stars and complete Level 2 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 1
@@ -1882,7 +1960,7 @@ Points: **3**
 
 ![level2mission2](badges/img/Level2Mission2.png "Level 2 Mission 2")
 
-Read the secret code
+Read the secret code and complete Level 2 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 2
@@ -1893,7 +1971,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 2 Mission 2
+### Perfect Secret Codex
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1903,7 +1981,7 @@ Points: **5**
 
 ![level2mission2challenge](badges/img/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 3 stars all while completing level 2 mission 2
+Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 2 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 2
@@ -1923,7 +2001,7 @@ Points: **3**
 
 ![level2mission3](badges/img/Level2Mission3.png "Level 2 Mission 3")
 
-Launch the self destructing rocket
+Launch the self destructing rocket and complete Level 2 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 3
@@ -1934,7 +2012,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 2 Mission 3
+### Perfect Liftoff
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1944,7 +2022,7 @@ Points: **5**
 
 ![level2mission3challenge](badges/img/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
 
-Take no damage and collect 1 heart all while completing level 2 mission 3
+Without taking damage, collect 1 heart and complete Level 2 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 2 Mission 3
@@ -1966,7 +2044,7 @@ Points: **10**
 
 ![completelevel2](badges/img/Level3.png "Complete Level 2")
 
-Complete level 2 and buy the lift pass for level 3 in one session
+Complete level 2 and buy the lift pass for level 3 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -1975,7 +2053,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Illuminate The Way
+### Illuminate the Way
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1983,7 +2061,7 @@ Points: **3**
 
 ![level3mission1](badges/img/Level3Mission1.png "Level 3 Mission 1")
 
-Find the flashlight
+Find the flashlight and complete Level 3 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 1
@@ -1994,7 +2072,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 3 Mission 1
+### Perfect Illuminate the Way
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2004,7 +2082,7 @@ Points: **5**
 
 ![level3mission1challenge](badges/img/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
 
-Take no damage and collect 1 heart and 2 stars all while completing level 3 mission 1
+Without taking damage, collect 1 heart and 2 stars and complete Level 3 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 1
@@ -2024,7 +2102,7 @@ Points: **3**
 
 ![level3mission2](badges/img/Level3Mission2.png "Level 3 Mission 2")
 
-Find the electrical control box
+Find the electrical control box and complete Level 3 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 2
@@ -2035,7 +2113,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 3 Mission 2
+### Perfect Circuit Breaker
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2045,7 +2123,7 @@ Points: **5**
 
 ![level3mission2challenge](badges/img/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
 
-Take no damage and collect 1 heart, 2 gold bullions and 3 stars all while completing level 3 mission 2
+Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 3 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 2
@@ -2065,7 +2143,7 @@ Points: **3**
 
 ![level3mission3](badges/img/Level3Mission3.png "Level 3 Mission 3")
 
-Search for the piggy bank
+Search for the piggy bank and complete Level 3 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 3
@@ -2076,7 +2154,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 3 Mission 3
+### Perfect Startup Funds
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2086,7 +2164,7 @@ Points: **5**
 
 ![level3mission3challenge](badges/img/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 2 stars all while completing level 3 mission 3
+Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 3 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 3 Mission 3
@@ -2108,7 +2186,7 @@ Points: **10**
 
 ![completelevel3](badges/img/Level4.png "Complete Level 3")
 
-Complete level 3 and buy the lift pass for level 4 in one session
+Complete level 3 and buy the lift pass for level 4 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2125,7 +2203,7 @@ Points: **3**
 
 ![level4mission1](badges/img/Level4Mission1.png "Level 4 Mission 1")
 
-Collect the pocketwatch
+Collect the pocketwatch and complete Level 4 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 1
@@ -2136,7 +2214,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 4 Mission 1
+### Perfect Time Keeper
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2146,7 +2224,7 @@ Points: **5**
 
 ![level4mission1challenge](badges/img/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
 
-Take no damage and collect 1 heart and 1 gold bullion all while completing level 4 mission 1
+Without taking damage, collect 1 heart and 1 gold bullion and complete Level 4 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 1
@@ -2166,7 +2244,7 @@ Points: **3**
 
 ![level4mission2](badges/img/Level4Mission2.png "Level 4 Mission 2")
 
-Get rid of the poisoned food
+Get rid of the poisoned food and complete Level 4 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 2
@@ -2177,7 +2255,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 4 Mission 2
+### Perfect Food Poisoning
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2187,7 +2265,7 @@ Points: **5**
 
 ![level4mission2challenge](badges/img/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 4 mission 2
+Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 2
@@ -2207,7 +2285,7 @@ Points: **3**
 
 ![level4mission3](badges/img/Level4Mission3.png "Level 4 Mission 3")
 
-Earn the crown of attack
+Earn the crown of attack and complete Level 4 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 3
@@ -2218,7 +2296,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 4 Mission 3
+### Perfect Command an Army
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2228,7 +2306,7 @@ Points: **5**
 
 ![level4mission3challenge](badges/img/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 1 star all while completing level 4 mission 3
+Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 4 Mission 3
@@ -2250,7 +2328,7 @@ Points: **10**
 
 ![completelevel4](badges/img/Level5.png "Complete Level 4")
 
-Complete level 4 and buy the lift pass for level 5 in one session
+Complete level 4 and buy the lift pass for level 5 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2267,7 +2345,7 @@ Points: **3**
 
 ![level5mission1](badges/img/Level5Mission1.png "Level 5 Mission 1")
 
-Take the ghost ship wood log
+Take the ghost ship wood log and complete Level 5 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 1
@@ -2278,7 +2356,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 5 Mission 1
+### Perfect Ghost Ship
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2288,7 +2366,7 @@ Points: **5**
 
 ![level5mission1challenge](badges/img/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
 
-Take no damage and collect 1 heart, 2 gold bullions and 1 star all while completing level 5 mission 1
+Without taking damage, collect 1 heart, 2 gold bullions and 1 star and complete Level 5 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 1
@@ -2308,7 +2386,7 @@ Points: **3**
 
 ![level5mission2](badges/img/Level5Mission2.png "Level 5 Mission 2")
 
-Collect the crystal ball
+Collect the crystal ball and complete Level 5 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 2
@@ -2319,7 +2397,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 5 Mission 2
+### Perfect Talk to the Dead
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2329,7 +2407,7 @@ Points: **5**
 
 ![level5mission2challenge](badges/img/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 5 mission 2
+Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 2
@@ -2349,7 +2427,7 @@ Points: **3**
 
 ![level5mission3](badges/img/Level5Mission3.png "Level 5 Mission 3")
 
-Use the wood stove
+Use the wood stove and complete Level 5 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 3
@@ -2360,7 +2438,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 5 Mission 3
+### Perfect Keeping Warm
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2370,7 +2448,7 @@ Points: **5**
 
 ![level5mission3challenge](badges/img/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 5 mission 3
+Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 5 Mission 3
@@ -2392,7 +2470,7 @@ Points: **10**
 
 ![completelevel5](badges/img/Level6.png "Complete Level 5")
 
-Complete level 5 and buy the lift pass for level 6 in one session
+Complete level 5 and buy the lift pass for level 6 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2409,7 +2487,7 @@ Points: **3**
 
 ![level6mission1](badges/img/Level6Mission1.png "Level 6 Mission 1")
 
-Return the safe
+Return the safe and complete Level 6 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 1
@@ -2420,7 +2498,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 6 Mission 1
+### Perfect In Safe Hands
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2430,7 +2508,7 @@ Points: **5**
 
 ![level6mission1challenge](badges/img/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
 
-Take no damage and collect 1 gold bullion all while completing level 6 mission 1
+Without taking damage, collect 1 gold bullion and complete Level 6 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 1
@@ -2450,7 +2528,7 @@ Points: **3**
 
 ![level6mission2](badges/img/Level6Mission2.png "Level 6 Mission 2")
 
-Smash the potion vial
+Smash the potion vial and complete Level 6 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 2
@@ -2461,7 +2539,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 6 Mission 2
+### Perfect Enchantment
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2471,7 +2549,7 @@ Points: **5**
 
 ![level6mission2challenge](badges/img/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
 
-Take no damage and collect 1 heart all while completing level 6 mission 2
+Without taking damage, collect 1 heart and complete Level 6 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 2
@@ -2491,7 +2569,7 @@ Points: **3**
 
 ![level6mission3](badges/img/Level6Mission3.png "Level 6 Mission 3")
 
-Destroy the dark jewel
+Destroy the dark jewel and complete Level 6 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 3
@@ -2502,7 +2580,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 6 Mission 3
+### Perfect Cursed Gem
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2512,7 +2590,7 @@ Points: **5**
 
 ![level6mission3challenge](badges/img/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 6 mission 3
+Without taking damage, collect 1 heart and 1 star and complete Level 6 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 6 Mission 3
@@ -2534,7 +2612,7 @@ Points: **10**
 
 ![completelevel6](badges/img/Level7.png "Complete Level 6")
 
-Complete level 6 and buy the lift pass for level 7 in one session
+Complete level 6 and buy the lift pass for level 7 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2551,7 +2629,7 @@ Points: **3**
 
 ![level7mission1](badges/img/Level7Mission1.png "Level 7 Mission 1")
 
-Earn the fizzy soda prize
+Earn the fizzy soda prize and complete Level 7 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 1
@@ -2562,7 +2640,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 7 Mission 1
+### Perfect POP!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2572,7 +2650,7 @@ Points: **5**
 
 ![level7mission1challenge](badges/img/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 4 stars all while completing level 7 mission 1
+Without taking damage, collect 1 heart, 1 gold bullion and 4 stars and complete Level 7 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 1
@@ -2592,7 +2670,7 @@ Points: **3**
 
 ![level7mission2](badges/img/Level7Mission2.png "Level 7 Mission 2")
 
-Collect the phone
+Collect the phone and complete Level 7 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 2
@@ -2603,7 +2681,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 7 Mission 2
+### Perfect Waiting for a Call
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2613,7 +2691,7 @@ Points: **5**
 
 ![level7mission2challenge](badges/img/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 3 stars all while completing level 7 mission 2
+Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 7 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 2
@@ -2633,7 +2711,7 @@ Points: **3**
 
 ![level7mission3](badges/img/Level7Mission3.png "Level 7 Mission 3")
 
-Release the captive voyager
+Release the captive voyager and complete Level 7 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 3
@@ -2644,7 +2722,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 7 Mission 3
+### Perfect S.O.S
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2654,7 +2732,7 @@ Points: **5**
 
 ![level7mission3challenge](badges/img/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
 
-Take no damage and collect 1 heart and 3 stars all while completing level 7 mission 3
+Without taking damage, collect 1 heart and 3 stars and complete Level 7 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 7 Mission 3
@@ -2676,7 +2754,7 @@ Points: **10**
 
 ![completelevel7](badges/img/Level8.png "Complete Level 7")
 
-Complete level 7 and buy the lift pass for level 8 in one session
+Complete level 7 and buy the lift pass for level 8 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2693,7 +2771,7 @@ Points: **3**
 
 ![level8mission1](badges/img/Level8Mission1.png "Level 8 Mission 1")
 
-Rescue the dog
+Rescue the dog and complete Level 8 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 1
@@ -2704,7 +2782,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 8 Mission 1
+### Perfect K9 Companion
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2714,7 +2792,7 @@ Points: **5**
 
 ![level8mission1challenge](badges/img/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 8 mission 1
+Without taking damage, collect 1 heart and 1 star and complete Level 8 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 1
@@ -2734,7 +2812,7 @@ Points: **3**
 
 ![level8mission2](badges/img/Level8Mission2.png "Level 8 Mission 2")
 
-Find and flee with the amphora jar
+Find and flee with the amphora jar and complete Level 8 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 2
@@ -2745,7 +2823,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 8 Mission 2
+### Perfect Fast Getaway
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2755,7 +2833,7 @@ Points: **5**
 
 ![level8mission2challenge](badges/img/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
 
-Take no damage and collect 1 heart and 3 stars all while completing level 8 mission 2
+Without taking damage, collect 1 heart and 3 stars and complete Level 8 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 2
@@ -2775,7 +2853,7 @@ Points: **3**
 
 ![level8mission3](badges/img/Level8Mission3.png "Level 8 Mission 3")
 
-Eat the triple decker cake
+Eat the triple decker cake and complete Level 8 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 3
@@ -2786,7 +2864,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 8 Mission 3
+### Perfect Piece of Cake
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2796,7 +2874,7 @@ Points: **5**
 
 ![level8mission3challenge](badges/img/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
 
-Take no damage and collect 1 heart, 1 gold bullion and 5 stars all while completing level 8 mission 3
+Without taking damage, collect 1 heart, 1 gold bullion and 5 stars and complete Level 8 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 8 Mission 3
@@ -2818,7 +2896,7 @@ Points: **10**
 
 ![completelevel8](badges/img/Level9.png "Complete Level 8")
 
-Complete level 8 and buy the lift pass for level 9 in one session
+Complete level 8 and buy the lift pass for level 9 without using passwords
 
 Conditions:
 1. Start game with no levels completed
@@ -2835,7 +2913,7 @@ Points: **3**
 
 ![level9mission1](badges/img/Level9Mission1.png "Level 9 Mission 1")
 
-Destroy the computer system
+Destroy the computer system and complete Level 9 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 1
@@ -2846,7 +2924,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 9 Mission 1
+### Perfect Hacking the Mainframe
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2856,7 +2934,7 @@ Points: **5**
 
 ![level9mission1challenge](badges/img/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
 
-Take no damage and collect 1 heart and 5 stars all while completing level 9 mission 1
+Without taking damage, collect 1 heart and 5 stars and complete Level 9 Mission 1
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 1
@@ -2876,7 +2954,7 @@ Points: **3**
 
 ![level9mission2](badges/img/Level9Mission2.png "Level 9 Mission 2")
 
-Smash open the jar of insects
+Smash open the jar of insects and complete Level 9 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 2
@@ -2897,7 +2975,7 @@ Points: **5**
 
 ![level9mission2challenge](badges/img/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
 
-Take no damage and collect 1 heart, 2 gold bullions and 3 stars all while completing level 9 mission 2
+Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 9 Mission 2
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 2
@@ -2917,7 +2995,7 @@ Points: **3**
 
 ![level9mission3](badges/img/Level9Mission3.png "Level 9 Mission 3")
 
-Find a new home
+Find a new home and complete Level 9 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 3
@@ -2928,7 +3006,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Perfect Level 9 Mission 3
+### Perfect Home Sweet Home
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2938,7 +3016,7 @@ Points: **5**
 
 ![level9mission3challenge](badges/img/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
 
-Take no damage and collect 1 heart and 1 star all while completing level 9 mission 3
+Without taking damage, collect 1 heart and 1 star and complete Level 9 Mission 3
 
 Conditions:
 1. Go from the lobby to Level 9 Mission 3
@@ -2960,7 +3038,7 @@ Points: **10**
 
 ![completelevel9](badges/img/Level10.png "Complete Level 9")
 
-Complete level 9 and buy the lift pass for level 10 in one session
+Complete level 9 and buy the lift pass for level 10 without using passwords
 
 Conditions:
 1. Start game with no levels completed
