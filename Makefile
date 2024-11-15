@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-export cwd  = $(shell pwd)
+export cwd = $(shell pwd)
 export RATOOLS_DIR = ~/Installs/RATools-v1.15.0
 export RALIBRETRO_DIR = ~/Installs/RALibretro-x64
 export GAME_ID = 4111
