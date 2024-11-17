@@ -1896,7 +1896,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2038,7 +2038,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2180,7 +2180,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2322,7 +2322,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2464,7 +2464,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2606,7 +2606,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2748,7 +2748,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -2890,7 +2890,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -3032,7 +3032,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Progression**_
 <br>
 Points: **10**
 
@@ -3070,7 +3070,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Type: _**Missable**_
+Type: _**Win Condition**_
 <br>
 Points: **25**
 
@@ -3153,8 +3153,6 @@ Rich presence is available and will change depending on where you are in the gam
     * "Level X Mission Y"
     * current hearts
     * current stars
-    * item A
-    * item B
 
 ## Leaderboards
 
