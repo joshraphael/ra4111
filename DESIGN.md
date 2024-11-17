@@ -3089,6 +3089,8 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+Points: **2**
+
 ![lightning](badges/Lightning.png "Lightning")
 
 Pick up a lightning in any mission
@@ -3100,6 +3102,8 @@ Conditions:
 ### Jump to the Rescue
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **2**
 
 ![powerspring](badges/PowerSpring.png "Power Spring")
 
@@ -3113,6 +3117,8 @@ Conditions:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
+Points: **2**
+
 ![powerring](badges/PowerRing.png "Power Ring")
 
 Pick up a power ring in any mission
@@ -3124,6 +3130,8 @@ Conditions:
 ### I'm the Map
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
+
+Points: **2**
 
 ![map](badges/Map.png "Map")
 
