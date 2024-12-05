@@ -1250,10 +1250,6 @@ for config in MissionConfigs
                 array_push(levelMissionConfigs, missionConfig)
             }
         }
-        startCondition = GameStarts()
-        if currentLevel != 1 {
-            startCondition = upgradeLiftPassLevel( levelLookup[currentLevel-1]["id"], levelLookup[currentLevel]["id"], levelLookup[currentLevel]["cost"] )
-        }
         conditions = [
             once( GameStarts() ),
             once( GameStarts() ),
