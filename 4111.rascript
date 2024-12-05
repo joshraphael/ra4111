@@ -200,55 +200,55 @@ levelLookup = {
         "id":      LEVEL2,
         "cost":    70,
         "raID":    459891,
-        "raBadge": "520623"
+        "raBadge": "" // unknown
     },
     3: {
         "id":      LEVEL3,
         "cost":    130,
         "raID":    459898,
-        "raBadge": "520630"
+        "raBadge": "520623"
     },
     4: {
         "id":      LEVEL4,
         "cost":    200,
         "raID":    459905,
-        "raBadge": "520637"
+        "raBadge": "520630"
     },
     5: {
         "id":      LEVEL5,
         "cost":    300,
         "raID":    459912,
-        "raBadge": "520644"
+        "raBadge": "520637"
     },
     6: {
         "id":      LEVEL6,
         "cost":    450,
         "raID":    459919,
-        "raBadge": "520651"
+        "raBadge": "520644"
     },
     7: {
         "id":      LEVEL7,
         "cost":    650,
         "raID":    459926,
-        "raBadge": "520658"
+        "raBadge": "520651"
     },
     8: {
         "id":      LEVEL8,
         "cost":    1000,
         "raID":    459933,
-        "raBadge": "520665"
+        "raBadge": "520658"
     },
     9: {
         "id":      LEVEL9,
         "cost":    1500,
         "raID":    459940,
-        "raBadge": "520672"
+        "raBadge": "520665"
     },
     10: {
         "id":      LEVEL10,
         "cost":    2500,
         "raID":    459947,
-        "raBadge": "520679"
+        "raBadge": "520672"
     },
 }
 
@@ -399,10 +399,7 @@ function MissionCompleteCondition( missionId, missionMask )
 {
     return tally( 2,
         once( PlayerEntersMission( missionId ) ),
-        once(
-            missionMarkedComplete( missionMask ) &&
-            onlyMissionUnlocked( missionMask )
-        )
+        once( onlyMissionUnlocked( missionMask ) )
     )
 }
 
@@ -410,18 +407,19 @@ function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars,
 {
     conditions = [
         once( PlayerEntersMission( missionId ) ),
-        once(
-            missionMarkedComplete( missionMask ) &&
-            onlyMissionUnlocked( missionMask ) &&
-            Health() == hearts &&
-            Bonus() == ( gold * bonus )
-        )
+        once( onlyMissionUnlocked( missionMask ) )
     ]
+    if hearts > 0 {
+        array_push( conditions, repeated( hearts, CurrentMission() == missionId && Health() == prev( Health() ) + 1 ))
+    }
     if stars > 0 {
         array_push( conditions, repeated( stars, CurrentMission() == missionId && LuckyStars() == prev( LuckyStars() ) + 1 ) )
     }
+    if gold > 0 {
+        array_push( conditions, repeated( gold, CurrentMission() == missionId && Bonus() == prev( Bonus() ) + bonus ) )
+    }
     return tally(
-        2 + stars,
+        2 + hearts + stars + gold,
         conditions
     )
 }
@@ -1349,7 +1347,7 @@ for config in MissionConfigs
                 MissionCompletePerfectCondition(
                     config["missionId"],
                     config["missionMask"],
-                    config["startingHearts"] + config["inGameHearts"],
+                    config["inGameHearts"],
                     config["stars"],
                     config["bonus"],
                     config["gold"]
@@ -1399,7 +1397,7 @@ for config in MissionConfigs
             PlayerDies() ||
             PlayerQuitsMission( config["missionId"], config["missionMask"] )
         ),
-        "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
+        "submit":          onlyMissionUnlocked( config["missionMask"] ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&
                            unless( inStartMenu() ),
@@ -1504,6 +1502,20 @@ a = {
 count = count + 1
 achievements[currIndex] = a
 
+// VOIDED Win condition achievement
+// currIndex = count + 1
+// a = {
+//     "title":       "[VOID] Beat the Game",
+//     "description": "Beat every level of the game without using passwords",
+//     "points":      0,
+//     "trigger":     always_false(),
+//     "type":        "",
+//     "id":          459949,
+//     "badge":       "520681",
+// }
+// count = count + 1
+// achievements[currIndex] = a
+
 if length( achievements ) == count { // This check is to ensure the amount of achievements I expect when building the order of them
     for index in range( 1, count ) {
         a = achievements[index]
@@ -1583,20 +1595,20 @@ rich_presence_conditional_display(
 rich_presence_conditional_display(
     inMainLobby(),
     "Main Lobby • {0} Star{1} • {2} Lift Pass • #{3} Credit{4}",
-    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
-    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" ),
-    rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
-    rich_presence_value( "Credits", Credits(), "POINTS" ),
-    rich_presence_lookup( "Multiple Credits Label", Credits(), singular_lookup, "s" )
+    rich_presence_value( "luckyStars", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" ),
+    rich_presence_lookup( "liftPassLevel", LiftPassLevel(), levelPass ),
+    rich_presence_value( "credits", Credits(), "POINTS" ),
+    rich_presence_lookup( "singularLookup", Credits(), singular_lookup, "s" )
 )
 
 rich_presence_display(
     "{0} • {1} Heart{2} • {3} Star{4}",
-    rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
-    rich_presence_value( "Health", Health(), "VALUE" ),
-    rich_presence_lookup( "Multiple Hearts Label", Health(), singular_lookup, "s" ),
-    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
-    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" )
+    rich_presence_lookup( "mission", CurrentMission(), currentMission ),
+    rich_presence_value( "health", Health(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", Health(), singular_lookup, "s" ),
+    rich_presence_value( "luckyStars", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" )
 )
 
 // Leaderboards
