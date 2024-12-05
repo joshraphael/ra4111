@@ -1246,11 +1246,9 @@ for config in MissionConfigs
             "title":       format("Complete Level {0}", currentLevel),
             "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
             "points":      10,
-            "trigger":     measured(
-                tally(2,
-                    once( GameStarts() ),
-                    once( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) )
-                )
+            "trigger":     tally(2,
+                once( GameStarts() ),
+                once( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) )
             ) &&
             never( OpenPasswordMenu() ),
             "type":        "progression",
@@ -1278,11 +1276,9 @@ for config in MissionConfigs
         "title":       config["title"],
         "description": desc,
         "points":      config["points"],
-        "trigger":     measured(
-            MissionCompleteCondition(
-                config["missionId"],
-                config["missionMask"]
-            )
+        "trigger":     MissionCompleteCondition(
+            config["missionId"],
+            config["missionMask"]
         ) &&
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
