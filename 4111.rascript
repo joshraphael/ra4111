@@ -10,8 +10,6 @@ function SelectMenu() => high4( 0xc009 )
 // $CFBF - Current mission
 function CurrentMission() => byte( 0xcfbf )
 
-function GetRoom( flag ) => bit(flag, 0xd00a)
-
 // $D00A: Mission Flags for marking completed missions
 function MissionFlags() => dword( 0xd00a )
 
@@ -456,7 +454,6 @@ function GameEnds()
 MissionConfigs = [
     {
         "index":           1,
-        "flag":            0,
         "level":           1,
         "mission":         0,
         "title":           "Play Pen",
@@ -481,7 +478,6 @@ MissionConfigs = [
     },
     {
         "index":            2,
-        "flag":             1,
         "level":            1,
         "mission":          1,
         "title":            "Big Brain",
@@ -509,7 +505,6 @@ MissionConfigs = [
     },
     {
         "index":            4,
-        "flag":             2,
         "level":            1,
         "mission":          2,
         "title":            "Ice Queen",
@@ -537,7 +532,6 @@ MissionConfigs = [
     },
     {
         "index":            6,
-        "flag":             3,
         "level":            1,
         "mission":          3,
         "title":            "Erase the Alchemist",
@@ -565,7 +559,6 @@ MissionConfigs = [
     },
     {
         "index":            9,
-        "flag":             4,
         "level":            2,
         "mission":          1,
         "title":            "Blind the Enemy",
@@ -593,7 +586,6 @@ MissionConfigs = [
     },
     {
         "index":            11,
-        "flag":             5,
         "level":            2,
         "mission":          2,
         "title":            "Secret Codex",
@@ -621,7 +613,6 @@ MissionConfigs = [
     },
     {
         "index":            13,
-        "flag":             6,
         "level":            2,
         "mission":          3,
         "title":            "Liftoff",
@@ -649,7 +640,6 @@ MissionConfigs = [
     },
     {
         "index":            16,
-        "flag":             7,
         "level":            3,
         "mission":          1,
         "title":            "Illuminate the Way",
@@ -677,7 +667,6 @@ MissionConfigs = [
     },
     {
         "index":            18,
-        "flag":             8,
         "level":            3,
         "mission":          2,
         "title":            "Circuit Breaker",
@@ -705,7 +694,6 @@ MissionConfigs = [
     },
     {
         "index":            20,
-        "flag":             9,
         "level":            3,
         "mission":          3,
         "title":            "Startup Funds",
@@ -733,7 +721,6 @@ MissionConfigs = [
     },
     {
         "index":            23,
-        "flag":             10,
         "level":            4,
         "mission":          1,
         "title":            "Time Keeper",
@@ -761,7 +748,6 @@ MissionConfigs = [
     },
     {
         "index":            25,
-        "flag":             11,
         "level":            4,
         "mission":          2,
         "title":            "Food Poisoning",
@@ -789,7 +775,6 @@ MissionConfigs = [
     },
     {
         "index":            27,
-        "flag":             12,
         "level":            4,
         "mission":          3,
         "title":            "Command an Army",
@@ -817,7 +802,6 @@ MissionConfigs = [
     },
     {
         "index":            30,
-        "flag":             13,
         "level":            5,
         "mission":          1,
         "title":            "Ghost Ship",
@@ -845,7 +829,6 @@ MissionConfigs = [
     },
     {
         "index":            32,
-        "flag":             14,
         "level":            5,
         "mission":          2,
         "title":            "Talk to the Dead",
@@ -873,7 +856,6 @@ MissionConfigs = [
     },
     {
         "index":            34,
-        "flag":             15,
         "level":            5,
         "mission":          3,
         "title":            "Keeping Warm",
@@ -901,7 +883,6 @@ MissionConfigs = [
     },
     {
         "index":            37,
-        "flag":             16,
         "level":            6,
         "mission":          1,
         "title":            "In Safe Hands",
@@ -929,7 +910,6 @@ MissionConfigs = [
     },
     {
         "index":            39,
-        "flag":             17,
         "level":            6,
         "mission":          2,
         "title":            "Enchantment",
@@ -957,7 +937,6 @@ MissionConfigs = [
     },
     {
         "index":            41,
-        "flag":             18,
         "level":            6,
         "mission":          3,
         "title":            "Cursed Gem",
@@ -985,7 +964,6 @@ MissionConfigs = [
     },
     {
         "index":            44,
-        "flag":             19,
         "level":            7,
         "mission":          1,
         "title":            "POP!",
@@ -1013,7 +991,6 @@ MissionConfigs = [
     },
     {
         "index":            46,
-        "flag":             20,
         "level":            7,
         "mission":          2,
         "title":            "Waiting for a Call",
@@ -1041,7 +1018,6 @@ MissionConfigs = [
     },
     {
         "index":            48,
-        "flag":             21,
         "level":            7,
         "mission":          3,
         "title":            "S.O.S",
@@ -1069,7 +1045,6 @@ MissionConfigs = [
     },
     {
         "index":            51,
-        "flag":             22,
         "level":            8,
         "mission":          1,
         "title":            "K9 Companion",
@@ -1097,7 +1072,6 @@ MissionConfigs = [
     },
     {
         "index":            53,
-        "flag":             23,
         "level":            8,
         "mission":          2,
         "title":            "Fast Getaway",
@@ -1125,7 +1099,6 @@ MissionConfigs = [
     },
     {
         "index":            55,
-        "flag":             24,
         "level":            8,
         "mission":          3,
         "title":            "Piece of Cake",
@@ -1153,7 +1126,6 @@ MissionConfigs = [
     },
     {
         "index":            58,
-        "flag":             25,
         "level":            9,
         "mission":          1,
         "title":            "Hacking the Mainframe",
@@ -1181,7 +1153,6 @@ MissionConfigs = [
     },
     {
         "index":            60,
-        "flag":             26,
         "level":            9,
         "mission":          2,
         "title":            "Infestation",
@@ -1209,7 +1180,6 @@ MissionConfigs = [
     },
     {
         "index":            62,
-        "flag":             27,
         "level":            9,
         "mission":          3,
         "title":            "Home Sweet Home",
@@ -1237,7 +1207,6 @@ MissionConfigs = [
     },
     {
         "index":            65,
-        "flag":             28,
         "level":            10,
         "mission":          1,
         "title":            "King Krond",
