@@ -1289,7 +1289,8 @@ for config in MissionConfigs
             once( GameStarts() ),
             once( GameStarts() ),
             once( GameStarts() ),
-            once( GameStarts() )
+            once( GameStarts() ),
+            deduct( once( PlayerDies() ) )
         ]
         for levelMissionConfig in levelMissionConfigs {
             array_push( conditions, once(
