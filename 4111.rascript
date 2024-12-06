@@ -200,7 +200,7 @@ levelLookup = {
         "id":      LEVEL2,
         "cost":    70,
         "raID":    459891,
-        "raBadge": "" // unknown
+        "raBadge": "549135"
     },
     3: {
         "id":      LEVEL3,
@@ -339,19 +339,6 @@ function countRoomsSeen()
     )
 }
 
-function countMissionRoomsAvailable()
-{
-    return (
-        MissionRoomsAvailableGroup1() +
-        MissionRoomsAvailableGroup2() +
-        MissionRoomsAvailableGroup3() +
-        MissionRoomsAvailableGroup4() +
-        MissionRoomsAvailableGroup5() +
-        MissionRoomsAvailableGroup6() +
-        MissionRoomsAvailableGroup7()
-    )
-}
-
 // public functions
 
 function OpenPasswordMenu()
@@ -384,6 +371,14 @@ function PlayerQuitsMission( missionId, missionMask )
         prev( CurrentMission() ) == missionId &&
         CurrentMission() != missionId &&
         !missionMarkedComplete( missionMask )
+    )
+}
+
+function PlayerExitsMission( missionId )
+{
+    return (
+        prev( CurrentMission() ) == missionId &&
+        CurrentMission() == MAINROOMID
     )
 }
 
@@ -466,7 +461,8 @@ MissionConfigs = [
         "powerSpring":     1,
         "powerRing":       0,
         "map":             0,
-        "points":          1,
+        "points":          2,
+        "type":            "",
         "missionId":       PLAYPENID,
         "missionMask":     PLAYPENMASK,
         "hasChallenge":    false,
@@ -492,11 +488,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL1MISSION1ID,
         "missionMask":      LEVEL1MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459885,
         "raBadge":          "520617",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459886,
         "challengeRABadge": "520618",
         "leaderboardID":    114801
@@ -519,11 +516,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL1MISSION2ID,
         "missionMask":      LEVEL1MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459887,
         "raBadge":          "520619",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459888,
         "challengeRABadge": "520620",
         "leaderboardID":    114802
@@ -546,11 +544,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL1MISSION3ID,
         "missionMask":      LEVEL1MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459889,
         "raBadge":          "520621",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459890,
         "challengeRABadge": "520622",
         "leaderboardID":    114803
@@ -573,11 +572,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL2MISSION1ID,
         "missionMask":      LEVEL2MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459892,
         "raBadge":          "520624",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459893,
         "challengeRABadge": "520625",
         "leaderboardID":    114804
@@ -600,11 +600,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL2MISSION2ID,
         "missionMask":      LEVEL2MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459894,
         "raBadge":          "520626",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459895,
         "challengeRABadge": "520627",
         "leaderboardID":    114805
@@ -627,11 +628,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL2MISSION3ID,
         "missionMask":      LEVEL2MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459896,
         "raBadge":          "520628",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459897,
         "challengeRABadge": "520629",
         "leaderboardID":    114806
@@ -654,11 +656,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL3MISSION1ID,
         "missionMask":      LEVEL3MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459899,
         "raBadge":          "520631",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459900,
         "challengeRABadge": "520632",
         "leaderboardID":    114807
@@ -681,11 +684,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL3MISSION2ID,
         "missionMask":      LEVEL3MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459901,
         "raBadge":          "520633",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459902,
         "challengeRABadge": "520634",
         "leaderboardID":    114808
@@ -708,11 +712,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL3MISSION3ID,
         "missionMask":      LEVEL3MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459903,
         "raBadge":          "520635",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459904,
         "challengeRABadge": "520636",
         "leaderboardID":    114809
@@ -735,11 +740,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL4MISSION1ID,
         "missionMask":      LEVEL4MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459906,
         "raBadge":          "520638",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459907,
         "challengeRABadge": "520639",
         "leaderboardID":    114810
@@ -762,11 +768,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL4MISSION2ID,
         "missionMask":      LEVEL4MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459908,
         "raBadge":          "520640",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459909,
         "challengeRABadge": "520641",
         "leaderboardID":    114811
@@ -789,11 +796,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL4MISSION3ID,
         "missionMask":      LEVEL4MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459910,
         "raBadge":          "520642",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459911,
         "challengeRABadge": "520643",
         "leaderboardID":    114812
@@ -816,11 +824,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION1ID,
         "missionMask":      LEVEL5MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459913,
         "raBadge":          "520645",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459914,
         "challengeRABadge": "520646",
         "leaderboardID":    114813
@@ -843,11 +852,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION2ID,
         "missionMask":      LEVEL5MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459915,
         "raBadge":          "520647",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459916,
         "challengeRABadge": "520648",
         "leaderboardID":    114814
@@ -870,11 +880,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION3ID,
         "missionMask":      LEVEL5MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459917,
         "raBadge":          "520649",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459918,
         "challengeRABadge": "520650",
         "leaderboardID":    114815
@@ -897,11 +908,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL6MISSION1ID,
         "missionMask":      LEVEL6MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459920,
         "raBadge":          "520652",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459921,
         "challengeRABadge": "520653",
         "leaderboardID":    114816
@@ -924,11 +936,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL6MISSION2ID,
         "missionMask":      LEVEL6MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459922,
         "raBadge":          "520654",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459923,
         "challengeRABadge": "520655",
         "leaderboardID":    114817
@@ -951,11 +964,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL6MISSION3ID,
         "missionMask":      LEVEL6MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459924,
         "raBadge":          "520656",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459925,
         "challengeRABadge": "520657",
         "leaderboardID":    114818
@@ -978,11 +992,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION1ID,
         "missionMask":      LEVEL7MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459927,
         "raBadge":          "520659",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459928,
         "challengeRABadge": "520660",
         "leaderboardID":    114819
@@ -1005,11 +1020,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION2ID,
         "missionMask":      LEVEL7MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459929,
         "raBadge":          "520661",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459930,
         "challengeRABadge": "520662",
         "leaderboardID":    114820
@@ -1032,11 +1048,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION3ID,
         "missionMask":      LEVEL7MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459931,
         "raBadge":          "520663",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459932,
         "challengeRABadge": "520664",
         "leaderboardID":    114821
@@ -1059,11 +1076,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION1ID,
         "missionMask":      LEVEL8MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459934,
         "raBadge":          "520666",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459935,
         "challengeRABadge": "520667",
         "leaderboardID":    114822
@@ -1086,11 +1104,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION2ID,
         "missionMask":      LEVEL8MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459936,
         "raBadge":          "520668",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459937,
         "challengeRABadge": "520669",
         "leaderboardID":    114823
@@ -1113,11 +1132,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION3ID,
         "missionMask":      LEVEL8MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459938,
         "raBadge":          "520670",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459939,
         "challengeRABadge": "520671",
         "leaderboardID":    114824
@@ -1140,11 +1160,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL9MISSION1ID,
         "missionMask":      LEVEL9MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459941,
         "raBadge":          "520673",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459942,
         "challengeRABadge": "520674",
         "leaderboardID":    114825
@@ -1167,11 +1188,12 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL9MISSION2ID,
         "missionMask":      LEVEL9MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459943,
         "raBadge":          "520675",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459944,
         "challengeRABadge": "520676",
         "leaderboardID":    114826
@@ -1194,11 +1216,12 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL9MISSION3ID,
         "missionMask":      LEVEL9MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459945,
         "raBadge":          "520677",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengePoints":  10,
         "challengeRAID":    459946,
         "challengeRABadge": "520678",
         "leaderboardID":    114827
@@ -1221,7 +1244,8 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL10MISSION1ID,
         "missionMask":      LEVEL10MISSION1MASK,
-        "points":           10,
+        "points":           25,
+        "type":             "win_condition",
         "raID":             459948,
         "raBadge":          "520680",
         "hasChallenge":     false,
@@ -1242,14 +1266,36 @@ for config in MissionConfigs
     // Progression level achievements
     if currentLevel + 1 == config["level"] {
         levelIndex = config["index"] - 1
+        levelMissionConfigs = []
+        for missionConfig in MissionConfigs {
+            if missionConfig["level"] == currentLevel {
+                array_push(levelMissionConfigs, missionConfig)
+            }
+        }
+        conditions = [
+            once( GameStarts() ),
+            once( GameStarts() ),
+            once( GameStarts() ),
+            once( GameStarts() ),
+            deduct( once( PlayerDies() ) )
+        ]
+         for levelMissionConfig in levelMissionConfigs {
+            array_push( conditions, once(
+                PlayerEntersMission( levelMissionConfig["missionId"] )
+            ) )
+            array_push( conditions, once(
+                onlyMissionUnlocked( levelMissionConfig["missionMask"] )
+            ) )
+        }
         levelAchievement = {
             "title":       format("Complete Level {0}", currentLevel),
             "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
             "points":      10,
-            "trigger":     tally(2,
-                once( GameStarts() ),
-                once( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) )
+            "trigger":     tally(
+                4,
+                conditions
             ) &&
+            trigger_when( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) ) &&
             never( OpenPasswordMenu() ),
             "type":        "progression",
             "id":          levelLookup[config["level"]]["raID"],
@@ -1283,7 +1329,7 @@ for config in MissionConfigs
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
         never( PlayerDies() ),
-        "type":        "",
+        "type":        config["type"],
         "id":          config["raID"],
         "badge":       config["raBadge"],
     }
@@ -1404,26 +1450,6 @@ for config in MissionConfigs
     array_push( leaderboards, l )
 }
 
-// Win condition achievement
-currIndex = count + 1
-a = {
-    "title":       "Beat the Game",
-    "description": "Beat every level of the game without using passwords",
-    "points":      25,
-    "trigger":     measured(
-        tally(2,
-            once( GameStarts() ),
-            once( GameEnds() )
-        )
-    ) &&
-    never( OpenPasswordMenu() ),
-    "type":        "win_condition",
-    "id":          459949,
-    "badge":       "520681",
-}
-count = count + 1
-achievements[currIndex] = a
-
 // Lightning achievement
 currIndex = count + 1
 a = {
@@ -1434,7 +1460,8 @@ a = {
     "trigger":     any_of(
         lightningMissions,
         mid => CurrentMission() == mid &&
-        prev( SpeedBoost() ) + 0x20 == SpeedBoost()
+        prev( SpeedBoost() ) == 0 &&
+        SpeedBoost() > 0
     ),
     "type":        "",
     "id":          459950,
@@ -1470,7 +1497,8 @@ a = {
     "trigger":     any_of(
         powerRingMissions,
         mid => CurrentMission() == mid &&
-        prev( PowerRing() ) + 0x20 == PowerRing()
+        prev( PowerRing() ) == 0 &&
+        PowerRing() > 0
     ),
     "type":        "",
     "id":          459952,
@@ -1488,7 +1516,7 @@ a = {
     "trigger":     any_of(
         mapMissions,
         mid => CurrentMission() == mid &&
-        prev( countRoomsSeen() ) <= countMissionRoomsAvailable() &&
+        prev( countRoomsSeen() ) <= countRoomsSeen() &&
         countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
     ),
     "type":        "",
@@ -1499,18 +1527,18 @@ count = count + 1
 achievements[currIndex] = a
 
 // VOIDED Win condition achievement
-// currIndex = count + 1
-// a = {
-//     "title":       "[VOID] Beat the Game",
-//     "description": "Beat every level of the game without using passwords",
-//     "points":      0,
-//     "trigger":     always_false(),
-//     "type":        "",
-//     "id":          459949,
-//     "badge":       "520681",
-// }
-// count = count + 1
-// achievements[currIndex] = a
+currIndex = count + 1
+a = {
+    "title":       "[VOID] Beat the Game",
+    "description": "Beat every level of the game without using passwords",
+    "points":      0,
+    "trigger":     always_false(),
+    "type":        "",
+    "id":          459949,
+    "badge":       "520681",
+}
+count = count + 1
+achievements[currIndex] = a
 
 if length( achievements ) == count { // This check is to ensure the amount of achievements I expect when building the order of them
     for index in range( 1, count ) {
@@ -1591,7 +1619,7 @@ rich_presence_conditional_display(
 rich_presence_conditional_display(
     inMainLobby(),
     "Main Lobby • {0} Star{1} • {2} Lift Pass • #{3} Credit{4}",
-    rich_presence_value( "luckyStars", LuckyStars(), "VALUE" ),
+    rich_presence_value( "valueFormat", LuckyStars(), "VALUE" ),
     rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" ),
     rich_presence_lookup( "liftPassLevel", LiftPassLevel(), levelPass ),
     rich_presence_value( "credits", Credits(), "POINTS" ),
@@ -1601,9 +1629,9 @@ rich_presence_conditional_display(
 rich_presence_display(
     "{0} • {1} Heart{2} • {3} Star{4}",
     rich_presence_lookup( "mission", CurrentMission(), currentMission ),
-    rich_presence_value( "health", Health(), "VALUE" ),
+    rich_presence_value( "valueFormat", Health(), "VALUE" ),
     rich_presence_lookup( "singularLookup", Health(), singular_lookup, "s" ),
-    rich_presence_value( "luckyStars", LuckyStars(), "VALUE" ),
+    rich_presence_value( "valueFormat", LuckyStars(), "VALUE" ),
     rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" )
 )
 
