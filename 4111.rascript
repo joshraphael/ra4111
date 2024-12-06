@@ -79,33 +79,11 @@ function MissionRoomsAvailableGroup6() => bitcount( 0xd19c )
 // $D19D: Mission Rooms Available Group 7
 function MissionRoomsAvailableGroup7() => bitcount( 0xd19d )
 
+// $D3F0 - Password first four chars
 function PasswordCharGroup1() => dword( 0xd3f0 )
 
+// $D3F4 - Password last four chars
 function PasswordCharGroup2() => dword( 0xd3f4 )
-
-// $D3F0 - Password first char
-function PasswordChar1() => byte( 0xd3f0 )
-
-// $D3F1 - Password second char
-function PasswordChar2() => byte( 0xd3f1 )
-
-// $D3F2 - Password third char
-function PasswordChar3() => byte( 0xd3f2 )
-
-// $D3F3 - Password fourth char
-function PasswordChar4() => byte( 0xd3f3 )
-
-// $D3F4 - Password fifth char
-function PasswordChar5() => byte( 0xd3f4 )
-
-// $D3F5 - Password sixth char
-function PasswordChar6() => byte( 0xd3f5 )
-
-// $D3F6 - Password seventh char
-function PasswordChar7() => byte( 0xd3f6 )
-
-// $D3F7 - Password eigth char
-function PasswordChar8() => byte( 0xd3f7 )
 
 // $D3E5 - Current Select Menu Option Selection
 function SelectMenuOption() => byte( 0xd3e5 )
@@ -197,14 +175,16 @@ LEVEL10 = 0x09
 
 levelLookup = {
     1: {
-        "id":   LEVEL1,
-        "cost": 0
+        "id":            LEVEL1,
+        "titleOverride": "The Journey Begins",
+        "cost":          0
     },
     2: {
-        "id":      LEVEL2,
-        "cost":    70,
-        "raID":    459891,
-        "raBadge": "549135"
+        "id":            LEVEL2,
+        "titleOverride": "Double The Trouble",
+        "cost":          70,
+        "raID":          459891,
+        "raBadge":       "549135"
     },
     3: {
         "id":      LEVEL3,
@@ -355,12 +335,19 @@ function OpenPasswordMenu()
     )
 }
 
-function PlayerDies()
+function PlayerDies( missionIds )
 {
-    return (
+    conditions = (
         prev( Health() ) != DEAD &&
         Health() == DEAD
     )
+    if length( missionIds ) > 0 {
+        return any_of(
+            missionIds,
+            mid => CurrentMission() == mid && conditions
+        )
+    }
+    return conditions
 }
 
 function PlayerQuitsMission( missionId, missionMask )
@@ -1257,9 +1244,11 @@ for config in MissionConfigs
     if currentLevel + 1 == config["level"] {
         levelIndex = config["index"] - 1
         levelMissionConfigs = []
+        levelMissionIds = []
         for missionConfig in MissionConfigs {
             if missionConfig["level"] == currentLevel {
-                array_push(levelMissionConfigs, missionConfig)
+                array_push( levelMissionConfigs, missionConfig )
+                array_push( levelMissionIds, missionConfig["missionId"] )
             }
         }
         conditions = [
@@ -1267,7 +1256,7 @@ for config in MissionConfigs
             once( GameStarts() ),
             once( GameStarts() ),
             once( GameStarts() ),
-            deduct( once( PlayerDies() ) )
+            deduct( once( PlayerDies( levelMissionIds ) ) )
         ]
         for levelMissionConfig in levelMissionConfigs {
             array_push( conditions, once(
@@ -1277,8 +1266,12 @@ for config in MissionConfigs
                 onlyMissionUnlocked( levelMissionConfig["missionMask"] )
             ) )
         }
+        title = format("Complete Level {0}", currentLevel)
+        if dictionary_contains_key( levelLookup[currentLevel], "titleOverride" ) {
+            title = levelLookup[currentLevel]["titleOverride"]
+        }
         levelAchievement = {
-            "title":       format("Complete Level {0}", currentLevel),
+            "title":       title,
             "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
             "points":      10,
             "trigger":     tally(
@@ -1318,7 +1311,7 @@ for config in MissionConfigs
         ) &&
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
-        never( PlayerDies() ),
+        never( PlayerDies( [] ) ),
         "type":        config["type"],
         "id":          config["raID"],
         "badge":       config["raBadge"],
@@ -1386,7 +1379,7 @@ for config in MissionConfigs
                 )
             ) &&
             never( OpenPasswordMenu() ) &&
-            never( PlayerDies() ) &&
+            never( PlayerDies( [] ) ) &&
             never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
             never( PlayerHurt() ),
             "type":        "missable",
@@ -1426,7 +1419,7 @@ for config in MissionConfigs
         "start":           PlayerEntersMission( config["missionId"] ),
         "cancel":          (
             OpenPasswordMenu() ||
-            PlayerDies() ||
+            PlayerDies( [] ) ||
             PlayerQuitsMission( config["missionId"], config["missionMask"] )
         ),
         "submit":          onlyMissionUnlocked( config["missionMask"] ),
