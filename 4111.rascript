@@ -374,14 +374,6 @@ function PlayerQuitsMission( missionId, missionMask )
     )
 }
 
-function PlayerExitsMission( missionId )
-{
-    return (
-        prev( CurrentMission() ) == missionId &&
-        CurrentMission() == MAINROOMID
-    )
-}
-
 function PlayerEntersMission( missionId )
 {
     return (
@@ -1279,7 +1271,7 @@ for config in MissionConfigs
             once( GameStarts() ),
             deduct( once( PlayerDies() ) )
         ]
-         for levelMissionConfig in levelMissionConfigs {
+        for levelMissionConfig in levelMissionConfigs {
             array_push( conditions, once(
                 PlayerEntersMission( levelMissionConfig["missionId"] )
             ) )
