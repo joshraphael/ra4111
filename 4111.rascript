@@ -79,6 +79,10 @@ function MissionRoomsAvailableGroup6() => bitcount( 0xd19c )
 // $D19D: Mission Rooms Available Group 7
 function MissionRoomsAvailableGroup7() => bitcount( 0xd19d )
 
+function PasswordCharGroup1() => dword( 0xd3f0 )
+
+function PasswordCharGroup2() => dword( 0xd3f4 )
+
 // $D3F0 - Password first char
 function PasswordChar1() => byte( 0xd3f0 )
 
@@ -346,14 +350,8 @@ function OpenPasswordMenu()
     return (
         inSelectMenu() &&
         SelectMenuOption() == 0x01 && // enter password menu
-        prev( PasswordChar1() ) != 0xFF && PasswordChar1() == 0xFF &&
-        prev( PasswordChar2() ) != 0xFF && PasswordChar2() == 0xFF &&
-        prev( PasswordChar3() ) != 0xFF && PasswordChar3() == 0xFF &&
-        prev( PasswordChar4() ) != 0xFF && PasswordChar4() == 0xFF &&
-        prev( PasswordChar5() ) != 0xFF && PasswordChar5() == 0xFF &&
-        prev( PasswordChar6() ) != 0xFF && PasswordChar6() == 0xFF &&
-        prev( PasswordChar7() ) != 0xFF && PasswordChar7() == 0xFF &&
-        prev( PasswordChar8() ) != 0xFF && PasswordChar8() == 0xFF
+        prev( PasswordCharGroup1() ) != 0xFFFFFFFF && PasswordCharGroup1() == 0xFFFFFFFF &&
+        prev( PasswordCharGroup2() ) != 0xFFFFFFFF && PasswordCharGroup2() == 0xFFFFFFFF
     )
 }
 
