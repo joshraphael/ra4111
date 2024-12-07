@@ -199,10 +199,11 @@ levelLookup = {
         "raBadge": "520658"
     },
     9: {
-        "id":      LEVEL9,
-        "cost":    1500,
-        "raID":    459940,
-        "raBadge": "520665"
+        "id":            LEVEL9,
+        "titleOverride": "School's Out!",
+        "cost":          1500,
+        "raID":          459940,
+        "raBadge":       "520665"
     },
     10: {
         "id":      LEVEL10,
@@ -659,6 +660,7 @@ MissionConfigs = [
         "raID":             459901,
         "raBadge":          "520633",
         "hasChallenge":     true,
+        "challengeTitle":   "Overdrive",
         "challengePoints":  10,
         "challengeRAID":    459902,
         "challengeRABadge": "520634",
@@ -689,6 +691,7 @@ MissionConfigs = [
         "raID":             459903,
         "raBadge":          "520635",
         "hasChallenge":     true,
+        "challengeTitle":   "Sold Out Concert",
         "challengePoints":  10,
         "challengeRAID":    459904,
         "challengeRABadge": "520636",
@@ -719,6 +722,7 @@ MissionConfigs = [
         "raID":             459906,
         "raBadge":          "520638",
         "hasChallenge":     true,
+        "challengeTitle":   "It's Show Time!",
         "challengePoints":  10,
         "challengeRAID":    459907,
         "challengeRABadge": "520639",
@@ -779,6 +783,7 @@ MissionConfigs = [
         "raID":             459910,
         "raBadge":          "520642",
         "hasChallenge":     true,
+        "challengeTitle":   "The King of Rock",
         "challengePoints":  10,
         "challengeRAID":    459911,
         "challengeRABadge": "520643",
@@ -959,6 +964,7 @@ MissionConfigs = [
         "raID":             459924,
         "raBadge":          "520656",
         "hasChallenge":     true,
+        "challengeTitle":   "Bejeweled",
         "challengePoints":  10,
         "challengeRAID":    459925,
         "challengeRABadge": "520657",
@@ -1019,6 +1025,7 @@ MissionConfigs = [
         "raID":             459929,
         "raBadge":          "520661",
         "hasChallenge":     true,
+        "challengeTitle":   "Off the Hook",
         "challengePoints":  10,
         "challengeRAID":    459930,
         "challengeRABadge": "520662",
@@ -1049,6 +1056,7 @@ MissionConfigs = [
         "raID":             459931,
         "raBadge":          "520663",
         "hasChallenge":     true,
+        "challengeTitle":   "Message in a Bottle",
         "challengePoints":  10,
         "challengeRAID":    459932,
         "challengeRABadge": "520664",
@@ -1199,6 +1207,7 @@ MissionConfigs = [
         "raID":             459943,
         "raBadge":          "520675",
         "hasChallenge":     true,
+        "challengeTitle":   "Squash Those Beetles",
         "challengePoints":  10,
         "challengeRAID":    459944,
         "challengeRABadge": "520676",
@@ -1388,8 +1397,12 @@ for config in MissionConfigs
                 items = items + args[index] + " " + args[index + 1]
             }
         }
+        title = format("Perfect {0}", config["title"])
+        if dictionary_contains_key( config, "challengeTitle" ) {
+            title = config["challengeTitle"]
+        }
         a1 = {
-            "title":       format("Perfect {0}", config["title"]),
+            "title":       title,
             "description": format("Without taking damage{0} and complete Level {1} Mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
             "trigger":     measured(
