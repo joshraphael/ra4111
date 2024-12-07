@@ -249,10 +249,12 @@ function missionMarkedComplete( missionMask )
     )
 }
 
-function onlyMissionUnlocked( missionMask )
+function onlyMissionUnlocked( config )
 {
     return (
-        MissionFlags() == ( prev( MissionFlags() ) + missionMask )
+        MissionFlags() == ( prev( MissionFlags() ) + config["missionMask"] ) &&
+        prior( bit( config["itemBit"], config["itemAddr"] ) ) == 0 &&
+        bit( config["itemBit"], config["itemAddr"] ) == 1
     )
 }
 
@@ -367,19 +369,19 @@ function PlayerEntersMission( missionId )
     )
 }
 
-function MissionCompleteCondition( missionId, missionMask ) 
+function MissionCompleteCondition( config ) 
 {
     return tally( 2,
-        once( PlayerEntersMission( missionId ) ),
-        once( onlyMissionUnlocked( missionMask ) )
+        once( PlayerEntersMission( config["missionId"] ) ),
+        once( onlyMissionUnlocked( config ) )
     )
 }
 
-function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars, bonus, gold ) 
+function MissionCompletePerfectCondition( config, missionId, missionMask, hearts, stars, bonus, gold ) 
 {
     conditions = [
         once( PlayerEntersMission( missionId ) ),
-        once( onlyMissionUnlocked( missionMask ) )
+        once( onlyMissionUnlocked( config ) )
     ]
     if hearts > 0 {
         array_push( conditions, repeated( hearts, CurrentMission() == missionId && Health() == prev( Health() ) + 1 ))
@@ -428,6 +430,8 @@ MissionConfigs = [
         "mission":         0,
         "title":           "Play Pen",
         "description":     "Beat the play pen tutorial",
+        "itemBit":         7,
+        "itemAddr":        0xd002,
         "reward":          1,
         "startingHearts":  0,
         "bonus":           0,
@@ -453,6 +457,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Big Brain",
         "description":      "Destroy the mind",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           30,
         "startingHearts":   4,
         "bonus":            3,
@@ -481,6 +487,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Ice Queen",
         "description":      "Steal the Ice Queen's crown",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           30,
         "startingHearts":   4,
         "bonus":            3,
@@ -509,6 +517,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Erase the Alchemist",
         "description":      "Destroy the alchemist",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           45,
         "startingHearts":   4,
         "bonus":            3,
@@ -537,6 +547,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Blind the Enemy",
         "description":      "Destroy the all seeing eye",
+        "itemBit":          4,
+        "itemAddr":         0xd004,
         "reward":           45,
         "startingHearts":   4,
         "bonus":            7,
@@ -565,6 +577,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Secret Codex",
         "description":      "Read the secret code",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           40,
         "startingHearts":   4,
         "bonus":            7,
@@ -593,6 +607,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Liftoff",
         "description":      "Launch the self destructing rocket",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           65,
         "startingHearts":   4,
         "bonus":            7,
@@ -621,6 +637,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Illuminate the Way",
         "description":      "Find the flashlight",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           70,
         "startingHearts":   4,
         "bonus":            10,
@@ -649,6 +667,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Circuit Breaker",
         "description":      "Find the electrical control box",
+        "itemBit":          7,
+        "itemAddr":         0xd003,
         "reward":           60,
         "startingHearts":   4,
         "bonus":            10,
@@ -677,6 +697,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Startup Funds",
         "description":      "Search for the piggy bank",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            10,
@@ -705,6 +727,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Time Keeper",
         "description":      "Collect the pocketwatch",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            15,
@@ -733,6 +757,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Food Poisoning",
         "description":      "Get rid of the poisoned food",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            15,
@@ -761,6 +787,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Command an Army",
         "description":      "Earn the crown of attack",
+        "itemBit":          5,
+        "itemAddr":         0xd002,
         "reward":           150,
         "startingHearts":   3,
         "bonus":            15,
@@ -789,6 +817,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Ghost Ship",
         "description":      "Take the ghost ship wood log",
+        "itemBit":          1,
+        "itemAddr":         0xd003,
         "reward":           150,
         "startingHearts":   4,
         "bonus":            20,
@@ -817,6 +847,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Talk to the Dead",
         "description":      "Collect the crystal ball",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           200,
         "startingHearts":   3,
         "bonus":            20,
@@ -845,6 +877,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Keeping Warm",
         "description":      "Use the wood stove",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           300,
         "startingHearts":   3,
         "bonus":            20,
@@ -873,6 +907,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "In Safe Hands",
         "description":      "Return the safe",
+        "itemBit":          4,
+        "itemAddr":         0xd005,
         "reward":           275,
         "startingHearts":   3,
         "bonus":            30,
@@ -901,6 +937,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Enchantment",
         "description":      "Smash the potion vial",
+        "itemBit":          5,
+        "itemAddr":         0xd005,
         "reward":           300,
         "startingHearts":   3,
         "bonus":            30,
@@ -929,6 +967,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Cursed Gem",
         "description":      "Destroy the dark jewel",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            30,
@@ -957,6 +997,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "POP!",
         "description":      "Earn the fizzy soda prize",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            42,
@@ -985,6 +1027,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Waiting for a Call",
         "description":      "Collect the phone",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            42,
@@ -1013,6 +1057,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "S.O.S",
         "description":      "Release the captive voyager",
+        "itemBit":          3,
+        "itemAddr":         0xd003,
         "reward":           600,
         "startingHearts":   2,
         "bonus":            42,
@@ -1041,6 +1087,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "K9 Companion",
         "description":      "Rescue the dog",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           650,
         "startingHearts":   3,
         "bonus":            60,
@@ -1069,6 +1117,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Fast Getaway",
         "description":      "Find and flee with the amphora jar",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           650,
         "startingHearts":   2,
         "bonus":            60,
@@ -1097,6 +1147,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Piece of Cake",
         "description":      "Eat the triple decker cake",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           850,
         "startingHearts":   2,
         "bonus":            60,
@@ -1125,6 +1177,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Hacking the Mainframe",
         "description":      "Destroy the computer system",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           900,
         "startingHearts":   2,
         "bonus":            90,
@@ -1153,6 +1207,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Infestation",
         "description":      "Smash open the jar of insects",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           800,
         "startingHearts":   2,
         "bonus":            90,
@@ -1181,6 +1237,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Home Sweet Home",
         "description":      "Find a new home",
+        "itemBit":          7,
+        "itemAddr":         0xd003,
         "reward":           1100,
         "startingHearts":   2,
         "bonus":            90,
@@ -1209,6 +1267,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "King Krond",
         "description":      "Defeat Krond and save the Mega Hero Academy!",
+        "itemBit":          5,
+        "itemAddr":         0xd008,
         "reward":           3500,
         "startingHearts":   3,
         "bonus":            120,
@@ -1246,7 +1306,7 @@ for config in MissionConfigs
         levelMissionConfigs = []
         levelMissionIds = []
         for missionConfig in MissionConfigs {
-            if missionConfig["level"] == currentLevel {
+            if missionConfig["level"] == currentLevel && missionConfig["mission"] != 0 {
                 array_push( levelMissionConfigs, missionConfig )
                 array_push( levelMissionIds, missionConfig["missionId"] )
             }
@@ -1263,7 +1323,7 @@ for config in MissionConfigs
                 PlayerEntersMission( levelMissionConfig["missionId"] )
             ) )
             array_push( conditions, once(
-                onlyMissionUnlocked( levelMissionConfig["missionMask"] )
+                onlyMissionUnlocked( levelMissionConfig )
             ) )
         }
         title = format("Complete Level {0}", currentLevel)
@@ -1305,10 +1365,7 @@ for config in MissionConfigs
         "title":       config["title"],
         "description": desc,
         "points":      config["points"],
-        "trigger":     MissionCompleteCondition(
-            config["missionId"],
-            config["missionMask"]
-        ) &&
+        "trigger":     MissionCompleteCondition( config ) &&
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
         never( PlayerDies( [] ) ),
@@ -1370,6 +1427,7 @@ for config in MissionConfigs
             "points":      config["challengePoints"],
             "trigger":     measured(
                 MissionCompletePerfectCondition(
+                    config,
                     config["missionId"],
                     config["missionMask"],
                     config["inGameHearts"],
@@ -1422,7 +1480,7 @@ for config in MissionConfigs
             PlayerDies( [] ) ||
             PlayerQuitsMission( config["missionId"], config["missionMask"] )
         ),
-        "submit":          onlyMissionUnlocked( config["missionMask"] ),
+        "submit":          onlyMissionUnlocked( config ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&
                            unless( inStartMenu() ),
