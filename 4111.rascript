@@ -240,12 +240,12 @@ achievements = {}
 
 // private functions
 
-function missionMarkedComplete( missionMask )
+function missionMarkedComplete( config )
 {
     // Mission is marked complete and it was previously closed
     return (
-        ( ( MissionFlags() & missionMask ) == missionMask ) &&
-        ( ( prev( MissionFlags() ) & missionMask ) == CLOSED )
+        ( ( MissionFlags() & config["missionMask"] ) == config["missionMask"] ) &&
+        ( ( prev( MissionFlags() ) & config["missionMask"] ) == CLOSED )
     )
 }
 
@@ -352,48 +352,48 @@ function PlayerDies( missionIds )
     return conditions
 }
 
-function PlayerQuitsMission( missionId, missionMask )
+function PlayerQuitsMission( config )
 {
     return (
-        prev( CurrentMission() ) == missionId &&
-        CurrentMission() != missionId &&
-        !missionMarkedComplete( missionMask )
+        prev( CurrentMission() ) == config["missionId"] &&
+        CurrentMission() != config["missionId"] &&
+        !missionMarkedComplete( config )
     )
 }
 
-function PlayerEntersMission( missionId )
+function PlayerEntersMission( config )
 {
     return (
         prev( CurrentMission() ) == MAINROOMID &&
-        CurrentMission() == missionId
+        CurrentMission() == config["missionId"]
     )
 }
 
 function MissionCompleteCondition( config ) 
 {
     return tally( 2,
-        once( PlayerEntersMission( config["missionId"] ) ),
+        once( PlayerEntersMission( config ) ),
         once( onlyMissionUnlocked( config ) )
     )
 }
 
-function MissionCompletePerfectCondition( config, missionId, missionMask, hearts, stars, bonus, gold ) 
+function MissionCompletePerfectCondition( config ) 
 {
     conditions = [
-        once( PlayerEntersMission( missionId ) ),
+        once( PlayerEntersMission( config ) ),
         once( onlyMissionUnlocked( config ) )
     ]
-    if hearts > 0 {
-        array_push( conditions, repeated( hearts, CurrentMission() == missionId && Health() == prev( Health() ) + 1 ))
+    if config["inGameHearts"] > 0 {
+        array_push( conditions, repeated( config["inGameHearts"], CurrentMission() == config["missionId"] && Health() == prev( Health() ) + 1 ))
     }
-    if stars > 0 {
-        array_push( conditions, repeated( stars, CurrentMission() == missionId && LuckyStars() == prev( LuckyStars() ) + 1 ) )
+    if config["stars"] > 0 {
+        array_push( conditions, repeated( config["stars"], CurrentMission() == config["missionId"] && LuckyStars() == prev( LuckyStars() ) + 1 ) )
     }
-    if gold > 0 {
-        array_push( conditions, repeated( gold, CurrentMission() == missionId && Bonus() == prev( Bonus() ) + bonus ) )
+    if config["gold"] > 0 {
+        array_push( conditions, repeated( config["gold"], CurrentMission() == config["missionId"] && Bonus() == prev( Bonus() ) + config["bonus"] ) )
     }
     return tally(
-        2 + hearts + stars + gold,
+        2 + config["inGameHearts"] + config["stars"] + config["gold"],
         conditions
     )
 }
@@ -1320,7 +1320,7 @@ for config in MissionConfigs
         ]
         for levelMissionConfig in levelMissionConfigs {
             array_push( conditions, once(
-                PlayerEntersMission( levelMissionConfig["missionId"] )
+                PlayerEntersMission( levelMissionConfig )
             ) )
             array_push( conditions, once(
                 onlyMissionUnlocked( levelMissionConfig )
@@ -1367,7 +1367,7 @@ for config in MissionConfigs
         "points":      config["points"],
         "trigger":     MissionCompleteCondition( config ) &&
         never( OpenPasswordMenu() ) &&
-        never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
+        never( PlayerQuitsMission( config ) ) &&
         never( PlayerDies( [] ) ),
         "type":        config["type"],
         "id":          config["raID"],
@@ -1426,19 +1426,11 @@ for config in MissionConfigs
             "description": format("Without taking damage{0} and complete Level {1} Mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
             "trigger":     measured(
-                MissionCompletePerfectCondition(
-                    config,
-                    config["missionId"],
-                    config["missionMask"],
-                    config["inGameHearts"],
-                    config["stars"],
-                    config["bonus"],
-                    config["gold"]
-                )
+                MissionCompletePerfectCondition( config )
             ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies( [] ) ) &&
-            never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
+            never( PlayerQuitsMission( config ) ) &&
             never( PlayerHurt() ),
             "type":        "missable",
             "id":          config["challengeRAID"],
@@ -1474,11 +1466,11 @@ for config in MissionConfigs
     l = {
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
-        "start":           PlayerEntersMission( config["missionId"] ),
+        "start":           PlayerEntersMission( config ),
         "cancel":          (
             OpenPasswordMenu() ||
             PlayerDies( [] ) ||
-            PlayerQuitsMission( config["missionId"], config["missionMask"] )
+            PlayerQuitsMission( config )
         ),
         "submit":          onlyMissionUnlocked( config ),
         "value":           measured( always_true() ) &&
