@@ -623,7 +623,7 @@ Notes: integer specifying what current mission the player is in
 
 Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-0 = not obtained
+0 = not obtained<br>
 1 = obtained
 
 * Bit0 = N/A
