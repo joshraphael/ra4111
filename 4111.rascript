@@ -228,6 +228,7 @@ function missionMarkedComplete( config )
 function onlyMissionUnlocked( config )
 {
     return (
+        CurrentMission() == config["missionId"] &&
         MissionFlags() == ( prev( MissionFlags() ) + config["missionMask"] ) &&
         prior( bit( config["itemBit"], config["itemAddr"] ) ) == 0 &&
         bit( config["itemBit"], config["itemAddr"] ) == 1
@@ -236,10 +237,9 @@ function onlyMissionUnlocked( config )
 
 function PlayerHurt()
 {
-    // Player loses a star, or heart
+    // Player loses a heart
     return (
         !inTitleScreen() && !inConcertScreen() && !inMainLobby() && // check that they are in a mission
-        ( LuckyStars() == ( prev( LuckyStars() ) - 1 ) ) ||
         ( Health() == ( prev( Health() ) - 1 ) )
     )
 }
@@ -345,20 +345,17 @@ function PlayerEntersMission( config )
     )
 }
 
-function MissionCompleteCondition( config ) 
-{
-    return tally( 2,
-        once( PlayerEntersMission( config ) ),
-        once( onlyMissionUnlocked( config ) )
-    )
-}
-
 function MissionCompletePerfectCondition( config ) 
 {
     conditions = [
-        once( PlayerEntersMission( config ) ),
-        once( onlyMissionUnlocked( config ) )
+        once( onlyMissionUnlocked( config ) ),
+        deduct( PlayerHurt() )
     ]
+    if config["startingHearts"] > 0 {
+        for i in range(1, config["startingHearts"] ) {
+            array_push( conditions, once( PlayerEntersMission( config ) ) )
+        }
+    }
     if config["inGameHearts"] > 0 {
         array_push( conditions, repeated( config["inGameHearts"], CurrentMission() == config["missionId"] && Health() == prev( Health() ) + 1 ))
     }
@@ -369,7 +366,7 @@ function MissionCompletePerfectCondition( config )
         array_push( conditions, repeated( config["gold"], CurrentMission() == config["missionId"] && Bonus() == prev( Bonus() ) + config["bonus"] ) )
     }
     return tally(
-        2 + config["inGameHearts"] + config["stars"] + config["gold"],
+        1 + config["startingHearts"] + config["inGameHearts"] + config["stars"] + config["gold"],
         conditions
     )
 }
@@ -1289,15 +1286,9 @@ for config in MissionConfigs
         }
         conditions = [
             once( GameStarts() ),
-            once( GameStarts() ),
-            once( GameStarts() ),
-            once( GameStarts() ),
-            deduct( once( PlayerDies( levelMissionIds ) ) )
+            once( GameStarts() )
         ]
         for levelMissionConfig in levelMissionConfigs {
-            array_push( conditions, once(
-                PlayerEntersMission( levelMissionConfig )
-            ) )
             array_push( conditions, once(
                 onlyMissionUnlocked( levelMissionConfig )
             ) )
@@ -1311,7 +1302,7 @@ for config in MissionConfigs
             "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
             "points":      10,
             "trigger":     tally(
-                4,
+                2,
                 conditions
             ) &&
             trigger_when( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) ) &&
@@ -1341,7 +1332,7 @@ for config in MissionConfigs
         "title":       config["title"],
         "description": desc,
         "points":      config["points"],
-        "trigger":     MissionCompleteCondition( config ) &&
+        "trigger":     onlyMissionUnlocked( config ) &&
         never( OpenPasswordMenu() ) &&
         never( PlayerQuitsMission( config ) ) &&
         never( PlayerDies( [] ) ),
@@ -1406,8 +1397,7 @@ for config in MissionConfigs
             ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies( [] ) ) &&
-            never( PlayerQuitsMission( config ) ) &&
-            never( PlayerHurt() ),
+            never( PlayerQuitsMission( config ) ),
             "type":        "missable",
             "id":          config["challengeRAID"],
             "badge":       config["challengeRABadge"]
