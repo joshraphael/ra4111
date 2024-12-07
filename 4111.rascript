@@ -348,15 +348,7 @@ function PlayerEntersMission( config )
 
 function MissionCompletePerfectCondition( config ) 
 {
-    conditions = [
-        once( onlyMissionUnlocked( config ) ),
-        deduct( PlayerHurt() )
-    ]
-    if config["startingHearts"] > 0 {
-        for i in range(1, config["startingHearts"] ) {
-            array_push( conditions, once( PlayerEntersMission( config ) ) )
-        }
-    }
+    conditions = []
     if config["inGameHearts"] > 0 {
         array_push( conditions, repeated( config["inGameHearts"], CurrentMission() == config["missionId"] && Health() == prev( Health() ) + 1 ))
     }
@@ -367,7 +359,7 @@ function MissionCompletePerfectCondition( config )
         array_push( conditions, repeated( config["gold"], CurrentMission() == config["missionId"] && Bonus() == prev( Bonus() ) + config["bonus"] ) )
     }
     return tally(
-        1 + config["startingHearts"] + config["inGameHearts"] + config["stars"] + config["gold"],
+        config["inGameHearts"] + config["stars"] + config["gold"],
         conditions
     )
 }
@@ -1405,9 +1397,12 @@ for config in MissionConfigs
             "title":       title,
             "description": format("Without taking damage{0} and complete Level {1} Mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
-            "trigger":     measured(
+            "trigger":     once( PlayerEntersMission( config ) ) &&
+            measured(
                 MissionCompletePerfectCondition( config )
             ) &&
+            once( onlyMissionUnlocked( config ) ) &&
+            never( PlayerHurt() ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies( [] ) ) &&
             never( PlayerQuitsMission( config ) ),
