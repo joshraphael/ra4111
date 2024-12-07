@@ -1306,7 +1306,7 @@ for config in MissionConfigs
                 2,
                 conditions
             ) &&
-            trigger_when( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) ) &&
+            upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) &&
             never( OpenPasswordMenu() ),
             "type":        "progression",
             "id":          levelLookup[config["level"]]["raID"],
@@ -1401,7 +1401,7 @@ for config in MissionConfigs
             measured(
                 MissionCompletePerfectCondition( config )
             ) &&
-            once( onlyMissionUnlocked( config ) ) &&
+            onlyMissionUnlocked( config ) &&
             never( PlayerHurt() ) &&
             never( OpenPasswordMenu() ) &&
             never( PlayerDies( [] ) ) &&
