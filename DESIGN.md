@@ -765,7 +765,7 @@ Notes: bit flags for missions completed
 
 **0xd08a** (8-bit)
 
-Notes: bit flags for key items obtained in missions
+Notes: Only used for the final mission where you collect four key items that are not power ups in order for the final room to allow you to cross the bridge and defeat King Krond.
 
 0 = not obtained<br>
 1 = obtained
@@ -774,10 +774,10 @@ Notes: bit flags for key items obtained in missions
 * Bit1 = item 2
 * Bit2 = item 3
 * Bit3 = item 4
-* Bit4 = item 5
-* Bit5 = item 6
-* Bit6 = item 7
-* Bit7 = item 8
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = N/A
 
 ### _A Button Item_
 
