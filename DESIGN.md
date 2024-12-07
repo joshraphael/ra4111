@@ -494,55 +494,58 @@ Level 10 Summary:
 1. [Start Menu](#start-menu)
 2. [Select Menu](#select-menu)
 3. [Current Mission](#current-mission)
-4. [Item Flags](#item-flags)
-5. [Mission Flags](#mission-flags)
-6. [Missions Unlocked Flags](#missions-unlocked-flags)
-7. [Mission Key Item Flags](#mission-key-item-flags)
-8. [A Button Item](#a-button-item)
-9. [B Button Item](#b-button-item)
-10. [Bag Contents](#bag-contents)
-11. [Lucky Stars](#lucky-stars)
-12. [Health](#health)
-13. [Speed Boost](#speed-boost)
-14. [Power Ring Time](#power-ring-time)
-15. [Power Spring Jumps](#power-spring-jumps)
-16. [Player Direction Facing](#player-direction-facing)
-17. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
-18. [Lift Pass Level](#lift-pass-level)
-19. [Credits](#credits)
-20. [Response Setting](#response-setting)
-21. [Idle Animation Timer](#idle-animation-timer)
-22. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
-23. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
-24. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
-25. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
-26. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
-27. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
-28. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
-29. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
-30. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
-31. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
-32. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
-33. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
-34. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
-35. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
-36. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
-37. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
-38. [Select Menu Option](#select-menu-option)
-39. [Language](#language)
-40. [Control Pad Setting](#control-pad-setting)
-41. [Information Menu Selector X](#information-menu-selector-x)
-42. [Information Menu Selector Y](#information-menu-selector-y)
-43. [Password Length](#password-length)
-44. [Password Character 1](#password-character-1)
-45. [Password Character 2](#password-character-2)
-46. [Password Character 3](#password-character-3)
-47. [Password Character 4](#password-character-4)
-48. [Password Character 5](#password-character-5)
-49. [Password Character 6](#password-character-6)
-50. [Password Character 7](#password-character-7)
-51. [Password Character 8](#password-character-8)
-52. [Mission Bonus Credits](#mission-bonus-credits)
+4. [Mission Final Item Flags Group 1](#mission-final-item-flags-group-1)
+5. [Mission Final Item Flags Group 2](#mission-final-item-flags-group-2)
+6. [Mission Final Item Flags Group 3](#mission-final-item-flags-group-3)
+7. [Mission Final Item Flags Group 4](#mission-final-item-flags-group-4)
+8. [Mission Final Item Flags Group 5](#mission-final-item-flags-group-5)
+9. [Missions Unlocked Flags](#missions-unlocked-flags)
+10. [Mission Key Item Flags](#mission-key-item-flags)
+11. [A Button Item](#a-button-item)
+12. [B Button Item](#b-button-item)
+13. [Bag Contents](#bag-contents)
+14. [Lucky Stars](#lucky-stars)
+15. [Health](#health)
+16. [Speed Boost](#speed-boost)
+17. [Power Ring Time](#power-ring-time)
+18. [Power Spring Jumps](#power-spring-jumps)
+19. [Player Direction Facing](#player-direction-facing)
+20. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
+21. [Lift Pass Level](#lift-pass-level)
+22. [Credits](#credits)
+23. [Response Setting](#response-setting)
+24. [Idle Animation Timer](#idle-animation-timer)
+25. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
+26. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
+27. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
+28. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
+29. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
+30. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
+31. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
+32. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
+33. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
+34. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
+35. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
+36. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
+37. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
+38. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
+39. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
+40. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
+41. [Select Menu Option](#select-menu-option)
+42. [Language](#language)
+43. [Control Pad Setting](#control-pad-setting)
+44. [Information Menu Selector X](#information-menu-selector-x)
+45. [Information Menu Selector Y](#information-menu-selector-y)
+46. [Password Length](#password-length)
+47. [Password Character 1](#password-character-1)
+48. [Password Character 2](#password-character-2)
+49. [Password Character 3](#password-character-3)
+50. [Password Character 4](#password-character-4)
+51. [Password Character 5](#password-character-5)
+52. [Password Character 6](#password-character-6)
+53. [Password Character 7](#password-character-7)
+54. [Password Character 8](#password-character-8)
+55. [Mission Bonus Credits](#mission-bonus-credits)
 
 ### _Start Menu_
 
@@ -612,51 +615,103 @@ Notes: integer specifying what current mission the player is in
 * 0x1e = Title Screen
 * 0x1f = Final Concert Scene
 
-### _Item Flags_
+### _Mission Final Item Flags Group 1_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xd002** (16-bit)
+**0xd002** (8-bit)
 
-Notes: Does not appear to be an order of item type. There is a max 16 items that can be found of any kind and these flags are used to make them disappear when re-entering a room.
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
 0 = not obtained
 1 = obtained
 
-* Bit0 = Item 1
-* Bit1 = Item 2
-* Bit2 = Item 3
-* Bit3 = Item 4
-* Bit4 = Item 5
-* Bit5 = Item 6
-* Bit6 = Item 7
-* Bit7 = Item 8
-* Bit8 = Item 9
-* Bit9 = Item 10
-* Bit10 = Item 11
-* Bit11 = Item 12
-* Bit12 = Item 13
-* Bit13 = Item 14
-* Bit14 = Item 15
-* Bit15 = Item 16
+* Bit0 = N/A
+* Bit1 = N/A
+* Bit2 = N/A
+* Bit3 = N/A
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = Play Pen, 4-3
 
-### _Mission Flags_
+### _Mission Final Item Flags Group 2_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd003** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = 5-1
+* Bit2 = N/A
+* Bit3 = 7-3
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = 3-2, 9-3
+
+### _Mission Final Item Flags Group 3_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xd004** (8-bit)
 
-Notes: bit flags for items obtained in missions
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
 0 = not obtained<br>
 1 = obtained
 
-* Bit0 = Item 1
-* Bit1 = Mission Door
+* Bit0 = 2-2, 4-2, 5-2, 6-3, 8-2, 9-1, 9-2
+* Bit1 = 1-1, 1-2, 3-3, 4-1, 5-3, 7-1, 8-1, 8-3
+* Bit2 = 1-3, 2-3, 3-1, 7-2
+* Bit3 = N/A
+* Bit4 = 2-1
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = N/A
+
+### _Mission Final Item Flags Group 4_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd005** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = N/A
+* Bit2 = N/A
+* Bit3 = N/A
+* Bit4 = 6-1
+* Bit5 = 6-2
+* Bit6 = N/A
+* Bit7 = N/A
+
+### _Mission Final Item Flags Group 5_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd008** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = N/A
 * Bit2 = N/A
 * Bit3 = N/A
 * Bit4 = N/A
-* Bit5 = N/A
+* Bit5 = 10-1
 * Bit6 = N/A
 * Bit7 = N/A
 

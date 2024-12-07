@@ -34,9 +34,6 @@ function LiftPassLevel() => byte( 0xd128 )
 // $D129: Number of credits earned
 function Credits() => word( 0xd129 )
 
-// $D12E: Idle Timer until Max begins playing guitar
-function IdleTimer() => byte( 0xd12e )
-
 // $D190: Start Menu Map Group 1
 function StartMenuMapGroup1() => bitcount( 0xd190 )
 
@@ -57,27 +54,6 @@ function StartMenuMapGroup6() => bitcount( 0xd195 )
 
 // $D196: Start Menu Map Group 7
 function StartMenuMapGroup7() => bitcount( 0xd196 )
-
-// $D197: Mission Rooms Available Group 1
-function MissionRoomsAvailableGroup1() => bitcount( 0xd197 )
-
-// $D198: Mission Rooms Available Group 2
-function MissionRoomsAvailableGroup2() => bitcount( 0xd198 )
-
-// $D199: Mission Rooms Available Group 3
-function MissionRoomsAvailableGroup3() => bitcount( 0xd199 )
-
-// $D19A: Mission Rooms Available Group 4
-function MissionRoomsAvailableGroup4() => bitcount( 0xd19a )
-
-// $D19B: Mission Rooms Available Group 5
-function MissionRoomsAvailableGroup5() => bitcount( 0xd19b )
-
-// $D19C: Mission Rooms Available Group 6
-function MissionRoomsAvailableGroup6() => bitcount( 0xd19c )
-
-// $D19D: Mission Rooms Available Group 7
-function MissionRoomsAvailableGroup7() => bitcount( 0xd19d )
 
 // $D3F0 - Password first four chars
 function PasswordCharGroup1() => dword( 0xd3f0 )
