@@ -1325,7 +1325,7 @@ for config in MissionConfigs
         }
         levelAchievement = {
             "title":       title,
-            "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
+            "description": format("Buy the lift pass for level {0} without using passwords, or if using passwords complete any two missions on level {1} before buying the lift pass for level {0}", config["level"], currentLevel),
             "points":      10,
             "trigger":     tally(
                 2,
