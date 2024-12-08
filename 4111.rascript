@@ -157,7 +157,7 @@ levelLookup = {
     },
     2: {
         "id":            LEVEL2,
-        "titleOverride": "Double The Trouble",
+        "titleOverride": "Double the Trouble",
         "cost":          70,
         "raID":          459891,
         "raBadge":       "549135"
@@ -1358,10 +1358,7 @@ for config in MissionConfigs
         "title":       config["title"],
         "description": desc,
         "points":      config["points"],
-        "trigger":     onlyMissionUnlocked( config ) &&
-        never( OpenPasswordMenu() ) &&
-        never( PlayerQuitsMission( config ) ) &&
-        never( PlayerDies( [] ) ),
+        "trigger":     onlyMissionUnlocked( config ),
         "type":        config["type"],
         "id":          config["raID"],
         "badge":       config["raBadge"],
