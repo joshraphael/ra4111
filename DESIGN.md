@@ -494,55 +494,58 @@ Level 10 Summary:
 1. [Start Menu](#start-menu)
 2. [Select Menu](#select-menu)
 3. [Current Mission](#current-mission)
-4. [Item Flags](#item-flags)
-5. [Mission Flags](#mission-flags)
-6. [Missions Unlocked Flags](#missions-unlocked-flags)
-7. [Mission Key Item Flags](#mission-key-item-flags)
-8. [A Button Item](#a-button-item)
-9. [B Button Item](#b-button-item)
-10. [Bag Contents](#bag-contents)
-11. [Lucky Stars](#lucky-stars)
-12. [Health](#health)
-13. [Speed Boost](#speed-boost)
-14. [Power Ring Time](#power-ring-time)
-15. [Power Spring Jumps](#power-spring-jumps)
-16. [Player Direction Facing](#player-direction-facing)
-17. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
-18. [Lift Pass Level](#lift-pass-level)
-19. [Credits](#credits)
-20. [Response Setting](#response-setting)
-21. [Idle Animation Timer](#idle-animation-timer)
-22. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
-23. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
-24. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
-25. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
-26. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
-27. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
-28. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
-29. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
-30. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
-31. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
-32. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
-33. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
-34. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
-35. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
-36. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
-37. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
-38. [Select Menu Option](#select-menu-option)
-39. [Language](#language)
-40. [Control Pad Setting](#control-pad-setting)
-41. [Information Menu Selector X](#information-menu-selector-x)
-42. [Information Menu Selector Y](#information-menu-selector-y)
-43. [Password Length](#password-length)
-44. [Password Character 1](#password-character-1)
-45. [Password Character 2](#password-character-2)
-46. [Password Character 3](#password-character-3)
-47. [Password Character 4](#password-character-4)
-48. [Password Character 5](#password-character-5)
-49. [Password Character 6](#password-character-6)
-50. [Password Character 7](#password-character-7)
-51. [Password Character 8](#password-character-8)
-52. [Mission Bonus Credits](#mission-bonus-credits)
+4. [Mission Final Item Flags Group 1](#mission-final-item-flags-group-1)
+5. [Mission Final Item Flags Group 2](#mission-final-item-flags-group-2)
+6. [Mission Final Item Flags Group 3](#mission-final-item-flags-group-3)
+7. [Mission Final Item Flags Group 4](#mission-final-item-flags-group-4)
+8. [Mission Final Item Flags Group 5](#mission-final-item-flags-group-5)
+9. [Missions Unlocked Flags](#missions-unlocked-flags)
+10. [Mission Key Item Flags](#mission-key-item-flags)
+11. [A Button Item](#a-button-item)
+12. [B Button Item](#b-button-item)
+13. [Bag Contents](#bag-contents)
+14. [Lucky Stars](#lucky-stars)
+15. [Health](#health)
+16. [Speed Boost](#speed-boost)
+17. [Power Ring Time](#power-ring-time)
+18. [Power Spring Jumps](#power-spring-jumps)
+19. [Player Direction Facing](#player-direction-facing)
+20. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
+21. [Lift Pass Level](#lift-pass-level)
+22. [Credits](#credits)
+23. [Response Setting](#response-setting)
+24. [Idle Animation Timer](#idle-animation-timer)
+25. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
+26. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
+27. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
+28. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
+29. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
+30. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
+31. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
+32. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
+33. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
+34. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
+35. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
+36. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
+37. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
+38. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
+39. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
+40. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
+41. [Select Menu Option](#select-menu-option)
+42. [Language](#language)
+43. [Control Pad Setting](#control-pad-setting)
+44. [Information Menu Selector X](#information-menu-selector-x)
+45. [Information Menu Selector Y](#information-menu-selector-y)
+46. [Password Length](#password-length)
+47. [Password Character 1](#password-character-1)
+48. [Password Character 2](#password-character-2)
+49. [Password Character 3](#password-character-3)
+50. [Password Character 4](#password-character-4)
+51. [Password Character 5](#password-character-5)
+52. [Password Character 6](#password-character-6)
+53. [Password Character 7](#password-character-7)
+54. [Password Character 8](#password-character-8)
+55. [Mission Bonus Credits](#mission-bonus-credits)
 
 ### _Start Menu_
 
@@ -612,51 +615,103 @@ Notes: integer specifying what current mission the player is in
 * 0x1e = Title Screen
 * 0x1f = Final Concert Scene
 
-### _Item Flags_
+### _Mission Final Item Flags Group 1_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
-**0xd002** (16-bit)
+**0xd002** (8-bit)
 
-Notes: Does not appear to be an order of item type. There is a max 16 items that can be found of any kind and these flags are used to make them disappear when re-entering a room.
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-0 = not obtained
+0 = not obtained<br>
 1 = obtained
 
-* Bit0 = Item 1
-* Bit1 = Item 2
-* Bit2 = Item 3
-* Bit3 = Item 4
-* Bit4 = Item 5
-* Bit5 = Item 6
-* Bit6 = Item 7
-* Bit7 = Item 8
-* Bit8 = Item 9
-* Bit9 = Item 10
-* Bit10 = Item 11
-* Bit11 = Item 12
-* Bit12 = Item 13
-* Bit13 = Item 14
-* Bit14 = Item 15
-* Bit15 = Item 16
+* Bit0 = N/A
+* Bit1 = N/A
+* Bit2 = N/A
+* Bit3 = N/A
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = Play Pen, 4-3
 
-### _Mission Flags_
+### _Mission Final Item Flags Group 2_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd003** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = 5-1
+* Bit2 = N/A
+* Bit3 = 7-3
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = 3-2, 9-3
+
+### _Mission Final Item Flags Group 3_
 
 <sub>[Back to navigation](#code-notes-navigation)</sub>
 
 **0xd004** (8-bit)
 
-Notes: bit flags for items obtained in missions
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
 0 = not obtained<br>
 1 = obtained
 
-* Bit0 = Item 1
-* Bit1 = Mission Door
+* Bit0 = 2-2, 4-2, 5-2, 6-3, 8-2, 9-1, 9-2
+* Bit1 = 1-1, 1-2, 3-3, 4-1, 5-3, 7-1, 8-1, 8-3
+* Bit2 = 1-3, 2-3, 3-1, 7-2
+* Bit3 = N/A
+* Bit4 = 2-1
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = N/A
+
+### _Mission Final Item Flags Group 4_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd005** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = N/A
+* Bit2 = N/A
+* Bit3 = N/A
+* Bit4 = 6-1
+* Bit5 = 6-2
+* Bit6 = N/A
+* Bit7 = N/A
+
+### _Mission Final Item Flags Group 5_
+
+<sub>[Back to navigation](#code-notes-navigation)</sub>
+
+**0xd008** (8-bit)
+
+Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
+
+0 = not obtained<br>
+1 = obtained
+
+* Bit0 = N/A
+* Bit1 = N/A
 * Bit2 = N/A
 * Bit3 = N/A
 * Bit4 = N/A
-* Bit5 = N/A
+* Bit5 = 10-1
 * Bit6 = N/A
 * Bit7 = N/A
 
@@ -710,7 +765,7 @@ Notes: bit flags for missions completed
 
 **0xd08a** (8-bit)
 
-Notes: bit flags for key items obtained in missions
+Notes: Only used for the final mission where you collect four key items that are not power ups in order for the final room to allow you to cross the bridge and defeat King Krond.
 
 0 = not obtained<br>
 1 = obtained
@@ -719,10 +774,10 @@ Notes: bit flags for key items obtained in missions
 * Bit1 = item 2
 * Bit2 = item 3
 * Bit3 = item 4
-* Bit4 = item 5
-* Bit5 = item 6
-* Bit6 = item 7
-* Bit7 = item 8
+* Bit4 = N/A
+* Bit5 = N/A
+* Bit6 = N/A
+* Bit7 = N/A
 
 ### _A Button Item_
 
@@ -1680,120 +1735,107 @@ Notes: Y coordinate of cursor in the information selection menu
 
 1. [Play Pen](#play-pen)
 2. [Big Brain](#big-brain)
-3. [Perfect Big Brain](#perfect-big-brain)
+3. [Street Smarts](#street-smarts)
 4. [Ice Queen](#ice-queen)
-5. [Perfect Ice Queen](#perfect-ice-queen)
+5. [Cold as Ice](#cold-as-ice)
 6. [Erase the Alchemist](#erase-the-alchemist)
-7. [Perfect Erase the Alchemist](#perfect-erase-the-alchemist)
-8. [Complete Level 1](#complete-level-1)
+7. [The Scientist](#the-scientist)
+8. [The Journey Begins](#the-journey-begins)
 9. [Blind the Enemy](#blind-the-enemy)
-10. [Perfect Blind the Enemy](#perfect-blind-the-enemy)
+10. [Eye of the Tiger](#eye-of-the-tiger)
 11. [Secret Codex](#secret-codex)
-12. [Perfect Secret Codex](#perfect-secret-codex)
+12. [Lyrical Analysis](#lyrical-analysis)
 13. [Liftoff](#liftoff)
-14. [Perfect Liftoff](#perfect-liftoff)
-15. [Complete Level 2](#complete-level-2)
+14. [Soar to the Top of the Charts](#soar-to-the-top-of-the-charts)
+15. [Double the Trouble](#double-the-trouble)
 16. [Illuminate the Way](#illuminate-the-way)
-17. [Perfect Illuminate the Way](#perfect-illuminate-the-way)
+17. [Kick Out the Stage Lights](#kick-out-the-stage-lights)
 18. [Circuit Breaker](#circuit-breaker)
-19. [Perfect Circuit Breaker](#perfect-circuit-breaker)
+19. [Overdrive](#overdrive)
 20. [Startup Funds](#startup-funds)
-21. [Perfect Startup Funds](#perfect-startup-funds)
-22. [Complete Level 3](#complete-level-3)
+21. [Sold Out Concert](#sold-out-concert)
+22. [It's a Long Way to the Top](#its-a-long-way-to-the-top)
 23. [Time Keeper](#time-keeper)
-24. [Perfect Time Keeper](#perfect-time-keeper)
+24. [It's Show Time!](#its-show-time)
 25. [Food Poisoning](#food-poisoning)
-26. [Perfect Food Poisoning](#perfect-food-poisoning)
+26. [Rock and McRoll](#rock-and-mcroll)
 27. [Command an Army](#command-an-army)
-28. [Perfect Command an Army](#perfect-command-an-army)
-29. [Complete Level 4](#complete-level-4)
+28. [The King of Rock](#the-king-of-rock)
+29. [Don't Stop Believin'](#dont-stop-believin)
 30. [Ghost Ship](#ghost-ship)
-31. [Perfect Ghost Ship](#perfect-ghost-ship)
+31. [Rock the Boat](#rock-the-boat)
 32. [Talk to the Dead](#talk-to-the-dead)
-33. [Perfect Talk to the Dead](#perfect-talk-to-the-dead)
+33. [Fortune Teller](#fortune-teller)
 34. [Keeping Warm](#keeping-warm)
-35. [Perfect Keeping Warm](#perfect-keeping-warm)
-36. [Complete Level 5](#complete-level-5)
+35. [Through the Fire and Flames](#through-the-fire-and-flames)
+36. [Just Move On Up](#just-move-on-up)
 37. [In Safe Hands](#in-safe-hands)
-38. [Perfect In Safe Hands](#perfect-in-safe-hands)
+38. [The Unreleased Album](#the-unreleased-album)
 39. [Enchantment](#enchantment)
-40. [Perfect Enchantment](#perfect-enchantment)
+40. [THE CONCOCTION](#the-concoction)
 41. [Cursed Gem](#cursed-gem)
-42. [Perfect Cursed Gem](#perfect-cursed-gem)
-43. [Complete Level 6](#complete-level-6)
+42. [Bejeweled](#bejeweled)
+43. [Takin' Care of Business](#takin-care-of-business)
 44. [POP!](#pop)
-45. [Perfect POP!](#perfect-pop)
+45. [Have a Drink on Me](#have-a-drink-on-me)
 46. [Waiting for a Call](#waiting-for-a-call)
-47. [Perfect Waiting for a Call](#perfect-waiting-for-a-call)
+47. [Off the Hook](#off-the-hook)
 48. [S.O.S](#sos)
-49. [Perfect S.O.S](#perfect-sos)
-50. [Complete Level 7](#complete-level-7)
+49. [Message in a Bottle](#message-in-a-bottle)
+50. [Stairway to Heaven](#stairway-to-heaven)
 51. [K9 Companion](#k9-companion)
-52. [Perfect K9 Companion](#perfect-k9-companion)
+52. [Who Let the Dogs Out?](#who-let-the-dogs-out)
 53. [Fast Getaway](#fast-getaway)
-54. [Perfect Fast Getaway](#perfect-fast-getaway)
+54. [Rock You like a Hurricane](#rock-you-like-a-hurricane)
 55. [Piece of Cake](#piece-of-cake)
-56. [Perfect Piece of Cake](#perfect-piece-of-cake)
-57. [Complete Level 8](#complete-level-8)
+56. [Fight for Your Right to Party](#fight-for-your-right-to-party)
+57. [A Rising Star](#a-rising-star)
 58. [Hacking the Mainframe](#hacking-the-mainframe)
-59. [Perfect Hacking the Mainframe](#perfect-hacking-the-mainframe)
+59. [Technologic](#technologic)
 60. [Infestation](#infestation)
-61. [Perfect Level 9 Mission 2](#perfect-level-9-mission-2)
+61. [Squash Those Beetles](#squash-those-beetles)
 62. [Home Sweet Home](#home-sweet-home)
-63. [Perfect Home Sweet Home](#perfect-home-sweet-home)
-64. [Complete Level 9](#complete-level-9)
+63. [Mansion Tour](#mansion-tour)
+64. [School's Out!](#schools-out)
 65. [King Krond](#king-krond)
-66. [Beat the Game](#beat-the-game)
-67. [Speedy](#speedy)
-68. [Jump to the Rescue](#jump-to-the-rescue)
-69. [Invincible](#invincible)
-70. [I'm the Map](#im-the-map)
+66. [Speedy](#speedy)
+67. [Jump to the Rescue](#jump-to-the-rescue)
+68. [Invincible](#invincible)
+69. [I'm the Map](#im-the-map)
 
 ### Play Pen
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **1**
+Points: **2**
 
 ![play pen](badges/PlayPen.png "Play Pen")
 
 Beat the play pen tutorial
 
 Conditions:
-1. Go from the lobby to play pen level
-2. Play pen mission marked complete, and no other mission status' changed
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
+1. Play pen mission marked complete, and no other mission status' changed
 
 ### Big Brain
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level1mission1](badges/Level1Mission1.png "Level 1 Mission 1")
 
 Destroy the mind and complete Level 1 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 1 Mission 1
-2. Level 1 Mission 1 marked complete, and no other mission status' changed
+1. Level 1 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Big Brain
+### Street Smarts
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level1mission1challenge](badges/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
 
@@ -1813,28 +1855,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level1mission2](badges/Level1Mission2.png "Level 1 Mission 2")
 
 Steal the Ice Queen's crown and complete Level 1 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 1 Mission 2
-2. Level 1 Mission 2 marked complete, and no other mission status' changed
+1. Level 1 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Ice Queen
+### Cold as Ice
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level1mission2challenge](badges/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
 
@@ -1855,28 +1891,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level1mission3](badges/Level1Mission3.png "Level 1 Mission 3")
 
 Destroy the alchemist and complete Level 1 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 1 Mission 3
-2. Level 1 Mission 1 marked complete, and no other mission status' changed
+1. Level 1 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Erase the Alchemist
+### The Scientist
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level1mission3challenge](badges/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
 
@@ -1900,9 +1930,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel1](badges/Level2.png "Complete Level 1")
+![completelevel1](badges/Level1.png "Complete Level 1")
 
-Complete level 1 and buy the lift pass for level 2 without using passwords
+Buy the lift pass for level 2 without using passwords, or if using passwords complete any two missions on level 1 before buying the lift pass for level 2
 
 Conditions:
 1. Start game with no levels completed
@@ -1915,28 +1945,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level2mission1](badges/Level2Mission1.png "Level 2 Mission 1")
 
 Destroy the all seeing eye and complete Level 2 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 2 Mission 1
-2. Level 2 Mission 1 marked complete, and no other mission status' changed
+1. Level 2 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Blind the Enemy
+### Eye of the Tiger
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level2mission1challenge](badges/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
 
@@ -1956,28 +1980,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level2mission2](badges/Level2Mission2.png "Level 2 Mission 2")
 
 Read the secret code and complete Level 2 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 2 Mission 2
-2. Level 2 Mission 2 marked complete, and no other mission status' changed
+1. Level 2 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Secret Codex
+### Lyrical Analysis
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level2mission2challenge](badges/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
 
@@ -1997,28 +2015,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level2mission3](badges/Level2Mission3.png "Level 2 Mission 3")
 
 Launch the self destructing rocket and complete Level 2 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 2 Mission 3
-2. Level 2 Mission 3 marked complete, and no other mission status' changed
+1. Level 2 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Liftoff
+### Soar to the Top of the Charts
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level2mission3challenge](badges/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
 
@@ -2034,7 +2046,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 2
+### Double the Trouble
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2042,9 +2054,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel2](badges/Level3.png "Complete Level 2")
+![completelevel2](badges/Level2.png "Complete Level 2")
 
-Complete level 2 and buy the lift pass for level 3 without using passwords
+Buy the lift pass for level 3 without using passwords, or if using passwords complete any two missions on level 2 before buying the lift pass for level 3
 
 Conditions:
 1. Start game with no levels completed
@@ -2057,28 +2069,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level3mission1](badges/Level3Mission1.png "Level 3 Mission 1")
 
 Find the flashlight and complete Level 3 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 3 Mission 1
-2. Level 3 Mission 1 marked complete, and no other mission status' changed
+1. Level 3 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Illuminate the Way
+### Kick Out the Stage Lights
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level3mission1challenge](badges/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
 
@@ -2098,28 +2104,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level3mission2](badges/Level3Mission2.png "Level 3 Mission 2")
 
 Find the electrical control box and complete Level 3 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 3 Mission 2
-2. Level 3 Mission 2 marked complete, and no other mission status' changed
+1. Level 3 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Circuit Breaker
+### Overdrive
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level3mission2challenge](badges/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
 
@@ -2139,28 +2139,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level3mission3](badges/Level3Mission3.png "Level 3 Mission 3")
 
 Search for the piggy bank and complete Level 3 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 3 Mission 3
-2. Level 3 Mission 3 marked complete, and no other mission status' changed
+1. Level 3 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Startup Funds
+### Sold Out Concert
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level3mission3challenge](badges/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
 
@@ -2176,7 +2170,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 3
+### It's a Long Way to the Top
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2184,9 +2178,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel3](badges/Level4.png "Complete Level 3")
+![completelevel3](badges/Level3.png "Complete Level 3")
 
-Complete level 3 and buy the lift pass for level 4 without using passwords
+Buy the lift pass for level 4 without using passwords, or if using passwords complete any two missions on level 3 before buying the lift pass for level 4
 
 Conditions:
 1. Start game with no levels completed
@@ -2199,28 +2193,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level4mission1](badges/Level4Mission1.png "Level 4 Mission 1")
 
 Collect the pocketwatch and complete Level 4 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 4 Mission 1
-2. Level 4 Mission 1 marked complete, and no other mission status' changed
+1. Level 4 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Time Keeper
+### It's Show Time!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level4mission1challenge](badges/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
 
@@ -2240,28 +2228,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level4mission2](badges/Level4Mission2.png "Level 4 Mission 2")
 
 Get rid of the poisoned food and complete Level 4 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 4 Mission 2
-2. Level 4 Mission 2 marked complete, and no other mission status' changed
+1. Level 4 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Food Poisoning
+### Rock and McRoll
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level4mission2challenge](badges/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
 
@@ -2281,28 +2263,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level4mission3](badges/Level4Mission3.png "Level 4 Mission 3")
 
 Earn the crown of attack and complete Level 4 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 4 Mission 3
-2. Level 4 Mission 3 marked complete, and no other mission status' changed
+1. Level 4 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Command an Army
+### The King of Rock
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level4mission3challenge](badges/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
 
@@ -2318,7 +2294,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 4
+### Don't Stop Believin'
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2326,9 +2302,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel4](badges/Level5.png "Complete Level 4")
+![completelevel4](badges/Level4.png "Complete Level 4")
 
-Complete level 4 and buy the lift pass for level 5 without using passwords
+Buy the lift pass for level 5 without using passwords, or if using passwords complete any two missions on level 4 before buying the lift pass for level 5
 
 Conditions:
 1. Start game with no levels completed
@@ -2341,28 +2317,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level5mission1](badges/Level5Mission1.png "Level 5 Mission 1")
 
 Take the ghost ship wood log and complete Level 5 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 5 Mission 1
-2. Level 5 Mission 1 marked complete, and no other mission status' changed
+1. Level 5 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Ghost Ship
+### Rock the Boat
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level5mission1challenge](badges/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
 
@@ -2382,28 +2352,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level5mission2](badges/Level5Mission2.png "Level 5 Mission 2")
 
 Collect the crystal ball and complete Level 5 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 5 Mission 2
-2. Level 5 Mission 2 marked complete, and no other mission status' changed
+1. Level 5 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Talk to the Dead
+### Fortune Teller
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level5mission2challenge](badges/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
 
@@ -2423,28 +2387,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level5mission3](badges/Level5Mission3.png "Level 5 Mission 3")
 
 Use the wood stove and complete Level 5 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 5 Mission 3
-2. Level 5 Mission 3 marked complete, and no other mission status' changed
+1. Level 5 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Keeping Warm
+### Through the Fire and Flames
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level5mission3challenge](badges/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
 
@@ -2460,7 +2418,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 5
+### Just Move On Up
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2468,9 +2426,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel5](badges/Level6.png "Complete Level 5")
+![completelevel5](badges/Level5.png "Complete Level 5")
 
-Complete level 5 and buy the lift pass for level 6 without using passwords
+Buy the lift pass for level 6 without using passwords, or if using passwords complete any two missions on level 5 before buying the lift pass for level 6
 
 Conditions:
 1. Start game with no levels completed
@@ -2483,28 +2441,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level6mission1](badges/Level6Mission1.png "Level 6 Mission 1")
 
 Return the safe and complete Level 6 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 6 Mission 1
-2. Level 6 Mission 1 marked complete, and no other mission status' changed
+1. Level 6 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect In Safe Hands
+### The Unreleased Album
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level6mission1challenge](badges/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
 
@@ -2524,28 +2476,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level6mission2](badges/Level6Mission2.png "Level 6 Mission 2")
 
 Smash the potion vial and complete Level 6 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 6 Mission 2
-2. Level 6 Mission 2 marked complete, and no other mission status' changed
+1. Level 6 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Enchantment
+### THE CONCOCTION
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level6mission2challenge](badges/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
 
@@ -2565,28 +2511,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level6mission3](badges/Level6Mission3.png "Level 6 Mission 3")
 
 Destroy the dark jewel and complete Level 6 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 6 Mission 3
-2. Level 6 Mission 3 marked complete, and no other mission status' changed
+1. Level 6 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Cursed Gem
+### Bejeweled
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level6mission3challenge](badges/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
 
@@ -2602,7 +2542,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 6
+### Takin' Care of Business
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2610,9 +2550,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel6](badges/Level7.png "Complete Level 6")
+![completelevel6](badges/Level6.png "Complete Level 6")
 
-Complete level 6 and buy the lift pass for level 7 without using passwords
+Buy the lift pass for level 7 without using passwords, or if using passwords complete any two missions on level 6 before buying the lift pass for level 7
 
 Conditions:
 1. Start game with no levels completed
@@ -2625,28 +2565,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level7mission1](badges/Level7Mission1.png "Level 7 Mission 1")
 
 Earn the fizzy soda prize and complete Level 7 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 7 Mission 1
-2. Level 7 Mission 1 marked complete, and no other mission status' changed
+1. Level 7 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect POP!
+### Have a Drink on Me
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level7mission1challenge](badges/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
 
@@ -2666,28 +2600,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level7mission2](badges/Level7Mission2.png "Level 7 Mission 2")
 
 Collect the phone and complete Level 7 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 7 Mission 2
-2. Level 7 Mission 2 marked complete, and no other mission status' changed
+1. Level 7 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Waiting for a Call
+### Off the Hook
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level7mission2challenge](badges/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
 
@@ -2707,28 +2635,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level7mission3](badges/Level7Mission3.png "Level 7 Mission 3")
 
 Release the captive voyager and complete Level 7 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 7 Mission 3
-2. Level 7 Mission 3 marked complete, and no other mission status' changed
+1. Level 7 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect S.O.S
+### Message in a Bottle
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level7mission3challenge](badges/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
 
@@ -2744,7 +2666,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 7
+### Stairway to Heaven
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2752,9 +2674,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel7](badges/Level8.png "Complete Level 7")
+![completelevel7](badges/Level7.png "Complete Level 7")
 
-Complete level 7 and buy the lift pass for level 8 without using passwords
+Buy the lift pass for level 8 without using passwords, or if using passwords complete any two missions on level 7 before buying the lift pass for level 8
 
 Conditions:
 1. Start game with no levels completed
@@ -2767,28 +2689,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level8mission1](badges/Level8Mission1.png "Level 8 Mission 1")
 
 Rescue the dog and complete Level 8 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 8 Mission 1
-2. Level 8 Mission 1 marked complete, and no other mission status' changed
+1. Level 8 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect K9 Companion
+### Who Let the Dogs Out?
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level8mission1challenge](badges/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
 
@@ -2808,28 +2724,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level8mission2](badges/Level8Mission2.png "Level 8 Mission 2")
 
 Find and flee with the amphora jar and complete Level 8 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 8 Mission 2
-2. Level 8 Mission 2 marked complete, and no other mission status' changed
+1. Level 8 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Fast Getaway
+### Rock You like a Hurricane
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level8mission2challenge](badges/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
 
@@ -2849,28 +2759,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level8mission3](badges/Level8Mission3.png "Level 8 Mission 3")
 
 Eat the triple decker cake and complete Level 8 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 8 Mission 3
-2. Level 8 Mission 3 marked complete, and no other mission status' changed
+1. Level 8 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Piece of Cake
+### Fight for Your Right to Party
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level8mission3challenge](badges/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
 
@@ -2886,7 +2790,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 8
+### A Rising Star
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2894,9 +2798,9 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel8](badges/Level9.png "Complete Level 8")
+![completelevel8](badges/Level8.png "Complete Level 8")
 
-Complete level 8 and buy the lift pass for level 9 without using passwords
+Buy the lift pass for level 9 without using passwords, or if using passwords complete any two missions on level 8 before buying the lift pass for level 9
 
 Conditions:
 1. Start game with no levels completed
@@ -2909,28 +2813,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level9mission1](badges/Level9Mission1.png "Level 9 Mission 1")
 
 Destroy the computer system and complete Level 9 Mission 1
 
 Conditions:
-1. Go from the lobby to Level 9 Mission 1
-2. Level 9 Mission 1 marked complete, and no other mission status' changed
+1. Level 9 Mission 1 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Hacking the Mainframe
+### Technologic
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level9mission1challenge](badges/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
 
@@ -2950,28 +2848,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level9mission2](badges/Level9Mission2.png "Level 9 Mission 2")
 
 Smash open the jar of insects and complete Level 9 Mission 2
 
 Conditions:
-1. Go from the lobby to Level 9 Mission 2
-2. Level 9 Mission 2 marked complete, and no other mission status' changed
+1. Level 9 Mission 2 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Level 9 Mission 2
+### Squash Those Beetles
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level9mission2challenge](badges/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
 
@@ -2991,28 +2883,22 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **3**
+Points: **5**
 
 ![level9mission3](badges/Level9Mission3.png "Level 9 Mission 3")
 
 Find a new home and complete Level 9 Mission 3
 
 Conditions:
-1. Go from the lobby to Level 9 Mission 3
-2. Level 9 Mission 3 marked complete, and no other mission status' changed
+1. Level 9 Mission 3 marked complete, and no other mission status' changed
 
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### Perfect Home Sweet Home
+### Mansion Tour
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
 Type: _**Missable**_
 <br>
-Points: **5**
+Points: **10**
 
 ![level9mission3challenge](badges/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
 
@@ -3028,7 +2914,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 9
+### School's Out!
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -3036,7 +2922,7 @@ Type: _**Progression**_
 <br>
 Points: **10**
 
-![completelevel9](badges/Level10.png "Complete Level 9")
+![completelevel9](badges/Level9.png "Complete Level 9")
 
 Complete level 9 and buy the lift pass for level 10 without using passwords
 
@@ -3051,7 +2937,7 @@ Reset When:
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
-Points: **10**
+Points: **25**
 
 ![level10mission1](badges/Level10Mission1.png "Level 10 Mission 1")
 
@@ -3065,25 +2951,6 @@ Reset When:
 1. Password menu opened
 2. Player quits mission
 3. Player dies (spawn back in lobby)
-
-### Beat the Game
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Win Condition**_
-<br>
-Points: **25**
-
-![beat game](badges/BeatGame.png "Beat Game")
-
-Beat every level of the game without passwords in one session
-
-Conditions:
-1. Start game with no levels completed
-2. Finish Game
-
-Reset When:
-1. Password menu opened
 
 ### Speedy
 

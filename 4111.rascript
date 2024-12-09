@@ -34,9 +34,6 @@ function LiftPassLevel() => byte( 0xd128 )
 // $D129: Number of credits earned
 function Credits() => word( 0xd129 )
 
-// $D12E: Idle Timer until Max begins playing guitar
-function IdleTimer() => byte( 0xd12e )
-
 // $D190: Start Menu Map Group 1
 function StartMenuMapGroup1() => bitcount( 0xd190 )
 
@@ -58,50 +55,11 @@ function StartMenuMapGroup6() => bitcount( 0xd195 )
 // $D196: Start Menu Map Group 7
 function StartMenuMapGroup7() => bitcount( 0xd196 )
 
-// $D197: Mission Rooms Available Group 1
-function MissionRoomsAvailableGroup1() => bitcount( 0xd197 )
+// $D3F0 - Password first four chars
+function PasswordCharGroup1() => dword( 0xd3f0 )
 
-// $D198: Mission Rooms Available Group 2
-function MissionRoomsAvailableGroup2() => bitcount( 0xd198 )
-
-// $D199: Mission Rooms Available Group 3
-function MissionRoomsAvailableGroup3() => bitcount( 0xd199 )
-
-// $D19A: Mission Rooms Available Group 4
-function MissionRoomsAvailableGroup4() => bitcount( 0xd19a )
-
-// $D19B: Mission Rooms Available Group 5
-function MissionRoomsAvailableGroup5() => bitcount( 0xd19b )
-
-// $D19C: Mission Rooms Available Group 6
-function MissionRoomsAvailableGroup6() => bitcount( 0xd19c )
-
-// $D19D: Mission Rooms Available Group 7
-function MissionRoomsAvailableGroup7() => bitcount( 0xd19d )
-
-// $D3F0 - Password first char
-function PasswordChar1() => byte( 0xd3f0 )
-
-// $D3F1 - Password second char
-function PasswordChar2() => byte( 0xd3f1 )
-
-// $D3F2 - Password third char
-function PasswordChar3() => byte( 0xd3f2 )
-
-// $D3F3 - Password fourth char
-function PasswordChar4() => byte( 0xd3f3 )
-
-// $D3F4 - Password fifth char
-function PasswordChar5() => byte( 0xd3f4 )
-
-// $D3F5 - Password sixth char
-function PasswordChar6() => byte( 0xd3f5 )
-
-// $D3F6 - Password seventh char
-function PasswordChar7() => byte( 0xd3f6 )
-
-// $D3F7 - Password eigth char
-function PasswordChar8() => byte( 0xd3f7 )
+// $D3F4 - Password last four chars
+function PasswordCharGroup2() => dword( 0xd3f4 )
 
 // $D3E5 - Current Select Menu Option Selection
 function SelectMenuOption() => byte( 0xd3e5 )
@@ -193,62 +151,71 @@ LEVEL10 = 0x09
 
 levelLookup = {
     1: {
-        "id":   LEVEL1,
-        "cost": 0
+        "id":            LEVEL1,
+        "titleOverride": "The Journey Begins",
+        "cost":          0
     },
     2: {
-        "id":      LEVEL2,
-        "cost":    70,
-        "raID":    459891,
-        "raBadge": "520623"
+        "id":            LEVEL2,
+        "titleOverride": "Double the Trouble",
+        "cost":          70,
+        "raID":          459891,
+        "raBadge":       "549135"
     },
     3: {
-        "id":      LEVEL3,
-        "cost":    130,
-        "raID":    459898,
-        "raBadge": "520630"
+        "id":            LEVEL3,
+        "titleOverride": "It's a Long Way to the Top",
+        "cost":          130,
+        "raID":          459898,
+        "raBadge":       "520623"
     },
     4: {
-        "id":      LEVEL4,
-        "cost":    200,
-        "raID":    459905,
-        "raBadge": "520637"
+        "id":            LEVEL4,
+        "titleOverride": "Don't Stop Believin'",
+        "cost":          200,
+        "raID":          459905,
+        "raBadge":       "520630"
     },
     5: {
-        "id":      LEVEL5,
-        "cost":    300,
-        "raID":    459912,
-        "raBadge": "520644"
+        "id":            LEVEL5,
+        "titleOverride": "Just Move On Up",
+        "cost":          300,
+        "raID":          459912,
+        "raBadge":       "520637"
     },
     6: {
-        "id":      LEVEL6,
-        "cost":    450,
-        "raID":    459919,
-        "raBadge": "520651"
+        "id":            LEVEL6,
+        "titleOverride": "Takin' Care of Business",
+        "cost":          450,
+        "raID":          459919,
+        "raBadge":       "520644"
     },
     7: {
-        "id":      LEVEL7,
-        "cost":    650,
-        "raID":    459926,
-        "raBadge": "520658"
+        "id":            LEVEL7,
+        "titleOverride": "Stairway to Heaven",
+        "cost":          650,
+        "raID":          459926,
+        "raBadge":       "520651"
     },
     8: {
-        "id":      LEVEL8,
-        "cost":    1000,
-        "raID":    459933,
-        "raBadge": "520665"
+        "id":            LEVEL8,
+        "titleOverride": "A Rising Star",
+        "cost":          1000,
+        "raID":          459933,
+        "raBadge":       "520658"
     },
     9: {
-        "id":      LEVEL9,
-        "cost":    1500,
-        "raID":    459940,
-        "raBadge": "520672"
+        "id":            LEVEL9,
+        "titleOverride": "School's Out!",
+        "cost":          1500,
+        "raID":          459940,
+        "raBadge":       "520665"
     },
     10: {
         "id":      LEVEL10,
         "cost":    2500,
         "raID":    459947,
-        "raBadge": "520679"
+        "raBadge": "520672"
     },
 }
 
@@ -256,28 +223,30 @@ achievements = {}
 
 // private functions
 
-function missionMarkedComplete( missionMask )
+function missionMarkedComplete( config )
 {
     // Mission is marked complete and it was previously closed
     return (
-        ( ( MissionFlags() & missionMask ) == missionMask ) &&
-        ( ( prev( MissionFlags() ) & missionMask ) == CLOSED )
+        ( ( MissionFlags() & config["missionMask"] ) == config["missionMask"] ) &&
+        ( ( prev( MissionFlags() ) & config["missionMask"] ) == CLOSED )
     )
 }
 
-function onlyMissionUnlocked( missionMask )
+function onlyMissionUnlocked( config )
 {
     return (
-        MissionFlags() == ( prev( MissionFlags() ) + missionMask )
+        CurrentMission() == config["missionId"] &&
+        MissionFlags() == ( prev( MissionFlags() ) + config["missionMask"] ) &&
+        prior( bit( config["itemBit"], config["itemAddr"] ) ) == 0 &&
+        bit( config["itemBit"], config["itemAddr"] ) == 1
     )
 }
 
 function PlayerHurt()
 {
-    // Player loses a star, or heart
+    // Player loses a heart
     return (
         !inTitleScreen() && !inConcertScreen() && !inMainLobby() && // check that they are in a mission
-        ( LuckyStars() == ( prev( LuckyStars() ) - 1 ) ) ||
         ( Health() == ( prev( Health() ) - 1 ) )
     )
 }
@@ -339,19 +308,6 @@ function countRoomsSeen()
     )
 }
 
-function countMissionRoomsAvailable()
-{
-    return (
-        MissionRoomsAvailableGroup1() +
-        MissionRoomsAvailableGroup2() +
-        MissionRoomsAvailableGroup3() +
-        MissionRoomsAvailableGroup4() +
-        MissionRoomsAvailableGroup5() +
-        MissionRoomsAvailableGroup6() +
-        MissionRoomsAvailableGroup7()
-    )
-}
-
 // public functions
 
 function OpenPasswordMenu()
@@ -359,69 +315,57 @@ function OpenPasswordMenu()
     return (
         inSelectMenu() &&
         SelectMenuOption() == 0x01 && // enter password menu
-        prev( PasswordChar1() ) != 0xFF && PasswordChar1() == 0xFF &&
-        prev( PasswordChar2() ) != 0xFF && PasswordChar2() == 0xFF &&
-        prev( PasswordChar3() ) != 0xFF && PasswordChar3() == 0xFF &&
-        prev( PasswordChar4() ) != 0xFF && PasswordChar4() == 0xFF &&
-        prev( PasswordChar5() ) != 0xFF && PasswordChar5() == 0xFF &&
-        prev( PasswordChar6() ) != 0xFF && PasswordChar6() == 0xFF &&
-        prev( PasswordChar7() ) != 0xFF && PasswordChar7() == 0xFF &&
-        prev( PasswordChar8() ) != 0xFF && PasswordChar8() == 0xFF
+        prev( PasswordCharGroup1() ) != 0xFFFFFFFF && PasswordCharGroup1() == 0xFFFFFFFF &&
+        prev( PasswordCharGroup2() ) != 0xFFFFFFFF && PasswordCharGroup2() == 0xFFFFFFFF
     )
 }
 
-function PlayerDies()
+function PlayerDies( missionIds )
 {
-    return (
+    conditions = (
         prev( Health() ) != DEAD &&
         Health() == DEAD
     )
+    if length( missionIds ) > 0 {
+        return any_of(
+            missionIds,
+            mid => CurrentMission() == mid && conditions
+        )
+    }
+    return conditions
 }
 
-function PlayerQuitsMission( missionId, missionMask )
+function PlayerQuitsMission( config )
 {
     return (
-        prev( CurrentMission() ) == missionId &&
-        CurrentMission() != missionId &&
-        !missionMarkedComplete( missionMask )
+        prev( CurrentMission() ) == config["missionId"] &&
+        CurrentMission() != config["missionId"] &&
+        !missionMarkedComplete( config )
     )
 }
 
-function PlayerEntersMission( missionId )
+function PlayerEntersMission( config )
 {
     return (
         prev( CurrentMission() ) == MAINROOMID &&
-        CurrentMission() == missionId
+        CurrentMission() == config["missionId"]
     )
 }
 
-function MissionCompleteCondition( missionId, missionMask ) 
+function MissionCompletePerfectCondition( config ) 
 {
-    return tally( 2,
-        once( PlayerEntersMission( missionId ) ),
-        once(
-            missionMarkedComplete( missionMask ) &&
-            onlyMissionUnlocked( missionMask )
-        )
-    )
-}
-
-function MissionCompletePerfectCondition( missionId, missionMask, hearts, stars, bonus, gold ) 
-{
-    conditions = [
-        once( PlayerEntersMission( missionId ) ),
-        once(
-            missionMarkedComplete( missionMask ) &&
-            onlyMissionUnlocked( missionMask ) &&
-            Health() == hearts &&
-            Bonus() == ( gold * bonus )
-        )
-    ]
-    if stars > 0 {
-        array_push( conditions, repeated( stars, CurrentMission() == missionId && LuckyStars() == prev( LuckyStars() ) + 1 ) )
+    conditions = []
+    if config["inGameHearts"] > 0 {
+        array_push( conditions, repeated( config["inGameHearts"], CurrentMission() == config["missionId"] && Health() == prev( Health() ) + 1 ))
+    }
+    if config["stars"] > 0 {
+        array_push( conditions, repeated( config["stars"], CurrentMission() == config["missionId"] && LuckyStars() == prev( LuckyStars() ) + 1 ) )
+    }
+    if config["gold"] > 0 {
+        array_push( conditions, repeated( config["gold"], CurrentMission() == config["missionId"] && Bonus() == prev( Bonus() ) + config["bonus"] ) )
     }
     return tally(
-        2 + stars,
+        config["inGameHearts"] + config["stars"] + config["gold"],
         conditions
     )
 }
@@ -458,6 +402,8 @@ MissionConfigs = [
         "mission":         0,
         "title":           "Play Pen",
         "description":     "Beat the play pen tutorial",
+        "itemBit":         7,
+        "itemAddr":        0xd002,
         "reward":          1,
         "startingHearts":  0,
         "bonus":           0,
@@ -468,7 +414,8 @@ MissionConfigs = [
         "powerSpring":     1,
         "powerRing":       0,
         "map":             0,
-        "points":          1,
+        "points":          2,
+        "type":            "",
         "missionId":       PLAYPENID,
         "missionMask":     PLAYPENMASK,
         "hasChallenge":    false,
@@ -482,6 +429,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Big Brain",
         "description":      "Destroy the mind",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           30,
         "startingHearts":   4,
         "bonus":            3,
@@ -494,11 +443,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL1MISSION1ID,
         "missionMask":      LEVEL1MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459885,
         "raBadge":          "520617",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Street Smarts",
+        "challengePoints":  10,
         "challengeRAID":    459886,
         "challengeRABadge": "520618",
         "leaderboardID":    114801
@@ -509,6 +460,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Ice Queen",
         "description":      "Steal the Ice Queen's crown",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           30,
         "startingHearts":   4,
         "bonus":            3,
@@ -521,11 +474,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL1MISSION2ID,
         "missionMask":      LEVEL1MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459887,
         "raBadge":          "520619",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Cold as Ice",
+        "challengePoints":  10,
         "challengeRAID":    459888,
         "challengeRABadge": "520620",
         "leaderboardID":    114802
@@ -536,6 +491,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Erase the Alchemist",
         "description":      "Destroy the alchemist",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           45,
         "startingHearts":   4,
         "bonus":            3,
@@ -548,11 +505,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL1MISSION3ID,
         "missionMask":      LEVEL1MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459889,
         "raBadge":          "520621",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "The Scientist",
+        "challengePoints":  10,
         "challengeRAID":    459890,
         "challengeRABadge": "520622",
         "leaderboardID":    114803
@@ -563,6 +522,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Blind the Enemy",
         "description":      "Destroy the all seeing eye",
+        "itemBit":          4,
+        "itemAddr":         0xd004,
         "reward":           45,
         "startingHearts":   4,
         "bonus":            7,
@@ -575,11 +536,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL2MISSION1ID,
         "missionMask":      LEVEL2MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459892,
         "raBadge":          "520624",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Eye of the Tiger",
+        "challengePoints":  10,
         "challengeRAID":    459893,
         "challengeRABadge": "520625",
         "leaderboardID":    114804
@@ -590,6 +553,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Secret Codex",
         "description":      "Read the secret code",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           40,
         "startingHearts":   4,
         "bonus":            7,
@@ -602,11 +567,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL2MISSION2ID,
         "missionMask":      LEVEL2MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459894,
         "raBadge":          "520626",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Lyrical Analysis",
+        "challengePoints":  10,
         "challengeRAID":    459895,
         "challengeRABadge": "520627",
         "leaderboardID":    114805
@@ -617,6 +584,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Liftoff",
         "description":      "Launch the self destructing rocket",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           65,
         "startingHearts":   4,
         "bonus":            7,
@@ -629,11 +598,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL2MISSION3ID,
         "missionMask":      LEVEL2MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459896,
         "raBadge":          "520628",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Soar to the Top of the Charts",
+        "challengePoints":  10,
         "challengeRAID":    459897,
         "challengeRABadge": "520629",
         "leaderboardID":    114806
@@ -644,6 +615,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Illuminate the Way",
         "description":      "Find the flashlight",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           70,
         "startingHearts":   4,
         "bonus":            10,
@@ -656,11 +629,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL3MISSION1ID,
         "missionMask":      LEVEL3MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459899,
         "raBadge":          "520631",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Kick Out the Stage Lights",
+        "challengePoints":  10,
         "challengeRAID":    459900,
         "challengeRABadge": "520632",
         "leaderboardID":    114807
@@ -671,6 +646,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Circuit Breaker",
         "description":      "Find the electrical control box",
+        "itemBit":          7,
+        "itemAddr":         0xd003,
         "reward":           60,
         "startingHearts":   4,
         "bonus":            10,
@@ -683,11 +660,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL3MISSION2ID,
         "missionMask":      LEVEL3MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459901,
         "raBadge":          "520633",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Overdrive",
+        "challengePoints":  10,
         "challengeRAID":    459902,
         "challengeRABadge": "520634",
         "leaderboardID":    114808
@@ -698,6 +677,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Startup Funds",
         "description":      "Search for the piggy bank",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            10,
@@ -710,11 +691,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL3MISSION3ID,
         "missionMask":      LEVEL3MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459903,
         "raBadge":          "520635",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Sold Out Concert",
+        "challengePoints":  10,
         "challengeRAID":    459904,
         "challengeRABadge": "520636",
         "leaderboardID":    114809
@@ -725,6 +708,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Time Keeper",
         "description":      "Collect the pocketwatch",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            15,
@@ -737,11 +722,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL4MISSION1ID,
         "missionMask":      LEVEL4MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459906,
         "raBadge":          "520638",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "It's Show Time!",
+        "challengePoints":  10,
         "challengeRAID":    459907,
         "challengeRABadge": "520639",
         "leaderboardID":    114810
@@ -752,6 +739,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Food Poisoning",
         "description":      "Get rid of the poisoned food",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           100,
         "startingHearts":   4,
         "bonus":            15,
@@ -764,11 +753,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL4MISSION2ID,
         "missionMask":      LEVEL4MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459908,
         "raBadge":          "520640",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Rock and McRoll",
+        "challengePoints":  10,
         "challengeRAID":    459909,
         "challengeRABadge": "520641",
         "leaderboardID":    114811
@@ -779,6 +770,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Command an Army",
         "description":      "Earn the crown of attack",
+        "itemBit":          5,
+        "itemAddr":         0xd002,
         "reward":           150,
         "startingHearts":   3,
         "bonus":            15,
@@ -791,11 +784,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL4MISSION3ID,
         "missionMask":      LEVEL4MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459910,
         "raBadge":          "520642",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "The King of Rock",
+        "challengePoints":  10,
         "challengeRAID":    459911,
         "challengeRABadge": "520643",
         "leaderboardID":    114812
@@ -806,6 +801,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Ghost Ship",
         "description":      "Take the ghost ship wood log",
+        "itemBit":          1,
+        "itemAddr":         0xd003,
         "reward":           150,
         "startingHearts":   4,
         "bonus":            20,
@@ -818,11 +815,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION1ID,
         "missionMask":      LEVEL5MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459913,
         "raBadge":          "520645",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Rock the Boat",
+        "challengePoints":  10,
         "challengeRAID":    459914,
         "challengeRABadge": "520646",
         "leaderboardID":    114813
@@ -833,6 +832,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Talk to the Dead",
         "description":      "Collect the crystal ball",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           200,
         "startingHearts":   3,
         "bonus":            20,
@@ -845,11 +846,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION2ID,
         "missionMask":      LEVEL5MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459915,
         "raBadge":          "520647",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Fortune Teller", // Roling Stones
+        "challengePoints":  10,
         "challengeRAID":    459916,
         "challengeRABadge": "520648",
         "leaderboardID":    114814
@@ -860,6 +863,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Keeping Warm",
         "description":      "Use the wood stove",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           300,
         "startingHearts":   3,
         "bonus":            20,
@@ -872,11 +877,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL5MISSION3ID,
         "missionMask":      LEVEL5MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459917,
         "raBadge":          "520649",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Through the Fire and Flames",
+        "challengePoints":  10,
         "challengeRAID":    459918,
         "challengeRABadge": "520650",
         "leaderboardID":    114815
@@ -887,6 +894,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "In Safe Hands",
         "description":      "Return the safe",
+        "itemBit":          4,
+        "itemAddr":         0xd005,
         "reward":           275,
         "startingHearts":   3,
         "bonus":            30,
@@ -899,11 +908,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL6MISSION1ID,
         "missionMask":      LEVEL6MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459920,
         "raBadge":          "520652",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "The Unreleased Album",
+        "challengePoints":  10,
         "challengeRAID":    459921,
         "challengeRABadge": "520653",
         "leaderboardID":    114816
@@ -914,6 +925,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Enchantment",
         "description":      "Smash the potion vial",
+        "itemBit":          5,
+        "itemAddr":         0xd005,
         "reward":           300,
         "startingHearts":   3,
         "bonus":            30,
@@ -926,11 +939,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL6MISSION2ID,
         "missionMask":      LEVEL6MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459922,
         "raBadge":          "520654",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "THE CONCOCTION",
+        "challengePoints":  10,
         "challengeRAID":    459923,
         "challengeRABadge": "520655",
         "leaderboardID":    114817
@@ -941,6 +956,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Cursed Gem",
         "description":      "Destroy the dark jewel",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            30,
@@ -953,11 +970,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL6MISSION3ID,
         "missionMask":      LEVEL6MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459924,
         "raBadge":          "520656",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Bejeweled",
+        "challengePoints":  10,
         "challengeRAID":    459925,
         "challengeRABadge": "520657",
         "leaderboardID":    114818
@@ -968,6 +987,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "POP!",
         "description":      "Earn the fizzy soda prize",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            42,
@@ -980,11 +1001,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION1ID,
         "missionMask":      LEVEL7MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459927,
         "raBadge":          "520659",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Have a Drink on Me", // AC/DC
+        "challengePoints":  10,
         "challengeRAID":    459928,
         "challengeRABadge": "520660",
         "leaderboardID":    114819
@@ -995,6 +1018,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Waiting for a Call",
         "description":      "Collect the phone",
+        "itemBit":          2,
+        "itemAddr":         0xd004,
         "reward":           450,
         "startingHearts":   3,
         "bonus":            42,
@@ -1007,11 +1032,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION2ID,
         "missionMask":      LEVEL7MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459929,
         "raBadge":          "520661",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Off the Hook",
+        "challengePoints":  10,
         "challengeRAID":    459930,
         "challengeRABadge": "520662",
         "leaderboardID":    114820
@@ -1022,6 +1049,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "S.O.S",
         "description":      "Release the captive voyager",
+        "itemBit":          3,
+        "itemAddr":         0xd003,
         "reward":           600,
         "startingHearts":   2,
         "bonus":            42,
@@ -1034,11 +1063,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL7MISSION3ID,
         "missionMask":      LEVEL7MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459931,
         "raBadge":          "520663",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Message in a Bottle", // The Police
+        "challengePoints":  10,
         "challengeRAID":    459932,
         "challengeRABadge": "520664",
         "leaderboardID":    114821
@@ -1049,6 +1080,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "K9 Companion",
         "description":      "Rescue the dog",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           650,
         "startingHearts":   3,
         "bonus":            60,
@@ -1061,11 +1094,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION1ID,
         "missionMask":      LEVEL8MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459934,
         "raBadge":          "520666",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Who Let the Dogs Out?",
+        "challengePoints":  10,
         "challengeRAID":    459935,
         "challengeRABadge": "520667",
         "leaderboardID":    114822
@@ -1076,6 +1111,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Fast Getaway",
         "description":      "Find and flee with the amphora jar",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           650,
         "startingHearts":   2,
         "bonus":            60,
@@ -1088,11 +1125,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION2ID,
         "missionMask":      LEVEL8MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459936,
         "raBadge":          "520668",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Rock You like a Hurricane",
+        "challengePoints":  10,
         "challengeRAID":    459937,
         "challengeRABadge": "520669",
         "leaderboardID":    114823
@@ -1103,6 +1142,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Piece of Cake",
         "description":      "Eat the triple decker cake",
+        "itemBit":          1,
+        "itemAddr":         0xd004,
         "reward":           850,
         "startingHearts":   2,
         "bonus":            60,
@@ -1115,11 +1156,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL8MISSION3ID,
         "missionMask":      LEVEL8MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459938,
         "raBadge":          "520670",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Fight for Your Right to Party",
+        "challengePoints":  10,
         "challengeRAID":    459939,
         "challengeRABadge": "520671",
         "leaderboardID":    114824
@@ -1130,6 +1173,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "Hacking the Mainframe",
         "description":      "Destroy the computer system",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           900,
         "startingHearts":   2,
         "bonus":            90,
@@ -1142,11 +1187,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL9MISSION1ID,
         "missionMask":      LEVEL9MISSION1MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459941,
         "raBadge":          "520673",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Technologic",
+        "challengePoints":  10,
         "challengeRAID":    459942,
         "challengeRABadge": "520674",
         "leaderboardID":    114825
@@ -1157,6 +1204,8 @@ MissionConfigs = [
         "mission":          2,
         "title":            "Infestation",
         "description":      "Smash open the jar of insects",
+        "itemBit":          0,
+        "itemAddr":         0xd004,
         "reward":           800,
         "startingHearts":   2,
         "bonus":            90,
@@ -1169,11 +1218,13 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL9MISSION2ID,
         "missionMask":      LEVEL9MISSION2MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459943,
         "raBadge":          "520675",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Squash Those Beetles",
+        "challengePoints":  10,
         "challengeRAID":    459944,
         "challengeRABadge": "520676",
         "leaderboardID":    114826
@@ -1184,6 +1235,8 @@ MissionConfigs = [
         "mission":          3,
         "title":            "Home Sweet Home",
         "description":      "Find a new home",
+        "itemBit":          7,
+        "itemAddr":         0xd003,
         "reward":           1100,
         "startingHearts":   2,
         "bonus":            90,
@@ -1196,11 +1249,13 @@ MissionConfigs = [
         "map":              1,
         "missionId":        LEVEL9MISSION3ID,
         "missionMask":      LEVEL9MISSION3MASK,
-        "points":           3,
+        "points":           5,
+        "type":             "",
         "raID":             459945,
         "raBadge":          "520677",
         "hasChallenge":     true,
-        "challengePoints":  5,
+        "challengeTitle":   "Mansion Tour",
+        "challengePoints":  10,
         "challengeRAID":    459946,
         "challengeRABadge": "520678",
         "leaderboardID":    114827
@@ -1211,6 +1266,8 @@ MissionConfigs = [
         "mission":          1,
         "title":            "King Krond",
         "description":      "Defeat Krond and save the Mega Hero Academy!",
+        "itemBit":          5,
+        "itemAddr":         0xd008,
         "reward":           3500,
         "startingHearts":   3,
         "bonus":            120,
@@ -1223,7 +1280,8 @@ MissionConfigs = [
         "map":              0,
         "missionId":        LEVEL10MISSION1ID,
         "missionMask":      LEVEL10MISSION1MASK,
-        "points":           10,
+        "points":           25,
+        "type":             "win_condition",
         "raID":             459948,
         "raBadge":          "520680",
         "hasChallenge":     false,
@@ -1244,16 +1302,36 @@ for config in MissionConfigs
     // Progression level achievements
     if currentLevel + 1 == config["level"] {
         levelIndex = config["index"] - 1
+        levelMissionConfigs = []
+        levelMissionIds = []
+        for missionConfig in MissionConfigs {
+            if missionConfig["level"] == currentLevel && missionConfig["mission"] != 0 {
+                array_push( levelMissionConfigs, missionConfig )
+                array_push( levelMissionIds, missionConfig["missionId"] )
+            }
+        }
+        conditions = [
+            once( GameStarts() ),
+            once( GameStarts() )
+        ]
+        for levelMissionConfig in levelMissionConfigs {
+            array_push( conditions, once(
+                onlyMissionUnlocked( levelMissionConfig )
+            ) )
+        }
+        title = format("Complete Level {0}", currentLevel)
+        if dictionary_contains_key( levelLookup[currentLevel], "titleOverride" ) {
+            title = levelLookup[currentLevel]["titleOverride"]
+        }
         levelAchievement = {
-            "title":       format("Complete Level {0}", currentLevel),
-            "description": format("Complete level {0} and buy the lift pass for level {1} without using passwords", currentLevel, config["level"]),
+            "title":       title,
+            "description": format("Buy the lift pass for level {0} without using passwords, or if using passwords complete any two missions on level {1} before buying the lift pass for level {0}", config["level"], currentLevel),
             "points":      10,
-            "trigger":     measured(
-                tally(2,
-                    once( GameStarts() ),
-                    once( upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) )
-                )
+            "trigger":     tally(
+                2,
+                conditions
             ) &&
+            upgradeLiftPassLevel( levelLookup[currentLevel]["id"], levelLookup[config["level"]]["id"], levelLookup[config["level"]]["cost"] ) &&
             never( OpenPasswordMenu() ),
             "type":        "progression",
             "id":          levelLookup[config["level"]]["raID"],
@@ -1280,16 +1358,8 @@ for config in MissionConfigs
         "title":       config["title"],
         "description": desc,
         "points":      config["points"],
-        "trigger":     measured(
-            MissionCompleteCondition(
-                config["missionId"],
-                config["missionMask"]
-            )
-        ) &&
-        never( OpenPasswordMenu() ) &&
-        never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
-        never( PlayerDies() ),
-        "type":        "",
+        "trigger":     onlyMissionUnlocked( config ),
+        "type":        config["type"],
         "id":          config["raID"],
         "badge":       config["raBadge"],
     }
@@ -1341,24 +1411,23 @@ for config in MissionConfigs
                 items = items + args[index] + " " + args[index + 1]
             }
         }
+        title = format("Perfect {0}", config["title"])
+        if dictionary_contains_key( config, "challengeTitle" ) {
+            title = config["challengeTitle"]
+        }
         a1 = {
-            "title":       format("Perfect {0}", config["title"]),
+            "title":       title,
             "description": format("Without taking damage{0} and complete Level {1} Mission {2}", items, config["level"], config["mission"]),
             "points":      config["challengePoints"],
-            "trigger":     measured(
-                MissionCompletePerfectCondition(
-                    config["missionId"],
-                    config["missionMask"],
-                    config["startingHearts"] + config["inGameHearts"],
-                    config["stars"],
-                    config["bonus"],
-                    config["gold"]
-                )
+            "trigger":     once( PlayerEntersMission( config ) ) &&
+            measured(
+                MissionCompletePerfectCondition( config )
             ) &&
+            onlyMissionUnlocked( config ) &&
+            never( PlayerHurt() ) &&
             never( OpenPasswordMenu() ) &&
-            never( PlayerDies() ) &&
-            never( PlayerQuitsMission( config["missionId"], config["missionMask"] ) ) &&
-            never( PlayerHurt() ),
+            never( PlayerDies( [] ) ) &&
+            never( PlayerQuitsMission( config ) ),
             "type":        "missable",
             "id":          config["challengeRAID"],
             "badge":       config["challengeRABadge"]
@@ -1393,13 +1462,13 @@ for config in MissionConfigs
     l = {
         "title":           leaderboardTitle,
         "description":     leaderboardDescription,
-        "start":           PlayerEntersMission( config["missionId"] ),
+        "start":           PlayerEntersMission( config ),
         "cancel":          (
             OpenPasswordMenu() ||
-            PlayerDies() ||
-            PlayerQuitsMission( config["missionId"], config["missionMask"] )
+            PlayerDies( [] ) ||
+            PlayerQuitsMission( config )
         ),
-        "submit":          missionMarkedComplete( config["missionMask"] ) && onlyMissionUnlocked( config["missionMask"] ),
+        "submit":          onlyMissionUnlocked( config ),
         "value":           measured( always_true() ) &&
                            unless( inSelectMenu() ) &&
                            unless( inStartMenu() ),
@@ -1409,26 +1478,6 @@ for config in MissionConfigs
     }
     array_push( leaderboards, l )
 }
-
-// Win condition achievement
-currIndex = count + 1
-a = {
-    "title":       "Beat the Game",
-    "description": "Beat every level of the game without using passwords",
-    "points":      25,
-    "trigger":     measured(
-        tally(2,
-            once( GameStarts() ),
-            once( GameEnds() )
-        )
-    ) &&
-    never( OpenPasswordMenu() ),
-    "type":        "win_condition",
-    "id":          459949,
-    "badge":       "520681",
-}
-count = count + 1
-achievements[currIndex] = a
 
 // Lightning achievement
 currIndex = count + 1
@@ -1440,7 +1489,8 @@ a = {
     "trigger":     any_of(
         lightningMissions,
         mid => CurrentMission() == mid &&
-        prev( SpeedBoost() ) + 0x20 == SpeedBoost()
+        prev( SpeedBoost() ) == 0 &&
+        SpeedBoost() > 0
     ),
     "type":        "",
     "id":          459950,
@@ -1476,7 +1526,8 @@ a = {
     "trigger":     any_of(
         powerRingMissions,
         mid => CurrentMission() == mid &&
-        prev( PowerRing() ) + 0x20 == PowerRing()
+        prev( PowerRing() ) == 0 &&
+        PowerRing() > 0
     ),
     "type":        "",
     "id":          459952,
@@ -1494,12 +1545,26 @@ a = {
     "trigger":     any_of(
         mapMissions,
         mid => CurrentMission() == mid &&
-        prev( countRoomsSeen() ) <= countMissionRoomsAvailable() &&
+        prev( countRoomsSeen() ) <= countRoomsSeen() &&
         countRoomsSeen() == 56 // 8 bits * 7 groups = 56 rooms max to play with
     ),
     "type":        "",
     "id":          459953,
     "badge":       "520685",
+}
+count = count + 1
+achievements[currIndex] = a
+
+// VOIDED Win condition achievement
+currIndex = count + 1
+a = {
+    "title":       "[VOID] Beat the Game",
+    "description": "Beat every level of the game without using passwords",
+    "points":      0,
+    "trigger":     always_false(),
+    "type":        "",
+    "id":          459949,
+    "badge":       "520681",
 }
 count = count + 1
 achievements[currIndex] = a
@@ -1583,20 +1648,20 @@ rich_presence_conditional_display(
 rich_presence_conditional_display(
     inMainLobby(),
     "Main Lobby • {0} Star{1} • {2} Lift Pass • #{3} Credit{4}",
-    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
-    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" ),
-    rich_presence_lookup( "Lift Pass Level", LiftPassLevel(), levelPass ),
-    rich_presence_value( "Credits", Credits(), "POINTS" ),
-    rich_presence_lookup( "Multiple Credits Label", Credits(), singular_lookup, "s" )
+    rich_presence_value( "valueFormat", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" ),
+    rich_presence_lookup( "liftPassLevel", LiftPassLevel(), levelPass ),
+    rich_presence_value( "credits", Credits(), "POINTS" ),
+    rich_presence_lookup( "singularLookup", Credits(), singular_lookup, "s" )
 )
 
 rich_presence_display(
     "{0} • {1} Heart{2} • {3} Star{4}",
-    rich_presence_lookup( "Mission", CurrentMission(), currentMission ),
-    rich_presence_value( "Health", Health(), "VALUE" ),
-    rich_presence_lookup( "Multiple Hearts Label", Health(), singular_lookup, "s" ),
-    rich_presence_value( "Lucky Stars", LuckyStars(), "VALUE" ),
-    rich_presence_lookup( "Multiple Stars Label", LuckyStars(), singular_lookup, "s" )
+    rich_presence_lookup( "mission", CurrentMission(), currentMission ),
+    rich_presence_value( "valueFormat", Health(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", Health(), singular_lookup, "s" ),
+    rich_presence_value( "valueFormat", LuckyStars(), "VALUE" ),
+    rich_presence_lookup( "singularLookup", LuckyStars(), singular_lookup, "s" )
 )
 
 // Leaderboards
