@@ -1803,7 +1803,7 @@ Notes: Y coordinate of cursor in the information selection menu
 68. [Invincible](#invincible)
 69. [I'm the Map](#im-the-map)
 
-### Play Pen
+### [Play Pen](https://retroachievements.org/achievement/459884)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1816,7 +1816,7 @@ Beat the play pen tutorial
 Conditions:
 1. Play pen mission marked complete, and no other mission status' changed
 
-### Big Brain
+### [Big Brain](https://retroachievements.org/achievement/459885)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1829,7 +1829,7 @@ Destroy the mind and complete Level 1 Mission 1
 Conditions:
 1. Level 1 Mission 1 marked complete, and no other mission status' changed
 
-### Street Smarts
+### [Street Smarts](https://retroachievements.org/achievement/459886)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1851,7 +1851,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Ice Queen
+### [Ice Queen](https://retroachievements.org/achievement/459887)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1864,7 +1864,7 @@ Steal the Ice Queen's crown and complete Level 1 Mission 2
 Conditions:
 1. Level 1 Mission 2 marked complete, and no other mission status' changed
 
-### Cold as Ice
+### [Cold as Ice](https://retroachievements.org/achievement/459888)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1887,7 +1887,7 @@ Reset When:
 4. Player gets hurt (loses heart or star)
 
 
-### Erase the Alchemist
+### [Erase the Alchemist](https://retroachievements.org/achievement/459889)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1900,7 +1900,7 @@ Destroy the alchemist and complete Level 1 Mission 3
 Conditions:
 1. Level 1 Mission 3 marked complete, and no other mission status' changed
 
-### The Scientist
+### [The Scientist](https://retroachievements.org/achievement/459890)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1922,7 +1922,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Complete Level 1
+### [The Journey Begins](https://retroachievements.org/achievement/459891)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1941,7 +1941,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Blind the Enemy
+### [Blind the Enemy](https://retroachievements.org/achievement/459892)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1954,7 +1954,7 @@ Destroy the all seeing eye and complete Level 2 Mission 1
 Conditions:
 1. Level 2 Mission 1 marked complete, and no other mission status' changed
 
-### Eye of the Tiger
+### [Eye of the Tiger](https://retroachievements.org/achievement/459893)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1976,7 +1976,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Secret Codex
+### [Secret Codex](https://retroachievements.org/achievement/459894)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -1989,7 +1989,7 @@ Read the secret code and complete Level 2 Mission 2
 Conditions:
 1. Level 2 Mission 2 marked complete, and no other mission status' changed
 
-### Lyrical Analysis
+### [Lyrical Analysis](https://retroachievements.org/achievement/459895)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2011,7 +2011,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Liftoff
+### [Liftoff](https://retroachievements.org/achievement/459896)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2024,7 +2024,7 @@ Launch the self destructing rocket and complete Level 2 Mission 3
 Conditions:
 1. Level 2 Mission 3 marked complete, and no other mission status' changed
 
-### Soar to the Top of the Charts
+### [Soar to the Top of the Charts](https://retroachievements.org/achievement/459897)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2046,7 +2046,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Double the Trouble
+### [Double the Trouble](https://retroachievements.org/achievement/459898)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2065,7 +2065,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Illuminate the Way
+### [Illuminate the Way](https://retroachievements.org/achievement/459899)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2078,7 +2078,7 @@ Find the flashlight and complete Level 3 Mission 1
 Conditions:
 1. Level 3 Mission 1 marked complete, and no other mission status' changed
 
-### Kick Out the Stage Lights
+### [Kick Out the Stage Lights](https://retroachievements.org/achievement/459900)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2100,7 +2100,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Circuit Breaker
+### [Circuit Breaker](https://retroachievements.org/achievement/459901)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2113,7 +2113,7 @@ Find the electrical control box and complete Level 3 Mission 2
 Conditions:
 1. Level 3 Mission 2 marked complete, and no other mission status' changed
 
-### Overdrive
+### [Overdrive](https://retroachievements.org/achievement/459902)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2135,7 +2135,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Startup Funds
+### [Startup Funds](https://retroachievements.org/achievement/459903)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2148,7 +2148,7 @@ Search for the piggy bank and complete Level 3 Mission 3
 Conditions:
 1. Level 3 Mission 3 marked complete, and no other mission status' changed
 
-### Sold Out Concert
+### [Sold Out Concert](https://retroachievements.org/achievement/459904)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2170,7 +2170,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### It's a Long Way to the Top
+### [It's a Long Way to the Top](https://retroachievements.org/achievement/459905)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2189,7 +2189,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Time Keeper
+### [Time Keeper](https://retroachievements.org/achievement/459906)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2202,7 +2202,7 @@ Collect the pocketwatch and complete Level 4 Mission 1
 Conditions:
 1. Level 4 Mission 1 marked complete, and no other mission status' changed
 
-### It's Show Time!
+### [It's Show Time!](https://retroachievements.org/achievement/459907)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2224,7 +2224,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Food Poisoning
+### [Food Poisoning](https://retroachievements.org/achievement/459908)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2237,7 +2237,7 @@ Get rid of the poisoned food and complete Level 4 Mission 2
 Conditions:
 1. Level 4 Mission 2 marked complete, and no other mission status' changed
 
-### Rock and McRoll
+### [Rock and McRoll](https://retroachievements.org/achievement/459909)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2259,7 +2259,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Command an Army
+### [Command an Army](https://retroachievements.org/achievement/459910)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2272,7 +2272,7 @@ Earn the crown of attack and complete Level 4 Mission 3
 Conditions:
 1. Level 4 Mission 3 marked complete, and no other mission status' changed
 
-### The King of Rock
+### [The King of Rock](https://retroachievements.org/achievement/459911)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2294,7 +2294,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Don't Stop Believin'
+### [Don't Stop Believin'](https://retroachievements.org/achievement/459912)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2313,7 +2313,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Ghost Ship
+### [Ghost Ship](https://retroachievements.org/achievement/459913)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2326,7 +2326,7 @@ Take the ghost ship wood log and complete Level 5 Mission 1
 Conditions:
 1. Level 5 Mission 1 marked complete, and no other mission status' changed
 
-### Rock the Boat
+### [Rock the Boat](https://retroachievements.org/achievement/459914)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2348,7 +2348,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Talk to the Dead
+### [Talk to the Dead](https://retroachievements.org/achievement/459915)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2361,7 +2361,7 @@ Collect the crystal ball and complete Level 5 Mission 2
 Conditions:
 1. Level 5 Mission 2 marked complete, and no other mission status' changed
 
-### Fortune Teller
+### [Fortune Teller](https://retroachievements.org/achievement/459916)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2383,7 +2383,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Keeping Warm
+### [Keeping Warm](https://retroachievements.org/achievement/459917)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2396,7 +2396,7 @@ Use the wood stove and complete Level 5 Mission 3
 Conditions:
 1. Level 5 Mission 3 marked complete, and no other mission status' changed
 
-### Through the Fire and Flames
+### [Through the Fire and Flames](https://retroachievements.org/achievement/459918)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2418,7 +2418,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Just Move On Up
+### [Just Move On Up](https://retroachievements.org/achievement/459919)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2437,7 +2437,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### In Safe Hands
+### [In Safe Hands](https://retroachievements.org/achievement/459920)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2450,7 +2450,7 @@ Return the safe and complete Level 6 Mission 1
 Conditions:
 1. Level 6 Mission 1 marked complete, and no other mission status' changed
 
-### The Unreleased Album
+### [The Unreleased Album](https://retroachievements.org/achievement/459921)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2472,7 +2472,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Enchantment
+### [Enchantment](https://retroachievements.org/achievement/459922)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2485,7 +2485,7 @@ Smash the potion vial and complete Level 6 Mission 2
 Conditions:
 1. Level 6 Mission 2 marked complete, and no other mission status' changed
 
-### THE CONCOCTION
+### [THE CONCOCTION](https://retroachievements.org/achievement/459923)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2507,7 +2507,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Cursed Gem
+### [Cursed Gem](https://retroachievements.org/achievement/459924)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2520,7 +2520,7 @@ Destroy the dark jewel and complete Level 6 Mission 3
 Conditions:
 1. Level 6 Mission 3 marked complete, and no other mission status' changed
 
-### Bejeweled
+### [Bejeweled](https://retroachievements.org/achievement/459925)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2542,7 +2542,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Takin' Care of Business
+### [Takin' Care of Business](https://retroachievements.org/achievement/459926)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2561,7 +2561,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### POP!
+### [POP!](https://retroachievements.org/achievement/459927)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2574,7 +2574,7 @@ Earn the fizzy soda prize and complete Level 7 Mission 1
 Conditions:
 1. Level 7 Mission 1 marked complete, and no other mission status' changed
 
-### Have a Drink on Me
+### [Have a Drink on Me](https://retroachievements.org/achievement/459928)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2596,7 +2596,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Waiting for a Call
+### [Waiting for a Call](https://retroachievements.org/achievement/459929)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2609,7 +2609,7 @@ Collect the phone and complete Level 7 Mission 2
 Conditions:
 1. Level 7 Mission 2 marked complete, and no other mission status' changed
 
-### Off the Hook
+### [Off the Hook](https://retroachievements.org/achievement/459930)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2631,7 +2631,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### S.O.S
+### [S.O.S](https://retroachievements.org/achievement/459931)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2644,7 +2644,7 @@ Release the captive voyager and complete Level 7 Mission 3
 Conditions:
 1. Level 7 Mission 3 marked complete, and no other mission status' changed
 
-### Message in a Bottle
+### [Message in a Bottle](https://retroachievements.org/achievement/459932)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2666,7 +2666,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Stairway to Heaven
+### [Stairway to Heaven](https://retroachievements.org/achievement/459933)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2685,7 +2685,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### K9 Companion
+### [K9 Companion](https://retroachievements.org/achievement/459934)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2698,7 +2698,7 @@ Rescue the dog and complete Level 8 Mission 1
 Conditions:
 1. Level 8 Mission 1 marked complete, and no other mission status' changed
 
-### Who Let the Dogs Out?
+### [Who Let the Dogs Out?](https://retroachievements.org/achievement/459935)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2720,7 +2720,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Fast Getaway
+### [Fast Getaway](https://retroachievements.org/achievement/459936)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2733,7 +2733,7 @@ Find and flee with the amphora jar and complete Level 8 Mission 2
 Conditions:
 1. Level 8 Mission 2 marked complete, and no other mission status' changed
 
-### Rock You like a Hurricane
+### [Rock You like a Hurricane](https://retroachievements.org/achievement/459937)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2755,7 +2755,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Piece of Cake
+### [Piece of Cake](https://retroachievements.org/achievement/459938)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2768,7 +2768,7 @@ Eat the triple decker cake and complete Level 8 Mission 3
 Conditions:
 1. Level 8 Mission 3 marked complete, and no other mission status' changed
 
-### Fight for Your Right to Party
+### [Fight for Your Right to Party](https://retroachievements.org/achievement/459939)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2790,7 +2790,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### A Rising Star
+### [A Rising Star](https://retroachievements.org/achievement/459940)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2809,7 +2809,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### Hacking the Mainframe
+### [Hacking the Mainframe](https://retroachievements.org/achievement/459941)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2822,7 +2822,7 @@ Destroy the computer system and complete Level 9 Mission 1
 Conditions:
 1. Level 9 Mission 1 marked complete, and no other mission status' changed
 
-### Technologic
+### [Technologic](https://retroachievements.org/achievement/459942)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2844,7 +2844,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Infestation
+### [Infestation](https://retroachievements.org/achievement/459943)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2857,7 +2857,7 @@ Smash open the jar of insects and complete Level 9 Mission 2
 Conditions:
 1. Level 9 Mission 2 marked complete, and no other mission status' changed
 
-### Squash Those Beetles
+### [Squash Those Beetles](https://retroachievements.org/achievement/459944)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2879,7 +2879,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### Home Sweet Home
+### [Home Sweet Home](https://retroachievements.org/achievement/459945)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2892,7 +2892,7 @@ Find a new home and complete Level 9 Mission 3
 Conditions:
 1. Level 9 Mission 3 marked complete, and no other mission status' changed
 
-### Mansion Tour
+### [Mansion Tour](https://retroachievements.org/achievement/459946)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2914,7 +2914,7 @@ Reset When:
 3. Player dies (spawn back in lobby)
 4. Player gets hurt (loses heart or star)
 
-### School's Out!
+### [School's Out!](https://retroachievements.org/achievement/459947)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2933,7 +2933,7 @@ Conditions:
 Reset When:
 1. Password menu opened
 
-### King Krond
+### [King Krond](https://retroachievements.org/achievement/459948)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2952,7 +2952,7 @@ Reset When:
 2. Player quits mission
 3. Player dies (spawn back in lobby)
 
-### Speedy
+### [Speedy](https://retroachievements.org/achievement/459950)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2966,7 +2966,7 @@ Conditions:
 1. Start in valid mission that has lighting powerup
 2. Gain 32 steps of speed
 
-### Jump to the Rescue
+### [Jump to the Rescue](https://retroachievements.org/achievement/459951)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2980,7 +2980,7 @@ Conditions:
 1. Start in valid mission that has power spring powerup
 2. Gain 10 power jumps
 
-### Invincible
+### [Invincible](https://retroachievements.org/achievement/459952)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
@@ -2994,7 +2994,7 @@ Conditions:
 1. Start in valid mission that has power ring powerup
 2. Gain 32 seconds of invincibility
 
-### I'm the Map
+### [I'm the Map](https://retroachievements.org/achievement/459953)
 
 <sub>[Back to navigation](#achievements-navigation)</sub>
 
