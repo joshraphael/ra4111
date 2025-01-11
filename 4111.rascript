@@ -593,7 +593,7 @@ MissionConfigs = [
         "gold":             0,
         "stars":            0,
         "lightning":        0,
-        "powerSpring":      0,
+        "powerSpring":      1,
         "powerRing":        0,
         "map":              0,
         "missionId":        LEVEL2MISSION3ID,
