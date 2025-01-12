@@ -1,0 +1,46 @@
+name: Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "**" ]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  compile:
+    name: compile
+    runs-on: ubuntu-latest
+    env:
+      RATOOLS_VERSION: v1.15.0
+      RALIBRETRO_DIR: ~/Installs/RALibretro-x64 # same as Makefile
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set ENV vars for github
+        run: echo "RATOOLS_DIR=~/Installs/RATools-${{env.RATOOLS_VERSION}}" >> $GITHUB_ENV # same as Makefile
+
+      - name: Create folders
+        run: mkdir -p ${{env.RATOOLS_DIR}} && mkdir -p ${{env.RALIBRETRO_DIR}}/RACache/Data
+
+      - name: Install wine
+        run: sudo apt-get update && sudo apt-get install -y wine
+
+      - name: Get .NET SDK 6.0.428
+        run: wget -O ${{env.RATOOLS_DIR}}/dotnet-sdk.exe "https://download.visualstudio.microsoft.com/download/pr/5b2c6cee-abe2-4734-a099-729a346205e7/b5776361ebee2e1eeed9be4aad944652/dotnet-sdk-6.0.428-win-x64.zip"
+
+      - name: Set Winecfg
+        run: winecfg /v win10
+
+      - name: Get RATools CLI
+        run: wget -O ${{env.RATOOLS_DIR}}/RATools-${{env.RATOOLS_VERSION}}.zip "https://github.com/Jamiras/RATools/releases/download/${{env.RATOOLS_VERSION}}/RATools-${{env.RATOOLS_VERSION}}.zip"
+
+      - name: Unpack RATools
+        run: unzip ${{env.RATOOLS_DIR}}/RATools-${{env.RATOOLS_VERSION}}.zip -d ${{env.RATOOLS_DIR}}
+
+      - name: Compile code
+        run: bash .github/runtime.sh
