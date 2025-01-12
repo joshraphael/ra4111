@@ -133,7 +133,7 @@ Level 2 Mission 3:
 * Gold Bullions: 0
 * Stars: 0
 * Lightning: 0
-* Power Spring: 0
+* Power Spring: 1
 * Power Ring: 0
 * Map: 0
 * Total: 65 + ((4 + 1 + 0) * 7) = 100 credits max
