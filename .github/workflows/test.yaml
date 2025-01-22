@@ -20,6 +20,7 @@ jobs:
       DOTNET_ROOT_X64: C:\\Programs\\dotnet
       DOTNET_ROOT: C:\\Programs\\dotnet
       WINEPATH: C:\\Programs\\dotnet
+      RA_CONNECT_TOKEN: ${{ secrets.RA_CONNECT_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -47,3 +48,13 @@ jobs:
       
       - name: Compile Code
         run: make compile
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: user-text
+          path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-User.txt
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rich-text
+          path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-Rich.txt
