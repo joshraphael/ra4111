@@ -57,17 +57,20 @@ jobs:
       - name: Compile Code
         run: make compile
       
-      - uses: actions/upload-artifact@v4
+      - name: Upload Code Notes
+        uses: actions/upload-artifact@v4
         with:
           name: notes-json
           path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-Notes.json
       
-      - uses: actions/upload-artifact@v4
+      - name: Upload Achievement and Leaderboard Code
+        uses: actions/upload-artifact@v4
         with:
           name: user-text
           path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-User.txt
       
-      - uses: actions/upload-artifact@v4
+      - name: Upload Rich Presence
+        uses: actions/upload-artifact@v4
         with:
           name: rich-text
           path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-Rich.txt
