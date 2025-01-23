@@ -24,6 +24,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+      
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '^1.23.0'
 
       - name: Set ENV vars for github
         run: echo "RATOOLS_DIR=~/Installs/RATools-${{env.RATOOLS_VERSION}}" >> $GITHUB_ENV # same as Makefile
@@ -46,8 +51,16 @@ jobs:
       - name: Get .NET SDK 6.0.428
         run: bash .github/dotnet-sdk.sh
       
+      - name: Get Code Notes
+        run: make notes
+      
       - name: Compile Code
         run: make compile
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notes-json
+          path: ${{env.RALIBRETRO_DIR}}/RACache/Data/4111-Notes.json
       
       - uses: actions/upload-artifact@v4
         with:
