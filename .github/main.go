@@ -12,7 +12,7 @@ import (
 func main() {
 	client := retroachievements.New(retroachievements.ClientConfig{
 		Host:      retroachievements.RetroAchievementHost,
-		UserAgent: "go-retroachievements/v1.0.0",
+		UserAgent: "go-retroachievements/v1.0.1",
 	})
 	notes, err := client.GetCodeNotes(models.GetCodeNotesParameters{
 		GameID: 4111,
