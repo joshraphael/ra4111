@@ -20,7 +20,6 @@ jobs:
       DOTNET_ROOT_X64: C:\\Programs\\dotnet
       DOTNET_ROOT: C:\\Programs\\dotnet
       WINEPATH: C:\\Programs\\dotnet
-      RA_CONNECT_TOKEN: ${{ secrets.RA_CONNECT_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -87,11 +86,11 @@ jobs:
         with:
           node-version: '20.x'
       
-      - name: Checkout tools repo
+      - name: Use autocr-cli
         uses: actions/checkout@v4
         with:
           repository: joshraphael/autocr-cli
-          ref: v1.0.0
+          ref: v1.1.0
 
       - name: Download Code Notes
         uses: actions/download-artifact@v4
@@ -109,4 +108,4 @@ jobs:
           name: rich-text
       
       - name: Run AutoCR
-        run: ./index.js --notes ${{env.GAME_ID}}-Notes.json --user ${{env.GAME_ID}}-User.txt --rich ${{env.GAME_ID}}-Rich.txt --severity error
+        run: ./index.js --notes ${{env.GAME_ID}}-Notes.json --user ${{env.GAME_ID}}-User.txt --rich ${{env.GAME_ID}}-Rich.txt --severity error --report
