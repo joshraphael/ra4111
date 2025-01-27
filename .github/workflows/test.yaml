@@ -20,7 +20,6 @@ jobs:
       DOTNET_ROOT_X64: C:\\Programs\\dotnet
       DOTNET_ROOT: C:\\Programs\\dotnet
       WINEPATH: C:\\Programs\\dotnet
-      RA_CONNECT_TOKEN: ${{ secrets.RA_CONNECT_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
