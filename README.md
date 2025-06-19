@@ -16,4 +16,3 @@ Retro Achievements set design document for the game [Monster Max](https://retroa
 |Title|Command|Parameters|Description|
 |-|-|-|-|
 |Compile|`make compile`|None|Compile RAScript into achievement logic|
-|Code Notes|`make notes`|None|Use the API to download the games code notes|
