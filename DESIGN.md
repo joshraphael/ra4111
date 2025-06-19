@@ -1,25 +1,18 @@
-# Design Doc
-
+# Design Doc for [Monster Max](https://retroachievements.org/game/4111)
 ## Table of Contents
-
 1. [About](#about)
 2. [Learnings](#learnings)
 3. [Code Notes](#code-notes)
 4. [Achievements](#achievements)
-5. [Rich Presence](#rich-presence)
-6. [Leaderboards](#leaderboards)
-
+5. [Leaderboards](#leaderboards)
 ## About
-
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
-
-* [Wikipedia](https://en.wikipedia.org/wiki/Monster_Max)
-* [RetroAchievements](https://retroachievements.org/game/4111)
-* [Walkthrough](https://gamefaqs.gamespot.com/gameboy/585809-monster-max/faqs/36096)
-* [YouTube Video Playthrough](https://www.youtube.com/watch?v=p4EVqKSPrcs)
-
+- [Game Page](https://retroachievements.org/game/4111)
+- [Forum Topic](https://retroachievements.org/forums/topic/27369)
+- [Wikipedia](https://en.wikipedia.org/wiki/Monster_Max)
+- [Walkthrough](https://gamefaqs.gamespot.com/gameboy/585809-monster-max/faqs/36096)
+- [YouTube Video Playthrough](https://www.youtube.com/watch?v=p4EVqKSPrcs)
 ## Learnings
-
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
 
 ### Passwords
@@ -486,2593 +479,1760 @@ Level 10 Summary:
 * Max stars: 50 + 4 = 54
 
 ## Code Notes
-
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
-
 ### Code Notes Navigation
-
-1. [Start Menu](#start-menu)
-2. [Select Menu](#select-menu)
-3. [Current Mission](#current-mission)
-4. [Mission Final Item Flags Group 1](#mission-final-item-flags-group-1)
-5. [Mission Final Item Flags Group 2](#mission-final-item-flags-group-2)
-6. [Mission Final Item Flags Group 3](#mission-final-item-flags-group-3)
-7. [Mission Final Item Flags Group 4](#mission-final-item-flags-group-4)
-8. [Mission Final Item Flags Group 5](#mission-final-item-flags-group-5)
-9. [Missions Unlocked Flags](#missions-unlocked-flags)
-10. [Mission Key Item Flags](#mission-key-item-flags)
-11. [A Button Item](#a-button-item)
-12. [B Button Item](#b-button-item)
-13. [Bag Contents](#bag-contents)
-14. [Lucky Stars](#lucky-stars)
-15. [Health](#health)
-16. [Speed Boost](#speed-boost)
-17. [Power Ring Time](#power-ring-time)
-18. [Power Spring Jumps](#power-spring-jumps)
-19. [Player Direction Facing](#player-direction-facing)
-20. [Player Direction Button Being Pressed](#player-direction-button-being-pressed)
-21. [Lift Pass Level](#lift-pass-level)
-22. [Credits](#credits)
-23. [Response Setting](#response-setting)
-24. [Idle Animation Timer](#idle-animation-timer)
-25. [Start Menu Map Group 1 Flags](#start-menu-map-group-1-flags)
-26. [Start Menu Map Group 2 Flags](#start-menu-map-group-2-flags)
-27. [Start Menu Map Group 3 Flags](#start-menu-map-group-3-flags)
-28. [Start Menu Map Group 4 Flags](#start-menu-map-group-4-flags)
-29. [Start Menu Map Group 5 Flags](#start-menu-map-group-5-flags)
-30. [Start Menu Map Group 6 Flags](#start-menu-map-group-6-flags)
-31. [Start Menu Map Group 7 Flags](#start-menu-map-group-7-flags)
-32. [Rooms Available In Mission Group 1](#rooms-available-in-mission-group-1)
-33. [Rooms Available In Mission Group 2](#rooms-available-in-mission-group-2)
-34. [Rooms Available In Mission Group 3](#rooms-available-in-mission-group-3)
-35. [Rooms Available In Mission Group 4](#rooms-available-in-mission-group-4)
-36. [Rooms Available In Mission Group 5](#rooms-available-in-mission-group-5)
-37. [Rooms Available In Mission Group 6](#rooms-available-in-mission-group-6)
-38. [Rooms Available In Mission Group 7](#rooms-available-in-mission-group-7)
-39. [Password Menu Letter Selector X](#password-menu-letter-selector-x)
-40. [Password Menu Letter Selector y](#password-menu-letter-selector-y)
-41. [Select Menu Option](#select-menu-option)
-42. [Language](#language)
-43. [Control Pad Setting](#control-pad-setting)
-44. [Information Menu Selector X](#information-menu-selector-x)
-45. [Information Menu Selector Y](#information-menu-selector-y)
-46. [Password Length](#password-length)
-47. [Password Character 1](#password-character-1)
-48. [Password Character 2](#password-character-2)
-49. [Password Character 3](#password-character-3)
-50. [Password Character 4](#password-character-4)
-51. [Password Character 5](#password-character-5)
-52. [Password Character 6](#password-character-6)
-53. [Password Character 7](#password-character-7)
-54. [Password Character 8](#password-character-8)
-55. [Mission Bonus Credits](#mission-bonus-credits)
-
-### _Start Menu_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xc006** (16-bit)
-
-Notes: the 0x3836 value is a special value swapped in for showing the start menu map
-
+1. [Code Note 0x000000](#code-note-0x000000)
+2. [Code Note 0x00c006](#code-note-0x00c006)
+3. [Code Note 0x00c009](#code-note-0x00c009)
+4. [Code Note 0x00cfbf](#code-note-0x00cfbf)
+5. [Code Note 0x00d002](#code-note-0x00d002)
+6. [Code Note 0x00d003](#code-note-0x00d003)
+7. [Code Note 0x00d004](#code-note-0x00d004)
+8. [Code Note 0x00d005](#code-note-0x00d005)
+9. [Code Note 0x00d008](#code-note-0x00d008)
+10. [Code Note 0x00d00a](#code-note-0x00d00a)
+11. [Code Note 0x00d08a](#code-note-0x00d08a)
+12. [Code Note 0x00d0fd](#code-note-0x00d0fd)
+13. [Code Note 0x00d0fe](#code-note-0x00d0fe)
+14. [Code Note 0x00d10b](#code-note-0x00d10b)
+15. [Code Note 0x00d120](#code-note-0x00d120)
+16. [Code Note 0x00d122](#code-note-0x00d122)
+17. [Code Note 0x00d123](#code-note-0x00d123)
+18. [Code Note 0x00d124](#code-note-0x00d124)
+19. [Code Note 0x00d125](#code-note-0x00d125)
+20. [Code Note 0x00d126](#code-note-0x00d126)
+21. [Code Note 0x00d127](#code-note-0x00d127)
+22. [Code Note 0x00d128](#code-note-0x00d128)
+23. [Code Note 0x00d129](#code-note-0x00d129)
+24. [Code Note 0x00d12d](#code-note-0x00d12d)
+25. [Code Note 0x00d12e](#code-note-0x00d12e)
+26. [Code Note 0x00d190](#code-note-0x00d190)
+27. [Code Note 0x00d191](#code-note-0x00d191)
+28. [Code Note 0x00d192](#code-note-0x00d192)
+29. [Code Note 0x00d193](#code-note-0x00d193)
+30. [Code Note 0x00d194](#code-note-0x00d194)
+31. [Code Note 0x00d195](#code-note-0x00d195)
+32. [Code Note 0x00d196](#code-note-0x00d196)
+33. [Code Note 0x00d197](#code-note-0x00d197)
+34. [Code Note 0x00d198](#code-note-0x00d198)
+35. [Code Note 0x00d199](#code-note-0x00d199)
+36. [Code Note 0x00d19a](#code-note-0x00d19a)
+37. [Code Note 0x00d19b](#code-note-0x00d19b)
+38. [Code Note 0x00d19c](#code-note-0x00d19c)
+39. [Code Note 0x00d19d](#code-note-0x00d19d)
+40. [Code Note 0x00d3e2](#code-note-0x00d3e2)
+41. [Code Note 0x00d3e3](#code-note-0x00d3e3)
+42. [Code Note 0x00d3e5](#code-note-0x00d3e5)
+43. [Code Note 0x00d3e6](#code-note-0x00d3e6)
+44. [Code Note 0x00d3e7](#code-note-0x00d3e7)
+45. [Code Note 0x00d3e9](#code-note-0x00d3e9)
+46. [Code Note 0x00d3ea](#code-note-0x00d3ea)
+47. [Code Note 0x00d3ef](#code-note-0x00d3ef)
+48. [Code Note 0x00d3f0](#code-note-0x00d3f0)
+49. [Code Note 0x00d3f1](#code-note-0x00d3f1)
+50. [Code Note 0x00d3f2](#code-note-0x00d3f2)
+51. [Code Note 0x00d3f3](#code-note-0x00d3f3)
+52. [Code Note 0x00d3f4](#code-note-0x00d3f4)
+53. [Code Note 0x00d3f5](#code-note-0x00d3f5)
+54. [Code Note 0x00d3f6](#code-note-0x00d3f6)
+55. [Code Note 0x00d3f7](#code-note-0x00d3f7)
+56. [Code Note 0x00d402](#code-note-0x00d402)
+### Code Note 0x000000
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+RAScript: https://github.com/joshraphael/ra4111/blob/main/4111.rascript
+```
+### Code Note 0x00c006
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
 [16-bit] Start Menu
 
+the 0x3836 value is a special value swapped in for showing the start menu map
+
 0x3836 = Open
-
-### _Select Menu_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xc009** (8-bit)
-
-Notes: boolean specifying if menu is open or not
+```
+### Code Note 0x00c009
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Select Menu
 
 Upper4
-* 0x0 = Open
-* 0x1 = Closed
+0x0 = Open
+0x1 = Closed
 
 Lower4
-* N/A
+N/A
+```
+### Code Note 0x00cfbf
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Current Mission
 
-### _Current Mission_
+0x00 = Main Lobby
+0x01 = Play Pen
+0x02 = Level 1 Mission 1
+0x03 = Level 1 Mission 2
+0x04 = Level 1 Mission 3
+0x05 = Level 2 Mission 1
+0x06 = Level 2 Mission 2
+0x07 = Level 2 Mission 3
+0x08 = Level 3 Mission 1
+0x09 = Level 3 Mission 2
+0x0a = Level 3 Mission 3
+0x0b = Level 4 Mission 1
+0x0c = Level 4 Mission 2
+0x0d = Level 4 Mission 3
+0x0e = Level 5 Mission 1
+0x0f = Level 5 Mission 2
+0x10 = Level 5 Mission 3
+0x11 = Level 6 Mission 1
+0x12 = Level 6 Mission 2
+0x13 = Level 6 Mission 3
+0x14 = Level 7 Mission 1
+0x15 = Level 7 Mission 2
+0x16 = Level 7 Mission 3
+0x17 = Level 8 Mission 1
+0x18 = Level 8 Mission 2
+0x19 = Level 8 Mission 3
+0x1a = Level 9 Mission 1
+0x1b = Level 9 Mission 2
+0x1c = Level 9 Mission 3
+0x1d = Final Mission
+0x1e = Title Screen
+0x1f = Final Concert Scene
+```
+### Code Note 0x00d002
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Final Item Flags Group 1
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
+Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-**0xcfbf** (8-bit)
-
-Notes: integer specifying what current mission the player is in
-
-* 0x00 = Main Lobby
-* 0x01 = Play Pen
-* 0x02 = Level 1 Mission 1
-* 0x03 = Level 1 Mission 2
-* 0x04 = Level 1 Mission 3
-* 0x05 = Level 2 Mission 1
-* 0x06 = Level 2 Mission 2
-* 0x07 = Level 2 Mission 3
-* 0x08 = Level 3 Mission 1
-* 0x09 = Level 3 Mission 2
-* 0x0a = Level 3 Mission 3
-* 0x0b = Level 4 Mission 1
-* 0x0c = Level 4 Mission 2
-* 0x0d = Level 4 Mission 3
-* 0x0e = Level 5 Mission 1
-* 0x0f = Level 5 Mission 2
-* 0x10 = Level 5 Mission 3
-* 0x11 = Level 6 Mission 1
-* 0x12 = Level 6 Mission 2
-* 0x13 = Level 6 Mission 3
-* 0x14 = Level 7 Mission 1
-* 0x15 = Level 7 Mission 2
-* 0x16 = Level 7 Mission 3
-* 0x17 = Level 8 Mission 1
-* 0x18 = Level 8 Mission 2
-* 0x19 = Level 8 Mission 3
-* 0x1a = Level 9 Mission 1
-* 0x1b = Level 9 Mission 2
-* 0x1c = Level 9 Mission 3
-* 0x1d = Final Mission
-* 0x1e = Title Screen
-* 0x1f = Final Concert Scene
-
-### _Mission Final Item Flags Group 1_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd002** (8-bit)
-
-Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = N/A
-* Bit1 = N/A
-* Bit2 = N/A
-* Bit3 = N/A
-* Bit4 = N/A
-* Bit5 = N/A
-* Bit6 = N/A
-* Bit7 = Play Pen, 4-3
+Bit0 = N/A
+Bit1 = N/A
+Bit2 = N/A
+Bit3 = N/A
+Bit4 = N/A
+Bit5 = N/A
+Bit6 = N/A
+Bit7 = Play Pen, 4-3
+```
+### Code Note 0x00d003
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Final Item Flags Group 2
 
-### _Mission Final Item Flags Group 2_
+Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd003** (8-bit)
-
-Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = N/A
-* Bit1 = 5-1
-* Bit2 = N/A
-* Bit3 = 7-3
-* Bit4 = N/A
-* Bit5 = N/A
-* Bit6 = N/A
-* Bit7 = 3-2, 9-3
+Bit0 = N/A
+Bit1 = 5-1
+Bit2 = N/A
+Bit3 = 7-3
+Bit4 = N/A
+Bit5 = N/A
+Bit6 = N/A
+Bit7 = 3-2, 9-3
+```
+### Code Note 0x00d004
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Final Item Flags Group 3
 
-### _Mission Final Item Flags Group 3_
+Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd004** (8-bit)
-
-Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = 2-2, 4-2, 5-2, 6-3, 8-2, 9-1, 9-2
-* Bit1 = 1-1, 1-2, 3-3, 4-1, 5-3, 7-1, 8-1, 8-3
-* Bit2 = 1-3, 2-3, 3-1, 7-2
-* Bit3 = N/A
-* Bit4 = 2-1
-* Bit5 = N/A
-* Bit6 = N/A
-* Bit7 = N/A
+Bit0 = 2-2, 4-2, 5-2, 6-3, 8-2, 9-1, 9-2
+Bit1 = 1-1, 1-2, 3-3, 4-1, 5-3, 7-1, 8-1, 8-3
+Bit2 = 1-3, 2-3, 3-1, 7-2
+Bit3 = N/A
+Bit4 = 2-1
+Bit5 = N/A
+Bit6 = N/A
+Bit7 = N/A
+```
+### Code Note 0x00d005
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Final Item Flags Group 4
 
-### _Mission Final Item Flags Group 4_
+Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd005** (8-bit)
-
-Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = N/A
-* Bit1 = N/A
-* Bit2 = N/A
-* Bit3 = N/A
-* Bit4 = 6-1
-* Bit5 = 6-2
-* Bit6 = N/A
-* Bit7 = N/A
+Bit0 = N/A
+Bit1 = N/A
+Bit2 = N/A
+Bit3 = N/A
+Bit4 = 6-1
+Bit5 = 6-2
+Bit6 = N/A
+Bit7 = N/A
+```
+### Code Note 0x00d008
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Final Item Flags Group 5
 
-### _Mission Final Item Flags Group 5_
+Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd008** (8-bit)
-
-Notes: Does not appear to be an order of item type. These mark the final item collected or destroyed that open the door to the end of the mission.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = N/A
-* Bit1 = N/A
-* Bit2 = N/A
-* Bit3 = N/A
-* Bit4 = N/A
-* Bit5 = 10-1
-* Bit6 = N/A
-* Bit7 = N/A
+Bit0 = N/A
+Bit1 = N/A
+Bit2 = N/A
+Bit3 = N/A
+Bit4 = N/A
+Bit5 = 10-1
+Bit6 = N/A
+Bit7 = N/A
+```
+### Code Note 0x00d00a
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[32-bit] Missions Unlocked Flags
 
-### _Missions Unlocked Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd00a** (32-bit)
-
-Notes: bit flags for missions completed
-
-0 = not completed<br>
+0 = not completed
 1 = completed
 
-* Bit0 = Play Pen
-* Bit1 = Level 1 Mission 1
-* Bit2 = Level 1 Mission 2
-* Bit3 = Level 1 Mission 3
-* Bit4 = Level 2 Mission 1
-* Bit5 = Level 2 Mission 2
-* Bit6 = Level 2 Mission 3
-* Bit7 = Level 3 Mission 1
-* Bit8 = Level 3 Mission 2
-* Bit9 = Level 3 Mission 3
-* Bit10 = Level 4 Mission 1
-* Bit11 = Level 4 Mission 2
-* Bit12 = Level 4 Mission 3
-* Bit13 = Level 5 Mission 1
-* Bit14 = Level 5 Mission 2
-* Bit15 = Level 5 Mission 3
-* Bit16 = Level 6 Mission 1
-* Bit17 = Level 6 Mission 2
-* Bit18 = Level 6 Mission 3
-* Bit19 = Level 7 Mission 1
-* Bit20 = Level 7 Mission 2
-* Bit21 = Level 7 Mission 3
-* Bit22 = Level 8 Mission 1
-* Bit23 = Level 8 Mission 2
-* Bit24 = Level 8 Mission 3
-* Bit25 = Level 9 Mission 1
-* Bit26 = Level 9 Mission 2
-* Bit27 = Level 9 Mission 3
-* Bit28 = Level 10 Mission
-* Bit29 = Unused
-* Bit30 = Unused
-* Bit31 = Unused
+Bit0 = Play Pen
+Bit1 = Level 1 Mission 1
+Bit2 = Level 1 Mission 2
+Bit3 = Level 1 Mission 3
+Bit4 = Level 2 Mission 1
+Bit5 = Level 2 Mission 2
+Bit6 = Level 2 Mission 3
+Bit7 = Level 3 Mission 1
+Bit8 = Level 3 Mission 2
+Bit9 = Level 3 Mission 3
+Bit10 = Level 4 Mission 1
+Bit11 = Level 4 Mission 2
+Bit12 = Level 4 Mission 3
+Bit13 = Level 5 Mission 1
+Bit14 = Level 5 Mission 2
+Bit15 = Level 5 Mission 3
+Bit16 = Level 6 Mission 1
+Bit17 = Level 6 Mission 2
+Bit18 = Level 6 Mission 3
+Bit19 = Level 7 Mission 1
+Bit20 = Level 7 Mission 2
+Bit21 = Level 7 Mission 3
+Bit22 = Level 8 Mission 1
+Bit23 = Level 8 Mission 2
+Bit24 = Level 8 Mission 3
+Bit25 = Level 9 Mission 1
+Bit26 = Level 9 Mission 2
+Bit27 = Level 9 Mission 3
+Bit28 = Level 10 Mission 
+Bit29 = Unused
+Bit30 = Unused
+Bit31 = Unused
+```
+### Code Note 0x00d08a
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Mission Key Item Flags
 
-### _Mission Key Item Flags_
+Only used for the final mission where you collect four key items that are not power ups in order for the final room to allow you to cross the bridge and defeat King Krond.
 
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd08a** (8-bit)
-
-Notes: Only used for the final mission where you collect four key items that are not power ups in order for the final room to allow you to cross the bridge and defeat King Krond.
-
-0 = not obtained<br>
+0 = not obtained
 1 = obtained
 
-* Bit0 = item 1
-* Bit1 = item 2
-* Bit2 = item 3
-* Bit3 = item 4
-* Bit4 = N/A
-* Bit5 = N/A
-* Bit6 = N/A
-* Bit7 = N/A
-
-### _A Button Item_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd0fd** (8-bit)
-
-Notes: integer specifying item currently in the A button slot
-
-* 0x00 = boots
-* 0x01 = bag
-* 0x02 = bag (occupied)
-* 0x03 = sword
-* 0x04 = gun level 2
-* 0x05 = gun level 1
-* 0x06 = duck
-* 0x07 = force field
-* 0x08 = bomb
-
-### _B Button Item_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd0fe** (8-bit)
-
-Notes: integer specifying item currently in the B button slot
-
-* 0x00 = boots
-* 0x01 = bag
-* 0x02 = bag (occupied)
-* 0x03 = sword
-* 0x04 = gun level 2
-* 0x05 = gun level 1
-* 0x06 = duck
-* 0x07 = force field
-* 0x08 = bomb
-
-### _Bag Contents_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd10b** (8-bit)
-
-Notes: integer specifying the contents of the bag
-
-* 0x74 = empty
-* 0xb8 = box
-
-### _Lucky Stars_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd120** (8-bit)
-
-Notes: number count, can hold 255 but can only display 9
-
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
-* 0x03 = 3
-* ...
-* 0xff = 255
-
-### _Health_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd122** (8-bit)
-
-Notes: number count, can hold 254 but can only display 5
-
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
-* 0x03 = 3
-* ...
-* 0xfe = 254
-* 0xff = Dead
-
-### _Speed Boost_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd123** (8-bit)
-
-Notes: can hold 255, each lightning adds 32 (0x20) speed tile steps
-
-* 0x00 = 0 tiles
-* 0x01 = 1 tiles
-* 0x02 = 2 tiles
-* ...
-* 0x20 = 32 tiles
-* ...
-* 0xff = 255 tiles
-
-### _Power Ring Time_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd124** (8-bit)
-
-Notes: can hold 255, each power ring adds 32 (0x20) seconds
-
-* 0x00 = 0 seconds
-* 0x01 = 1 seconds
-* 0x02 = 2 seconds
-* 0x03 = 3 seconds
-* 0x04 = 4 seconds
-* 0x05 = 5 seconds
-* 0x06 = 6 seconds
-* 0x07 = 7 seconds
-* 0x08 = 8 seconds
-* 0x09 = 9 seconds
-* 0x0a = 10 seconds
-* 0x0b = 11 seconds
-* 0x0c = 12 seconds
-* 0x0d = 13 seconds
-* 0x0e = 14 seconds
-* 0x0f = 15 seconds
-* 0x10 = 16 seconds
-* 0x11 = 17 seconds
-* 0x12 = 18 seconds
-* 0x13 = 19 seconds
-* 0x14 = 20 seconds
-* 0x15 = 21 seconds
-* 0x16 = 22 seconds
-* 0x17 = 23 seconds
-* 0x18 = 24 seconds
-* 0x19 = 25 seconds
-* 0x1a = 26 seconds
-* 0x1b = 27 seconds
-* 0x1c = 28 seconds
-* 0x1f = 29 seconds
-* 0x1e = 30 seconds
-* 0x1f = 31 seconds
-* 0x20 = 32 seconds
-* ...
-* 0xff = 255 seconds
-
-### _Power Spring Jumps_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd125** (8-bit)
-
-Notes: can hold 255, each power spring adds 10 (0x0a) jumps
-
-* 0x00 = 0 jumps
-* 0x01 = 1 jumps
-* 0x02 = 2 jumps
-* 0x03 = 3 jumps
-* 0x04 = 4 jumps
-* 0x05 = 5 jumps
-* 0x06 = 6 jumps
-* 0x07 = 7 jumps
-* 0x08 = 8 jumps
-* 0x09 = 9 jumps
-* 0x0a = 10 jumps
-* ...
-* 0xff = 255 jumps
-
-### _Player Direction Facing_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd126** (8-bit)
-
-* 0x01 = NE
-* 0x02 = SW
-* 0x04 = NW
-* 0x08 = SE
-
-### _Player Direction Button Being Pressed_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd127** (8-bit)
-
-* 0x00 = None
-* 0x01 = NE
-* 0x02 = SW
-* 0x04 = NW
-* 0x08 = SE
-
-### _Lift Pass Level_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd128** (8-bit)
-
-* 0x00 = level 1
-* 0x01 = level 2
-* 0x02 = level 3
-* 0x03 = level 4
-* 0x04 = level 5
-* 0x05 = level 6
-* 0x06 = level 7
-* 0x07 = level 8
-* 0x08 = level 9
-* 0x09 = level 10
-
-### _Credits_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd129** (16-bit)
-
-* 0x0000 = 0
-* 0x0001 = 1
-* 0x0002 = 2
-* ...
-* 0xffff = 65535
-
-### _Response Setting_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd12d** (8-bit)
-
-* 0x00 = High
-* 0x01 = Low
-
-### _Idle Animation Timer_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd12e** (8-bit)
-
-Notes: Only works if player is facing southwest or southeast
-
-* 0x00 = not idle
-* 0x01 = not idle
-* 0x02 = not idle
-* ...
-* 0xfd = not idle
-* 0xfe = not idle
-* 0xff = idle
-
-### _Start Menu Map Group 1 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd190** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+Bit0 = item 1
+Bit1 = item 2
+Bit2 = item 3
+Bit3 = item 4
+Bit4 = N/A
+Bit5 = N/A
+Bit6 = N/A
+Bit7 = N/A
+```
+### Code Note 0x00d0fd
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] A Button Item
+
+0x00 = boots
+0x01 = bag
+0x02 = bag (occupied)
+0x03 = sword
+0x04 = gun level 2
+0x05 = gun level 1
+0x06 = duck
+0x07 = force field
+0x08 = bomb
+```
+### Code Note 0x00d0fe
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] B Button Item
+
+0x00 = boots
+0x01 = bag
+0x02 = bag (occupied)
+0x03 = sword
+0x04 = gun level 2
+0x05 = gun level 1
+0x06 = duck
+0x07 = force field
+0x08 = bomb
+```
+### Code Note 0x00d10b
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Bag Contents
+
+0x74 = empty
+0xb8 = box
+```
+### Code Note 0x00d120
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Lucky Stars
+
+can hold 255 but can only display 9
+
+0x00 = 0
+0x01 = 1
+0x02 = 2
+0x03 = 3
+0x04 = 4
+0x05 = 5
+0x06 = 6
+0x07 = 7
+0x08 = 8
+0x09 = 9
+...
+0xff = 255
+```
+### Code Note 0x00d122
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Health
+
+can hold 254 but can only display 5
+
+0xff = Dead
+0x00 = 0 hearts
+0x01 = 1 hearts
+0x02 = 2 hearts
+0x03 = 3 hearts
+0x04 = 4 hearts
+0x05 = 5 hearts
+...
+0xfe = 254
+```
+### Code Note 0x00d123
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Speed Boost Left
+
+can hold 255, each lightning adds 32 (0x20) speed tile steps
+
+0x00 = 0 tiles
+0x01 = 1 tiles
+0x02 = 2 tiles
+...
+0x20 = 32 tiles
+...
+0xff = 255 tiles
+```
+### Code Note 0x00d124
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Power Ring Time Remaining
+
+can hold 255, each power ring adds 32 (0x20) seconds
+
+0x00 = 0 seconds
+0x01 = 1 seconds
+0x02 = 2 seconds
+0x03 = 3 seconds
+0x04 = 4 seconds
+0x05 = 5 seconds
+0x06 = 6 seconds
+0x07 = 7 seconds
+0x08 = 8 seconds
+0x09 = 9 seconds
+0x0a = 10 seconds
+0x0b = 11 seconds
+0x0c = 12 seconds
+0x0d = 13 seconds
+0x0e = 14 seconds
+0x0f = 15 seconds
+0x10 = 16 seconds
+0x11 = 17 seconds
+0x12 = 18 seconds
+0x13 = 19 seconds
+0x14 = 20 seconds
+0x15 = 21 seconds
+0x16 = 22 seconds
+0x17 = 23 seconds
+0x18 = 24 seconds
+0x19 = 25 seconds
+0x1a = 26 seconds
+0x1b = 27 seconds
+0x1c = 28 seconds
+0x1f = 29 seconds
+0x1e = 30 seconds
+0x1f = 31 seconds
+0x20 = 32 seconds
+...
+0xff = 255 seconds
+```
+### Code Note 0x00d125
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Power Spring Jumps Remaining
+
+can hold 255, each power spring adds 10 (0x0a) jumps
+
+0x00 = 0 jumps
+0x01 = 1 jumps
+0x02 = 2 jumps
+0x03 = 3 jumps
+0x04 = 4 jumps
+0x05 = 5 jumps
+0x06 = 6 jumps
+0x07 = 7 jumps
+0x08 = 8 jumps
+0x09 = 9 jumps
+0x0a = 10 jumps
+...
+0xff = 255 jumps
+```
+### Code Note 0x00d126
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Player Direction Facing
+
+0x01 = NE
+0x02 = SW
+0x04 = NW
+0x08 = SE
+```
+### Code Note 0x00d127
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Player Direction Button Being Pressed
+
+0x00 = None
+0x01 = NE
+0x02 = SW
+0x04 = NW
+0x08 = SE
+```
+### Code Note 0x00d128
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Lift Pass Level
+
+0x00 = level 1
+0x01 = level 2
+0x02 = level 3
+0x03 = level 4
+0x04 = level 5
+0x05 = level 6
+0x06 = level 7
+0x07 = level 8
+0x08 = level 9
+0x09 = level 10
+```
+### Code Note 0x00d129
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[16-bit] Credits
+
+0x0000 = 0
+0x0001 = 1
+0x0002 = 2
+...
+0xffff = 65535
+```
+### Code Note 0x00d12d
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Response Setting
+
+0x00 = High
+0x01 = Low
+```
+### Code Note 0x00d12e
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Idle Animation Timer
+
+Only works if player is facing southwest or southeast
+
+0x00 = not idle
+0x01 = not idle
+0x02 = not idle
+...
+0xfd = not idle
+0xfe = not idle
+0xff = idle
+```
+### Code Note 0x00d190
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 1 Flags
+
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 1
-* Bit1 = room 2
-* Bit2 = room 3
-* Bit3 = room 4
-* Bit4 = room 5
-* Bit5 = room 6
-* Bit6 = room 7
-* Bit7 = room 8
+Bit0 = room 1
+Bit1 = room 2
+Bit2 = room 3
+Bit3 = room 4
+Bit4 = room 5
+Bit5 = room 6
+Bit6 = room 7
+Bit7 = room 8
+```
+### Code Note 0x00d191
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 2 Flags
 
-### _Start Menu Map Group 2 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd191** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 9
-* Bit1 = room 10
-* Bit2 = room 11
-* Bit3 = room 12
-* Bit4 = room 13
-* Bit5 = room 14
-* Bit6 = room 15
-* Bit7 = room 16
+Bit0 = room 9
+Bit1 = room 10
+Bit2 = room 11
+Bit3 = room 12
+Bit4 = room 13
+Bit5 = room 14
+Bit6 = room 15
+Bit7 = room 16
+```
+### Code Note 0x00d192
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 3 Flags
 
-### _Start Menu Map Group 3 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd192** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 17
-* Bit1 = room 18
-* Bit2 = room 19
-* Bit3 = room 20
-* Bit4 = room 21
-* Bit5 = room 22
-* Bit6 = room 23
-* Bit7 = room 24
+Bit0 = room 17
+Bit1 = room 18
+Bit2 = room 19
+Bit3 = room 20
+Bit4 = room 21
+Bit5 = room 22
+Bit6 = room 23
+Bit7 = room 24
+```
+### Code Note 0x00d193
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 4 Flags
 
-### _Start Menu Map Group 4 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd193** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 25
-* Bit1 = room 26
-* Bit2 = room 27
-* Bit3 = room 28
-* Bit4 = room 29
-* Bit5 = room 30
-* Bit6 = room 31
-* Bit7 = room 32
+Bit0 = room 25
+Bit1 = room 26
+Bit2 = room 27
+Bit3 = room 28
+Bit4 = room 29
+Bit5 = room 30
+Bit6 = room 31
+Bit7 = room 32
+```
+### Code Note 0x00d194
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 5 Flags
 
-### _Start Menu Map Group 5 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd194** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 33
-* Bit1 = room 34
-* Bit2 = room 35
-* Bit3 = room 36
-* Bit4 = room 37
-* Bit5 = room 38
-* Bit6 = room 39
-* Bit7 = room 40
+Bit0 = room 33
+Bit1 = room 34
+Bit2 = room 35
+Bit3 = room 36
+Bit4 = room 37
+Bit5 = room 38
+Bit6 = room 39
+Bit7 = room 40
+```
+### Code Note 0x00d195
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 6 Flags
 
-### _Start Menu Map Group 6 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd195** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 41
-* Bit1 = room 42
-* Bit2 = room 43
-* Bit3 = room 44
-* Bit4 = room 45
-* Bit5 = room 46
-* Bit6 = room 47
-* Bit7 = room 48
+Bit0 = room 41
+Bit1 = room 42
+Bit2 = room 43
+Bit3 = room 44
+Bit4 = room 45
+Bit5 = room 46
+Bit6 = room 47
+Bit7 = room 48
+```
+### Code Note 0x00d196
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Start Menu Map Group 7 Flags
 
-### _Start Menu Map Group 7 Flags_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd196** (8-bit)
-
-Notes:<br>
-0 = room not visited<br>
+0 = room not visited
 1 = room visited
 
-* Bit0 = room 49
-* Bit1 = room 50
-* Bit2 = room 51
-* Bit3 = room 52
-* Bit4 = room 53
-* Bit5 = room 54
-* Bit6 = room 55
-* Bit7 = room 56
-
-### _Rooms Available In Mission Group 1_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd197** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 1
-* Bit1 = room 2
-* Bit2 = room 3
-* Bit3 = room 4
-* Bit4 = room 5
-* Bit5 = room 6
-* Bit6 = room 7
-* Bit7 = room 8
-
-### _Rooms Available In Mission Group 2_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd198** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 9
-* Bit1 = room 10
-* Bit2 = room 11
-* Bit3 = room 12
-* Bit4 = room 13
-* Bit5 = room 14
-* Bit6 = room 15
-* Bit7 = room 16
-
-### _Rooms Available In Mission Group 3_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd199** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 17
-* Bit1 = room 18
-* Bit2 = room 19
-* Bit3 = room 20
-* Bit4 = room 21
-* Bit5 = room 22
-* Bit6 = room 23
-* Bit7 = room 24
-
-### _Rooms Available In Mission Group 4_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd19a** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 25
-* Bit1 = room 26
-* Bit2 = room 27
-* Bit3 = room 28
-* Bit4 = room 29
-* Bit5 = room 30
-* Bit6 = room 31
-* Bit7 = room 32
-
-### _Rooms Available In Mission Group 5_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd19b** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 33
-* Bit1 = room 34
-* Bit2 = room 35
-* Bit3 = room 36
-* Bit4 = room 37
-* Bit5 = room 38
-* Bit6 = room 39
-* Bit7 = room 40
-
-### _Rooms Available In Mission Group 6_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd19c** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 41
-* Bit1 = room 42
-* Bit2 = room 43
-* Bit3 = room 44
-* Bit4 = room 45
-* Bit5 = room 46
-* Bit6 = room 47
-* Bit7 = room 48
-
-### _Rooms Available In Mission Group 7_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd19d** (8-bit)
-
-Notes: These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
-
-0 = room not visited<br>
-1 = room visited
-
-* Bit0 = room 49
-* Bit1 = room 50
-* Bit2 = room 51
-* Bit3 = room 52
-* Bit4 = room 53
-* Bit5 = room 54
-* Bit6 = room 55
-* Bit7 = room 56
-
-### _Password Menu Letter Selector X_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e2** (8-bit)
-
-Notes: X coordinate of cursor in password letter selection menu
-
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
-* 0x03 = 3
-* 0x04 = 4
-* 0x05 = 5
-* 0x06 = 6
-* 0x07 = 7
-
-### _Password Menu Letter Selector Y_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e3** (8-bit)
-
-Notes: Y coordinate of cursor in password letter selection menu
-
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
-* 0x03 = 3
-
-### _Select Menu Option_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e5** (8-bit)
-
-* 0x00 = information (default, resets on open)
-* 0x01 = enter password
-* 0x02 = control pad
-* 0x03 = response
-
-### _Language_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e6** (8-bit)
-
-* 0x00 = ENGLISH
-* 0x03 = FRANCAIS
-* 0x06 = NEDERLANDS
-* 0x09 = ITALIANO
-* 0x0c = ESPANOL
-* 0x0f = DEUTCH
-
-### _Control Pad Setting_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e7** (8-bit)
-
-* 0x10 = A
-* 0x00 = B
-
-### _Information Menu Selector X_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3e9** (8-bit)
-
-Notes: X coordinate of cursor in the information selection menu
-
-* 0x00 = 0
-* 0x03 = 2
-* 0x06 = 3
-* 0x09 = 4
-* 0x0c = 5
-* 0x0f = 6
-* 0x12 = 7
-
-### _Information Menu Selector Y_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3ea** (8-bit)
-
-Notes: Y coordinate of cursor in the information selection menu
-
-* 0x04 = 1
-* 0x08 = 2
-
-### _Password Length_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3ef** (8-bit)
-
-* 0x00 = 0
-* 0x01 = 1
-* 0x02 = 2
-* 0x03 = 3
-* 0x04 = 4
-* 0x05 = 5
-* 0x06 = 6
-* 0x07 = 7
-* 0x08 = 8
-
-### _Password Character 1_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f0** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 2_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f1** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 3_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f2** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 4_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f3** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 5_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f4** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 6_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f5** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 7_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f6** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Password Character 8_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd3f7** (8-bit)
-
-* 0x00 = 1
-* 0x01 = 2
-* 0x02 = 3
-* 0x03 = 4
-* 0x04 = 5
-* 0x05 = 6
-* 0x06 = 7
-* 0x07 = 8
-* 0x08 = 9
-* 0x09 = B
-* 0x0a = D
-* 0x0b = G
-* 0x0c = H
-* 0x0d = J
-* 0x0e = K
-* 0x0f = L
-* 0x10 = M
-* 0x11 = N
-* 0x12 = P
-* 0x13 = Q
-* 0x14 = R
-* 0x15 = T
-* 0x16 = V
-* 0x17 = W
-* 0x18 = X
-* 0x19 = Y
-* 0x1a = Z
-* 0x1b = #
-* 0x1c = !
-* 0x1d = *
-* 0x1e = -
-* 0x1f = ?
-* 0xff = \<blank\>
-
-### _Mission Bonus Credits_
-
-<sub>[Back to navigation](#code-notes-navigation)</sub>
-
-**0xd402** (16-bit)
-
-* 0x0000 = 0
-* 0x0001 = 1
-* 0x0002 = 2
-* ...
-* 0xffff = 65535
-
+Bit0 = room 49
+Bit1 = room 50
+Bit2 = room 51
+Bit3 = room 52
+Bit4 = room 53
+Bit5 = room 54
+Bit6 = room 55
+Bit7 = room 56
+```
+### Code Note 0x00d197
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 1
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 1
+Bit1 = room 2
+Bit2 = room 3
+Bit3 = room 4
+Bit4 = room 5
+Bit5 = room 6
+Bit6 = room 7
+Bit7 = room 8
+```
+### Code Note 0x00d198
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 2
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 9
+Bit1 = room 10
+Bit2 = room 11
+Bit3 = room 12
+Bit4 = room 13
+Bit5 = room 14
+Bit6 = room 15
+Bit7 = room 16
+```
+### Code Note 0x00d199
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 3
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 17
+Bit1 = room 18
+Bit2 = room 19
+Bit3 = room 20
+Bit4 = room 21
+Bit5 = room 22
+Bit6 = room 23
+Bit7 = room 24
+```
+### Code Note 0x00d19a
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 4
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 25
+Bit1 = room 26
+Bit2 = room 27
+Bit3 = room 28
+Bit4 = room 29
+Bit5 = room 30
+Bit6 = room 31
+Bit7 = room 32
+```
+### Code Note 0x00d19b
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 5
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 33
+Bit1 = room 34
+Bit2 = room 35
+Bit3 = room 36
+Bit4 = room 37
+Bit5 = room 38
+Bit6 = room 39
+Bit7 = room 40
+```
+### Code Note 0x00d19c
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 6
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 41
+Bit1 = room 42
+Bit2 = room 43
+Bit3 = room 44
+Bit4 = room 45
+Bit5 = room 46
+Bit6 = room 47
+Bit7 = room 48
+```
+### Code Note 0x00d19d
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Rooms Available In Mission Group 7
+
+These act as a count of rooms in the mission, the start menu map group flag address's (0xd190 - 0xd196) should build up to the shape of available rooms in the mission (0xd197 - 0xd19d)
+
+0 = room not available
+1 = room available
+
+Bit0 = room 49
+Bit1 = room 50
+Bit2 = room 51
+Bit3 = room 52
+Bit4 = room 53
+Bit5 = room 54
+Bit6 = room 55
+Bit7 = room 56
+```
+### Code Note 0x00d3e2
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Menu Letter Selector X
+
+X coordinate of cursor in password letter selection menu
+
+0x00 = 0
+0x01 = 1
+0x02 = 2
+0x03 = 3
+0x04 = 4
+0x05 = 5
+0x06 = 6
+0x07 = 7
+```
+### Code Note 0x00d3e3
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Menu Letter Selector Y
+
+Y coordinate of cursor in password letter selection menu
+
+0x00 = 0
+0x01 = 1
+0x02 = 2
+0x03 = 3
+```
+### Code Note 0x00d3e5
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Select Menu Option
+
+0x00 = information (default, resets on open)
+0x01 = enter password
+0x02 = control pad
+0x03 = response
+```
+### Code Note 0x00d3e6
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Language
+
+0x00 = ENGLISH
+0x03 = FRANCAIS
+0x06 = NEDERLANDS
+0x09 = ITALIANO
+0x0c = ESPANOL
+0x0f = DEUTCH
+```
+### Code Note 0x00d3e7
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Control Pad Setting
+
+0x10 = A
+0x00 = B
+```
+### Code Note 0x00d3e9
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Information Menu Selector X
+
+X coordinate of cursor in the information selection menu
+
+0x00 = 0
+0x03 = 2
+0x06 = 3
+0x09 = 4
+0x0c = 5
+0x0f = 6
+0x12 = 7
+```
+### Code Note 0x00d3ea
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Information Menu Selector Y
+
+Y coordinate of cursor in the information selection menu
+
+0x04 = 1
+0x08 = 2
+```
+### Code Note 0x00d3ef
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Length
+
+0x00 = 0
+0x01 = 1
+0x02 = 2
+0x03 = 3
+0x04 = 4
+0x05 = 5
+0x06 = 6
+0x07 = 7
+0x08 = 8
+```
+### Code Note 0x00d3f0
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 1
+
+0x00 = 1
+0x01 = 2
+0x02 = 3
+0x03 = 4
+0x04 = 5
+0x05 = 6
+0x06 = 7
+0x07 = 8
+0x08 = 9
+0x09 = B
+0x0a = D
+0x0b = G
+0x0c = H
+0x0d = J
+0x0e = K
+0x0f = L
+0x10 = M
+0x11 = N
+0x12 = P
+0x13 = Q
+0x14 = R
+0x15 = T
+0x16 = V
+0x17 = W
+0x18 = X
+0x19 = Y
+0x1a = Z
+0x1b = #
+0x1c = !
+0x1d = *
+0x1e = -
+0x1f = ?
+0xff = <blank>
+```
+### Code Note 0x00d3f1
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 2
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f2
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 3
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f3
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 4
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f4
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 5
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f5
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 6
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f6
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 7
+
+(see 0xd3f0)
+```
+### Code Note 0x00d3f7
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[8-bit] Password Character 8
+
+(see 0xd3f0)
+```
+### Code Note 0x00d402
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)<br>
+```txt
+[16-bit] Mission Bonus Credits
+
+0x0000 = 0
+0x0001 = 1
+0x0002 = 2
+...
+0xffff = 65535
+```
 ## Achievements
-
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
-
-### Achievements navigation
-
-1. [Play Pen](#play-pen)
-2. [Big Brain](#big-brain)
-3. [Street Smarts](#street-smarts)
-4. [Ice Queen](#ice-queen)
-5. [Cold as Ice](#cold-as-ice)
-6. [Erase the Alchemist](#erase-the-alchemist)
-7. [The Scientist](#the-scientist)
-8. [The Journey Begins](#the-journey-begins)
-9. [Blind the Enemy](#blind-the-enemy)
-10. [Eye of the Tiger](#eye-of-the-tiger)
-11. [Secret Codex](#secret-codex)
-12. [Lyrical Analysis](#lyrical-analysis)
-13. [Liftoff](#liftoff)
-14. [Soar to the Top of the Charts](#soar-to-the-top-of-the-charts)
-15. [Double the Trouble](#double-the-trouble)
-16. [Illuminate the Way](#illuminate-the-way)
-17. [Kick Out the Stage Lights](#kick-out-the-stage-lights)
-18. [Circuit Breaker](#circuit-breaker)
-19. [Overdrive](#overdrive)
-20. [Startup Funds](#startup-funds)
-21. [Sold Out Concert](#sold-out-concert)
-22. [It's a Long Way to the Top](#its-a-long-way-to-the-top)
-23. [Time Keeper](#time-keeper)
-24. [It's Show Time!](#its-show-time)
-25. [Food Poisoning](#food-poisoning)
-26. [Rock and McRoll](#rock-and-mcroll)
-27. [Command an Army](#command-an-army)
-28. [The King of Rock](#the-king-of-rock)
-29. [Don't Stop Believin'](#dont-stop-believin)
-30. [Ghost Ship](#ghost-ship)
-31. [Rock the Boat](#rock-the-boat)
-32. [Talk to the Dead](#talk-to-the-dead)
-33. [Fortune Teller](#fortune-teller)
-34. [Keeping Warm](#keeping-warm)
-35. [Through the Fire and Flames](#through-the-fire-and-flames)
-36. [Just Move On Up](#just-move-on-up)
-37. [In Safe Hands](#in-safe-hands)
-38. [The Unreleased Album](#the-unreleased-album)
-39. [Enchantment](#enchantment)
-40. [THE CONCOCTION](#the-concoction)
-41. [Cursed Gem](#cursed-gem)
-42. [Bejeweled](#bejeweled)
-43. [Takin' Care of Business](#takin-care-of-business)
-44. [POP!](#pop)
-45. [Have a Drink on Me](#have-a-drink-on-me)
-46. [Waiting for a Call](#waiting-for-a-call)
-47. [Off the Hook](#off-the-hook)
-48. [S.O.S](#sos)
-49. [Message in a Bottle](#message-in-a-bottle)
-50. [Stairway to Heaven](#stairway-to-heaven)
-51. [K9 Companion](#k9-companion)
-52. [Who Let the Dogs Out?](#who-let-the-dogs-out)
-53. [Fast Getaway](#fast-getaway)
-54. [Rock You like a Hurricane](#rock-you-like-a-hurricane)
-55. [Piece of Cake](#piece-of-cake)
-56. [Fight for Your Right to Party](#fight-for-your-right-to-party)
-57. [A Rising Star](#a-rising-star)
-58. [Hacking the Mainframe](#hacking-the-mainframe)
-59. [Technologic](#technologic)
-60. [Infestation](#infestation)
-61. [Squash Those Beetles](#squash-those-beetles)
-62. [Home Sweet Home](#home-sweet-home)
-63. [Mansion Tour](#mansion-tour)
-64. [School's Out!](#schools-out)
-65. [King Krond](#king-krond)
-66. [Speedy](#speedy)
-67. [Jump to the Rescue](#jump-to-the-rescue)
-68. [Invincible](#invincible)
-69. [I'm the Map](#im-the-map)
-
-### [Play Pen](https://retroachievements.org/achievement/459884)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **2**
-
-![play pen](badges/PlayPen.png "Play Pen")
-
+### Achievements Navigation
+1. [Play Pen (Achievement 459884)](#achievement-459884)
+2. [Big Brain (Achievement 459885)](#achievement-459885)
+3. [Street Smarts (Achievement 459886)](#achievement-459886)
+4. [Ice Queen (Achievement 459887)](#achievement-459887)
+5. [Cold as Ice (Achievement 459888)](#achievement-459888)
+6. [Erase the Alchemist (Achievement 459889)](#achievement-459889)
+7. [The Scientist (Achievement 459890)](#achievement-459890)
+8. [The Journey Begins (Achievement 459891)](#achievement-459891)
+9. [Blind the Enemy (Achievement 459892)](#achievement-459892)
+10. [Eye of the Tiger (Achievement 459893)](#achievement-459893)
+11. [Secret Codex (Achievement 459894)](#achievement-459894)
+12. [Lyrical Analysis (Achievement 459895)](#achievement-459895)
+13. [Liftoff (Achievement 459896)](#achievement-459896)
+14. [Soar to the Top of the Charts (Achievement 459897)](#achievement-459897)
+15. [Double the Trouble (Achievement 459898)](#achievement-459898)
+16. [Illuminate the Way (Achievement 459899)](#achievement-459899)
+17. [Kick Out the Stage Lights (Achievement 459900)](#achievement-459900)
+18. [Circuit Breaker (Achievement 459901)](#achievement-459901)
+19. [Overdrive (Achievement 459902)](#achievement-459902)
+20. [Startup Funds (Achievement 459903)](#achievement-459903)
+21. [Sold Out Concert (Achievement 459904)](#achievement-459904)
+22. [It's a Long Way to the Top (Achievement 459905)](#achievement-459905)
+23. [Time Keeper (Achievement 459906)](#achievement-459906)
+24. [It's Show Time! (Achievement 459907)](#achievement-459907)
+25. [Food Poisoning (Achievement 459908)](#achievement-459908)
+26. [Rock and McRoll (Achievement 459909)](#achievement-459909)
+27. [Command an Army (Achievement 459910)](#achievement-459910)
+28. [The King of Rock (Achievement 459911)](#achievement-459911)
+29. [Don't Stop Believin' (Achievement 459912)](#achievement-459912)
+30. [Ghost Ship (Achievement 459913)](#achievement-459913)
+31. [Rock the Boat (Achievement 459914)](#achievement-459914)
+32. [Talk to the Dead (Achievement 459915)](#achievement-459915)
+33. [Fortune Teller (Achievement 459916)](#achievement-459916)
+34. [Keeping Warm (Achievement 459917)](#achievement-459917)
+35. [Through the Fire and Flames (Achievement 459918)](#achievement-459918)
+36. [Just Move On Up (Achievement 459919)](#achievement-459919)
+37. [In Safe Hands (Achievement 459920)](#achievement-459920)
+38. [The Unreleased Album (Achievement 459921)](#achievement-459921)
+39. [Enchantment (Achievement 459922)](#achievement-459922)
+40. [THE CONCOCTION (Achievement 459923)](#achievement-459923)
+41. [Cursed Gem (Achievement 459924)](#achievement-459924)
+42. [Bejeweled (Achievement 459925)](#achievement-459925)
+43. [Takin' Care of Business (Achievement 459926)](#achievement-459926)
+44. [POP! (Achievement 459927)](#achievement-459927)
+45. [Have a Drink on Me (Achievement 459928)](#achievement-459928)
+46. [Waiting for a Call (Achievement 459929)](#achievement-459929)
+47. [Off the Hook (Achievement 459930)](#achievement-459930)
+48. [S.O.S (Achievement 459931)](#achievement-459931)
+49. [Message in a Bottle (Achievement 459932)](#achievement-459932)
+50. [Stairway to Heaven (Achievement 459933)](#achievement-459933)
+51. [K9 Companion (Achievement 459934)](#achievement-459934)
+52. [Who Let the Dogs Out? (Achievement 459935)](#achievement-459935)
+53. [Fast Getaway (Achievement 459936)](#achievement-459936)
+54. [Rock You like a Hurricane (Achievement 459937)](#achievement-459937)
+55. [Piece of Cake (Achievement 459938)](#achievement-459938)
+56. [Fight for Your Right to Party (Achievement 459939)](#achievement-459939)
+57. [A Rising Star (Achievement 459940)](#achievement-459940)
+58. [Hacking the Mainframe (Achievement 459941)](#achievement-459941)
+59. [Technologic (Achievement 459942)](#achievement-459942)
+60. [Infestation (Achievement 459943)](#achievement-459943)
+61. [Squash Those Beetles (Achievement 459944)](#achievement-459944)
+62. [Home Sweet Home (Achievement 459945)](#achievement-459945)
+63. [Mansion Tour (Achievement 459946)](#achievement-459946)
+64. [School's Out! (Achievement 459947)](#achievement-459947)
+65. [King Krond (Achievement 459948)](#achievement-459948)
+66. [Speedy (Achievement 459950)](#achievement-459950)
+67. [Jump to the Rescue (Achievement 459951)](#achievement-459951)
+68. [Invincible (Achievement 459952)](#achievement-459952)
+69. [I'm the Map (Achievement 459953)](#achievement-459953)
+### [Achievement 459884](https://retroachievements.org/achievement/459884)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Play Pen**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **2**
+<br>![Play Pen](badges/520616.png)<br>
 Beat the play pen tutorial
-
-Conditions:
-1. Play pen mission marked complete, and no other mission status' changed
-
-### [Big Brain](https://retroachievements.org/achievement/459885)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level1mission1](badges/Level1Mission1.png "Level 1 Mission 1")
-
+### [Achievement 459885](https://retroachievements.org/achievement/459885)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Big Brain**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Big Brain](badges/520617.png)<br>
 Destroy the mind and complete Level 1 Mission 1
-
-Conditions:
-1. Level 1 Mission 1 marked complete, and no other mission status' changed
-
-### [Street Smarts](https://retroachievements.org/achievement/459886)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level1mission1challenge](badges/Level1Mission1Challenge.png "Level 1 Mission 1 Challenge")
-
+### [Achievement 459886](https://retroachievements.org/achievement/459886)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Street Smarts**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Street Smarts](badges/520618.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 1 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 1 Mission 1
-2. Level 1 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Ice Queen](https://retroachievements.org/achievement/459887)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level1mission2](badges/Level1Mission2.png "Level 1 Mission 2")
-
+### [Achievement 459887](https://retroachievements.org/achievement/459887)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Ice Queen**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Ice Queen](badges/520619.png)<br>
 Steal the Ice Queen's crown and complete Level 1 Mission 2
-
-Conditions:
-1. Level 1 Mission 2 marked complete, and no other mission status' changed
-
-### [Cold as Ice](https://retroachievements.org/achievement/459888)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level1mission2challenge](badges/Level1Mission2Challenge.png "Level 1 Mission 2 Challenge")
-
+### [Achievement 459888](https://retroachievements.org/achievement/459888)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Cold as Ice**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Cold as Ice](badges/520620.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 1 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 1 Mission 2
-2. Level 1 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-
-### [Erase the Alchemist](https://retroachievements.org/achievement/459889)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level1mission3](badges/Level1Mission3.png "Level 1 Mission 3")
-
+### [Achievement 459889](https://retroachievements.org/achievement/459889)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Erase the Alchemist**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Erase the Alchemist](badges/520621.png)<br>
 Destroy the alchemist and complete Level 1 Mission 3
-
-Conditions:
-1. Level 1 Mission 3 marked complete, and no other mission status' changed
-
-### [The Scientist](https://retroachievements.org/achievement/459890)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level1mission3challenge](badges/Level1Mission3Challenge.png "Level 1 Mission 3 Challenge")
-
+### [Achievement 459890](https://retroachievements.org/achievement/459890)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **The Scientist**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![The Scientist](badges/520622.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 1 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 1 Mission 3
-2. Level 1 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [The Journey Begins](https://retroachievements.org/achievement/459891)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel1](badges/Level1.png "Complete Level 1")
-
+### [Achievement 459891](https://retroachievements.org/achievement/459891)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **The Journey Begins**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![The Journey Begins](badges/549135.png)<br>
 Buy the lift pass for level 2 without using passwords, or if using passwords complete any two missions on level 1 before buying the lift pass for level 2
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 1->2 pass
-
-Reset When:
-1. Password menu opened
-
-### [Blind the Enemy](https://retroachievements.org/achievement/459892)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level2mission1](badges/Level2Mission1.png "Level 2 Mission 1")
-
+### [Achievement 459892](https://retroachievements.org/achievement/459892)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Blind the Enemy**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Blind the Enemy](badges/520624.png)<br>
 Destroy the all seeing eye and complete Level 2 Mission 1
-
-Conditions:
-1. Level 2 Mission 1 marked complete, and no other mission status' changed
-
-### [Eye of the Tiger](https://retroachievements.org/achievement/459893)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level2mission1challenge](badges/Level2Mission1Challenge.png "Level 2 Mission 1 Challenge")
-
+### [Achievement 459893](https://retroachievements.org/achievement/459893)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Eye of the Tiger**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Eye of the Tiger](badges/520625.png)<br>
 Without taking damage, collect 1 heart and 2 stars and complete Level 2 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 2 Mission 1
-2. Level 2 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 2 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Secret Codex](https://retroachievements.org/achievement/459894)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level2mission2](badges/Level2Mission2.png "Level 2 Mission 2")
-
+### [Achievement 459894](https://retroachievements.org/achievement/459894)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Secret Codex**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Secret Codex](badges/520626.png)<br>
 Read the secret code and complete Level 2 Mission 2
-
-Conditions:
-1. Level 2 Mission 2 marked complete, and no other mission status' changed
-
-### [Lyrical Analysis](https://retroachievements.org/achievement/459895)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level2mission2challenge](badges/Level2Mission2Challenge.png "Level 2 Mission 2 Challenge")
-
+### [Achievement 459895](https://retroachievements.org/achievement/459895)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Lyrical Analysis**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Lyrical Analysis](badges/520627.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 2 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 2 Mission 2
-2. Level 2 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Liftoff](https://retroachievements.org/achievement/459896)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level2mission3](badges/Level2Mission3.png "Level 2 Mission 3")
-
+### [Achievement 459896](https://retroachievements.org/achievement/459896)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Liftoff**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Liftoff](badges/520628.png)<br>
 Launch the self destructing rocket and complete Level 2 Mission 3
-
-Conditions:
-1. Level 2 Mission 3 marked complete, and no other mission status' changed
-
-### [Soar to the Top of the Charts](https://retroachievements.org/achievement/459897)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level2mission3challenge](badges/Level2Mission3Challenge.png "Level 2 Mission 3 Challenge")
-
+### [Achievement 459897](https://retroachievements.org/achievement/459897)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Soar to the Top of the Charts**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Soar to the Top of the Charts](badges/520629.png)<br>
 Without taking damage, collect 1 heart and complete Level 2 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 2 Mission 3
-2. Level 2 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Double the Trouble](https://retroachievements.org/achievement/459898)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel2](badges/Level2.png "Complete Level 2")
-
+### [Achievement 459898](https://retroachievements.org/achievement/459898)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Double the Trouble**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![Double the Trouble](badges/520623.png)<br>
 Buy the lift pass for level 3 without using passwords, or if using passwords complete any two missions on level 2 before buying the lift pass for level 3
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 2->3 pass
-
-Reset When:
-1. Password menu opened
-
-### [Illuminate the Way](https://retroachievements.org/achievement/459899)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level3mission1](badges/Level3Mission1.png "Level 3 Mission 1")
-
+### [Achievement 459899](https://retroachievements.org/achievement/459899)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Illuminate the Way**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Illuminate the Way](badges/520631.png)<br>
 Find the flashlight and complete Level 3 Mission 1
-
-Conditions:
-1. Level 3 Mission 1 marked complete, and no other mission status' changed
-
-### [Kick Out the Stage Lights](https://retroachievements.org/achievement/459900)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level3mission1challenge](badges/Level3Mission1Challenge.png "Level 3 Mission 1 Challenge")
-
+### [Achievement 459900](https://retroachievements.org/achievement/459900)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Kick Out the Stage Lights**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Kick Out the Stage Lights](badges/520632.png)<br>
 Without taking damage, collect 1 heart and 2 stars and complete Level 3 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 3 Mission 1
-2. Level 3 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 2 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Circuit Breaker](https://retroachievements.org/achievement/459901)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level3mission2](badges/Level3Mission2.png "Level 3 Mission 2")
-
+### [Achievement 459901](https://retroachievements.org/achievement/459901)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Circuit Breaker**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Circuit Breaker](badges/520633.png)<br>
 Find the electrical control box and complete Level 3 Mission 2
-
-Conditions:
-1. Level 3 Mission 2 marked complete, and no other mission status' changed
-
-### [Overdrive](https://retroachievements.org/achievement/459902)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level3mission2challenge](badges/Level3Mission2Challenge.png "Level 3 Mission 2 Challenge")
-
+### [Achievement 459902](https://retroachievements.org/achievement/459902)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Overdrive**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Overdrive](badges/520634.png)<br>
 Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 3 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 3 Mission 2
-2. Level 3 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Startup Funds](https://retroachievements.org/achievement/459903)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level3mission3](badges/Level3Mission3.png "Level 3 Mission 3")
-
+### [Achievement 459903](https://retroachievements.org/achievement/459903)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Startup Funds**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Startup Funds](badges/520635.png)<br>
 Search for the piggy bank and complete Level 3 Mission 3
-
-Conditions:
-1. Level 3 Mission 3 marked complete, and no other mission status' changed
-
-### [Sold Out Concert](https://retroachievements.org/achievement/459904)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level3mission3challenge](badges/Level3Mission3Challenge.png "Level 3 Mission 3 Challenge")
-
+### [Achievement 459904](https://retroachievements.org/achievement/459904)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Sold Out Concert**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Sold Out Concert](badges/520636.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 2 stars and complete Level 3 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 3 Mission 3
-2. Level 3 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 2 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [It's a Long Way to the Top](https://retroachievements.org/achievement/459905)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel3](badges/Level3.png "Complete Level 3")
-
+### [Achievement 459905](https://retroachievements.org/achievement/459905)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **It's a Long Way to the Top**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![It's a Long Way to the Top](badges/520630.png)<br>
 Buy the lift pass for level 4 without using passwords, or if using passwords complete any two missions on level 3 before buying the lift pass for level 4
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 3->4 pass
-
-Reset When:
-1. Password menu opened
-
-### [Time Keeper](https://retroachievements.org/achievement/459906)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level4mission1](badges/Level4Mission1.png "Level 4 Mission 1")
-
+### [Achievement 459906](https://retroachievements.org/achievement/459906)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Time Keeper**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Time Keeper](badges/520638.png)<br>
 Collect the pocketwatch and complete Level 4 Mission 1
-
-Conditions:
-1. Level 4 Mission 1 marked complete, and no other mission status' changed
-
-### [It's Show Time!](https://retroachievements.org/achievement/459907)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level4mission1challenge](badges/Level4Mission1Challenge.png "Level 4 Mission 1 Challenge")
-
+### [Achievement 459907](https://retroachievements.org/achievement/459907)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **It's Show Time!**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![It's Show Time!](badges/520639.png)<br>
 Without taking damage, collect 1 heart and 1 gold bullion and complete Level 4 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 4 Mission 1
-2. Level 4 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 1 gold bullion in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Food Poisoning](https://retroachievements.org/achievement/459908)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level4mission2](badges/Level4Mission2.png "Level 4 Mission 2")
-
+### [Achievement 459908](https://retroachievements.org/achievement/459908)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Food Poisoning**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Food Poisoning](badges/520640.png)<br>
 Get rid of the poisoned food and complete Level 4 Mission 2
-
-Conditions:
-1. Level 4 Mission 2 marked complete, and no other mission status' changed
-
-### [Rock and McRoll](https://retroachievements.org/achievement/459909)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level4mission2challenge](badges/Level4Mission2Challenge.png "Level 4 Mission 2 Challenge")
-
+### [Achievement 459909](https://retroachievements.org/achievement/459909)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Rock and McRoll**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Rock and McRoll](badges/520641.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 4 Mission 2
-2. Level 4 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion, and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Command an Army](https://retroachievements.org/achievement/459910)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level4mission3](badges/Level4Mission3.png "Level 4 Mission 3")
-
+### [Achievement 459910](https://retroachievements.org/achievement/459910)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Command an Army**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Command an Army](badges/520642.png)<br>
 Earn the crown of attack and complete Level 4 Mission 3
-
-Conditions:
-1. Level 4 Mission 3 marked complete, and no other mission status' changed
-
-### [The King of Rock](https://retroachievements.org/achievement/459911)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level4mission3challenge](badges/Level4Mission3Challenge.png "Level 4 Mission 3 Challenge")
-
+### [Achievement 459911](https://retroachievements.org/achievement/459911)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **The King of Rock**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![The King of Rock](badges/520643.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 1 star and complete Level 4 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 4 Mission 3
-2. Level 4 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion, and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Don't Stop Believin'](https://retroachievements.org/achievement/459912)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel4](badges/Level4.png "Complete Level 4")
-
+### [Achievement 459912](https://retroachievements.org/achievement/459912)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Don't Stop Believin'**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![Don't Stop Believin'](badges/520637.png)<br>
 Buy the lift pass for level 5 without using passwords, or if using passwords complete any two missions on level 4 before buying the lift pass for level 5
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 4->5 pass
-
-Reset When:
-1. Password menu opened
-
-### [Ghost Ship](https://retroachievements.org/achievement/459913)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level5mission1](badges/Level5Mission1.png "Level 5 Mission 1")
-
+### [Achievement 459913](https://retroachievements.org/achievement/459913)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Ghost Ship**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Ghost Ship](badges/520645.png)<br>
 Take the ghost ship wood log and complete Level 5 Mission 1
-
-Conditions:
-1. Level 5 Mission 1 marked complete, and no other mission status' changed
-
-### [Rock the Boat](https://retroachievements.org/achievement/459914)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level5mission1challenge](badges/Level5Mission1Challenge.png "Level 5 Mission 1 Challenge")
-
+### [Achievement 459914](https://retroachievements.org/achievement/459914)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Rock the Boat**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Rock the Boat](badges/520646.png)<br>
 Without taking damage, collect 1 heart, 2 gold bullions and 1 star and complete Level 5 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 5 Mission 1
-2. Level 5 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions, and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Talk to the Dead](https://retroachievements.org/achievement/459915)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level5mission2](badges/Level5Mission2.png "Level 5 Mission 2")
-
+### [Achievement 459915](https://retroachievements.org/achievement/459915)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Talk to the Dead**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Talk to the Dead](badges/520647.png)<br>
 Collect the crystal ball and complete Level 5 Mission 2
-
-Conditions:
-1. Level 5 Mission 2 marked complete, and no other mission status' changed
-
-### [Fortune Teller](https://retroachievements.org/achievement/459916)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level5mission2challenge](badges/Level5Mission2Challenge.png "Level 5 Mission 2 Challenge")
-
+### [Achievement 459916](https://retroachievements.org/achievement/459916)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Fortune Teller**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Fortune Teller](badges/520648.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 5 Mission 2
-2. Level 5 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Keeping Warm](https://retroachievements.org/achievement/459917)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level5mission3](badges/Level5Mission3.png "Level 5 Mission 3")
-
+### [Achievement 459917](https://retroachievements.org/achievement/459917)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Keeping Warm**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Keeping Warm](badges/520649.png)<br>
 Use the wood stove and complete Level 5 Mission 3
-
-Conditions:
-1. Level 5 Mission 3 marked complete, and no other mission status' changed
-
-### [Through the Fire and Flames](https://retroachievements.org/achievement/459918)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level5mission3challenge](badges/Level5Mission3Challenge.png "Level 5 Mission 3 Challenge")
-
+### [Achievement 459918](https://retroachievements.org/achievement/459918)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Through the Fire and Flames**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Through the Fire and Flames](badges/520650.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 5 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 5 Mission 3
-2. Level 5 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Just Move On Up](https://retroachievements.org/achievement/459919)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel5](badges/Level5.png "Complete Level 5")
-
+### [Achievement 459919](https://retroachievements.org/achievement/459919)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Just Move On Up**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![Just Move On Up](badges/520644.png)<br>
 Buy the lift pass for level 6 without using passwords, or if using passwords complete any two missions on level 5 before buying the lift pass for level 6
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 5->6 pass
-
-Reset When:
-1. Password menu opened
-
-### [In Safe Hands](https://retroachievements.org/achievement/459920)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level6mission1](badges/Level6Mission1.png "Level 6 Mission 1")
-
+### [Achievement 459920](https://retroachievements.org/achievement/459920)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **In Safe Hands**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![In Safe Hands](badges/520652.png)<br>
 Return the safe and complete Level 6 Mission 1
-
-Conditions:
-1. Level 6 Mission 1 marked complete, and no other mission status' changed
-
-### [The Unreleased Album](https://retroachievements.org/achievement/459921)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level6mission1challenge](badges/Level6Mission1Challenge.png "Level 6 Mission 1 Challenge")
-
+### [Achievement 459921](https://retroachievements.org/achievement/459921)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **The Unreleased Album**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![The Unreleased Album](badges/520653.png)<br>
 Without taking damage, collect 1 gold bullion and complete Level 6 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 6 Mission 1
-2. Level 6 Mission 1 marked complete, and no other mission status' changed AND player collected 1 gold bullion in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Enchantment](https://retroachievements.org/achievement/459922)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level6mission2](badges/Level6Mission2.png "Level 6 Mission 2")
-
+### [Achievement 459922](https://retroachievements.org/achievement/459922)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Enchantment**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Enchantment](badges/520654.png)<br>
 Smash the potion vial and complete Level 6 Mission 2
-
-Conditions:
-1. Level 6 Mission 2 marked complete, and no other mission status' changed
-
-### [THE CONCOCTION](https://retroachievements.org/achievement/459923)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level6mission2challenge](badges/Level6Mission2Challenge.png "Level 6 Mission 2 Challenge")
-
+### [Achievement 459923](https://retroachievements.org/achievement/459923)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **THE CONCOCTION**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![THE CONCOCTION](badges/520655.png)<br>
 Without taking damage, collect 1 heart and complete Level 6 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 6 Mission 2
-2. Level 6 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Cursed Gem](https://retroachievements.org/achievement/459924)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level6mission3](badges/Level6Mission3.png "Level 6 Mission 3")
-
+### [Achievement 459924](https://retroachievements.org/achievement/459924)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Cursed Gem**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Cursed Gem](badges/520656.png)<br>
 Destroy the dark jewel and complete Level 6 Mission 3
-
-Conditions:
-1. Level 6 Mission 3 marked complete, and no other mission status' changed
-
-### [Bejeweled](https://retroachievements.org/achievement/459925)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level6mission3challenge](badges/Level6Mission3Challenge.png "Level 6 Mission 3 Challenge")
-
+### [Achievement 459925](https://retroachievements.org/achievement/459925)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Bejeweled**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Bejeweled](badges/520657.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 6 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 6 Mission 3
-2. Level 6 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Takin' Care of Business](https://retroachievements.org/achievement/459926)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel6](badges/Level6.png "Complete Level 6")
-
+### [Achievement 459926](https://retroachievements.org/achievement/459926)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Takin' Care of Business**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![Takin' Care of Business](badges/520651.png)<br>
 Buy the lift pass for level 7 without using passwords, or if using passwords complete any two missions on level 6 before buying the lift pass for level 7
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 6->7 pass
-
-Reset When:
-1. Password menu opened
-
-### [POP!](https://retroachievements.org/achievement/459927)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level7mission1](badges/Level7Mission1.png "Level 7 Mission 1")
-
+### [Achievement 459927](https://retroachievements.org/achievement/459927)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **POP!**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![POP!](badges/520659.png)<br>
 Earn the fizzy soda prize and complete Level 7 Mission 1
-
-Conditions:
-1. Level 7 Mission 1 marked complete, and no other mission status' changed
-
-### [Have a Drink on Me](https://retroachievements.org/achievement/459928)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level7mission1challenge](badges/Level7Mission1Challenge.png "Level 7 Mission 1 Challenge")
-
+### [Achievement 459928](https://retroachievements.org/achievement/459928)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Have a Drink on Me**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Have a Drink on Me](badges/520660.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 4 stars and complete Level 7 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 7 Mission 1
-2. Level 7 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 4 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Waiting for a Call](https://retroachievements.org/achievement/459929)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level7mission2](badges/Level7Mission2.png "Level 7 Mission 2")
-
+### [Achievement 459929](https://retroachievements.org/achievement/459929)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Waiting for a Call**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Waiting for a Call](badges/520661.png)<br>
 Collect the phone and complete Level 7 Mission 2
-
-Conditions:
-1. Level 7 Mission 2 marked complete, and no other mission status' changed
-
-### [Off the Hook](https://retroachievements.org/achievement/459930)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level7mission2challenge](badges/Level7Mission2Challenge.png "Level 7 Mission 2 Challenge")
-
+### [Achievement 459930](https://retroachievements.org/achievement/459930)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Off the Hook**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Off the Hook](badges/520662.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 3 stars and complete Level 7 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 7 Mission 2
-2. Level 7 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [S.O.S](https://retroachievements.org/achievement/459931)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level7mission3](badges/Level7Mission3.png "Level 7 Mission 3")
-
+### [Achievement 459931](https://retroachievements.org/achievement/459931)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **S.O.S**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![S.O.S](badges/520663.png)<br>
 Release the captive voyager and complete Level 7 Mission 3
-
-Conditions:
-1. Level 7 Mission 3 marked complete, and no other mission status' changed
-
-### [Message in a Bottle](https://retroachievements.org/achievement/459932)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level7mission3challenge](badges/Level7Mission3Challenge.png "Level 7 Mission 3 Challenge")
-
+### [Achievement 459932](https://retroachievements.org/achievement/459932)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Message in a Bottle**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Message in a Bottle](badges/520664.png)<br>
 Without taking damage, collect 1 heart and 3 stars and complete Level 7 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 7 Mission 3
-2. Level 7 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Stairway to Heaven](https://retroachievements.org/achievement/459933)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel7](badges/Level7.png "Complete Level 7")
-
+### [Achievement 459933](https://retroachievements.org/achievement/459933)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Stairway to Heaven**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![Stairway to Heaven](badges/520658.png)<br>
 Buy the lift pass for level 8 without using passwords, or if using passwords complete any two missions on level 7 before buying the lift pass for level 8
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 7->8 pass
-
-Reset When:
-1. Password menu opened
-
-### [K9 Companion](https://retroachievements.org/achievement/459934)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level8mission1](badges/Level8Mission1.png "Level 8 Mission 1")
-
+### [Achievement 459934](https://retroachievements.org/achievement/459934)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **K9 Companion**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![K9 Companion](badges/520666.png)<br>
 Rescue the dog and complete Level 8 Mission 1
-
-Conditions:
-1. Level 8 Mission 1 marked complete, and no other mission status' changed
-
-### [Who Let the Dogs Out?](https://retroachievements.org/achievement/459935)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level8mission1challenge](badges/Level8Mission1Challenge.png "Level 8 Mission 1 Challenge")
-
+### [Achievement 459935](https://retroachievements.org/achievement/459935)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Who Let the Dogs Out?**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Who Let the Dogs Out?](badges/520667.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 8 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 8 Mission 1
-2. Level 8 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Fast Getaway](https://retroachievements.org/achievement/459936)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level8mission2](badges/Level8Mission2.png "Level 8 Mission 2")
-
+### [Achievement 459936](https://retroachievements.org/achievement/459936)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Fast Getaway**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Fast Getaway](badges/520668.png)<br>
 Find and flee with the amphora jar and complete Level 8 Mission 2
-
-Conditions:
-1. Level 8 Mission 2 marked complete, and no other mission status' changed
-
-### [Rock You like a Hurricane](https://retroachievements.org/achievement/459937)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level8mission2challenge](badges/Level8Mission2Challenge.png "Level 8 Mission 2 Challenge")
-
+### [Achievement 459937](https://retroachievements.org/achievement/459937)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Rock You like a Hurricane**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Rock You like a Hurricane](badges/520669.png)<br>
 Without taking damage, collect 1 heart and 3 stars and complete Level 8 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 8 Mission 2
-2. Level 8 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Piece of Cake](https://retroachievements.org/achievement/459938)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level8mission3](badges/Level8Mission3.png "Level 8 Mission 3")
-
+### [Achievement 459938](https://retroachievements.org/achievement/459938)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Piece of Cake**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Piece of Cake](badges/520670.png)<br>
 Eat the triple decker cake and complete Level 8 Mission 3
-
-Conditions:
-1. Level 8 Mission 3 marked complete, and no other mission status' changed
-
-### [Fight for Your Right to Party](https://retroachievements.org/achievement/459939)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level8mission3challenge](badges/Level8Mission3Challenge.png "Level 8 Mission 3 Challenge")
-
+### [Achievement 459939](https://retroachievements.org/achievement/459939)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Fight for Your Right to Party**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Fight for Your Right to Party](badges/520671.png)<br>
 Without taking damage, collect 1 heart, 1 gold bullion and 5 stars and complete Level 8 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 8 Mission 3
-2. Level 8 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart, 1 gold bullion and 5 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [A Rising Star](https://retroachievements.org/achievement/459940)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel8](badges/Level8.png "Complete Level 8")
-
+### [Achievement 459940](https://retroachievements.org/achievement/459940)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **A Rising Star**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![A Rising Star](badges/520665.png)<br>
 Buy the lift pass for level 9 without using passwords, or if using passwords complete any two missions on level 8 before buying the lift pass for level 9
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 8->9 pass
-
-Reset When:
-1. Password menu opened
-
-### [Hacking the Mainframe](https://retroachievements.org/achievement/459941)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level9mission1](badges/Level9Mission1.png "Level 9 Mission 1")
-
+### [Achievement 459941](https://retroachievements.org/achievement/459941)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Hacking the Mainframe**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Hacking the Mainframe](badges/520673.png)<br>
 Destroy the computer system and complete Level 9 Mission 1
-
-Conditions:
-1. Level 9 Mission 1 marked complete, and no other mission status' changed
-
-### [Technologic](https://retroachievements.org/achievement/459942)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level9mission1challenge](badges/Level9Mission1Challenge.png "Level 9 Mission 1 Challenge")
-
+### [Achievement 459942](https://retroachievements.org/achievement/459942)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Technologic**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Technologic](badges/520674.png)<br>
 Without taking damage, collect 1 heart and 5 stars and complete Level 9 Mission 1
-
-Conditions:
-1. Go from the lobby to Level 9 Mission 1
-2. Level 9 Mission 1 marked complete, and no other mission status' changed AND player collected 1 heart and 5 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Infestation](https://retroachievements.org/achievement/459943)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level9mission2](badges/Level9Mission2.png "Level 9 Mission 2")
-
+### [Achievement 459943](https://retroachievements.org/achievement/459943)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Infestation**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Infestation](badges/520675.png)<br>
 Smash open the jar of insects and complete Level 9 Mission 2
-
-Conditions:
-1. Level 9 Mission 2 marked complete, and no other mission status' changed
-
-### [Squash Those Beetles](https://retroachievements.org/achievement/459944)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level9mission2challenge](badges/Level9Mission2Challenge.png "Level 9 Mission 2 Challenge")
-
+### [Achievement 459944](https://retroachievements.org/achievement/459944)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Squash Those Beetles**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Squash Those Beetles](badges/520676.png)<br>
 Without taking damage, collect 1 heart, 2 gold bullions and 3 stars and complete Level 9 Mission 2
-
-Conditions:
-1. Go from the lobby to Level 9 Mission 2
-2. Level 9 Mission 2 marked complete, and no other mission status' changed AND player collected 1 heart, 2 gold bullions and 3 stars in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [Home Sweet Home](https://retroachievements.org/achievement/459945)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **5**
-
-![level9mission3](badges/Level9Mission3.png "Level 9 Mission 3")
-
+### [Achievement 459945](https://retroachievements.org/achievement/459945)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Home Sweet Home**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **5**
+<br>![Home Sweet Home](badges/520677.png)<br>
 Find a new home and complete Level 9 Mission 3
-
-Conditions:
-1. Level 9 Mission 3 marked complete, and no other mission status' changed
-
-### [Mansion Tour](https://retroachievements.org/achievement/459946)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Missable**_
-<br>
-Points: **10**
-
-![level9mission3challenge](badges/Level9Mission3Challenge.png "Level 9 Mission 3 Challenge")
-
+### [Achievement 459946](https://retroachievements.org/achievement/459946)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Mansion Tour**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***missable***
+<br>Points: **10**
+<br>![Mansion Tour](badges/520678.png)<br>
 Without taking damage, collect 1 heart and 1 star and complete Level 9 Mission 3
-
-Conditions:
-1. Go from the lobby to Level 9 Mission 3
-2. Level 9 Mission 3 marked complete, and no other mission status' changed AND player collected 1 heart and 1 star in the mission
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-4. Player gets hurt (loses heart or star)
-
-### [School's Out!](https://retroachievements.org/achievement/459947)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Type: _**Progression**_
-<br>
-Points: **10**
-
-![completelevel9](badges/Level9.png "Complete Level 9")
-
-Complete level 9 and buy the lift pass for level 10 without using passwords
-
-Conditions:
-1. Start game with no levels completed
-2. Buy level 9->10 pass
-
-Reset When:
-1. Password menu opened
-
-### [King Krond](https://retroachievements.org/achievement/459948)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **25**
-
-![level10mission1](badges/Level10Mission1.png "Level 10 Mission 1")
-
+### [Achievement 459947](https://retroachievements.org/achievement/459947)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **School's Out!**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***progression***
+<br>Points: **10**
+<br>![School's Out!](badges/520672.png)<br>
+Buy the lift pass for level 10 without using passwords, or if using passwords complete any two missions on level 9 before buying the lift pass for level 10
+### [Achievement 459948](https://retroachievements.org/achievement/459948)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **King Krond**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Type: ***win_condition***
+<br>Points: **25**
+<br>![King Krond](badges/520680.png)<br>
 Defeat Krond and save the Mega Hero Academy!
-
-Conditions:
-1. Go from the lobby to Level 10 Mission 1
-2. Level 10 Mission 1 marked complete, and no other mission status' changed
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-### [Speedy](https://retroachievements.org/achievement/459950)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **2**
-
-![lightning](badges/Lightning.png "Lightning")
-
+### [Achievement 459950](https://retroachievements.org/achievement/459950)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Speedy**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **2**
+<br>![Speedy](badges/520682.png)<br>
 Pick up a lightning in any mission
-
-Conditions:
-1. Start in valid mission that has lighting powerup
-2. Gain 32 steps of speed
-
-### [Jump to the Rescue](https://retroachievements.org/achievement/459951)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **2**
-
-![powerspring](badges/PowerSpring.png "Power Spring")
-
+### [Achievement 459951](https://retroachievements.org/achievement/459951)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Jump to the Rescue**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **2**
+<br>![Jump to the Rescue](badges/520683.png)<br>
 Pick up a power spring in any mission except the Play Pen
-
-Conditions:
-1. Start in valid mission that has power spring powerup
-2. Gain 10 power jumps
-
-### [Invincible](https://retroachievements.org/achievement/459952)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **2**
-
-![powerring](badges/PowerRing.png "Power Ring")
-
+### [Achievement 459952](https://retroachievements.org/achievement/459952)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **Invincible**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **2**
+<br>![Invincible](badges/520684.png)<br>
 Pick up a power ring in any mission
-
-Conditions:
-1. Start in valid mission that has power ring powerup
-2. Gain 32 seconds of invincibility
-
-### [I'm the Map](https://retroachievements.org/achievement/459953)
-
-<sub>[Back to navigation](#achievements-navigation)</sub>
-
-Points: **2**
-
-![map](badges/Map.png "Map")
-
+### [Achievement 459953](https://retroachievements.org/achievement/459953)
+<sub>[Back to navigation](#achievements-navigation)</sub><br>
+<br>Title: **I'm the Map**
+<br>Author: [joshraphael](https://retroachievements.org/user/joshraphael)
+<br>Points: **2**
+<br>![I'm the Map](badges/520685.png)<br>
 If there's a place you got to get, a map can get you there, I bet. Find a map to reveal the mission layout
-
-Conditions:
-1. Start in valid mission that has a map
-2. previously, the amount of rooms seen is no more than the max rooms available
-3. the amount of rooms seen is now 56 (max)
-
-## Rich Presence
-
-<sub>[Back to Table of Contents](#table-of-contents)</sub>
-
-Rich presence is available and will change depending on where you are in the game
-
-1. if you're in the main menu it will display
-    * "Title Screen"
-2. if you're in the end game concert it will display
-    * "Playing in the Hero Academy Concert"
-3. if you're in the main lobby it will display
-    * "Main Lobby"
-    * Number of stars
-    * level pass obtained
-    * credits earned
-4. if you're in a mission it will display
-    * "Level X Mission Y"
-    * current hearts
-    * current stars
-
 ## Leaderboards
-
 <sub>[Back to Table of Contents](#table-of-contents)</sub>
-
-### 1. Speedrun Monster Max
-
-The Speedrun Monster Max leaderboard is measuring the time it takes a player to complete the game from start to finish. You do not need to do every level, but you do need to earn enough points to go through each level all the way to the end in one session.
-
-Conditions:
-1. Start game with no levels completed
-2. Finish Game
-
-Reset When:
-1. Password menu opened
-
-Pause When:
-* In title screen
-* In start menu
-* In select menu
-
-### 2. High Score
-
-The High Score leaderboard is a calculations of the players credits, plus stars at the end of the game. points are subtracted when you buy a lift pass. Based on _my_ calculations a player can get a max high score of 10,009.
-
-Conditions:
-1. Start game with no levels completed
-2. Finish Game
-
-Reset When:
-1. Password menu opened
-
-### 3-31. Speedrun Missions
-
-Leaderboards 3 thru 31 are individual speedrun timers for each of the 29 missions. The logic for them is the same and will generalize in the conditions below
-
-Conditions:
-1. Player enters mission
-2. Mission marked complete
-
-Reset When:
-1. Password menu opened
-2. Player quits mission
-3. Player dies (spawn back in lobby)
-
-Pause When:
-* In start menu
-* In select menu
+### Leaderboards Navigation
+1. [Speedrun Monster Max (Leaderboard 114798)](#leaderboard-114798)
+2. [High Score (Leaderboard 114799)](#leaderboard-114799)
+3. [Speedrun Play Pen (Leaderboard 114800)](#leaderboard-114800)
+4. [Speedrun Level 1 Mission 1 (Leaderboard 114801)](#leaderboard-114801)
+5. [Speedrun Level 1 Mission 2 (Leaderboard 114802)](#leaderboard-114802)
+6. [Speedrun Level 1 Mission 3 (Leaderboard 114803)](#leaderboard-114803)
+7. [Speedrun Level 2 Mission 1 (Leaderboard 114804)](#leaderboard-114804)
+8. [Speedrun Level 2 Mission 2 (Leaderboard 114805)](#leaderboard-114805)
+9. [Speedrun Level 2 Mission 3 (Leaderboard 114806)](#leaderboard-114806)
+10. [Speedrun Level 3 Mission 1 (Leaderboard 114807)](#leaderboard-114807)
+11. [Speedrun Level 3 Mission 2 (Leaderboard 114808)](#leaderboard-114808)
+12. [Speedrun Level 3 Mission 3 (Leaderboard 114809)](#leaderboard-114809)
+13. [Speedrun Level 4 Mission 1 (Leaderboard 114810)](#leaderboard-114810)
+14. [Speedrun Level 4 Mission 2 (Leaderboard 114811)](#leaderboard-114811)
+15. [Speedrun Level 4 Mission 3 (Leaderboard 114812)](#leaderboard-114812)
+16. [Speedrun Level 5 Mission 1 (Leaderboard 114813)](#leaderboard-114813)
+17. [Speedrun Level 5 Mission 2 (Leaderboard 114814)](#leaderboard-114814)
+18. [Speedrun Level 5 Mission 3 (Leaderboard 114815)](#leaderboard-114815)
+19. [Speedrun Level 6 Mission 1 (Leaderboard 114816)](#leaderboard-114816)
+20. [Speedrun Level 6 Mission 2 (Leaderboard 114817)](#leaderboard-114817)
+21. [Speedrun Level 6 Mission 3 (Leaderboard 114818)](#leaderboard-114818)
+22. [Speedrun Level 7 Mission 1 (Leaderboard 114819)](#leaderboard-114819)
+23. [Speedrun Level 7 Mission 2 (Leaderboard 114820)](#leaderboard-114820)
+24. [Speedrun Level 7 Mission 3 (Leaderboard 114821)](#leaderboard-114821)
+25. [Speedrun Level 8 Mission 1 (Leaderboard 114822)](#leaderboard-114822)
+26. [Speedrun Level 8 Mission 2 (Leaderboard 114823)](#leaderboard-114823)
+27. [Speedrun Level 8 Mission 3 (Leaderboard 114824)](#leaderboard-114824)
+28. [Speedrun Level 9 Mission 1 (Leaderboard 114825)](#leaderboard-114825)
+29. [Speedrun Level 9 Mission 2 (Leaderboard 114826)](#leaderboard-114826)
+30. [Speedrun Level 9 Mission 3 (Leaderboard 114827)](#leaderboard-114827)
+31. [Speedrun Level 10 Mission 1 (Leaderboard 114828)](#leaderboard-114828)
+### [Leaderboard 114798](https://retroachievements.org/leaderboardinfo.php?i=114798)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Monster Max<br><br>
+Complete the game from start to finish as fast as possible without using passwords
+### [Leaderboard 114799](https://retroachievements.org/leaderboardinfo.php?i=114799)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: High Score<br><br>
+Complete the game from start to finish with the most credits and stars without using passwords
+### [Leaderboard 114800](https://retroachievements.org/leaderboardinfo.php?i=114800)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Play Pen<br><br>
+Complete Play Pen from start to finish as fast as possible without using passwords
+### [Leaderboard 114801](https://retroachievements.org/leaderboardinfo.php?i=114801)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 1 Mission 1<br><br>
+Complete Level 1 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114802](https://retroachievements.org/leaderboardinfo.php?i=114802)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 1 Mission 2<br><br>
+Complete Level 1 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114803](https://retroachievements.org/leaderboardinfo.php?i=114803)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 1 Mission 3<br><br>
+Complete Level 1 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114804](https://retroachievements.org/leaderboardinfo.php?i=114804)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 2 Mission 1<br><br>
+Complete Level 2 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114805](https://retroachievements.org/leaderboardinfo.php?i=114805)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 2 Mission 2<br><br>
+Complete Level 2 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114806](https://retroachievements.org/leaderboardinfo.php?i=114806)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 2 Mission 3<br><br>
+Complete Level 2 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114807](https://retroachievements.org/leaderboardinfo.php?i=114807)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 3 Mission 1<br><br>
+Complete Level 3 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114808](https://retroachievements.org/leaderboardinfo.php?i=114808)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 3 Mission 2<br><br>
+Complete Level 3 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114809](https://retroachievements.org/leaderboardinfo.php?i=114809)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 3 Mission 3<br><br>
+Complete Level 3 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114810](https://retroachievements.org/leaderboardinfo.php?i=114810)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 4 Mission 1<br><br>
+Complete Level 4 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114811](https://retroachievements.org/leaderboardinfo.php?i=114811)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 4 Mission 2<br><br>
+Complete Level 4 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114812](https://retroachievements.org/leaderboardinfo.php?i=114812)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 4 Mission 3<br><br>
+Complete Level 4 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114813](https://retroachievements.org/leaderboardinfo.php?i=114813)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 5 Mission 1<br><br>
+Complete Level 5 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114814](https://retroachievements.org/leaderboardinfo.php?i=114814)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 5 Mission 2<br><br>
+Complete Level 5 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114815](https://retroachievements.org/leaderboardinfo.php?i=114815)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 5 Mission 3<br><br>
+Complete Level 5 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114816](https://retroachievements.org/leaderboardinfo.php?i=114816)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 6 Mission 1<br><br>
+Complete Level 6 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114817](https://retroachievements.org/leaderboardinfo.php?i=114817)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 6 Mission 2<br><br>
+Complete Level 6 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114818](https://retroachievements.org/leaderboardinfo.php?i=114818)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 6 Mission 3<br><br>
+Complete Level 6 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114819](https://retroachievements.org/leaderboardinfo.php?i=114819)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 7 Mission 1<br><br>
+Complete Level 7 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114820](https://retroachievements.org/leaderboardinfo.php?i=114820)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 7 Mission 2<br><br>
+Complete Level 7 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114821](https://retroachievements.org/leaderboardinfo.php?i=114821)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 7 Mission 3<br><br>
+Complete Level 7 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114822](https://retroachievements.org/leaderboardinfo.php?i=114822)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 8 Mission 1<br><br>
+Complete Level 8 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114823](https://retroachievements.org/leaderboardinfo.php?i=114823)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 8 Mission 2<br><br>
+Complete Level 8 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114824](https://retroachievements.org/leaderboardinfo.php?i=114824)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 8 Mission 3<br><br>
+Complete Level 8 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114825](https://retroachievements.org/leaderboardinfo.php?i=114825)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 9 Mission 1<br><br>
+Complete Level 9 Mission 1 from start to finish as fast as possible without using passwords
+### [Leaderboard 114826](https://retroachievements.org/leaderboardinfo.php?i=114826)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 9 Mission 2<br><br>
+Complete Level 9 Mission 2 from start to finish as fast as possible without using passwords
+### [Leaderboard 114827](https://retroachievements.org/leaderboardinfo.php?i=114827)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 9 Mission 3<br><br>
+Complete Level 9 Mission 3 from start to finish as fast as possible without using passwords
+### [Leaderboard 114828](https://retroachievements.org/leaderboardinfo.php?i=114828)
+<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<br>Title: Speedrun Level 10 Mission 1<br><br>
+Complete Level 10 Mission 1 from start to finish as fast as possible without using passwords
