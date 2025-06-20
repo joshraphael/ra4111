@@ -2113,126 +2113,126 @@ If there's a place you got to get, a map can get you there, I bet. Find a map to
 30. [Speedrun Level 9 Mission 3 (Leaderboard 114827)](#leaderboard-114827)
 31. [Speedrun Level 10 Mission 1 (Leaderboard 114828)](#leaderboard-114828)
 ### [Leaderboard 114798](https://retroachievements.org/leaderboardinfo.php?i=114798)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Monster Max<br><br>
 Complete the game from start to finish as fast as possible without using passwords
 ### [Leaderboard 114799](https://retroachievements.org/leaderboardinfo.php?i=114799)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: High Score<br><br>
 Complete the game from start to finish with the most credits and stars without using passwords
 ### [Leaderboard 114800](https://retroachievements.org/leaderboardinfo.php?i=114800)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Play Pen<br><br>
 Complete Play Pen from start to finish as fast as possible without using passwords
 ### [Leaderboard 114801](https://retroachievements.org/leaderboardinfo.php?i=114801)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 1 Mission 1<br><br>
 Complete Level 1 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114802](https://retroachievements.org/leaderboardinfo.php?i=114802)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 1 Mission 2<br><br>
 Complete Level 1 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114803](https://retroachievements.org/leaderboardinfo.php?i=114803)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 1 Mission 3<br><br>
 Complete Level 1 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114804](https://retroachievements.org/leaderboardinfo.php?i=114804)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 2 Mission 1<br><br>
 Complete Level 2 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114805](https://retroachievements.org/leaderboardinfo.php?i=114805)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 2 Mission 2<br><br>
 Complete Level 2 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114806](https://retroachievements.org/leaderboardinfo.php?i=114806)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 2 Mission 3<br><br>
 Complete Level 2 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114807](https://retroachievements.org/leaderboardinfo.php?i=114807)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 3 Mission 1<br><br>
 Complete Level 3 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114808](https://retroachievements.org/leaderboardinfo.php?i=114808)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 3 Mission 2<br><br>
 Complete Level 3 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114809](https://retroachievements.org/leaderboardinfo.php?i=114809)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 3 Mission 3<br><br>
 Complete Level 3 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114810](https://retroachievements.org/leaderboardinfo.php?i=114810)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 4 Mission 1<br><br>
 Complete Level 4 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114811](https://retroachievements.org/leaderboardinfo.php?i=114811)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 4 Mission 2<br><br>
 Complete Level 4 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114812](https://retroachievements.org/leaderboardinfo.php?i=114812)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 4 Mission 3<br><br>
 Complete Level 4 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114813](https://retroachievements.org/leaderboardinfo.php?i=114813)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 5 Mission 1<br><br>
 Complete Level 5 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114814](https://retroachievements.org/leaderboardinfo.php?i=114814)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 5 Mission 2<br><br>
 Complete Level 5 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114815](https://retroachievements.org/leaderboardinfo.php?i=114815)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 5 Mission 3<br><br>
 Complete Level 5 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114816](https://retroachievements.org/leaderboardinfo.php?i=114816)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 6 Mission 1<br><br>
 Complete Level 6 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114817](https://retroachievements.org/leaderboardinfo.php?i=114817)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 6 Mission 2<br><br>
 Complete Level 6 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114818](https://retroachievements.org/leaderboardinfo.php?i=114818)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 6 Mission 3<br><br>
 Complete Level 6 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114819](https://retroachievements.org/leaderboardinfo.php?i=114819)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 7 Mission 1<br><br>
 Complete Level 7 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114820](https://retroachievements.org/leaderboardinfo.php?i=114820)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 7 Mission 2<br><br>
 Complete Level 7 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114821](https://retroachievements.org/leaderboardinfo.php?i=114821)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 7 Mission 3<br><br>
 Complete Level 7 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114822](https://retroachievements.org/leaderboardinfo.php?i=114822)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 8 Mission 1<br><br>
 Complete Level 8 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114823](https://retroachievements.org/leaderboardinfo.php?i=114823)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 8 Mission 2<br><br>
 Complete Level 8 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114824](https://retroachievements.org/leaderboardinfo.php?i=114824)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 8 Mission 3<br><br>
 Complete Level 8 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114825](https://retroachievements.org/leaderboardinfo.php?i=114825)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 9 Mission 1<br><br>
 Complete Level 9 Mission 1 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114826](https://retroachievements.org/leaderboardinfo.php?i=114826)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 9 Mission 2<br><br>
 Complete Level 9 Mission 2 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114827](https://retroachievements.org/leaderboardinfo.php?i=114827)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 9 Mission 3<br><br>
 Complete Level 9 Mission 3 from start to finish as fast as possible without using passwords
 ### [Leaderboard 114828](https://retroachievements.org/leaderboardinfo.php?i=114828)
-<sub>[Back to navigation](#code-notes-navigation)</sub><br>
+<sub>[Back to navigation](#leaderboards-navigation)</sub><br>
 <br>Title: Speedrun Level 10 Mission 1<br><br>
 Complete Level 10 Mission 1 from start to finish as fast as possible without using passwords
